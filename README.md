@@ -114,3 +114,13 @@ Ulteriori letture saranno indicate durante il corso.
 Marco Veronese Passarella - [marco.veronesepassarella@univaq.it](mailto:marco.veronesepassarella@univaq.it)
 
 Per orari, aule e date di inizio delle lezioni si rimanda alle comunicazioni della Segreteria Didattica del Dipartimento.
+
+---
+
+## Parte I - Le origini dell'approccio classico
+
+### 1.1 Introduzione al pensiero economico
+
+...
+
+🚧 *Work in progress* 🚧
