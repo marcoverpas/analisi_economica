@@ -35,9 +35,9 @@ Il percorso didattico segue lo sviluppo di questo quadro teorico dall'economia p
 
 L'intero corso è organizzato attorno a quattro domande, che ritornano — con risposte diverse — in ciascun approccio teorico studiato:
 
-1. Come si formano i **prezzi**?
-2. Da dove nascono i **profitti**?
-3. Che cosa determina gli **investimenti**?
+1. Che cosa determina il livello e la composizione della **produzione**?
+2. Come si formano i **prezzi**?
+3. Da dove nascono i **profitti**?
 4. Quale ruolo hanno **banche e moneta**?
 
 Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori economici** e delle **classi sociali**, ricorrendo a *toy models* e a matrici semplificate.
