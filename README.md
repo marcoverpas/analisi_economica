@@ -33,7 +33,7 @@ Il percorso didattico segue lo sviluppo di questo quadro teorico dall'economia p
 
 ## ❓ Le quattro domande-guida
 
-L'intero corso è organizzato attorno a quattro domande, che ritornano — con risposte diverse — in ciascun approccio teorico studiato:
+L'intero corso è organizzato attorno a quattro domande, che ritornano - con risposte diverse - in ciascun approccio teorico studiato:
 
 1. Che cosa determina il livello e la composizione della **produzione**?
 2. Come si formano i **prezzi**?
@@ -73,7 +73,7 @@ Al termine dell'insegnamento sarai in grado di:
 - **conoscere** i principali approcci che interpretano l'economia capitalistica come sistema monetario di produzione, l'evoluzione dell'approccio classico e i concetti di sovrappiù, distribuzione, accumulazione, moneta e credito, insieme ai relativi strumenti analitici (schemi di riproduzione, prezzi di produzione, matrici input-output, schemi fondi-flussi);
 - **confrontare** l'approccio classico e i suoi sviluppi recenti con il paradigma marginalista-neoclassico, e interpretare il ruolo della moneta e della finanza nel processo di produzione;
 - **analizzare** le condizioni di riproduzione, stabilità e instabilità delle economie capitalistiche;
-- **leggere** i fenomeni economici — crisi, inflazione, disuguaglianza — alla luce dei diversi quadri teorici;
+- **leggere** i fenomeni economici - crisi, inflazione, disuguaglianza - alla luce dei diversi quadri teorici;
 - **utilizzare** schemi concettuali e semplici strumenti modellistici, anche mediante ambienti e linguaggi di programmazione, per rappresentare il funzionamento di un'economia.
 
 ---
@@ -84,7 +84,7 @@ Lezioni frontali e gruppi di studio, integrati da esercitazioni basate su *toy m
 
 ## ✍️ Verifica dell'apprendimento
 
-Prova scritta con tre tipologie di domande — a risposta multipla, vero/falso e a risposta aperta — riferite, per ciascun approccio teorico, ai nuclei fondamentali del corso: formazione dei prezzi, origine dei profitti, determinanti degli investimenti, ruolo di banche e moneta.
+Prova scritta con tre tipologie di domande - a risposta multipla, vero/falso e a risposta aperta - riferite, per ciascun approccio teorico, ai nuclei fondamentali del corso: formazione dei prezzi, origine dei profitti, determinanti degli investimenti, ruolo di banche e moneta.
 
 ---
 
@@ -94,10 +94,10 @@ Il materiale didattico principale è costituito dalle **slide delle lezioni** e 
 
 A titolo esemplificativo, alcuni suggerimenti di lettura (limitatamente ai capitoli utilizzati):
 
-- E. Screpanti, S. Zamagni, *An Outline of the History of Economic Thought*, Oxford University Press — storia del pensiero economico (dalle origini dell'economia politica classica fino a Marx).
-- A. Graziani, *The Monetary Theory of Production*, Cambridge University Press — teoria del circuito monetario.
-- W. Godley, M. Lavoie, *Monetary Economics*, Palgrave Macmillan — modelli *stock-flow consistent* (capitoli introduttivi e modelli SIM, PC, BMW).
-- R. E. Miller, P. D. Blair, *Input-Output Analysis: Foundations and Extensions*, Cambridge University Press — analisi input-output (modello base).
+- E. Screpanti, S. Zamagni, *An Outline of the History of Economic Thought*, Oxford University Press - storia del pensiero economico (dalle origini dell'economia politica classica fino a Marx).
+- A. Graziani, *The Monetary Theory of Production*, Cambridge University Press - teoria del circuito monetario.
+- W. Godley, M. Lavoie, *Monetary Economics*, Palgrave Macmillan - modelli *stock-flow consistent* (capitoli introduttivi e modelli SIM, PC, BMW).
+- R. E. Miller, P. D. Blair, *Input-Output Analysis: Foundations and Extensions*, Cambridge University Press - analisi input-output (modello base).
 
 Ulteriori letture saranno indicate durante il corso.
 
@@ -105,6 +105,6 @@ Ulteriori letture saranno indicate durante il corso.
 
 ## ✉️ Contatti
 
-Marco Veronese Passarella — [marco.veronesepassarella@univaq.it](mailto:marco.veronesepassarella@univaq.it)
+Marco Veronese Passarella - [marco.veronesepassarella@univaq.it](mailto:marco.veronesepassarella@univaq.it)
 
 Per orari, aule e date di inizio delle lezioni si rimanda alle comunicazioni della Segreteria Didattica del Dipartimento.
