@@ -84,7 +84,7 @@ Lezioni frontali e gruppi di studio, integrati da esercitazioni basate su *toy m
 
 ## ✍️ Verifica dell'apprendimento
 
-Prova scritta con tre tipologie di domande - a risposta multipla, vero/falso e a risposta aperta - riferite, per ciascun approccio teorico, ai nuclei fondamentali del corso: formazione dei prezzi, origine dei profitti, determinanti degli investimenti, ruolo di banche e moneta.
+Prova scritta con tre tipologie di domande - a risposta multipla, vero/falso e a risposta aperta - riferite, per ciascun approccio teorico, ai nuclei fondamentali del corso: determinanti della produzione e degli investimenti, formazione dei prezzi, origine dei profitti, ruolo di banche e moneta.
 
 ---
 
