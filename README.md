@@ -46,19 +46,19 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 
 ## 🗂️ Programma
 
-### Parte I -- Le origini dell'approccio classico
+### Parte I - Le origini dell'approccio classico
 - **1.1** Introduzione al pensiero economico
 - **1.2** Da Quesnay a Smith: sovrappiù e prezzi naturali
 - **1.3** Distribuzione e conflitto nella teoria di Ricardo
 - **1.4** La "critica" di Marx: accumulazione e crisi
 
-### Parte II -- Crisi e rinascita dell'approccio classico
+### Parte II - Crisi e rinascita dell'approccio classico
 - **2.1** L'ascesa del marginalismo e la nascita dell'ortodossia neoclassica
 - **2.2** La rivoluzione keynesiana: rottura o rinnovamento?
 - **2.3** Sraffa e la ripresa delle teorie del sovrappiù
 - **2.4** La controrivoluzione anti-keynesiana
 
-### Parte III -- Gli sviluppi eretici più recenti
+### Parte III - Gli sviluppi eretici più recenti
 - **3.1** L'economia come insieme di settori integrati: il modello input-output di Leontief
 - **3.2** L'economia come insieme di bilanci integrati: circuito monetario e modelli fondi-flussi (*stock-flow consistent*)
 - **3.3** Sintesi dei due approcci e introduzione ai sistemi complessi
