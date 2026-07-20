@@ -1,6 +1,12 @@
 # 📊 Analisi economica
 ### Produzione, distribuzione, conflitto e moneta 💰
 
+<div align="center">
+<figure>
+<img src="https://github.com/marcoverpas/figures/blob/main/analisi_economica_cover.png" width="1000">
+</figure>
+</div>
+
 [*Italian only*] Materiale didattico dell'insegnamento di **Analisi Economica**, Corso di Laurea in Amministrazione, Economia e Finanza (percorso *Economia dell'Innovazione, del Territorio e della Sostenibilità*), Università degli Studi dell'Aquila.
 
 Questo archivio raccoglie slide, letture e altro materiale del corso, consultabile anche in forma di libro HTML.
