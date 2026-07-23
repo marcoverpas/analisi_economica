@@ -1,0 +1,12 @@
+cff-version: 1.0.0
+message: "Se utilizzi questo materiale, cita come indicato di seguito."
+title: "Analisi economica: produzione, distribuzione, conflitto e moneta"
+type: dataset
+authors:
+  - family-names: "Veronese Passarella"
+    given-names: "Marco"
+    affiliation: "Università degli Studi dell'Aquila"
+    # orcid: "https://orcid.org/0000-0001-7652-5952"
+version: "a.a. 2026-2027"
+date-released: "2026-09-01"
+url: "https://github.com/marcoverpas/analisi_economica"
