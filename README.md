@@ -170,8 +170,6 @@ L'impossibilità di formulare previsioni quantitative accurate, anzitutto, è un
 
 Se è vero, infatti, che la scienza procede per metafore, spesso mutuate da ambiti di studio differenti, ciò che va sottoposto a critica radicale non è la matematica in quanto tale, bensì la *visione preanalitica* - per usare il termine di Schumpeter - da cui la modellistica dominante è derivata: l'immagine di un cosmo ordinato, a-storico, a-sociale e a-conflittuale, che è in definitiva l'istanza di autorappresentazione delle classi sociali egemoni. Civettando con Sraffa, non si tratta cioè di rigettare la matematica, ma la visione preanalitica a partire dalla quale essa viene impiegata. Per converso, e a dispetto delle migliori intenzioni dei suoi sostenitori, la negazione di ogni carattere di scientificità alle discipline sociali finisce per rafforzare la visione dominante: entrambe le posizioni, infatti, presuppongono che l'unico statuto scientifico possibile sia quello della scienza naturale.
 
-#### L'economia come scienza sociale
-
 Meglio si farebbe, allora, a rivendicare che l'economia è una scienza *sociale*: una disciplina che indaga criticamente le leggi (storicamente mutevoli) di movimento delle società capitalistiche, rifuggendo tanto le pretese di neutralità del pensiero dominante quanto le fughe irrazionalistiche dei suoi critici più ingenui. È da questo punto di vista che il corso ricostruisce l'approccio classico, monetario e del sovrappiù alla produzione, alla distribuzione e al conflitto, di cui le sezioni seguenti seguiranno lo sviluppo storico e analitico.
 
 ---
