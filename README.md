@@ -146,6 +146,8 @@ Queste scuole possono essere ricondotte ad alcune "visioni di base" di lungo per
 </figure>
 </div>
 
+<br>
+
 Non a caso, questa polarità è rintracciabile già nelle "due anime" dell'opera di Adam Smith: da un lato la dimensione micro-individuale (decisioni di agenti auto-interessati, mano invisibile, divisione del lavoro, allocazione), ripresa e sviluppata dai marginalisti; dall'altro la dimensione macro-sociale (classi sociali, dimensione del mercato, valore come costo di riproduzione, sviluppo economico), ripresa dai classici, da Marx e, in seguito, da Keynes. È lungo questo asse - che oppone *individuo, mercato e scarsità* a *società, conflitto e riproduzione* - che si dispone l'intero albero genealogico delle teorie economiche, di cui la Figura 1 offre una rappresentazione sinottica.
 
 #### La questione della scientificità
