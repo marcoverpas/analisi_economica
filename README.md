@@ -144,7 +144,7 @@ Non a caso, questa polarità è rintracciabile già nelle "due anime" dell'opera
 <div align="center">
 <figure>
 <img src="https://github.com/marcoverpas/figures/blob/main/Albero_gen.png" width="1000">
-<figcaption><em>Figura 1.1 - L'albero genealogico delle scuole del pensiero economico. Le principali tradizioni teoriche sono disposte lungo l'asse verticale, che oppone la visione centrata su individuo, mercato e scarsità a quella centrata su società, conflitto e riproduzione, e lungo l'asse orizzontale del tempo storico. I riquadri distinguono gli approcci dominanti (in tinta piena o tratteggiata) da quelli eterodossi; le frecce indicano i legami diretti (linea continua) e mediati (tratteggiata) fra le scuole.</em></figcaption>
+<figcaption><sub><em>Figura 1.1 - L'albero genealogico delle scuole del pensiero economico. Le principali tradizioni teoriche sono disposte lungo l'asse verticale, che oppone la visione centrata su individuo, mercato e scarsità a quella centrata su società, conflitto e riproduzione, e lungo l'asse orizzontale del tempo storico. I riquadri distinguono gli approcci dominanti (in tinta piena o tratteggiata) da quelli eterodossi; le frecce indicano i legami diretti (linea continua) e mediati (tratteggiata) fra le scuole.</em></figcaption>
 </figure>
 </div>
 
