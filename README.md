@@ -152,7 +152,7 @@ Queste scuole possono essere ricondotte ad alcune "visioni di base" di lungo per
 
 Non a caso, questa polarità è rintracciabile già nelle "due anime" dell'opera di Adam Smith: da un lato la dimensione micro-individuale (decisioni di agenti auto-interessati, mano invisibile, divisione del lavoro, allocazione), ripresa e sviluppata dai marginalisti; dall'altro la dimensione macro-sociale (classi sociali, dimensione del mercato, valore come costo di riproduzione, sviluppo economico), ripresa dai classici, da Marx e, in seguito, da Keynes. È lungo questo asse - che oppone *individuo, mercato e scarsità* a *società, conflitto e riproduzione* - che si dispone l'intero albero genealogico delle teorie economiche, di cui la Figura 1.1 offre una rappresentazione sinottica.
 
-> [!NOTA]
+> [!NOTE]
 > **Una precisazione terminologica.** In questo corso l'espressione "approccio classico" è usata nell'accezione di Marx e degli storici del pensiero economico: la tradizione che, da Smith a Ricardo fino a Marx, analizza la produzione, il sovrappiù e la sua distribuzione fra le classi - l'impianto poi ripreso e riformulato da Sraffa. Essa non va confusa con l'uso, assai più ampio e peculiare, che ne fa Keynes nella *Teoria generale*, dove con "economisti classici" si designa un insieme che va da Ricardo fino ai suoi successori marginalisti (Marshall, Pigou), accomunati dall'adesione alla legge di Say. In quell'accezione "classico" finisce per includere anche i neoclassici, ossia proprio l'indirizzo da cui l'approccio del sovrappiù intende distinguersi - e che era, in realtà, il vero bersaglio della critica keynesiana. Quando qui parliamo di "classici", dunque, ci riferiamo ai teorici del sovrappiù, non a coloro contro cui Keynes si scagliava.
 
 
