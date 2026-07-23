@@ -123,7 +123,7 @@ Per orari, aule e date di inizio delle lezioni si rimanda alle comunicazioni del
 
 Un corso di analisi economica non può cominciare con la mera esposizione di un apparato di modelli. La prospettiva che qui si adotta - quella dell'economia politica classica e dei suoi sviluppi eterodossi - si comprende infatti soltanto se la si colloca, per un verso, entro la storia del pensiero economico e, per l'altro, all'interno di una riflessione preliminare sulla natura stessa della disciplina. È a questa duplice contestualizzazione che è dedicata la presente sezione introduttiva.
 
-#### Idee economiche, storia e società
+#### 1.1.1 Idee economiche, storia e società
 
 Contrariamente a un'immagine diffusa, il pensiero economico non progredisce in modo continuo e cumulativo, come una palla di neve, ossia attraverso una progressiva acquisizione di verità che si sostituiscono agli errori del passato. Riprendendo un'intuizione di Schumpeter, la sua evoluzione procede piuttosto *per salti*, alternando fasi rivoluzionarie e lunghi periodi di consolidamento, nel corso dei quali una determinata impostazione diventa "situazione classica", ossia ortodossia condivisa (si vedano Screpanti e Zamagni, 2005).
 
@@ -131,7 +131,7 @@ Ancor più rilevante è il fatto che teorie, dibattiti, metodi e prescrizioni di
 
 Un esempio chiarisce il punto. Stabilire se un tasso di disoccupazione del 5 per cento sia preoccupante oppure se un tasso del 10 per cento sia "naturale" non è una questione puramente tecnica: le due letture rimandano a visioni teoriche contrapposte e, dietro di esse, a interessi sociali distinti. La scelta dei problemi e dei criteri di valutazione, insomma, è essa stessa parte del conflitto di cui l'economia si occupa.
 
-#### Perché nell'economia esistono scuole di pensiero
+#### 1.1.2 Perché nell'economia esistono scuole di pensiero
 
 Da qui discende una peculiarità che distingue le scienze economiche - e, più in generale, le scienze sociali - dalle cosiddette scienze "dure". Anche in queste ultime, naturalmente, esiste il dissenso. Ad esempio, è noto che Einstein, pur essendo tra i fondatori della teoria dei quanti, ne rifiutò la completezza - è celebre la sua battuta "Dio non gioca a dadi" - e, con il paradosso EPR, propese per una descrizione a variabili nascoste di impianto deterministico. In modo analogo, Roger Penrose non rigetta la meccanica quantistica, ma la ha sembre ritenuta incompleta, proponendone una modifica con collasso "oggettivo" della funzione d'onda indotto dalla gravità. Su un altro versante, il modello cosmologico standard e i suoi pilastri - dalla materia oscura al principio cosmologico - restano oggetto di un dibattito tuttora aperto: lavori recentissimi, come quello di F. Sylos Labini e M. Galoppo, che sulla base dei dati della *survey* DESI hanno segnalato strutture anisotrope su scala di gigaparsec, in tensione con l'ipotesi di un universo isotropo (Sylos Labini e Galoppo, 2026), sono peraltro stati subito sottoposti a serrate repliche critiche. Tale dissenso, però, tende nel lungo periodo a essere riassorbito, o comunque arbitrato dall'evidenza empirica: resta, sullo sfondo, l'idea di un'unica verità a cui ci si avvicina progressivamente, e le posizioni divergenti sono valutate in base a quanto vi si accostano.
 
@@ -150,7 +150,7 @@ Queste scuole possono essere ricondotte ad alcune "visioni di base" di lungo per
 
 Non a caso, questa polarità è rintracciabile già nelle "due anime" dell'opera di Adam Smith: da un lato la dimensione micro-individuale (decisioni di agenti auto-interessati, mano invisibile, divisione del lavoro, allocazione), ripresa e sviluppata dai marginalisti; dall'altro la dimensione macro-sociale (classi sociali, dimensione del mercato, valore come costo di riproduzione, sviluppo economico), ripresa dai classici, da Marx e, in seguito, da Keynes. È lungo questo asse - che oppone *individuo, mercato e scarsità* a *società, conflitto e riproduzione* - che si dispone l'intero albero genealogico delle teorie economiche, di cui la Figura 1 offre una rappresentazione sinottica.
 
-#### La questione della scientificità
+#### 1.1.3 La questione della scientificità
 
 A ciò si lega l'annosa disputa sulla scientificità dell'"economia", che si ripropone puntualmente - per esempio in occasione dell'assegnazione dei premi Nobel - e attorno alla quale regna una certa confusione. Si tratta, in realtà, di un tema assai complesso, ricco di sfumature e che non si presta risposte nette, che conviene affrontare con alcune premesse.
 
@@ -175,5 +175,7 @@ Meglio si farebbe, allora, a rivendicare che l'economia è una scienza *sociale*
 ---
 
 *Riferimenti.* Le considerazioni sulla relazione fra idee economiche, storia e gruppi sociali, e sulla natura delle scuole di pensiero, riprendono e rielaborano l'Introduzione di E. Screpanti e S. Zamagni, *An Outline of the History of Economic Thought*, Oxford University Press, 2005 (in particolare le pp. 1-12). Sul dibattito relativo al modello cosmologico standard si veda F. Sylos Labini e M. Galoppo, "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, 2026, DOI: 10.1038/s41586-026-10702-5. Sull'applicazione delle categorie di paradigma e rivoluzione scientifica all'economia si veda G. Gattei, *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino, 1994. 
+
+---
 
 🚧 *Work in progress* 🚧
