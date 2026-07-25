@@ -1,7 +1,7 @@
 # 📊 Analisi Economica
 ### Produzione, distribuzione, conflitto e moneta 💰
 
-[*Italian only*] Materiale didattico dell'insegnamento di **Analisi Economica**, Corso di Laurea in Amministrazione, Economia e Finanza (percorso *Economia dell'Innovazione, del Territorio e della Sostenibilità*), Università degli Studi dell'Aquila.
+[*Italian only*] Materiale didattico dell'insegnamento di **Analisi Economica**, Corso di Laurea Magistrale in Amministrazione, Economia e Finanza (percorso *Economia dell'Innovazione, del Territorio e della Sostenibilità*), Università degli Studi dell'Aquila.
 
 <div align="center">
 <figure>
