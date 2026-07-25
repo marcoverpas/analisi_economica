@@ -100,10 +100,10 @@ Il materiale didattico principale è costituito dalle **slide delle lezioni** e 
 
 A titolo esemplificativo, alcuni suggerimenti di lettura (limitatamente ai capitoli utilizzati):
 
-- E. Screpanti, S. Zamagni, *An Outline of the History of Economic Thought*, Oxford University Press - storia del pensiero economico (dalle origini dell'economia politica classica fino a Marx).
-- A. Graziani, *The Monetary Theory of Production*, Cambridge University Press - teoria del circuito monetario.
-- W. Godley, M. Lavoie, *Monetary Economics*, Palgrave Macmillan - modelli *stock-flow consistent* (capitoli introduttivi e modelli SIM, PC, BMW).
-- R. E. Miller, P. D. Blair, *Input-Output Analysis: Foundations and Extensions*, Cambridge University Press - analisi input-output (modello base).
+- E. Screpanti, S. Zamagni, *Profilo di storia del pensiero economico*, Carocci (dalle origini dell'economia politica classica fino a Marx).
+- A. Graziani, *The Monetary Theory of Production*, Cambridge University Press (teoria del circuito monetario).
+- W. Godley, M. Lavoie, *Monetary Economics*, Palgrave Macmillan (modelli *stock-flow consistent*, capitoli introduttivi e modelli SIM, PC, BMW).
+- R. E. Miller, P. D. Blair, *Input-Output Analysis: Foundations and Extensions*, Cambridge University Press (analisi input-output, modello base).
 
 Ulteriori letture saranno indicate durante il corso.
 
@@ -125,7 +125,7 @@ Un corso di analisi economica non può cominciare con la mera esposizione di un 
 
 #### 1.1.1 Idee economiche, storia e società
 
-Contrariamente a un'immagine diffusa, il pensiero economico non progredisce in modo continuo e cumulativo, come una palla di neve, ossia attraverso una progressiva acquisizione di verità che si sostituiscono agli errori del passato. Riprendendo un'intuizione di Joseph Schumpeter, la sua evoluzione procede piuttosto *per salti*, alternando fasi rivoluzionarie e lunghi periodi di consolidamento, nel corso dei quali una determinata impostazione diventa "situazione classica", ossia ortodossia condivisa (si vedano Screpanti e Zamagni, 2005).
+Contrariamente a un'immagine diffusa, il pensiero economico non progredisce in modo continuo e cumulativo, come una palla di neve, ossia attraverso una progressiva acquisizione di verità che si sostituiscono agli errori del passato. Riprendendo un'intuizione di Joseph Schumpeter, la sua evoluzione procede piuttosto *per salti*, alternando fasi rivoluzionarie e lunghi periodi di consolidamento, nel corso dei quali una determinata impostazione diventa "situazione classica", ossia ortodossia condivisa (si vedano Screpanti e Zamagni, 2004).
 
 Ancor più rilevante è il fatto che teorie, dibattiti, metodi e prescrizioni di politica economica non siano indipendenti dal contesto storico in cui prendono forma. Essi sorgono in risposta a problemi concreti - crisi, disoccupazione, inflazione, conflitto distributivo - e vengono selezionati, raffinati ed elevati al rango di ortodossia in funzione della loro capacità di rappresentare, e insieme di legittimare, gli interessi e l'immagine di sé dei gruppi sociali di volta in volta egemoni. In questa lettura, che potremmo dire *storico-sociale*, è la società nel suo complesso a stabilire quali problemi siano rilevanti, in quali direzioni cercarne la soluzione e, in ultima istanza, quali teorie riconoscere come "corrette". Un giudice, tuttavia, né neutrale né imparziale, poiché attraversato da interessi e conflitti.
 
@@ -137,7 +137,7 @@ Da qui discende una peculiarità che distingue le scienze economiche - e, più i
 
 Su un altro versante, il modello cosmologico standard e i suoi pilastri - dalla materia oscura al principio cosmologico - restano oggetto di un dibattito tuttora aperto. Ad esempio, a partire dalle osservazioni fornite da DESI (*Dark Energy Spectroscopic Instrument*), ossia di una vasta mappatura tridimensionale della distribuzione delle galassie, alcuni lavori recenti hanno mostrato l'esistenza di strutture anisotrope su scala di gigaparsec (Sylos Labini e Galoppo, 2026), in tensione con l'ipotesi di un universo isotropo. Tali lavori sono stati subito sottoposti a serrate repliche critiche. Tale dissenso, però, tende nel lungo periodo a essere riassorbito, o comunque arbitrato dall'evidenza empirica: resta, sullo sfondo, l'idea di un'unica verità a cui ci si avvicina progressivamente, e le posizioni divergenti sono valutate in base a quanto vi si accostano.
 
-Nelle scienze sociali accade qualcosa di diverso. Una teoria economica non è soltanto uno strumento conoscitivo, ma anche una forma di autocomprensione e di *autorappresentazione* di un soggetto sociale (si rinvia, di nuovo, a Screpanti e Zamagni, 2005). Poiché i soggetti sociali sono eterogenei - classi, gruppi, nazioni - e le loro relazioni sono spesso conflittuali, la disciplina non ospita un dissenso meramente episodico, ma vere e proprie *scuole di pensiero* in senso stretto - durature, coerenti al proprio interno e portatrici, ciascuna, di una distinta *visione preanalitica* di come la società *è* e di come *dovrebbe essere*.
+Nelle scienze sociali accade qualcosa di diverso. Una teoria economica non è soltanto uno strumento conoscitivo, ma anche una forma di autocomprensione e di *autorappresentazione* di un soggetto sociale (si rinvia, di nuovo, a Screpanti e Zamagni, 2004). Poiché i soggetti sociali sono eterogenei - classi, gruppi, nazioni - e le loro relazioni sono spesso conflittuali, la disciplina non ospita un dissenso meramente episodico, ma vere e proprie *scuole di pensiero* in senso stretto - durature, coerenti al proprio interno e portatrici, ciascuna, di una distinta *visione preanalitica* di come la società *è* e di come *dovrebbe essere*.
 
 Queste scuole possono essere ricondotte ad alcune "visioni di base" di lungo periodo: correnti carsiche che, al pari di fiumi sotterranei, scompaiono, o vengono marginalizzati per lunghi tratti dall'accademia, per poi riaffiorare quando le mutate condizioni sociali lo richiedono. Due orientamenti, in particolare, si fronteggiano lungo tutta la storia della disciplina: quello che concepisce il mercato come un ordine capace di autoregolarsi (dalla legge di Say ai modelli di equilibrio economico generale) e quello che, al contrario, muove dalla centralità della produzione, dal ruolo della domanda effettiva e dalla possibilità di crisi generali (da Malthus e Marx fino a Keynes). Un'analoga tensione attraversa la teoria del valore, dove l'orientamento soggettivista (Menger, Jevons) si oppone a quello oggettivista (Ricardo, Sraffa). L'approccio classico e del sovrappiù, che costituisce il filo conduttore di questo corso, è appunto una di queste visioni di base: a lungo confinata nel "sottosuolo" dell'eterodossia e periodicamente riemergente.
 
@@ -173,7 +173,7 @@ Le categorie kuhniane possono rivelarsi feconde anche per il pensiero economico,
 
 Su questo sfondo, il dibattito tende a polarizzarsi. Da un lato si colloca la maggioranza degli economisti, che assimilano l'economia a una scienza naturale, adottano il linguaggio matematico come criterio di scientificità e giustificano i recenti insuccessi previsionali invocando la natura stocastica delle crisi. Dall'altro lato vi sono quanti negano alle discipline economiche ogni statuto scientifico, condannano l'uso della matematica *tout court* e brandiscono quegli stessi fallimenti previsionali come prova inoppugnabile di non-scientificità. Nessuna delle due posizioni è, a ben vedere, interamente persuasiva.
 
-L'impossibilità di formulare previsioni quantitative accurate, anzitutto, è un limite condiviso con numerose discipline che studiano fenomeni naturali: dalla medicina alla sismologia alla meteorologia gli esempi non mancano. Specularmente, l'esperimento di laboratorio, di uso comune in alcune branche della microeconomia applicata, risulta di difficile realizzazione in scienze naturali come l'astronomia. Anche il dilemma "matematica sì, matematica no" è, in fondo, un falso problema. Ogni linguaggio ha i propri limiti - incluso il codice HTML con cui questi appunti sono redatti - e quello matematico non fa eccezione. La consapevolezza di tali limiti dovrebbe semmai condurre a un uso parsimonioso e avvertito degli strumenti matematici e statistici, e forse alla rinuncia all'ambizione di un modello onnicomprensivo dei fenomeni economici: un *pluralismo metodologico* che non deve però sfociare in relativismo teorico o, peggio, in irrazionalismo epistemologico.
+L'impossibilità di formulare previsioni quantitative accurate, anzitutto, è un limite condiviso con numerose discipline che studiano fenomeni naturali: dalla medicina alla sismologia alla meteorologia gli esempi non mancano. Specularmente, l'esperimento di laboratorio, di uso comune in alcune branche della microeconomia applicata, risulta di difficile realizzazione in scienze naturali come l'astronomia. Anche il dilemma "matematica sì, matematica no" è, in fondo, un falso problema. Ogni linguaggio ha i propri limiti - inclusi la lingua italiana o il codice HTML con cui questi appunti sono redatti - e quello matematico non fa eccezione. La consapevolezza di tali limiti dovrebbe semmai condurre a un uso parsimonioso e avvertito degli strumenti matematici e statistici, e forse alla rinuncia all'ambizione di un modello onnicomprensivo dei fenomeni economici: un *pluralismo metodologico* che non deve però sfociare in relativismo teorico o, peggio, in irrazionalismo epistemologico.
 
 Se è vero, infatti, che la scienza procede per metafore, spesso mutuate da ambiti di studio differenti, ciò che va sottoposto a critica radicale non è la matematica in quanto tale, bensì la *visione preanalitica* - per usare il termine di Schumpeter - da cui la modellistica dominante è derivata: l'immagine di un cosmo ordinato, a-storico, a-sociale e a-conflittuale, che è in definitiva l'istanza di autorappresentazione delle classi sociali egemoni. Civettando con Piero Sraffa, non si tratta cioè di rigettare la matematica, ma la visione preanalitica a partire dalla quale essa viene impiegata. Per converso, e a dispetto delle migliori intenzioni dei suoi sostenitori, la negazione di ogni carattere di scientificità alle discipline sociali finisce per rafforzare la visione dominante. Entrambe le posizioni, infatti, presuppongono che l'unico statuto scientifico possibile sia quello della scienza naturale.
 
@@ -181,7 +181,21 @@ Meglio si farebbe, allora, a riconoscere che l'economia è una *scienza sociale*
 
 ---
 
-*Riferimenti.* Le considerazioni sulla relazione fra idee economiche, storia e gruppi sociali, e sulla natura delle scuole di pensiero, riprendono e rielaborano l'Introduzione di E. Screpanti e S. Zamagni, *An Outline of the History of Economic Thought*, Oxford University Press, 2005 (in particolare le pp. 1-12). Sul dibattito relativo al modello cosmologico standard si veda F. Sylos Labini e M. Galoppo, "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, 2026, DOI: 10.1038/s41586-026-10702-5. Sull'applicazione delle categorie di paradigma e rivoluzione scientifica all'economia si veda G. Gattei, *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino, 1994. 
+**Riferimenti**
+
+- Duhem, P. (1906), *La teoria fisica: il suo oggetto, la sua struttura*, il Mulino, Bologna, 1978.
+- Feyerabend, P. K. (1975), *Contro il metodo. Abbozzo di una teoria anarchica della conoscenza*, Feltrinelli, Milano, 1979.
+- Gattei, G. (1994), *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino.
+- Keynes, J. M. (1936), *Teoria generale dell'occupazione, dell'interesse e della moneta*, UTET, Torino, 1947.
+- Kuhn, T. S. (1962), *La struttura delle rivoluzioni scientifiche*, Einaudi, Torino, 1969.
+- Lakatos, I. (1970), "La falsificazione e la metodologia dei programmi di ricerca scientifici", in I. Lakatos e A. Musgrave (a cura di), *Critica e crescita della conoscenza*, Feltrinelli, Milano, 1976.
+- Marx, K. (1867), *Il capitale. Critica dell'economia politica*, Libro I, Editori Riuniti, Roma, 1964.
+- Popper, K. R. (1934), *Logica della scoperta scientifica*, Einaudi, Torino, 1970.
+- Quine, W. V. O. (1951), "I due dogmi dell'empirismo", in *Il problema del significato*, Ubaldini, Roma, 1966.
+- Schumpeter, J. A. (1954), *Storia dell'analisi economica*, Boringhieri, Torino, 1959–60 (ed. it. a cura di P. Sylos Labini).
+- Screpanti, E. e Zamagni, S. (2004), *Profilo di storia del pensiero economico*, Carocci, Roma.
+- Sraffa, P. (1960), *Produzione di merci a mezzo di merci. Premesse a una critica della teoria economica*, Einaudi, Torino.
+- Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*. DOI: 10.1038/s41586-026-10702-5. 
 
 ---
 
