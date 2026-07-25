@@ -200,7 +200,7 @@ Meglio si farebbe, allora, a riconoscere che l'economia è una *scienza sociale*
 - Schumpeter, J. A. (1954), *Storia dell'analisi economica*, Boringhieri, Torino, 1959–60 (ed. it. a cura di P. Sylos Labini).
 - Screpanti, E. e Zamagni, S. (2004), *Profilo di storia del pensiero economico*, Carocci, Roma.
 - Sraffa, P. (1960), *Produzione di merci a mezzo di merci. Premesse a una critica della teoria economica*, Einaudi, Torino.
-- Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, [DOI: 10.1038/s41586-026-10702-5](https://www.nature.com/articles/s41586-026-10702-5) 
+- Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, [DOI: 10.1038/s41586-026-10702-5](https://www.nature.com/articles/s41586-026-10702-5). 
 
 ---
 
