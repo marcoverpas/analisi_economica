@@ -62,7 +62,7 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 - **2.1** L'ascesa del marginalismo e la nascita dell'ortodossia neoclassica
 - **2.2** La rivoluzione keynesiana: rottura o rinnovamento?
 - **2.3** Sraffa e la ripresa delle teorie del sovrappiù
-- **2.4** La controrivoluzione anti-keynesiana
+- **2.4** Le ragioni storiche e teoriche della controrivoluzione anti-keynesiana
 
 ### Parte III - Gli sviluppi eretici più recenti
 - **3.1** L'economia come insieme di settori integrati: il modello input-output di Leontief
