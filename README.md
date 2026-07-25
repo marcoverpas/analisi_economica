@@ -54,7 +54,7 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 
 ### Parte I - Le origini dell'approccio classico
 - [**1.1** Introduzione al pensiero economico](https://github.com/marcoverpas/analisi_economica#11-introduzione-al-pensiero-economico)
-- **1.2** Da Quesnay a Smith: sovrappiù e prezzi naturali
+- [**1.2** Da Quesnay a Smith: sovrappiù e prezzi naturali](https://github.com/marcoverpas/analisi_economica/tree/main#12-da-quesnay-a-smith-sovrappi%C3%B9-e-prezzi-naturali)
 - **1.3** Distribuzione e conflitto nella teoria di Ricardo
 - **1.4** La "critica" di Marx: accumulazione e crisi
 
