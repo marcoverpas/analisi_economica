@@ -20,9 +20,9 @@ Questo archivio raccoglie slide, letture e altro materiale del corso. Nei prossi
 | **Docente** | Marco Veronese Passarella |
 | **Corso di Studio** | Amministrazione, Economia e Finanza (M4AR) |
 | **Insegnamento integrato** | Analisi economica ed Econometria |
-| **Settore** | SECS-P/02 – Politica economica |
+| **Settore** | SECS-P/02 - Politica economica |
 | **CFU** | 6 (42 ore) |
-| **Anno / Periodo** | II anno – Primo semestre |
+| **Anno / Periodo** | II anno - Primo semestre |
 | **Lingua** | Italiano |
 
 ---
