@@ -199,4 +199,6 @@ Meglio si farebbe, allora, a riconoscere che l'economia è una *scienza sociale*
 
 ---
 
+### 1.2 Da Quesnay a Smith: sovrappiù e prezzi naturali
+
 🚧 *Work in progress* 🚧
