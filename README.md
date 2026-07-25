@@ -131,7 +131,7 @@ Ancor più rilevante è il fatto che teorie, dibattiti, metodi e prescrizioni di
 
 Un esempio può aiutare a chiarire il punto. Stabilire se un tasso di disoccupazione del 5 per cento sia preoccupante oppure se un tasso del 10 per cento sia "naturale" non è *solo* una questione tecnica: le due letture rimandano a visioni teoriche contrapposte e, dietro di esse, a interessi sociali distinti. La scelta dei problemi e dei criteri di valutazione, insomma, è essa stessa parte del conflitto di cui l'economia si occupa.
 
-#### 1.1.2 Perché nell'economia esistono scuole di pensiero
+#### 1.1.2 Perché nelle discipline economiche esistono scuole di pensiero
 
 Da qui discende una peculiarità che distingue le scienze economiche - e, più in generale, le scienze sociali - dalle cosiddette scienze "dure". Anche in queste ultime, naturalmente, esiste il dissenso. Ad esempio, è noto che Albert Einstein, pur essendo tra i fondatori della teoria dei quanti, ne rifiutò la completezza - è celebre la sua battuta "Dio non gioca a dadi" - e, con il paradosso EPR, propese per una descrizione a variabili nascoste di impianto deterministico. In modo analogo, Roger Penrose non rigetta la meccanica quantistica, ma la ha sempre ritenuta incompleta, proponendone una modifica con collasso "oggettivo" della funzione d'onda indotto dalla gravità.
 
