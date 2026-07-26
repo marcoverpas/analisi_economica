@@ -62,11 +62,11 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 - **2.1** L'ascesa del marginalismo e la nascita dell'ortodossia neoclassica
 - **2.2** La rivoluzione keynesiana: rottura o rinnovamento?
 - **2.3** Sraffa e la ripresa delle teorie del sovrappiù
-- **2.4** Le ragioni storiche e teoriche della controrivoluzione anti-keynesiana
+- **2.4** La controrivoluzione monetarista e la risposta classico-keynesiana
 
-### Parte III - Gli sviluppi eretici più recenti
-- **3.1** L'economia come insieme di settori integrati: il modello input-output di Leontief
-- **3.2** L'economia come insieme di bilanci integrati: circuito monetario e modelli fondi-flussi (*stock-flow consistent*)
+### Parte III - Gli sviluppi modellistici più recenti
+- **3.1** L'economia come insieme di settori integrati: il modello input-output 
+- **3.2** L'economia come insieme di bilanci integrati: circuito monetario e modelli dinamici fondi-flussi 
 - **3.3** Sintesi dei due approcci e introduzione ai sistemi complessi
 - **3.4** Conclusione del corso e ripasso
 
