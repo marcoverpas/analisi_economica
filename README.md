@@ -234,7 +234,7 @@ Non essendovi mezzi di produzione prodotti, il valore-lavoro di un'unità coinci
 
 Il *prezzo naturale* è pari al capitale anticipato — il monte salari — più il profitto che su di esso matura:
 
-$$p_i = w l_i + w l_i r_i = w l_i (1+r_i). \tag{1.2}$$
+$$p_i = w l_i + w l_i r_i = w l_i (1+r_i)$$
 
 Il prezzo espresso in *lavoro comandato* è allora:
 
