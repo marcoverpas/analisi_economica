@@ -303,7 +303,7 @@ Le due "anime" di Smith già incontrate nella sezione precedente - quella *macro
 
 ---
 
-**Riferimenti**
+**Riferimenti della Parte I**
 - Duhem, P. (1906), *La teoria fisica: il suo oggetto, la sua struttura*, il Mulino, Bologna, 1978.
 - Feyerabend, P. K. (1975), *Contro il metodo. Abbozzo di una teoria anarchica della conoscenza*, Feltrinelli, Milano, 1979.
 - Gattei, G. (1994), *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino.
