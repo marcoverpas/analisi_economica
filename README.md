@@ -159,7 +159,7 @@ La contrapposizione fra le due visioni di base non riguarda soltanto la teoria d
 
 <div align="center">
 <figure>
-<img src="https://github.com/marcoverpas/figures/blob/main/Equilibrio.png" width="740">
+<img src="https://github.com/marcoverpas/figures/blob/main/Equilibrio.png" width="780">
 <figcaption><sub><em>Figura 1.2 - I quattro concetti di equilibrio. La pallina rappresenta il sistema economico e il suo punto di quiete il centro di gravità (l'equilibrio). (a) Equilibrio unico e stabile: dopo ogni perturbazione il sistema vi ritorna. (b) Equilibrio neutrale: ogni posizione è di equilibrio e il sistema permane dove lo shock lo conduce. (c) Equilibrio instabile: una piccola deviazione tende ad amplificarsi. (d) Equilibri multipli: coesistono più posizioni di equilibrio, e quale si realizzi dipende da condizioni iniziali, storia e aspettative.</em></sub></figcaption>
 </figure>
 </div>
