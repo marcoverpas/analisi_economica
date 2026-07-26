@@ -220,63 +220,7 @@ La seconda è la teoria del *lavoro comandato* (*labour commanded*): il valore d
 
 La terza è la teoria *additiva* (*adding-up*): il valore, o prezzo naturale, di una merce è dato dalla somma dei redditi naturali (salari, profitti e rendite) necessari a produrla. Questa impostazione nasce da alcune affermazioni in cui Smith presenta i tre redditi come le "fonti originarie" del valore. Qui si annida, però, un problema. Finché il profitto è concepito come un *residuo*, ossia come ciò che resta del valore prodotto dopo aver pagato i salari, la teoria del lavoro comandato regge come teoria dei prezzi. Se invece si interpretano i redditi come *fonti prime* del valore, determinate autonomamente sui mercati dei fattori, la loro somma verrebbe a determinare il valore del bene: è la deriva additiva, che apre la porta alle spiegazioni dei prezzi fondate sulla domanda e prefigura l'impostazione marginalista (Screpanti e Zamagni, 2004).
 
-#### 1.2.3 Un primo modello classico: valore, prezzo e profitto
 
-Le tre impostazioni di Smith possono essere rese precise costruendo il più semplice dei modelli classici, che ci accompagnerà, via via arricchito, nelle sezioni successive. Consideriamo un'economia in cui ogni settore $i$ produce una quantità $x_i$ di merce impiegando lavoro; astraiamo, per il momento, dalla rendita — immaginando la terra libera o abbondante — così da isolare il rapporto fra salari e profitti. In Smith si può assumere che l'unico capitale anticipato sia costituito dai salari, il *monte salari*. Poiché la produzione richiede tempo, i salari vanno anticipati ai lavoratori prima che il prodotto sia venduto: è in ciò che consiste il loro carattere di capitale, ed è su di essi che matura il profitto. I mezzi di produzione prodotti e il capitale fisso, che complicheranno il quadro solo con Ricardo (si pensi al suo scambio con Torrens), sono qui assenti, così come l'ipotesi del salario pagato a produzione avvenuta, che entrerà in scena soltanto con Sraffa.
-
-Indichiamo con $L_i$ il lavoro complessivamente impiegato nel settore $i$ e con $l_i = L_i/x_i$ il lavoro per unità di prodotto; con $w$ il salario monetario e con $r_i$ il saggio di profitto (per il momento anche diverso da settore a settore).
-
-Il *valore*, inteso come lavoro contenuto, è definito da $\lambda_i x_i = L_i$, ossia:
-
-$$\lambda_i = \frac{L_i}{x_i} = l_i. \tag{1.1}$$
-
-Non essendovi mezzi di produzione prodotti, il valore-lavoro di un'unità coincide con il lavoro diretto impiegato per ottenerla.
-
-Il *prezzo naturale* è pari al capitale anticipato — il monte salari — più il profitto che su di esso matura:
-
-$$p_i = w l_i + w l_i r_i = w l_i (1+r_i)$$
-
-Il prezzo espresso in *lavoro comandato* è allora:
-
-$$\frac{p_i}{w} = l_i (1+r_i) \equiv l_i^{\,com}. \tag{1.3}$$
-
-Il confronto con il lavoro contenuto è immediato:
-
-$$l_i^{\,com} = l_i(1+r_i) \;>\; l_i = \lambda_i \qquad \text{se e solo se } \; r_i>0. \tag{1.4}$$
-
-Il lavoro comandato eccede dunque il lavoro contenuto esattamente in ragione del profitto. Ne discende la struttura dei prezzi relativi: per due merci qualsiasi,
-
-$$\frac{p_1}{p_2} = \frac{w l_1 (1+r_1)}{w l_2 (1+r_2)} = \frac{l_1(1+r_1)}{l_2(1+r_2)}. \tag{1.5}$$
-
-Nello "stato primitivo e rozzo", con $r_1=r_2=0$, i prezzi relativi coincidono con i rapporti fra i lavori contenuti, $p_1/p_2 = l_1/l_2 = \lambda_1/\lambda_2$; con profitti positivi, ed eventualmente diversi fra settori, i prezzi se ne discostano.
-
-Moltiplicando per le quantità, il valore del prodotto si scompone in salari e profitti — è la lettura *additiva*:
-
-$$p_i x_i = \underbrace{w l_i x_i}_{V_i} + \underbrace{w l_i x_i\, r_i}_{\Pi_i}. \tag{1.6}$$
-
-dove $V_i$ è il monte salari e $\Pi_i$ la massa dei profitti. Il sovrappiù dell'economia coincide, in questo schema, con il profitto aggregato $\Pi=\sum_i \Pi_i=\sum_i w\,l_i x_i\,r_i$ (la rendita, qui trascurata, ne costituirebbe un'ulteriore detrazione). È lecito scrivere il prezzo come somma dei redditi; è invece un errore leggere quei redditi come *fonti prime* del valore. Se salari e profitti fossero determinati in modo indipendente, la relazione fisserebbe simultaneamente il salario e il saggio di profitto, e il sistema risulterebbe sovradeterminato: la coerenza richiede che il profitto sia un *residuo*. Dato infatti il salario reale $\omega \equiv w/p$, dall'equazione del prezzo (1.2), specializzata a una singola merce ($p = wl(1+r)$), si ricava $1 = \omega l (1+r)$, e quindi:
-
-$$r = \frac{1}{\omega l} - 1 = \frac{1 - \omega l}{\omega l}. \tag{1.7}$$
-
-Il saggio di profitto è così determinato per differenza, una volta dato il salario reale, secondo la relazione inversa fra salario e profitto che sarà il cuore dell'analisi ricardiana della distribuzione. Si intravede già, del resto, il nesso con lo sfruttamento, che nella sua forma più trasparente si legge in termini reali: con la tecnologia qui assunta un'unità di lavoro produce $1/l$ unità di merce, ma il lavoratore ne riceve soltanto $\omega < 1/l$ (è la condizione $\omega l<1$, cioè $r>0$), e la differenza è il sovrappiù che si trasforma in profitto. Si tratta, per ora, di una semplice intuizione: la sua formulazione rigorosa richiederà la distinzione, propria di Marx, fra il lavoro e la forza-lavoro, il cui valore è inferiore al valore che essa è in grado di creare.
-
-> **Sintesi.** Le tre impostazioni di Smith si lasciano riassumere così: il valore come *lavoro contenuto*, $\lambda_i = l_i$; la misura del valore come *lavoro comandato*, $l_i^{\,com}=l_i(1+r_i)$; la scomposizione *additiva* del prezzo, $p_i x_i = V_i + \Pi_i$. Le prime due misure coincidono solo se $r_i=0$; la terza è legittima come contabilità del valore, ma fallace se legge i redditi come sue fonti prime.
-
-#### 1.2.4 Il profitto come detrazione: l'intuizione dello sfruttamento
-
-Dietro il passaggio dal lavoro contenuto al lavoro comandato si cela un'intuizione destinata a lunga fortuna. Nello stato primitivo l'intero prodotto del lavoro spetta al lavoratore; ma non appena il capitale e la terra diventano proprietà privata, il lavoratore deve dividere il prodotto con il capitalista e con il proprietario fondiario. Profitto e rendita si configurano, allora, come *detrazioni* dal prodotto del lavoro. In questa idea, che il profitto sia parte del valore creato dal lavoro e da esso sottratta, Smith adombra una teoria del profitto fondata sullo *sfruttamento*, che Ricardo renderà più rigorosa e che Marx porrà al centro della propria critica. Non a caso Screpanti e Zamagni colgono in Smith la tensione fra l'"essere" della storia e il "dover essere" dell'ordine naturale, tensione da cui scaturisce precisamente l'anticipazione di una teoria del profitto come sfruttamento (Screpanti e Zamagni, 2004). Nella lettura coerente, il profitto resta un residuo; è solo quando lo si trasforma in remunerazione "naturale" del rischio o del capitale che l'intuizione si smarrisce, e con essa la carica critica dell'analisi. Sarà questo il filo che, nelle sezioni seguenti, seguiremo da Ricardo a Marx.
-
-#### 1.2.5 Il lavoro comandato come misura della ricchezza delle nazioni
-
-La teoria del lavoro comandato non serve solo a spiegare i prezzi: per Smith è anche lo strumento con cui *misurare* la ricchezza. La domanda di ricerca della *Ricchezza delle nazioni* è, infatti, quale sia la causa e la giusta misura della ricchezza reale di una nazione. Contro i mercantilisti, che identificavano la ricchezza con lo *stock* di metalli preziosi, Smith la definisce come "il prodotto annuale della terra e del lavoro" del paese: un *flusso* di reddito che corrisponde grosso modo a ciò che oggi chiamiamo prodotto interno lordo.
-
-Sorge però un problema di misura. Ricchezza e reddito sono aggregati eterogenei, e una misura monetaria è inaffidabile, perché il valore reale della moneta cambia nel tempo: è l'inflazione. Serve un metro più stabile. Smith lo individua proprio nel lavoro comandato: misurare il prodotto in base alla quantità di lavoro che esso è in grado di acquistare significa disporre di un *deflatore naturale*, che consente di confrontare la ricchezza di un paese nel tempo e fra luoghi diversi. Formalmente, se $\sum_i p_i x_i$ è il valore monetario del prodotto complessivo, il lavoro comandato da quel prodotto, $\sum_i p_i x_i / w$, funge da deflatore, riconducendo a un metro omogeneo aggregati altrimenti eterogenei. Sul piano operativo, ciò equivale ad assumere la sostanziale costanza del salario, il metro prescelto. Dietro questa scelta agisce però una tesi smithiana più profonda: che il lavoro sia una *misura invariabile* del valore, giacché costante sarebbe la "fatica" che una data quantità di lavoro costa a chi la eroga. È precisamente questa pretesa che Ricardo metterà in discussione, aprendo il problema della misura invariabile del valore.
-
-#### 1.2.6 Prezzo di mercato, prezzo naturale e le "tre anime" di Smith
-
-Resta da chiarire come i prezzi effettivi si formino. Smith distingue il *prezzo di mercato*, che è il prezzo corrente in un dato momento, dal *prezzo naturale*, che è il prezzo di lungo periodo, corrispondente ai costi di produzione quando i fattori sono remunerati ai loro saggi naturali. I due prezzi non coincidono istante per istante, ma il primo *gravita* attorno al secondo: se il prezzo di mercato eccede quello naturale, i capitali affluiscono nel settore e la maggiore offerta lo riporta verso il basso; se è inferiore, i capitali defluiscono, con l'effetto opposto. È il meccanismo della "mano invisibile": la concorrenza, mossa dall'interesse individuale, fa sì che vengano prodotti i beni domandati, con i metodi più efficienti e al prezzo più basso compatibile con un profitto normale. Lo stesso movimento di capitali che regola la gravitazione tende, inoltre, a uniformare i saggi di profitto settoriali $r_i$ a un unico saggio $r$: è questa uniformità a rendere ben definiti i prezzi naturali, e sarà il nucleo della teoria dei prezzi di produzione che svilupperemo con Ricardo e con Marx. Smith non dimostra, però, che tale equilibrio esista, né che sia unico e stabile, problemi con cui gli economisti si misureranno a lungo (Screpanti e Zamagni, 2004).
-
-Le due "anime" di Smith già incontrate nella sezione precedente — quella *macroeconomica*, imperniata sulla teoria del sovrappiù (classi sociali, lavoro produttivo e improduttivo, profitto come residuo), e quella *microeconomica*, imperniata sull'equilibrio concorrenziale (mano invisibile, prezzi additivi, profitto come remunerazione del rischio) — vanno qui integrate da una terza, spesso trascurata: l'anima *istituzionalista*, che guarda al mercato come a un insieme di istituzioni e ai fondamenti morali e giuridici dell'ordine sociale. È lungo la frattura fra le prime due, corrispondente all'asse fra "società, conflitto e riproduzione" e "individuo, mercato e scarsità" della Figura 1, che si separeranno le strade dell'approccio del sovrappiù e della rivoluzione marginalista. Sarà David Ricardo, come vedremo, a riprendere e sistematizzare l'anima macroeconomica, ponendo al centro la distribuzione del prodotto fra le classi e il conflitto che l'accompagna.
 
 ---
 
