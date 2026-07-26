@@ -202,8 +202,6 @@ Meglio si farebbe, allora, a riconoscere che l'economia è una *scienza sociale*
 
 ### 1.2 Da Quesnay a Smith: sovrappiù e prezzi naturali
 
-🚧 *Work in progress* 🚧
-
 Le radici dell'approccio classico affondano nel Settecento, quando l'economia comincia a essere concepita come un sistema che si riproduce nel tempo e che, così facendo, genera un *sovrappiù*. Due sono i contributi fondamentali di questa fase. Il primo è quello di François Quesnay e dei fisiocratici, i quali offrono la prima rappresentazione del processo economico come circuito, definendo con chiarezza la nozione di prodotto netto. Il secondo è quello di Adam Smith, che alla teoria del sovrappiù affianca una riflessione sistematica sul valore e sui prezzi, e che proprio per questo è considerato il fondatore dell'economia politica. In entrambi i casi troviamo, in nuce, i temi che percorreranno l'intero corso: la riproduzione del sistema, la formazione e la distribuzione del sovrappiù, il ruolo del lavoro come fonte e come misura del valore.
 
 #### 1.2.1 Quesnay e il *Tableau économique*: il circuito del prodotto netto
@@ -300,6 +298,8 @@ Sorge però un problema di misura. Ricchezza e reddito sono aggregati eterogenei
 Resta da chiarire come i prezzi effettivi si formino. Smith distingue il *prezzo di mercato*, che è il prezzo corrente in un dato momento, dal *prezzo naturale*, che è il prezzo di lungo periodo, corrispondente ai costi di produzione quando i fattori sono remunerati ai loro saggi naturali. I due prezzi non coincidono istante per istante, ma il primo *gravita* attorno al secondo. Se il prezzo di mercato eccede quello naturale, i capitali affluiscono nel settore e la maggiore offerta lo riporta verso il basso. Se è inferiore, i capitali defluiscono, con l'effetto opposto. È il meccanismo della "mano invisibile": la concorrenza, mossa dall'interesse individuale, fa sì che vengano prodotti i beni domandati, con i metodi più efficienti e al prezzo più basso compatibile con un profitto normale. Lo stesso movimento di capitali che regola la gravitazione tende, inoltre, a uniformare i saggi di profitto settoriali $r_i$ a un unico saggio $r. È questa uniformità a rendere ben definiti i prezzi naturali, e sarà il nucleo della teoria dei prezzi di produzione che svilupperemo con Ricardo e con Marx. 
 
 Le due "anime" di Smith già incontrate nella sezione precedente - quella *macroeconomica*, imperniata sulla teoria del sovrappiù (classi sociali, lavoro produttivo e improduttivo, profitto come residuo), e quella *microeconomica*, imperniata sull'equilibrio concorrenziale (mano invisibile, prezzi additivi, profitto come remunerazione del rischio) - vanno qui integrate da una terza, spesso trascurata: l'anima *istituzionalista*, che guarda al mercato come a un insieme di istituzioni e ai fondamenti morali e giuridici dell'ordine sociale. È lungo la frattura fra le prime due, corrispondente all'asse fra "società, conflitto e riproduzione" e "individuo, mercato e scarsità" della Figura 1, che si separeranno le strade dell'approccio del sovrappiù e della rivoluzione marginalista. Sarà David Ricardo, come vedremo, a riprendere e sistematizzare l'anima macroeconomica, ponendo al centro la distribuzione del prodotto fra le classi e il conflitto che l'accompagna.
+
+🚧 *Work in progress* 🚧
 
 ---
 
