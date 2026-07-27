@@ -330,7 +330,7 @@ con $w$ il salario (in grano) per lavoratore. La (1.9) esprime, in forma traspar
 
 Sulla terra inframarginale la massa dei profitti è:
 
-$$P' = r w N' = (a/w - 1)\, w N' = (a - w) N' \qquad (1.10)$$
+$$P' = r w N' = (a/w - 1) w N' = (a - w) N' \qquad (1.10)$$
 
 mentre la rendita ivi conseguita è il residuo che eccede salari e profitti:
 
@@ -360,7 +360,7 @@ La teoria del valore-lavoro non è però esente da difficoltà, di cui Ricardo s
 
 Consideriamo il primo aspetto. Se due merci sono prodotte con il solo lavoro, ma investito per tempi diversi $t_i$ e $t_j$, e il salario è anticipato, i prezzi in lavoro comandato diventano $p_i/w = l_i(1+r)^{t_i}$, sicché il prezzo relativo è:
 
-$$\frac{p_i}{p_j} = \frac{l_i}{l_j}\,(1 + r)^{\,t_i - t_j} \qquad (1.14)$$
+$$\frac{p_i}{p_j} = \frac{l_i}{l_j}(1 + r)^{t_i - t_j} \qquad (1.14)$$
 
 Il rapporto di scambio torna dunque a dipendere dalla distribuzione (dal saggio $r$). In altri termini, è di nuovo un rapporto fra lavori *comandati*, non fra lavori contenuti. Per sottrarsi a questa dipendenza, Ricardo si mette alla ricerca di una **misura invariabile del valore** (sezione VI della III edizione): una merce che, prodotta in condizioni "medie" rispetto all'intero sistema, non muti di valore al variare della distribuzione. Non la troverà: ripiegherà su una determinazione soltanto approssimata (una teoria del valore-lavoro, come è stato detto, "valida al 93%"), e quella misura resterà, nelle parole di Marx, un tentativo di "quadratura del cerchio".
 
