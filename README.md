@@ -55,7 +55,7 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 ### Parte I - Le origini dell'approccio classico
 - [**1.1** Introduzione al pensiero economico](https://github.com/marcoverpas/analisi_economica#11-introduzione-al-pensiero-economico)
 - [**1.2** Da Quesnay a Smith: sovrappiù e prezzi naturali](https://github.com/marcoverpas/analisi_economica/tree/main#12-da-quesnay-a-smith-sovrappi%C3%B9-e-prezzi-naturali)
-- **1.3** Distribuzione e conflitto nella teoria di Ricardo
+- [**1.3** Distribuzione e conflitto nella teoria di Ricardo](https://github.com/marcoverpas/analisi_economica#13-distribuzione-e-conflitto-nella-teoria-di-ricardo)
 - **1.4** La "critica" di Marx: accumulazione e crisi
 
 ### Parte II - Crisi e rinascita dell'approccio classico
@@ -299,6 +299,92 @@ Sorge però un problema di misura. Ricchezza e reddito sono aggregati eterogenei
 Resta da chiarire come i prezzi effettivi si formino. Smith distingue il *prezzo di mercato*, che è il prezzo corrente in un dato momento, dal *prezzo naturale*, che è il prezzo di lungo periodo, corrispondente ai costi di produzione quando i fattori sono remunerati ai loro saggi naturali. I due prezzi non coincidono istante per istante, ma il primo *gravita* attorno al secondo. Se il prezzo di mercato eccede quello naturale, i capitali affluiscono nel settore e la maggiore offerta lo riporta verso il basso. Se è inferiore, i capitali defluiscono, con l'effetto opposto. È il meccanismo della "mano invisibile": la concorrenza, mossa dall'interesse individuale, fa sì che vengano prodotti i beni domandati, con i metodi più efficienti e al prezzo più basso compatibile con un profitto normale. Lo stesso movimento di capitali che regola la gravitazione tende, inoltre, a uniformare i saggi di profitto settoriali $r_i$ a un unico saggio $r. È questa uniformità a rendere ben definiti i prezzi naturali, e sarà il nucleo della teoria dei prezzi di produzione che svilupperemo con Ricardo e con Marx. 
 
 Le due "anime" di Smith già incontrate nella sezione precedente - quella *macroeconomica*, imperniata sulla teoria del sovrappiù (classi sociali, lavoro produttivo e improduttivo, profitto come residuo), e quella *microeconomica*, imperniata sull'equilibrio concorrenziale (mano invisibile, prezzi additivi, profitto come remunerazione del rischio) - vanno qui integrate da una terza, spesso trascurata: l'anima *istituzionalista*, che guarda al mercato come a un insieme di istituzioni e ai fondamenti morali e giuridici dell'ordine sociale. È lungo la frattura fra le prime due, corrispondente all'asse fra "società, conflitto e riproduzione" e "individuo, mercato e scarsità" della Figura 1, che si separeranno le strade dell'approccio del sovrappiù e della rivoluzione marginalista. Sarà David Ricardo, come vedremo, a riprendere e sistematizzare l'anima macroeconomica, ponendo al centro la distribuzione del prodotto fra le classi e il conflitto che l'accompagna.
+
+### 1.3 Distribuzione e conflitto nella teoria di Ricardo
+
+Se in Smith la teoria del sovrappiù convive con l'anima dell'equilibrio concorrenziale, in David Ricardo (1772-1823) l'approccio classico raggiunge la sua forma più rigorosa e conflittuale. Per Ricardo l'economia è la scienza che studia la **distribuzione** del prodotto fra le tre classi della società capitalistica (lavoratori salariati, capitalisti e proprietari fondiari) e il suo oggetto precipuo è la determinazione del **saggio di profitto** e del suo andamento, da cui dipende il ritmo dell'accumulazione. Poiché ciò che va a una classe non può andare a un'altra, la distribuzione è, per costruzione, un terreno di conflitto.
+
+Il quadro storico è quello dell'Età della Restaurazione, dal Congresso di Vienna (1815) alle rivoluzioni del 1848, e in particolare della battaglia sulle *Corn Laws*, le tariffe protezionistiche sul grano approvate nel 1816 e abrogate solo nel 1846 (Screpanti e Zamagni, 2004). La posta in gioco è il modello di sviluppo del paese - agricoltura o industria - e dietro le teorie si scorge lo scontro fra proprietari terrieri e borghesia industriale, di cui Ricardo è il portavoce teorico.
+
+#### 1.3.1 Il "Saggio" del 1815 e la rendita differenziale
+
+Nel *Saggio sull'influenza di un basso prezzo del grano sui profitti del capitale* (1815), scritto al culmine del dibattito sulle *Corn Laws*, Ricardo riconduce il saggio "generale" del profitto al saggio di profitto del settore agricolo, e dunque alla **rendita differenziale** — una teoria formulata quasi contemporaneamente da Thomas Robert Malthus, Edward West e Robert Torrens, e già abbozzata da James Anderson nel 1777.
+
+L'idea è la seguente. Finché le terre sono abbondanti, su di esse non si forma alcuna rendita. Ma non appena, per accrescere la produzione, si mettono a coltura terre meno fertili, sulle terre migliori si forma una **rendita estensiva**: la concorrenza fra capitalisti, disposti a pagare per accaparrarsi i suoli più produttivi, la fa emergere. La rendita è così la parte di sovrappiù (prodotto netto meno salari) che si tramuterebbe in profitto se non vi fossero differenze di fertilità. Non è un costo che determina il prezzo, ma un differenziale determinato al margine. La stessa logica vale in forma **intensiva**: intensificando gli investimenti su una data terra, la produttività dell'ultima dose di lavoro e capitale decresce, ed è questa "legge dei rendimenti marginali decrescenti" (che i marginalisti riprenderanno più tardi) a generare il differenziale (per un approfondimento, si rinvia a Screpanti e Zamagni, 2004).
+
+Man mano che la coltivazione si estende, il saggio del profitto scende verso il livello conseguibile sulla terra marginale, le rendite aumentano e, oltre un certo limite, si riduce anche la massa dei profitti. E poiché i capitali si spostano verso i settori più redditizi, la caduta del saggio di profitto agricolo trascina al ribasso, per concorrenza, l'intero saggio generale.
+
+#### 1.3.2 Il modello grano-grano
+
+Il nucleo analitico di questo argomento è il celebre **modello grano-grano**. Si supponga che il capitale sia costituito soltanto da grano anticipato ai lavoratori in forma di salario (il monte salari della 1.2, ora in grano). Allora il saggio di profitto agricolo, determinato in termini *fisici* e a prescindere dal sistema dei prezzi, determina il saggio generale.
+
+Su una terra marginale il prodotto netto è:
+
+$$X = a N \qquad (1.8)$$
+
+dove $N$ è il lavoro impiegato e $a = a(N)$ il prodotto netto per lavoratore, decrescente ($a'(N) < 0$). Il saggio di profitto agricolo sulla terra marginale, dove non si paga rendita, è allora:
+
+$$r = \frac{X - wN}{wN} = \frac{a}{w} - 1 \qquad (1.9)$$
+
+con $w$ il salario (in grano) per lavoratore. La (1.9) esprime, in forma trasparente, la **relazione inversa fra saggio di profitto e salario**: se $w$ è fisso al livello di sussistenza, $r$ è determinato per residuo e si riduce all'aumentare di $N$, cioè al decrescere di $a$.
+
+Sulla terra inframarginale la massa dei profitti è:
+
+$$P' = r w N' = (a/w - 1)\, w N' = (a - w) N' \qquad (1.10)$$
+
+mentre la rendita ivi conseguita è il residuo che eccede salari e profitti:
+
+$$R = a' N' - w N' - P' = (a' - a) N' \qquad (1.11)$$
+
+La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla differenza di fertilità (o dalla produttività decrescente del lavoro agricolo). All'estendersi della coltivazione - per esempio a seguito dell'introduzione di dazi sul grano - la rendita totale aumenta (le terre marginali, prima esenti, diventano inframarginali), il monte salari totale aumenta, e la massa dei profitti si riduce, poiché $a$ tende a $w$ e quindi $r$ tende a zero. È lo spettro dello **stato stazionario**.
+
+#### 1.3.3 La teoria del valore-lavoro
+
+Il modello grano-grano è però implausibile, perché una sola merce vi compare come input e come output. Nei *Principi di economia politica e della tassazione* (1817) Ricardo abbandona quindi lo schema fisico e adotta una **teoria del valore come lavoro contenuto**. La teoria smithiana del lavoro *comandato*, obietta Ricardo, è viziata da circolo vizioso, perché affida la determinazione di un valore di scambio a un altro valore di scambio. Le merci si scambiano, invece, secondo le quantità di lavoro in esse contenute.
+
+Riprendendo la struttura del prezzo naturale già vista in (1.2), il prezzo di produzione della merce $i$-esima resta $p_i = w l_i (1 + r_i)$, e il lavoro da essa comandato $p_i/w = l_i(1+r_i)$, superiore al lavoro contenuto in ragione del profitto [cfr. (1.3) e (1.5)]. La novità decisiva è però l'ipotesi di **uniformità tendenziale del saggio di profitto**. Una volta che la concorrenza uniforma i saggi settoriali ($r_i = r_j = r$), il valore di scambio delle due merci torna a essere definito dal solo contenuto di lavoro:
+
+$$\frac{p_i}{p_j} = \frac{l_i}{l_j} \qquad (1.12)$$
+
+Causa e misura del valore coincidono: è questa la posizione di Ricardo, ed è ciò che lo distingue da Smith.
+
+Se le merci si scambiano secondo il lavoro contenuto, il saggio di profitto può essere determinato in termini fisici anche fuori dal modello grano-grano. Basta sostituire al grano le quantità di lavoro. Si ottiene:
+
+$$r = \frac{L - L_n}{L_n} = \frac{1}{\omega} - 1 \qquad (1.13)$$
+
+dove $L$ è il lavoro contenuto nel prodotto sociale, $L_n$ il lavoro necessario alla produzione dei beni-salario e $\omega \equiv L_n/L$ la quota salari misurata in lavoro. Coerentemente con la (1.7), il saggio di profitto è ancora un **residuo**, e la massa del profitto non è che il lavoro impiegato nella produzione delle merci che non entra nel salario pagato ai lavoratori: il pluslavoro.
+
+#### 1.3.4 I problemi del valore-lavoro e la misura invariabile
+
+La teoria del valore-lavoro non è però esente da difficoltà, di cui Ricardo si occupa nelle sezioni IV e V del primo capitolo dei *Principi*. Il rapporto di scambio fra due merci dipende non solo dal loro contenuto di lavoro, ma anche dal **tempo** richiesto dall'investimento e dalla **ripartizione del capitale fra salari e mezzi di produzione** (problema che emerge nel corso di uno scambio epistolare con Torrens).
+
+Consideriamo il primo aspetto. Se due merci sono prodotte con il solo lavoro, ma investito per tempi diversi $t_i$ e $t_j$, e il salario è anticipato, i prezzi in lavoro comandato diventano $p_i/w = l_i(1+r)^{t_i}$, sicché il prezzo relativo è:
+
+$$\frac{p_i}{p_j} = \frac{l_i}{l_j}\,(1 + r)^{\,t_i - t_j} \qquad (1.14)$$
+
+Il rapporto di scambio torna dunque a dipendere dalla distribuzione (dal saggio $r$). In altri termini, è di nuovo un rapporto fra lavori *comandati*, non fra lavori contenuti. Per sottrarsi a questa dipendenza, Ricardo si mette alla ricerca di una **misura invariabile del valore** (sezione VI della III edizione): una merce che, prodotta in condizioni "medie" rispetto all'intero sistema, non muti di valore al variare della distribuzione. Non la troverà: ripiegherà su una determinazione soltanto approssimata (una teoria del valore-lavoro, come è stato detto, "valida al 93%"), e quella misura resterà, nelle parole di Marx, un tentativo di "quadratura del cerchio".
+
+Vi è, inoltre, una circolarità di fondo. Perché il saggio di profitto agricolo determini quello generale attraverso la teoria del valore-lavoro, occorre che il salario sia composto in modo preponderante da grano e che l'uso di altri mezzi di produzione in agricoltura sia trascurabile. Ma queste sono esattamente le ipotesi del modello grano-grano (Napoleoni, 1973, p. 112). Il sistema ricardiano riceverà una formulazione matematica rigorosa e multisettoriale solo un secolo e mezzo più tardi, grazie ai contributi di Piero Sraffa e di Luigi Ludovico Pasinetti.
+
+#### 1.3.5 Conflitto di classe, macchine e disoccupazione
+
+La distribuzione, in Ricardo, è dunque il luogo di due conflitti distinti. Il primo oppone i proprietari terrieri alla borghesia industriale: un aumento del prezzo del grano accresce la rendita e il costo dei salari, e comprime il saggio di profitto. Il secondo oppone capitalisti e lavoratori. Tuttavia, poiché il salario è fissato al livello di sussistenza, questo conflitto si sposta dal salario al **livello dell'occupazione**.
+
+È qui che si colloca la celebre **questione delle macchine**. Fino alla terza edizione dei *Principi*, Ricardo riteneva che l'introduzione di macchinari non producesse disoccupazione, se non temporanea e frizionale. Nel capitolo "On Machinery", aggiunto alla terza edizione, ritratta: il progresso tecnico può generare una disoccupazione (tecnologica) che i nuovi settori non riassorbono. In condizioni di piena occupazione, infatti, produrre macchine sottrae risorse al fondo salari (l'ammontare dei beni-salario) e getta nella disoccupazione una parte della manodopera prima impiegata.
+
+#### 1.3.6 Il dibattito con Malthus e la legge di Say
+
+Ricardo esclude la possibilità di una **sovrapproduzione generalizzata**, e dunque di una caduta del saggio di profitto che non provenga da un aumento del salario, sulla base della legge di Say. È l'origine di un fecondo dibattito con Malthus.
+
+Malthus osserva che i profitti, a differenza di salari e rendite, vengono in gran parte *risparmiati*: se la quota dei profitti cresce, il potere d'acquisto pagato ai lavoratori (il fondo salari) può risultare insufficiente a realizzare il valore delle merci prodotte. La sua soluzione è favorire la rendita, cioè il consumo improduttivo dei proprietari terrieri, che fornirebbe la domanda mancante - donde la difesa delle *Corn Laws*. Ricardo replica che, se esiste il potere d'acquisto, esiste anche la volontà d'acquisto: i risparmi dei capitalisti si traducono sempre in domanda per investimenti, ossia nella messa all'opera di nuova forza-lavoro. In altri termini, risparmiare *è* spendere.
+
+Il punto debole è che Ricardo **assume ciò che andrebbe dimostrato**. Sennonché, per confutarlo, Malthus avrebbe dovuto mettere in discussione la legge di Say - cosa che non fece, finendo per indebolire le sue tesi sulla possibilità di carenza di domanda. Va, però, aggiunta una precisazione: nell'uso classico, la legge di Say non garantiva la piena occupazione, ma solo l'impossibilità di un'insufficienza della domanda per i beni riproducibili. La piena occupazione era semmai assicurata, nel lungo periodo, dal meccanismo malthusiano della popolazione. Proprio il ripensamento sulle macchine (con la possibile non coincidenza fra composizione della domanda e composizione dell'offerta) lascia però trasparire una riconsiderazione più generale della legge di Say da parte di Ricardo.
+
+#### 1.3.7 Corn Laws, libero scambio e vantaggi comparati
+
+La battaglia teorica era, per Ricardo, funzionale alla battaglia politica per il libero scambio. Abrogare le *Corn Laws* significava lasciar entrare nel Regno Unito grano estero a basso prezzo. Ciò avrebbe ridotto il salario monetario di sussistenza, accresciuto il saggio di profitto e contrastato così la sua tendenza alla caduta, sostenendo l'accumulazione. È questo il fondamento della teoria ricardiana dei **vantaggi comparati**. Anche quando un paese è meno efficiente in tutte le produzioni, conviene che si specializzi in quelle in cui è relativamente meno svantaggiato (ossia ha un minore costo opportunità) e scambiare.
+
+Al di là della presa di posizione a favore del commercio internazionale, ciò che qui conta è che la politica commerciale è, per Ricardo, uno strumento del conflitto distributivo: contro la rendita, a favore del profitto e dell'industria. Ricardo lascia così in eredità il nucleo dell'approccio del sovrappiù (la distribuzione come conflitto, il saggio di profitto come residuo, la sua tendenza alla caduta) insieme a una teoria del valore-lavoro gravata da problemi irrisolti (la misura invariabile, l'effetto della distribuzione sui prezzi relativi). Sarà Marx, come vedremo, a raccoglierli e a radicalizzarli in senso socialista, ponendo al centro la distinzione fra lavoro e forza-lavoro e la teoria dello sfruttamento.
 
 🚧 *Work in progress* 🚧
 
