@@ -398,9 +398,12 @@ Al di là della presa di posizione a favore del commercio internazionale, ciò c
 - Kuhn, T. S. (1962), *La struttura delle rivoluzioni scientifiche*, Einaudi, Torino, 1969.
 - Lakatos, I. (1970), "La falsificazione e la metodologia dei programmi di ricerca scientifici", in I. Lakatos e A. Musgrave (a cura di), *Critica e crescita della conoscenza*, Feltrinelli, Milano, 1976.
 - Marx, K. (1867), *Il capitale. Critica dell'economia politica*, Libro I, Editori Riuniti, Roma, 1964.
+- Napoleoni, C. (1973), *Smith Ricardo Marx. Considerazioni sulla storia del pensiero economico*, Boringhieri, Torino.
+- Pasinetti, L. L. (1960), "A Mathematical Formulation of the Ricardian System", *The Review of Economic Studies*, 27(2), pp. 78–98.
 - Popper, K. R. (1934), *Logica della scoperta scientifica*, Einaudi, Torino, 1970.
 - Quesnay, F. (1758), *Il Tableau économique e altri scritti di economia*, a cura di M. Ridolfi, ISEDI, Milano, 1973.
 - Quine, W. V. O. (1951), "I due dogmi dell'empirismo", in *Il problema del significato*, Ubaldini, Roma, 1966.
+- Ricardo, D. (1817), *Sui principi dell'economia politica e della tassazione*, introduzione di F. Vianello, ISEDI, Milano, 1976 (trad. dalla III ed., 1821).
 - Schumpeter, J. A. (1954), *Storia dell'analisi economica*, Boringhieri, Torino, 1959–60 (ed. it. a cura di P. Sylos Labini).
 - Screpanti, E. e Zamagni, S. (2004), *Profilo di storia del pensiero economico*, Carocci, Roma.
 - Smith, A. (1776), *La ricchezza delle nazioni*, a cura di A. e T. Bagiotti, UTET, Torino, 1975.
