@@ -9,6 +9,13 @@
 </figure>
 </div>
 
+<div align="center">
+<figure>
+<img src="https://github.com/marcoverpas/figures/blob/main/moniac_ita.gif" width="1000">
+</figure>
+</div>
+
+
 Questo archivio raccoglie slide, letture e altro materiale del corso. Nei prossimi mesi sarà consultabile anche in forma di libro HTML. 🚧
 
 ---
