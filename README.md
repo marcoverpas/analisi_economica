@@ -568,7 +568,7 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 # Schemi di riproduzione di Marx - versione didattica semplificata
 # Corso "Analisi economica" - Parte I (sezione 1.4.5)
 # Basato su: M. Veronese Passarella, "Marx's Reproduction Schemes"
-# (versione originale 30/03/2016; qui semplificata)
+# (versione originale 30/03/2016)
 #
 # Notazione: v = capitale variabile (V), k = capitale costante (C),
 # s = plusvalore (S). Indici: 1 = settore dei beni capitali,
