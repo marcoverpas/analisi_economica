@@ -9,13 +9,6 @@
 </figure>
 </div>
 
-<div align="center">
-<figure>
-<img src="https://github.com/marcoverpas/figures/blob/main/moniac_ita.gif" width="1000">
-</figure>
-</div>
-
-
 Questo archivio raccoglie slide, letture e altro materiale del corso. Nei prossimi mesi sarà consultabile anche in forma di libro HTML. 🚧
 
 ---
@@ -209,11 +202,11 @@ Meglio si farebbe, allora, a riconoscere che l'economia è una **scienza sociale
 <table>
 <tr>
 <td align="center" width="50%">
-<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Phillips_and_MONIAC_LSE.JPG" width="360"><br>
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Phillips_and_MONIAC_LSE.jpg" width="360"><br>
 <sub><em>(a) A. W. H. Phillips accanto al MONIAC (LSE, 1949).</em></sub>
 </td>
 <td align="center" width="50%">
-<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/moniac_ita.GIF" width="360"><br>
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/moniac_ita.gif" width="360"><br>
 <sub><em>(b) Simulazione del funzionamento.</em></sub>
 </td>
 </tr>
