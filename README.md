@@ -29,9 +29,9 @@ Questo archivio raccoglie slide, letture e altro materiale del corso. Nei prossi
 
 ## 📖 Presentazione del corso
 
-Il corso analizza l'economia capitalistica come **sistema monetario di produzione e di scambio**, ricostruendo l'evoluzione dell'approccio "classico" dalla sua nascita agli sviluppi più recenti. Il filo conduttore è l'idea del capitalismo come *economia monetaria di produzione*, nella quale la moneta e il credito non sono elementi neutrali, ma condizioni essenziali per l'avvio del processo produttivo.
+Il corso analizza l'economia capitalistica come **sistema monetario di produzione e di scambio**, ricostruendo l'evoluzione dell'approccio "classico-keynesiano" dalla sua nascita agli sviluppi più recenti. Il filo conduttore è l'idea del capitalismo come *economia monetaria di produzione*, nella quale la moneta e il credito non sono elementi neutrali, ma condizioni essenziali per l'avvio del processo produttivo.
 
-In questa prospettiva, l'analisi si concentra sulle condizioni di riproduzione del sistema economico nel tempo, sulla formazione e distribuzione del sovrappiù, sul ruolo della finanza e delle istituzioni monetarie, nonché sulle possibili cause di instabilità del sistema. Tale impostazione si distingue dall'approccio dominante, quello marginalista-neoclassico, centrato prevalentemente sull'allocazione efficiente di risorse scarse e sull'equilibrio di mercato.
+In questa prospettiva, l'analisi si concentra sulle condizioni di riproduzione del sistema economico nel tempo, sulla formazione e distribuzione del sovrappiù, sul ruolo della finanza e delle istituzioni monetarie, nonché sulle possibili cause di instabilità del sistema. Tale impostazione si distingue dall'approccio dominante, quello "marginalista-neoclassico", centrato prevalentemente sull'allocazione efficiente di risorse scarse e sull'equilibrio di mercato.
 
 Il percorso didattico segue lo sviluppo di questo quadro teorico dall'economia politica classica alle sue rielaborazioni contemporanee, mettendo a confronto i contributi che interpretano il capitalismo come un sistema strutturalmente monetario e conflittuale.
 
