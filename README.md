@@ -359,6 +359,21 @@ $$R = a' N' - w N' - P' = (a' - a) N' \qquad (1.11)$$
 
 La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla differenza di fertilità (o dalla produttività decrescente del lavoro agricolo). All'estendersi della coltivazione - per esempio a seguito dell'introduzione di dazi sul grano - la rendita totale aumenta (le terre marginali, prima esenti, diventano inframarginali), il monte salari totale aumenta, e la massa dei profitti si riduce, poiché $a$ tende a $w$ e quindi $r$ tende a zero. È lo spettro dello **stato stazionario**.
 
+Questa configurazione distributiva si lascia riassumere in un unico diagramma (Figura 1.5). In ascissa è la quantità di lavoro $N$, ossia l'intensità della coltivazione. In ordinata il prodotto marginale del lavoro $a$, decrescente. Dato il salario di sussistenza $\bar{w}$, al margine $N_m$ l'ultima dose di lavoro rende $a_m$, che si ripartisce fra **salari** ($\bar{w}$) e **profitti** ($a_m - \bar{w}$), coerentemente con la (1.9). La **rendita** è invece il sovrappiù delle dosi intra-marginali, l'area compresa fra la curva e la retta $a_m$, ossia la (1.11) letta graficamente. All'estendersi della coltivazione il margine si sposta verso destra e $a_m$ scende verso $\bar{w}$. Le rendite si dilatano, i profitti si comprimono e il saggio di profitto tende a zero, fino al punto $S$, in cui $a = \bar{w}$ e il profitto si annulla - lo stato stazionario.
+
+<table align="center">
+  <tr>
+    <td width="640" align="center">
+      <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/rendita.png" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="640" align="center">
+      <em><strong>Figura 1.5</strong> - La rendita differenziale ricardiana. Al crescere dell'intensità di coltivazione (o con la messa a coltura di terre meno fertili) il prodotto marginale del lavoro <em>a</em> diminuisce. Dato il salario di sussistenza <em>w&#772;</em>, al margine <em>N<sub>m</sub></em> il prodotto <em>a<sub>m</sub></em> si divide fra salari e profitti, mentre la rendita è il sovrappiù delle dosi intra-marginali, pari all'area al di sopra di <em>a<sub>m</sub></em>. Nel punto <em>S</em>, dove <em>a</em> = <em>w&#772;</em>, il profitto si annulla (stato stazionario).</em>
+    </td>
+  </tr>
+</table>
+
 #### 1.3.3 La teoria del valore-lavoro
 
 Il modello grano-grano è però implausibile, perché una sola merce vi compare come input e come output. Nei *Principi di economia politica e della tassazione* (1817) Ricardo abbandona quindi lo schema fisico e adotta una **teoria del valore come lavoro contenuto**. La teoria smithiana del lavoro *comandato*, obietta Ricardo, è viziata da circolo vizioso, perché affida la determinazione di un valore di scambio a un altro valore di scambio. Le merci si scambiano, invece, secondo le quantità di lavoro in esse contenute.
@@ -538,7 +553,7 @@ che si riduce alla (1.24) quando l'accumulazione si annulla ($\Delta S_1 = \Delt
 **Instabilità e crisi.** In entrambi i casi l'equilibrio richiede un coordinamento preciso fra le decisioni di accumulazione dei due settori e la struttura della domanda sociale. Ma poiché tali decisioni sono prese in modo decentralizzato, da una miriade di capitalisti in condizioni di incertezza, nulla garantisce ex ante il rispetto di queste proporzioni: l'equilibrio è un caso limite, per giunta instabile. Ne discendono l'implausibilità della **legge di Say** e la fragilità intrinseca del processo di riproduzione, per cui la crisi appare come esito *endogeno* del funzionamento del capitalismo, non come deviazione accidentale. Questi schemi, che descrivono i flussi intersettoriali di $C$, $V$ e $S$ (si veda anche la Figura 1.4), sono inoltre il ponte diretto fra il *Tableau* di Quesnay e il modello **input-output** di Leontief (sezione 3.1).
 
 > [!NOTE]
-> **Un'illustrazione dinamica in `R`.** Gli schemi di riproduzione si prestano a una semplice implementazione numerica, che ne mostra il funzionamento nel tempo e ne anticipa il carattere *dinamico*. Consideriamo un'economia a due settori in riproduzione allargata, in cui la quota di plusvalore accumulata (la *propensione all'accumulo*) del settore 1 (beni capitali) è data, mentre quella del settore 2 (beni di consumo) si adegua *gradualmente* verso il valore coerente con il saggio di crescita del settore 1. Il [codice `R` seguente](https://github.com/marcoverpas/analisi_economica/blob/main/schemi_riproduzione.R) simula un sentiero di crescita bilanciata e, in uno scenario alternativo, uno shock permanente che dimezza la propensione all'accumulo del settore 1 a partire dal periodo 20.
+> **Un'illustrazione dinamica in `R`.** Gli schemi di riproduzione si prestano a una semplice implementazione numerica, che ne mostra il funzionamento nel tempo e ne anticipa il carattere *dinamico*. Consideriamo un'economia a due settori in riproduzione allargata, in cui la quota di plusvalore accumulata (la *propensione all'accumulo*) del settore 1 (beni capitali) è data, mentre quella del settore 2 (beni di consumo) si adegua *gradualmente* verso il valore coerente con il saggio di crescita del settore 1. Il [codice `R` seguente](https://github.com/marcoverpas/analisi_economica/blob/main/schemi_riproduzione.R) simula un sentiero di crescita bilanciata e, in uno scenario alternativo, uno shock permanente che dimezza la propensione all'accumulo del settore 1 a partire dal periodo 20 (Figura 6).
 
 ```r
 # Schemi di riproduzione di Marx - versione didattica semplificata
@@ -688,7 +703,7 @@ legend("topright", c("Settore 1", "Settore 2"), bty = "n", cex = 0.8,
   </tr>
 </table>
 
-<p align="center"><em>Figura 1.5 - Schemi di riproduzione: effetto di una caduta della propensione all'accumulo del settore 1 sui saggi di accumulazione (a sinistra) e sulle propensioni all'accumulo (a destra).</em></p>
+<p align="center"><em>Figura 1.6 - Schemi di riproduzione: effetto di una caduta della propensione all'accumulo del settore 1 sui saggi di accumulazione (a sinistra) e sulle propensioni all'accumulo (a destra).</em></p>
 
 > [!NOTE]
 > A regime i due settori crescono allo stesso saggio (nell'esempio, il 10 per cento), a conferma che la riproduzione allargata richiede una proporzione precisa fra di essi. Va però sottolineato che questo sentiero di crescita bilanciata è esso stesso un **caso limite**, nel senso chiarito nella sezione 1.4.5. Qui lo imponiamo (facendo convergere la propensione all'accumulo del settore 2 verso il valore coerente con la crescita del settore 1) non perché il mercato lo garantisca spontaneamente, ma per poterne **studiare le condizioni**. In un'economia decentralizzata nulla assicura che quelle proporzioni siano rispettate, e lo squilibrio, più che l'equilibrio, è la norma. Quando i capitalisti del settore 1 riducono la quota di plusvalore accumulata, il saggio di crescita del settore 1 scende di colpo, mentre quello del settore 2 vi converge (qui gradualmente, sulla base del parametro *adj* che regola, appunto, la velocità con cui la propensione all'accumulo del settore 2 si adegua al nuovo sentiero di crescita). È proprio questa interdipendenza dinamica fra decisioni di accumulazione e proporzioni settoriali a preparare il terreno per l'analisi del ciclo (sezione 1.4.6) e per la sua formalizzazione preda-predatore alla Goodwin (sezioni 3.2-3.3).
