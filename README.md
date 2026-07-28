@@ -77,7 +77,7 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 Al termine dell'insegnamento sarai in grado di:
 
 - **conoscere** i principali approcci che interpretano l'economia capitalistica come sistema monetario di produzione, l'evoluzione dell'approccio classico e i concetti di sovrappiù, distribuzione, accumulazione, moneta e credito, insieme ai relativi strumenti analitici (schemi di riproduzione, prezzi di produzione, matrici input-output, schemi fondi-flussi);
-- **confrontare** l'approccio classico e i suoi sviluppi recenti con il paradigma marginalista-neoclassico, e interpretare il ruolo della moneta e della finanza nel processo di produzione;
+- **confrontare** l'approccio classico-keynsiano e i suoi sviluppi recenti con il paradigma marginalista-neoclassico, e interpretare il ruolo della moneta e della finanza nel processo di produzione;
 - **analizzare** le condizioni di riproduzione, stabilità e instabilità delle economie capitalistiche;
 - **leggere** i fenomeni economici - crisi, inflazione, disuguaglianza - alla luce dei diversi quadri teorici;
 - **utilizzare** schemi concettuali e semplici strumenti modellistici, anche mediante ambienti e linguaggi di programmazione, per rappresentare il funzionamento di un'economia.
