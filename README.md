@@ -407,6 +407,135 @@ La battaglia teorica era, per Ricardo, funzionale alla battaglia politica per il
 
 Al di là della presa di posizione a favore del commercio internazionale, ciò che qui conta è che la politica commerciale è, per Ricardo, uno strumento del conflitto distributivo: contro la rendita, a favore del profitto e dell'industria. Ricardo lascia così in eredità il nucleo dell'approccio del sovrappiù (la distribuzione come conflitto, il saggio di profitto come residuo, la sua tendenza alla caduta) insieme a una teoria del valore-lavoro gravata da problemi irrisolti (la misura invariabile, l'effetto della distribuzione sui prezzi relativi). Sarà Marx, come vedremo, a raccoglierli e a radicalizzarli in senso socialista, ponendo al centro la distinzione fra lavoro e forza-lavoro e la teoria dello sfruttamento.
 
+---
+
+### 1.4 La "critica" di Marx: accumulazione e crisi
+
+Con Karl Marx (1818-1883) l'approccio classico raggiunge il suo esito più radicale e, insieme, la sua metamorfosi in **critica dell'economia politica**. Marx eredita da Petty, Quesnay, Smith e soprattutto Ricardo le categorie di classe, costo di produzione, valore-lavoro e sovrappiù, ma ne rovescia il significato: ciò che nei classici appare come l'ordine naturale di un'economia di mercato diventa, in Marx, un **modo di produzione storicamente determinato** e attraversato da contraddizioni. Il punto di partenza è il nodo lasciato irrisolto da Ricardo e sollevato dai *socialisti ricardiani* (Hodgskin, Thompson, Bray): se il valore è creato dal lavoro, da dove viene il profitto del capitale? La risposta di Marx - una teoria dello sfruttamento fondata sulla distinzione fra **lavoro** e **forza-lavoro** - dà finalmente rigore all'intuizione già incontrata in Smith (sezione 1.2.4) e in Ricardo. Attorno ad essa Marx costruisce un'analisi dell'**accumulazione** e della **crisi** che, come vedremo, anticipa gran parte degli sviluppi modellistici della Parte III.
+
+Un tratto metodologico attraversa tutta l'opera: per Marx un conto sono gli individui, altro è la **classe**. Le "leggi di movimento" del capitalismo operano alle spalle degli agenti, come proprietà *emergenti* del sistema e non come semplice somma dei comportamenti individuali - un'intuizione che, come vedremo, prefigura l'approccio dei sistemi complessi (sezione 3.3).
+
+#### 1.4.1 La merce, il valore e il feticismo
+
+L'analisi comincia dalla **merce**, la "cellula elementare" del capitalismo. Ogni merce possiede un **valore d'uso** (la sua utilità concreta) e un **valore di scambio** (la proporzione in cui si scambia con altre merci). Ma perché due merci si scambino in una data proporzione, devono avere qualcosa in comune e misurabile: per Marx è il **valore**, definito come la quantità di *lavoro astratto socialmente necessario* a produrle. "Astratto" indica il lavoro ridotto a puro dispendio di energia umana, al di là delle sue forme concrete; "socialmente necessario" rinvia al tempo di lavoro mediamente richiesto nelle condizioni tecniche date - un tempo che dev'essere *validato* dalla vendita della merce contro denaro. Alla doppia natura della merce corrisponde così la doppia natura del lavoro: **concreto** (crea valori d'uso) e **astratto** (crea valore).
+
+Da qui il **feticismo delle merci**: nello scambio generalizzato, i rapporti sociali fra i produttori assumono la forma di rapporti fra cose, e il valore appare come una proprietà naturale degli oggetti anziché come espressione di una determinata organizzazione sociale del lavoro. Svelare questa inversione - per cui relazioni fra individui e classi si presentano come relazioni fra oggetti - è il compito stesso della critica marxiana.
+
+#### 1.4.2 Le due forme della circolazione: M-D-M e D-M-D'
+
+Nel capitalismo convivono due forme di circolazione. La prima è la **circolazione semplice delle merci**, $M-D-M$. Si vende una merce ($M$) per denaro ($D$) allo scopo di acquistarne un'altra. Qui il denaro è mero mezzo di scambio e il fine è il *consumo*. La seconda è la **circolazione propriamente capitalistica**, $D-M-D'$. Si anticipa denaro per acquistare merci e rivenderle a una somma maggiore. In formule:
+
+$$M_A - D - M_B \qquad\qquad D - M - D' \qquad (1.15)$$
+
+con $\Delta D = D' - D$. Ora il denaro non è più un lubrificante degli scambi, ma **capitale**: il fine non è il consumo, bensì la *valorizzazione*, cioè il profitto e l'accumulazione. Sorge, però, un problema. Se sul mercato si scambiano equivalenti, da dove nasce l'eccedenza $\Delta D$?
+
+La risposta è che il capitalista deve trovare sul mercato una merce del tutto particolare, capace di creare, una volta impiegata nella produzione, più valore di quanto costi: la **forza-lavoro**. La forma $D-M-D'$, con la moneta che diventa capitale-denaro necessario per avviare la produzione, è già il germe di quel *circuito monetario della produzione* che riprenderemo nella sezione 3.2.
+
+#### 1.4.3 Forza-lavoro, plusvalore e sfruttamento
+
+Per spiegare $\Delta D$ occorre spostarsi dalla circolazione alla **produzione**. Il capitalista anticipa denaro per acquistare due tipi di merci: i mezzi di produzione, il cui costo Marx chiama **capitale costante** $C$, e la forza-lavoro, il cui costo è il **capitale variabile** $V$. La distinzione è cruciale: i mezzi di produzione si limitano a *trasferire* il proprio valore al prodotto (per questo "costante"), mentre la forza-lavoro *crea* nuovo valore, in misura potenzialmente superiore al proprio costo. Il valore delle merci prodotte in ciascun settore $i$ è allora:
+
+$$\Lambda_i = C_i + V_i + S_i \qquad (1.16)$$
+
+dove $S_i$ è il **plusvalore**.
+
+Le grandezze $\Lambda_i$ sono, per costruzione, **prezzi diretti**: prezzi proporzionali ai contenuti di lavoro, in cui ogni capitalista realizza il plusvalore prodotto nel proprio settore. L'origine del plusvalore sta nella natura speciale della forza-lavoro: essa viene pagata al suo valore di scambio (il costo della sua riproduzione, ossia i beni-salario necessari al lavoratore), che corrisponde però solo a una frazione della giornata lavorativa - il *tempo di lavoro necessario*. Oltre quella frazione, il lavoratore continua a lavorare: è questo **pluslavoro** a generare il plusvalore. Qui l'intuizione smithiana e ricardiana dello sfruttamento (sezioni 1.2.4 e 1.3) trova finalmente il suo fondamento rigoroso, nella distinzione fra il *lavoro* (che il capitalista comanda per l'intera giornata) e la *forza-lavoro* (pagata al valore di riproduzione).
+
+Detta $v$ la frazione della giornata coperta dal lavoro necessario, il **saggio di plusvalore** (o saggio di sfruttamento) è il rapporto fra pluslavoro e lavoro necessario:
+
+$$\sigma = \frac{S}{V} = \frac{1-v}{v} = \frac{1}{v} - 1 \qquad (1.17)$$
+
+che è la stessa forma del saggio di profitto in termini di lavoro incontrato in (1.13). Il valore di ciascuna merce si riscrive allora come:
+
+$$\Lambda_i = C_i + V_i(1+\sigma) \qquad (1.18)$$
+
+Il plusvalore può crescere per due vie: allungando la giornata a parità di lavoro necessario (**plusvalore assoluto**) o riducendo il lavoro necessario grazie all'aumento della produttività nei settori dei beni-salario (**plusvalore relativo**), tipico delle fasi mature del capitalismo e legato a doppio filo all'innovazione tecnica.
+
+#### 1.4.4 Dai prezzi diretti ai prezzi di produzione: la trasformazione
+
+I prezzi diretti $\Lambda_i$ della (1.16) descrivono un'economia in cui la concorrenza *intersettoriale* è ancora sospesa. Ma i prezzi diretti non possono essere i prezzi effettivi, e per rendersene conto occorre considerare **almeno due settori** con diversa **composizione organica** $q_i = C_i/V_i$. A prezzi diretti, infatti, il saggio di profitto di ciascun settore, $S_i/(C_i+V_i)$, dipende da $q_i$: dato un saggio di sfruttamento $\sigma$ uniforme, un settore ad alta composizione (molto capitale costante, poco lavoro vivo) mostrerebbe un saggio di profitto più basso, uno a bassa composizione un saggio più alto. Ma la concorrenza non tollera saggi di profitto diversi a parità di capitale anticipato. I capitali, infatti, si spostano finché il saggio non si livella.
+
+I capitalisti fissano allora i prezzi applicando un unico saggio $r$ all'intero capitale $C_i+V_i$, senza distinguere fra le sue componenti. Nascono così i **prezzi di produzione** (a loro volta, centri di gravitazione dei prezzi di mercato):
+
+$$P_i = (C_i + V_i)(1 + r) \qquad (1.19)$$
+
+Per Marx, contro Ricardo, i prezzi di produzione **devono** divergere da quelli diretti, settore per settore. Non è un difetto della teoria, ma l'esito della concorrenza. Eppure tale divergenza è una pura **redistribuzione** del plusvalore, un gioco a somma zero: ciò che un settore guadagna, un altro lo perde. In aggregato valgono infatti due **identità fondamentali** (il "principio di conservazione del valore"):
+
+$$\Pi \equiv S \qquad\qquad P \equiv \Lambda \qquad (1.20)$$
+
+il profitto totale eguaglia il plusvalore totale, e la somma dei prezzi di produzione eguaglia la somma dei valori. In ossequio a Lucrezio (*De rerum natura*, I, 149-150) e al principio di conservazione dell'energia della termodinamica, nulla si crea e nulla si distrugge nel passaggio. La circolazione redistribuisce il valore prodotto, non lo genera. È così che Marx scioglie il nodo che aveva bloccato Ricardo (sezione 1.3.4): l'equivalenza di valore e lavoro non regge merce per merce, ma regge a livello dell'**aggregato sociale**, dove il lavoro resta la fonte del profitto. Su questa base Marx riteneva di poter leggere il **saggio generale del profitto** direttamente dalle grandezze di valore, come rapporto fra plusvalore e capitale complessivamente anticipato:
+
+$$r = \frac{S}{C+V} = \frac{\sigma}{1+q}, \qquad q = \frac{C}{V} \qquad (1.21)$$
+
+con $q$ la composizione organica dell'intera economia. Il saggio di profitto cresce con lo sfruttamento $\sigma$ e diminuisce con la composizione organica $q$ - relazione da cui dipenderà la tendenza alla caduta del saggio di profitto.
+
+**Un esempio numerico.** Si considerino due settori con saggio di sfruttamento uniforme $\sigma = 100\%$ (dunque $S_i = V_i$): il settore 1 ad alta composizione organica, il settore 2 a bassa.
+
+| Settore | C | V | S | Valore (Λ) | Saggio di profitto a prezzi diretti |
+|---|---|---|---|---|---|
+| 1 (alta composizione) | 80 | 20 | 20 | 120 | 20% |
+| 2 (bassa composizione) | 50 | 50 | 50 | 150 | 50% |
+| Totale | 130 | 70 | 70 | 270 | 35% |
+
+A prezzi diretti i saggi di profitto dei due settori (20% e 50%) sono incompatibili con la concorrenza. Seguendo la procedura originale di Marx, che valuta gli input $C$ e $V$ ai loro prezzi diretti, il saggio generale è $r = 70/200 = 35\%$, e i prezzi di produzione $P_i=(C_i+V_i)(1+r)$ valgono $P_1 = 135$ e $P_2 = 135$: il settore 1 (alta composizione) *guadagna* ($135 > 120$), il settore 2 (bassa composizione) *perde* ($135 < 150$). La somma resta $270$ e il profitto totale $70$: entrambe le identità (1.20) sono rispettate. In un trattamento pienamente coerente, però, anche gli input andrebbero valutati ai prezzi di produzione, e il saggio $r$ non precederebbe più i prezzi ma sarebbe determinato *insieme* ad essi (si veda oltre).
+
+In generale, con $n$ settori, la teoria si può riscrivere in forma **matriciale** (rivelandone la parentela con il modello input-output, di cui ci occuperemo in dettaglio nella sezione 3.1). Siano $A$ la matrice dei coefficienti di capitale circolante (l'elemento $a_{ij}$ è la quantità del bene $i$ impiegata per produrre una unità del bene $j$), $l$ il vettore riga dei coefficienti di lavoro diretto e $x$ il vettore dei prodotti lordi. I valori o prezzi diretti (vettore riga $\Lambda$) risolvono $\Lambda = \Lambda A + l$, ossia
+
+$$\Lambda = l\cdot (I - A)^{-1} \qquad (1.22)$$
+
+dove $(I-A)^{-1}$ è l'**inversa di Leontief**. I prezzi di produzione (vettore riga $p$), valutando gli input al loro prezzo effettivo e anticipando il salario monetario $w$, risolvono a loro volta
+
+$$p = (1+r)\cdot (p A + w\cdot l) \qquad (1.23)$$
+
+È, come vedremo, esattamente il sistema di prezzi che Piero Sraffa ricaverà nel 1960 (sezione 2.3), fondato sull'inversa di Leontief del modello input-output (sezione 3.1).
+
+Proprio la (1.23), però, sembra far scomparire ogni riferimento al valore: i prezzi risultano determinati dalle sole condizioni tecniche e da una variabile distributiva. Di qui la lunga *vexata quaestio* della trasformazione.
+
+La chiave per scioglierla consiste nel misurare le grandezze marxiane fin dall'inizio in moneta, e nel riferire la legge del valore non al prodotto lordo, ma al **prodotto netto** $y = (I-A)\cdot x$ (si vedano, ad esempio, Foley 1982, e Duménil e Foley, 2008). Il valore aggiunto monetario esprime allora esattamente il **lavoro vivo** complessivamente speso, $l\cdot x$, tramite l'*espressione monetaria del tempo di lavoro* (MELT). Definendo il salario come quota del valore aggiunto, si ritrova l'identità $\Pi \equiv S$: il profitto monetario totale è pluslavoro.
+
+In questo quadro coerente, però, gli input $C$ e $V$ vanno anch'essi valutati a prezzi di produzione. Ne deriva che il saggio di profitto non può essere determinato prima e indipendentemente dai prezzi, come Marx riteneva in base alla (1.21), ma emerge *simultaneamente* ad essi, quale soluzione del sistema (1.23) una volta dati la tecnica e il salario monetario. Ciò che si conserva rigorosamente è la sola identità aggregata $\Pi \equiv S$, ancorata al prodotto netto tramite la MELT, mentre il saggio di profitto viene calcolato sulla base dei prezzi di produzione. La funzione della teoria del valore, del resto, non è mai stata calcolare i prezzi relativi (compito che spetta alle condizioni tecniche e alla distribuzione), bensì svelare l'origine sociale del profitto dal pluslavoro.
+
+#### 1.4.5 Gli schemi di riproduzione
+
+Nel Libro II del *Capitale*, Marx si chiede a quali condizioni il sistema possa **riprodursi nel tempo**. Introduce a questo scopo i celebri **schemi di riproduzione**, esplicitamente ispirati al *Tableau* di Quesnay (sezione 1.2.1). Si immagini un'economia in due settori: il settore 1 produce **beni capitali** (mezzi di produzione), il settore 2 **beni di consumo**.
+
+Nella **riproduzione semplice** l'intero plusvalore è consumato e la scala resta invariata. Imponendo che l'offerta di ciascun bene sia assorbita dalla domanda, la condizione di equilibrio si riduce a:
+
+$$V_1 + S_1 = C_2 \qquad (1.24)$$
+
+la domanda di beni di consumo proveniente dal settore dei beni capitali (i suoi salari e profitti) deve eguagliare il capitale costante di cui il settore dei beni di consumo ha bisogno. Nella **riproduzione allargata**, una frazione $\Delta S$ del plusvalore viene invece accumulata, e la condizione diventa:
+
+$$V_1 + S_1 - \Delta S_1 = C_2 + \Delta S_2 \qquad (1.25)$$
+
+In entrambi i casi l'equilibrio richiede una **proporzione precisa** fra i due settori. Ma poiché le decisioni di produzione e investimento sono prese in modo decentralizzato, da una miriade di capitalisti in condizioni di incertezza, nulla garantisce ex ante tale proporzione: l'equilibrio è un caso limite, per giunta instabile.
+
+La **legge di Say** si rivela così implausibile, e la crisi appare come esito *endogeno* del funzionamento del capitalismo, non come deviazione accidentale. Questi schemi, che descrivono i flussi intersettoriali di $C$, $V$ e $S$ (si veda anche la Figura 1.4), sono il ponte diretto fra il *Tableau* di Quesnay e il modello **input-output** di Leontief (sezione 3.1).
+
+#### 1.4.6 Accumulazione, ciclo e crisi
+
+Marx non ha lasciato una teoria compiuta del **ciclo economico**, ma ne fornisce tutti gli elementi. La catena causale è la seguente: gli investimenti dipendono positivamente dal saggio di profitto; il profitto dipende negativamente dal salario reale; il salario dipende dalle condizioni del mercato del lavoro, cioè dal grado di occupazione e dal potere contrattuale dei lavoratori. Ne segue una dinamica **endogenamente oscillante**. Quando l'occupazione è bassa, i salari sono compressi, i profitti alti, gli investimenti crescono e l'economia si espande; ma l'espansione riassorbe l'*esercito industriale di riserva*, i salari salgono, i profitti si comprimono, gli investimenti rallentano, l'occupazione cade - e le condizioni per una nuova espansione vengono ricostituite.
+
+Le crisi, dunque, non nascono da *shock* esterni, ma dalle stesse *leggi di movimento* del capitalismo: sono il complemento dinamico degli schemi di riproduzione. Questa dinamica fra accumulazione, occupazione e distribuzione si lascia formalizzare come un sistema **preda-predatore** di tipo Lotka-Volterra, come mostrerà Richard Goodwin (1967): è uno dei primi modelli dinamici non lineari in economia, e lo riprenderemo nella Parte III (sezioni 3.2-3.3).
+
+#### 1.4.7 La caduta tendenziale del saggio di profitto e le leggi di tendenza
+
+Fra le "leggi di tendenza" del capitalismo, la più celebre è la **caduta tendenziale del saggio di profitto**. L'idea è semplice: con lo sviluppo del capitalismo ogni lavoratore viene dotato di quantità crescenti di macchine e materie prime, sicché la composizione organica $q = C/V$ aumenta. Ma - come mostra la (1.21) - a parità di saggio di sfruttamento $\sigma$, un $q$ crescente fa scendere il saggio di profitto $r$. Poiché il plusvalore nasce solo dal *lavoro vivo*, il progressivo assottigliarsi della parte "viva" del capitale rispetto a quella "morta" erode la fonte stessa del profitto.
+
+Si tratta di una *tendenza*, non di una profezia di collasso: ad essa si oppongono numerose **controtendenze** - l'aumento del saggio di sfruttamento, l'abbassamento del valore del capitale costante (per aumenti di produttività, commercio estero, colonie), la compressione temporanea dei salari, l'aumento del *coefficiente di rotazione* del capitale.
+
+Attorno alla caduta del saggio di profitto ruotano altre leggi di tendenza: la formazione di un **esercito industriale di riserva** (la disoccupazione tecnologica come componente funzionale del sistema, non come accidente), l'**immiserimento relativo** della classe lavoratrice (il salario reale cresce meno della produttività), la **proletarizzazione** di strati crescenti della società e la **concentrazione e centralizzazione** dei capitali, che spinge verso strutture oligopolistiche.
+
+#### 1.4.8 Moneta, credito e crisi
+
+Marx distingue il **denaro** (la merce che funge da misura del valore e mezzo di circolazione) dalla **moneta** (segno di valore con corso legale). Ma è solo nella circolazione capitalistica $D-M-D'$ che la moneta diventa pienamente **capitale-denaro**, punto di partenza e di arrivo della valorizzazione: non un velo neutrale, bensì il volano del sistema. Su questa base la divisione di classe può essere riletta come separazione fra chi accede alla moneta solo come *reddito da spendere* (i lavoratori) e chi vi accede come *capitale che avvia la produzione* (i capitalisti).
+
+Nel Libro III Marx anticipa una concezione moderna della **moneta-credito** e del **capitale fittizio**: titoli finanziari il cui valore deriva dalla capitalizzazione di redditi futuri e che possono circolare come se fossero capitale reale, sganciandosi *temporaneamente* dal valore prodotto e alimentando bolle e instabilità. Nella fase di boom l'offerta di credito è elastica e sostiene l'accumulazione; poi, quando i margini di profitto si comprimono e cresce l'indebitamento, il credito da leva dell'accumulazione si fa veicolo di squilibri; infine la crisi esplode quando il sistema creditizio si contrae bruscamente, aprendo una **crisi di realizzo** in cui merci e titoli non riescono più a convertirsi in moneta. La moneta e il credito non sono cause esterne, ma elementi strutturali del movimento ciclico. Questa concezione della moneta come endogena e non neutrale prelude alla **teoria del circuito monetario** e della **moneta endogena** che svilupperemo nella sezione 3.2.
+
+Con Marx si chiude la parabola dell'economia politica classica e si aprono le sue rielaborazioni eterodosse. La sua analisi lascia in eredità una teoria dello sfruttamento, un'idea del capitalismo come sistema instabile e conflittuale, e un intero arsenale di strumenti che le tradizioni successive - da Sraffa ai post-keynesiani, dai teorici del sovrappiù agli evoluzionisti - riprenderanno e svilupperanno. Prima, però, occorre fare i conti con la reazione che, proprio mentre Marx scriveva il *Capitale*, stava rovesciando l'intero impianto classico: la **rivoluzione marginalista**, con cui si apre la Parte II.
+
+> [!NOTE]
+> **Marx precursore.** Molti degli strumenti che incontreremo nel seguito hanno in Marx un antecedente. (a) Gli *schemi di riproduzione* a due settori, eredi del *Tableau* di Quesnay, anticipano il modello *input-output* di Leontief (sezione 3.1). (b) I *prezzi di produzione* con saggio di profitto uniforme, in forma matriciale (1.22)-(1.23), prefigurano il sistema di Sraffa (sezione 2.3). (c) La circolazione capitalistica $D-M-D'$ e la moneta-credito endogena preludono alla *teoria del circuito monetario* e della *moneta endogena* (sezione 3.2). (d) La dinamica ciclica fra accumulazione, occupazione e distribuzione si lascia formalizzare come un sistema *preda-predatore* (Lotka-Volterra), come mostrerà Goodwin (sezioni 3.2-3.3). (e) La distinzione fra il comportamento degli individui e quello delle *classi* - queste ultime come soggetti *emergenti* - anticipa l'approccio dei *sistemi complessi* (sezione 3.3).
+
 🚧 *Work in progress* 🚧
 
 ---
