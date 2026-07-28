@@ -207,7 +207,7 @@ Meglio si farebbe, allora, a riconoscere che l'economia è una **scienza sociale
 </td>
 <td align="center" width="50%">
 <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/moniac_ita.gif" width="380"><br>
-<sub><em>(b) Simulazione del funzionamento.</em></sub>
+<sub><em>(b) Simulazione del funzionamento del MONIAC.</em></sub>
 </td>
 </tr>
 </table>
