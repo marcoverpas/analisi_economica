@@ -211,7 +211,7 @@ Meglio si farebbe, allora, a riconoscere che l'economia è una **scienza sociale
 </td>
 </tr>
 </table>
-<sub><em>Figura 1.3 - Il MONIAC (Monetary National Income Analogue Computer), il calcolatore analogico idraulico di A. W. H. Phillips e W. Newlyn: una foto storica con A. W. H. Phillips (a) e una simulazione animata del suo funzionamento ottenuta con Python (b). Fonte della foto (a): London School of Economics, ca. 1958-1967; nessuna restrizione di copyright conosciuta.</em></sub>
+<sub><em>Figura 1.3 - Il MONIAC (Monetary National Income Analogue Computer), il calcolatore analogico idraulico di A. W. H. Phillips e W. Newlyn: (a) una foto storica con A. W. H. Phillips; (b) una simulazione animata del suo funzionamento ottenuta con Python. Fonte della foto (a): London School of Economics, ca. 1958-1967; nessuna restrizione di copyright conosciuta.</em></sub>
 </div>
 
 > [!NOTE]
