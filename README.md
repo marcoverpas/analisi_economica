@@ -536,7 +536,7 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 > [!NOTE]
 > **Marx precursore.** Molti degli strumenti che incontreremo nel seguito hanno in Marx un antecedente. (a) Gli *schemi di riproduzione* a due settori, eredi del *Tableau* di Quesnay, anticipano il modello *input-output* di Leontief (sezione 3.1). (b) I *prezzi di produzione* con saggio di profitto uniforme, in forma matriciale (1.22)-(1.23), prefigurano il sistema di Sraffa (sezione 2.3). (c) La circolazione capitalistica $D-M-D'$ e la moneta-credito endogena preludono alla *teoria del circuito monetario* e della *moneta endogena* (sezione 3.2). (d) La dinamica ciclica fra accumulazione, occupazione e distribuzione si lascia formalizzare come un sistema *preda-predatore* (Lotka-Volterra), come mostrerà Goodwin (sezioni 3.2-3.3). (e) La distinzione fra il comportamento degli individui e quello delle *classi* - queste ultime come soggetti *emergenti* - anticipa l'approccio dei *sistemi complessi* (sezione 3.3).
 
-**Un'illustrazione dinamica in R.** Gli schemi di riproduzione si prestano a una semplice implementazione numerica, che ne mostra il funzionamento nel tempo e ne anticipa il carattere *dinamico*. Consideriamo un'economia a due settori in riproduzione allargata, in cui la quota di plusvalore accumulata (la *propensione all'accumulo*) del settore 1 (beni capitali) è data, mentre quella del settore 2 (beni di consumo) si adegua *gradualmente* verso il valore coerente con il saggio di crescita del settore 1. Il codice seguente (una versione didattica semplificata di un modello più ampio) simula un sentiero di crescita bilanciata e, in uno scenario alternativo, uno shock permanente che dimezza la propensione all'accumulo del settore 1 a partire dal periodo 20.
+**Un'illustrazione dinamica in R.** Gli schemi di riproduzione si prestano a una semplice implementazione numerica, che ne mostra il funzionamento nel tempo e ne anticipa il carattere *dinamico*. Consideriamo un'economia a due settori in riproduzione allargata, in cui la quota di plusvalore accumulata (la *propensione all'accumulo*) del settore 1 (beni capitali) è data, mentre quella del settore 2 (beni di consumo) si adegua *gradualmente* verso il valore coerente con il saggio di crescita del settore 1. Il [codice `R` seguente](https://github.com/marcoverpas/analisi_economica/blob/main/schemi_riproduzione.R) simula un sentiero di crescita bilanciata e, in uno scenario alternativo, uno shock permanente che dimezza la propensione all'accumulo del settore 1 a partire dal periodo 20.
 
 ```r
 # Schemi di riproduzione di Marx - versione didattica semplificata
@@ -675,11 +675,20 @@ legend("topright", c("Settore 1", "Settore 2"), bty = "n", cex = 0.8,
        lty = c(1, 3), lwd = c(2, 2), col = c(4, 2))
 ```
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/schemi_riproduzione.png" width="90%">
-</p>
-
-<p align="center"><em>Figura 1.5 - Schemi di riproduzione: effetto di una caduta della propensione all'accumulo del settore 1 (beni capitali) sui saggi di accumulazione (a sinistra) e sulle propensioni all'accumulo (a destra) dei due settori.</em></p>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/fig1_saggi_accumulazione.gif" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/fig2_propensioni_accumulo.gif" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><em>Saggi di accumulazione</em></td>
+    <td align="center"><em>Propensioni all'accumulo</em></td>
+  </tr>
+</table>
 
 A regime i due settori crescono allo stesso saggio (nell'esempio, il 10 per cento), a conferma che la riproduzione allargata richiede una proporzione precisa fra di essi. Quando i capitalisti del settore 1 riducono la quota di plusvalore accumulata, il saggio di crescita del settore 1 scende di colpo, mentre quello del settore 2 vi converge *gradualmente*: il parametro `adj` regola la velocità con cui la propensione all'accumulo del settore 2 si adegua al nuovo sentiero di crescita. È proprio questa interdipendenza dinamica fra decisioni di accumulazione e proporzioni settoriali a preparare il terreno per l'analisi del ciclo (sezione 1.4.6) e per la sua formalizzazione preda-predatore alla Goodwin (sezioni 3.2-3.3).
 
