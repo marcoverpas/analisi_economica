@@ -481,17 +481,17 @@ A prezzi diretti i saggi di profitto dei due settori (20% e 50%) sono incompatib
 
 In generale, con $n$ settori, la teoria si può riscrivere in forma **matriciale** (rivelandone la parentela con il modello input-output, di cui ci occuperemo in dettaglio nella sezione 3.1). Siano $A$ la matrice dei coefficienti di capitale circolante (l'elemento $a_{ij}$ è la quantità del bene $i$ impiegata per produrre una unità del bene $j$), $l$ il vettore riga dei coefficienti di lavoro diretto e $x$ il vettore dei prodotti lordi. I valori o prezzi diretti (vettore riga $\Lambda$) risolvono $\Lambda = \Lambda A + l$, ossia
 
-$$\Lambda = l\cdot (I - A)^{-1} \qquad (1.22)$$
+$$\Lambda = l (I - A)^{-1} \qquad (1.22)$$
 
 dove $(I-A)^{-1}$ è l'**inversa di Leontief**. I prezzi di produzione (vettore riga $p$), valutando gli input al loro prezzo effettivo e anticipando il salario monetario $w$, risolvono a loro volta
 
-$$p = (1+r)\cdot (p A + w\cdot l) \qquad (1.23)$$
+$$p = (1+r) (p A + w l) \qquad (1.23)$$
 
 È, come vedremo, esattamente il sistema di prezzi che Piero Sraffa ricaverà nel 1960 (sezione 2.3), fondato sull'inversa di Leontief del modello input-output (sezione 3.1).
 
 Proprio la (1.23), però, sembra far scomparire ogni riferimento al valore: i prezzi risultano determinati dalle sole condizioni tecniche e da una variabile distributiva. Di qui la lunga *vexata quaestio* della trasformazione.
 
-La chiave per scioglierla consiste nel misurare le grandezze marxiane fin dall'inizio in moneta, e nel riferire la legge del valore non al prodotto lordo, ma al **prodotto netto** $y = (I-A)\cdot x$ (si vedano, ad esempio, Foley 1982, e Duménil e Foley, 2008). Il valore aggiunto monetario esprime allora esattamente il **lavoro vivo** complessivamente speso, $l\cdot x$, tramite l'*espressione monetaria del tempo di lavoro* (MELT). Definendo il salario come quota del valore aggiunto, si ritrova l'identità $\Pi \equiv S$: il profitto monetario totale è pluslavoro.
+La chiave per scioglierla consiste nel misurare le grandezze marxiane fin dall'inizio in moneta, e nel riferire la legge del valore non al prodotto lordo, ma al **prodotto netto** $y = (I-A) x$ (si vedano, ad esempio, Foley 1982, e Duménil e Foley, 2008). Il valore aggiunto monetario esprime allora esattamente il **lavoro vivo** complessivamente speso, $l x$, tramite l'*espressione monetaria del tempo di lavoro* (MELT). Definendo il salario come quota del valore aggiunto, si ritrova l'identità $\Pi \equiv S$: il profitto monetario totale è pluslavoro.
 
 In questo quadro coerente, però, gli input $C$ e $V$ vanno anch'essi valutati a prezzi di produzione. Ne deriva che il saggio di profitto non può essere determinato prima e indipendentemente dai prezzi, come Marx riteneva in base alla (1.21), ma emerge *simultaneamente* ad essi, quale soluzione del sistema (1.23) una volta dati la tecnica e il salario monetario. Ciò che si conserva rigorosamente è la sola identità aggregata $\Pi \equiv S$, ancorata al prodotto netto tramite la MELT, mentre il saggio di profitto viene calcolato sulla base dei prezzi di produzione. La funzione della teoria del valore, del resto, non è mai stata calcolare i prezzi relativi (compito che spetta alle condizioni tecniche e alla distribuzione), bensì svelare l'origine sociale del profitto dal pluslavoro.
 
