@@ -17,7 +17,7 @@ Questo archivio raccoglie slide, letture e altro materiale del corso. Nei prossi
 
 | | |
 |---|---|
-| **Docente** | Marco Veronese Passarella |
+| **Docente** | [Marco Veronese Passarella](https://ec.univaq.it/index.php?id=veronesepassarella) |
 | **Corso di Studio** | Amministrazione, Economia e Finanza (M4AR) |
 | **Insegnamento integrato** | Analisi economica ed Econometria |
 | **Settore** | SECS-P/02 - Politica economica |
