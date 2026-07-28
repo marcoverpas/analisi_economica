@@ -1,7 +1,7 @@
 # 📊 Analisi Economica
 ### Produzione, distribuzione, conflitto e moneta 💰
 
-[*Italian only*] Materiale didattico dell'insegnamento di [Analisi Economica](https://univaq.coursecatalogue.cineca.it/corsi/2025/10494/insegnamenti/2026/42128-1/2025/4?coorte=2025&schemaid=12253&adCodRadice=DG0301), Corso di Laurea Magistrale in Amministrazione, Economia e Finanza (percorso *Economia dell'Innovazione, del Territorio e della Sostenibilità*), Università degli Studi dell'Aquila.
+[*Italian only*] Materiale didattico dell'insegnamento di [Analisi Economica](https://univaq.coursecatalogue.cineca.it/corsi/2025/10494/insegnamenti/2026/42128-1/2025/4?coorte=2025&schemaid=12253&adCodRadice=DG0301), [Corso di Laurea Magistrale in Amministrazione, Economia e Finanza](https://univaq.coursecatalogue.cineca.it/corsi/2026/10494?annoOrdinamento=2026) (percorso *Economia dell'Innovazione, del Territorio e della Sostenibilità*), [DIIIE - Università degli Studi dell'Aquila](https://diiie.univaq.it/index.php?id=2583&no_cache=1).
 
 <div align="center">
 <figure>
