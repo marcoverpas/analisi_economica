@@ -549,7 +549,7 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 # 2 = settore dei beni di consumo.
 
 #~~~~~~~~~~~~~~~~
-# Fase 1: Prepara l'ambiente ####
+# Passo 1: Prepara l'ambiente ####
 rm(list = ls(all = TRUE))
 if (!is.null(dev.list())) dev.off()
 cat("\014")
@@ -558,7 +558,7 @@ nPeriods   <- 100     # Numero di periodi
 nScenarios <- 2       # 1 = baseline ; 2 = shock alla propensione all'accumulo del settore 1
 
 #~~~~~~~~~~~~~~~~
-# Fase 2: Crea variabili e parametri ####
+# Passo 2: Crea variabili e parametri ####
 mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
 
 # Parametri (costanti nel tempo)
@@ -593,7 +593,7 @@ omega <- mat(0)      # Quota salari (sul reddito netto)
 pri   <- mat(0)      # Quota profitti  
 
 #~~~~~~~~~~~~~~~~
-# Fase 3: Lancia il modello ####
+# Passo 3: Lancia il modello ####
 for (j in 1:nScenarios) {
   
   for (i in 2:nPeriods) {
@@ -649,7 +649,7 @@ for (j in 1:nScenarios) {
 }
 
 #~~~~~~~~~~~~~~~~
-# Fase 3: Produci i grafici ####
+# Passo 4: Produci i grafici ####
 tt <- 15:50   # Finestra temporale (lo shock avviene al periodo 20)
 
 layout(matrix(c(1, 2), 1, 2, byrow = TRUE))
