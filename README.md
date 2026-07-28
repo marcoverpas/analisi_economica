@@ -720,6 +720,10 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 
 ---
 
+## Parte II - Crisi e rinascita dell'approccio classico
+
+### 2.1 L'ascesa del marginalismo e la nascita dell'ortodossia neoclassica
+
 🚧 *Work in progress* 🚧
 
 ---
