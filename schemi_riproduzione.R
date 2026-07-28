@@ -1,12 +1,12 @@
 # Schemi di riproduzione di Marx - versione didattica semplificata
 # Corso "Analisi economica" - Parte I (sezione 1.4.5)
 # Basato su: M. Veronese Passarella, "Marx's Reproduction Schemes"
-# (versione originale 30/03/2016; qui semplificata)
+# (versione originale 30/03/2016)
 #
 # Rispetto alla versione completa si tralascia il blocco ricchezza/portafoglio
 # (consumo dei capitalisti da ricchezza, propensioni sigma, stock h). Restano il
 # cuore a due settori, i saggi di accumulazione e l'aggiustamento graduale della
-# propensione all'accumulo del settore 2. Le equazioni sono RICORSIVE (nessuna
+# propensione all'accumulo del settore 2. Le equazioni sono ricorsive (nessuna
 # simultaneità entro il periodo): il ciclo iterativo di soluzione alla
 # Gauss-Seidel, tipico dei modelli SFC, verrà reintrodotto nella Parte III.
 #
