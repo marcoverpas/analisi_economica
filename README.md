@@ -332,7 +332,7 @@ con $w$ il salario (in grano) per lavoratore. La (1.9) esprime, in forma traspar
 
 Sulla terra inframarginale la massa dei profitti è:
 
-$$P' = r w N' = (a/w - 1) w N' = (a - w) N' \qquad (1.10)$$
+$$P' = r w N' = (\frac{a}{w} - 1) w N' = (a - w) N' \qquad (1.10)$$
 
 mentre la rendita ivi conseguita è il residuo che eccede salari e profitti:
 
