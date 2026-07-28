@@ -142,16 +142,6 @@ Nelle **scienze sociali** accade qualcosa di diverso. Una teoria economica non �
 Queste scuole possono essere ricondotte ad alcune visioni di base di lungo periodo: correnti carsiche che, al pari di fiumi sotterranei, scompaiono, o vengono marginalizzati per lunghi tratti dall'accademia, per poi riaffiorare quando le mutate condizioni sociali lo richiedono. Due orientamenti, in particolare, si fronteggiano lungo tutta la storia della disciplina: quello che concepisce il **mercato come un ordine capace di autoregolarsi** (dalla legge di Say ai modelli di equilibrio economico generale) e quello che, al contrario, muove dalla **centralità della produzione, dal ruolo della domanda effettiva e dalla possibilità di crisi generali** (da Malthus e Marx fino a Keynes). Un'analoga tensione attraversa la teoria del valore, dove l'orientamento **soggettivista** (Menger, Jevons) si oppone a quello **oggettivista** (Ricardo, Sraffa). L'approccio classico e del sovrappiù, che costituisce il filo conduttore di questo corso, è appunto una di queste visioni di base: a lungo confinata nel "sottosuolo" dell'eterodossia e periodicamente riemergente.
 
 <div align="center">
-<figure>
-<img src="https://github.com/marcoverpas/figures/blob/main/Albero_gen.png" width="1000">
-<figcaption><sub><em>Figura 1.1 - L'albero genealogico delle scuole del pensiero economico. Le principali tradizioni teoriche sono disposte lungo l'asse verticale, che oppone la visione centrata su individuo, mercato e scarsità a quella centrata su società, conflitto e riproduzione, e lungo l'asse orizzontale del tempo storico. I riquadri distinguono gli approcci dominanti (in tinta piena o tratteggiata) da quelli eterodossi; le frecce indicano i legami diretti (linea continua) e mediati (tratteggiata) fra le scuole.</em></figcaption>
-</figure>
-</div>
-<br>
-<br>
-
-
-<div align="center">
 <table>
 <tr><td width="820" align="center">
 <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Albero_gen.png" width="800" alt="I quattro concetti di equilibrio"><br>
@@ -159,8 +149,6 @@ Queste scuole possono essere ricondotte ad alcune visioni di base di lungo perio
 </td></tr>
 </table>
 </div>
-
-
 
 Non a caso, questa polarità è rintracciabile già nelle **due anime** dell'opera di Adam Smith: da un lato la dimensione **micro-individuale** (decisioni di agenti auto-interessati, mano invisibile, divisione del lavoro, allocazione), ripresa e sviluppata dai marginalisti; dall'altro la dimensione **macro-sociale** (classi sociali, dimensione del mercato, valore come costo di riproduzione, sviluppo economico), ripresa dai classici, da Marx e, in seguito, da Keynes. È lungo questo asse - che oppone *individuo, mercato e scarsità* a *società, conflitto e riproduzione* - che si dispone l'intero albero genealogico delle teorie economiche, di cui la Figura 1.1 offre una rappresentazione sinottica.
 
