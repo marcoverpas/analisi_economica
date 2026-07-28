@@ -198,6 +198,25 @@ Se è vero, infatti, che la scienza procede per metafore, spesso mutuate da ambi
 
 Meglio si farebbe, allora, a riconoscere che l'economia è una **scienza sociale**, ossia una disciplina che indaga criticamente le leggi (storicamente mutevoli) di movimento delle società capitalistiche, rifuggendo tanto le pretese di neutralità del pensiero dominante quanto le fughe irrazionalistiche dei suoi critici più ingenui. È a partire da questa premessa epistemologica che il corso aspira a fornire una ricostruzione semplificata, ma sufficientemente esaustiva, dell'approccio *della riproduzione* allo studio dei fenomeni economici.
 
+<div align="center">
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Phillips_and_MONIAC_LSE.JPG" width="360"><br>
+<sub><em>(a) A. W. H. Phillips accanto al MONIAC (LSE, 1949).</em></sub>
+</td>
+<td align="center" width="50%">
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/moniac_ita.GIF" width="360"><br>
+<sub><em>(b) Simulazione del funzionamento.</em></sub>
+</td>
+</tr>
+</table>
+<sub><em>Figura 2 - Il MONIAC (Monetary National Income Analogue Computer), il calcolatore analogico idraulico di A. W. H. Phillips (1949): una foto storica con l'autore (a) e una simulazione animata del suo funzionamento (b). Fonte della foto (a): London School of Economics, ca. 1958–1967; nessuna restrizione di copyright conosciuta.</em></sub>
+</div>
+
+> [!NOTE]
+> **Il MONIAC e il trasferimento di metodi tra discipline.** L'economia non si è mai sviluppata in isolamento. Nel corso della sua storia, gli economisti hanno ripetutamente mutuato concetti, metodi e strumenti analitici da altre discipline scientifiche. L'economia politica classica trasse ispirazione dalla meccanica newtoniana, adottandone le nozioni di equilibrio e di causalità sistemica. Successivamente, la rivoluzione marginalista, in particolare nelle opere di Léon Walras e Vilfredo Pareto, modellò esplicitamente i sistemi economici utilizzando il linguaggio e la struttura matematica della meccanica analitica. Dalla fine del XIX secolo i metodi statistici entrarono a far parte integrante dell'analisi economica, mentre nella prima metà del XX secolo le equazioni differenziali e i sistemi dinamici si affermarono come strumenti fondamentali della modellizzazione macroeconomica, soprattutto grazie ai contributi di Ragnar Frisch, Jan Tinbergen e Roy Harrod. All'interno di questa lunga tradizione di trasferimento metodologico, il MONIAC (*Monetary National Income Analogue Computer*), progettato da Alban William Housego Phillips (lo stesso economista della curva di Phillips) con la collaborazione di Walter Newlyn nel 1949, occupa una posizione peculiare. Più che introdurre una nuova teoria economica, il MONIAC incorporava un modello macroeconomico keynesiano in un sistema fisico di tipo ingegneristico. Si trattava di un calcolatore analogico idraulico nel quale flussi d'acqua, serbatoi, valvole e meccanismi di retroazione rappresentavano le variabili macroeconomiche e le loro interazioni. Invece di risolvere le equazioni in forma simbolica o numerica, la macchina riproduceva le relazioni macroeconomiche attraverso il comportamento fisico dei fluidi. Il MONIAC non dovrebbe quindi essere considerato il primo esempio di economia che attinge metodi da altre scienze. Esso rappresenta piuttosto uno dei primi esempi operativi di simulazione analogica fisica applicata all'economia e una tappa fondamentale nel trasferimento dei metodi dell'ingegneria alla modellizzazione macroeconomica. La sua importanza risiede non solo nel suo valore didattico, ma anche nell'aver dimostrato che un modello economico poteva essere implementato come un dispositivo computazionale fisico, ponendo così un ponte tra teoria economica, ingegneria e calcolo analogico. Non a caso, essendo letteralmente un modello idraulico di stock e flussi, il MONIAC è oggi rivendicato come un antenato dei modelli fondi-flussi (*stock-flow consistent*) che incontreremo nella Parte III.
+
 ---
 
 ### 1.2 Da Quesnay a Smith: sovrappiù e prezzi naturali
