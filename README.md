@@ -300,6 +300,8 @@ Resta da chiarire come i prezzi effettivi si formino. Smith distingue il **prezz
 
 Le due "anime" di Smith già incontrate nella sezione precedente - quella *macroeconomica*, imperniata sulla teoria del sovrappiù (classi sociali, lavoro produttivo e improduttivo, profitto come residuo), e quella *microeconomica*, imperniata sull'equilibrio concorrenziale (mano invisibile, prezzi additivi, profitto come remunerazione del rischio) - vanno qui integrate da una terza, spesso trascurata: l'anima *istituzionalista*, che guarda al mercato come a un insieme di istituzioni e ai fondamenti morali e giuridici dell'ordine sociale. È lungo la frattura fra le prime due, corrispondente all'asse fra "società, conflitto e riproduzione" e "individuo, mercato e scarsità" della Figura 1, che si separeranno le strade dell'approccio del sovrappiù e della rivoluzione marginalista. Sarà David Ricardo, come vedremo, a riprendere e sistematizzare l'anima macroeconomica, ponendo al centro la distribuzione del prodotto fra le classi e il conflitto che l'accompagna.
 
+---
+
 ### 1.3 Distribuzione e conflitto nella teoria di Ricardo
 
 Se in Smith la teoria del sovrappiù convive con l'anima dell'equilibrio concorrenziale, in David Ricardo (1772-1823) l'approccio classico raggiunge la sua forma più rigorosa e conflittuale. Per Ricardo l'economia è la scienza che studia la **distribuzione** del prodotto fra le tre classi della società capitalistica (lavoratori salariati, capitalisti e proprietari fondiari) e il suo oggetto precipuo è la determinazione del **saggio di profitto** e del suo andamento, da cui dipende il ritmo dell'accumulazione. Poiché ciò che va a una classe non può andare a un'altra, la distribuzione è, per costruzione, un terreno di conflitto.
