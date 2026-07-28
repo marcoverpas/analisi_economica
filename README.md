@@ -728,7 +728,7 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 
 ---
 
-**Riferimenti della Parte I**
+**Riferimenti bibliografici**
 - Duhem, P. (1906), *La teoria fisica: il suo oggetto, la sua struttura*, il Mulino, Bologna, 1978.
 - Duménil, G. e Foley, D. K. (2008), "The Marxian transformation problem", in S. N. Durlauf e L. E. Blume (a cura di), *The New Palgrave Dictionary of Economics*, 2ª ed., Palgrave Macmillan, Londra.
 - Feyerabend, P. K. (1975), *Contro il metodo. Abbozzo di una teoria anarchica della conoscenza*, Feltrinelli, Milano, 1979.
