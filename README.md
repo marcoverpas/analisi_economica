@@ -299,13 +299,13 @@ Dietro il passaggio dal lavoro contenuto al lavoro comandato si cela un'intuizio
 La Figura 1.4 raffigura il capitalismo come un sistema che si *riproduce* nel tempo: il processo produttivo combina i fattori lavoro, terra e macchine, e genera un *prodotto lordo*. Da questo, sottraendo i *mezzi di produzione* consumati, si ottiene il *prodotto netto*, da cui, detraendone il *fondo salari* si isola il *sovrappiù*. Infine, da quest'ultimo, tolta la *rendita*, residua il *profitto*. A ciascuna detrazione corrisponde un reddito e una classe sociale: i *lavoratori salariati* percepiscono il fondo salari, i *proprietari terrieri* la rendita, i *capitalisti* il profitto. Lo schema mostra al tempo stesso che la ripartizione del prodotto netto fra le classi è l'esito di un conflitto (la *lotta di classe*) e che una parte del profitto viene *reinvestita*, alimentando il ciclo produttivo successivo e, con esso, la riproduzione (eventualmente allargata) del sistema. Rispetto al modello minimo della sezione precedente, la figura anticipa due elementi che entreranno in scena più avanti - i mezzi di produzione (il capitale costante, con Marx) e la rendita (con Ricardo) - e costituisce perciò la mappa concettuale, dal prodotto lordo al profitto, lungo la quale si muoverà l'intera Parte I.
 
 <div align="center">
-<figure>
-<img src="https://github.com/marcoverpas/figures/blob/main/Classi_sociali.png" width="1000">
-<figcaption><sub><em>Figura 1.4 - Lo schema della riproduzione e le classi sociali. Il processo produttivo combina lavoro, terra, macchine, e genera il prodotto lordo. Le detrazioni successive (mezzi di produzione, fondo salari, rendita) conducono dal prodotto lordo al prodotto netto, al sovrappiù e infine al profitto. I tre redditi (salari, rendita, profitto) remunerano rispettivamente lavoratori salariati, proprietari terrieri e capitalisti. La loro ripartizione è oggetto della lotta di classe, mentre la quota di profitto reinvestita rende possibile la riproduzione del sistema.</em></sub></figcaption>
-</figure>
+<table>
+<tr><td width="820" align="center">
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Classi_sociali.png" width="800" alt="I quattro concetti di equilibrio"><br>
+<sub><em>Figura 1.4 - Lo schema della riproduzione e le classi sociali. Il processo produttivo combina lavoro, terra, macchine, e genera il prodotto lordo. Le detrazioni successive (mezzi di produzione, fondo salari, rendita) conducono dal prodotto lordo al prodotto netto, al sovrappiù e infine al profitto. I tre redditi (salari, rendita, profitto) remunerano rispettivamente lavoratori salariati, proprietari terrieri e capitalisti. La loro ripartizione è oggetto della lotta di classe, mentre la quota di profitto reinvestita rende possibile la riproduzione del sistema.</em></sub>
+</td></tr>
+</table>
 </div>
-<br>
-<br>
 
 #### 1.2.5 Il lavoro comandato come misura della ricchezza delle nazioni
 
