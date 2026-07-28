@@ -497,19 +497,45 @@ In questo quadro coerente, però, gli input $C$ e $V$ vanno anch'essi valutati a
 
 #### 1.4.5 Gli schemi di riproduzione
 
-Nel Libro II del *Capitale*, Marx si chiede a quali condizioni il sistema possa **riprodursi nel tempo**. Introduce a questo scopo i celebri **schemi di riproduzione**, esplicitamente ispirati al *Tableau* di Quesnay (sezione 1.2.1). Si immagini un'economia in due settori: il settore 1 produce **beni capitali** (mezzi di produzione), il settore 2 **beni di consumo**.
+Nel Libro II del *Capitale* Marx affronta un problema che i classici avevano lasciato sullo sfondo: a quali condizioni il sistema capitalistico può **riprodursi nel tempo**, cioè rinnovare periodo dopo periodo le proprie premesse materiali, sia mantenendo invariata la scala della produzione sia ampliandola. A questo scopo introduce i celebri **schemi di riproduzione**, esplicitamente ispirati al *Tableau* di Quesnay (sezione 1.2.1).
 
-Nella **riproduzione semplice** l'intero plusvalore è consumato e la scala resta invariata. Imponendo che l'offerta di ciascun bene sia assorbita dalla domanda, la condizione di equilibrio si riduce a:
+Seguendo Marx, immaginiamo un'economia divisa in due settori: il **settore 1** produce **beni capitali** (mezzi di produzione), il **settore 2** produce **beni di consumo**. Supponiamo, inoltre, che le merci siano scambiate ai loro *prezzi diretti* (la concorrenza intersettoriale è ancora sospesa, come nella sezione 1.4.3). Il valore del prodotto del settore 1 è $C_1 + V_1 + S_1$, quello del settore 2 è $C_2 + V_2 + S_2$ (in entrambi i casi secondo la (1.16)).
+
+Il punto decisivo è che i due prodotti hanno destinazioni d'uso diverse: l'intero prodotto del settore 1 è costituito da mezzi di produzione, che possono essere acquistati soltanto come **capitale costante**; l'intero prodotto del settore 2 è costituito da beni di consumo, che possono essere acquistati soltanto come **reddito speso** da lavoratori e capitalisti. È da questa asimmetria che discendono le condizioni di equilibrio.
+
+**Riproduzione semplice.** Nella riproduzione semplice l'intero plusvalore è consumato dai capitalisti, non vi è accumulazione netta e la scala resta invariata. Il valore prodotto, però, si realizza solo se trova sul mercato una domanda monetaria adeguata. Esaminiamo dunque i due mercati.
+
+Sul **mercato dei beni capitali** (settore 1) l'offerta è l'intero prodotto del settore, $C_1 + V_1 + S_1$. La domanda proviene da entrambi i settori, che devono reintegrare i mezzi di produzione consumati nel periodo, ossia il proprio capitale costante, $C_1 + C_2$. Uguagliando offerta e domanda:
+
+$$C_1 + V_1 + S_1 = C_1 + C_2$$
+
+Sul **mercato dei beni di consumo** (settore 2) l'offerta è $C_2 + V_2 + S_2$. La domanda proviene dai lavoratori, che spendono l'intero salario ($V_1 + V_2$), e dai capitalisti, che nella riproduzione semplice consumano tutto il plusvalore ($S_1 + S_2$):
+
+$$C_2 + V_2 + S_2 = V_1 + V_2 + S_1 + S_2$$
+
+In un'economia a due beni le due condizioni non sono indipendenti: se un mercato è in equilibrio, lo è necessariamente anche l'altro (è una forma della legge di Walras). Basta dunque prenderne uno. Semplificando i termini comuni - $C_1$ nella prima equazione, oppure $V_2 + S_2$ nella seconda - si ottiene in entrambi i casi la **condizione di riproduzione semplice**:
 
 $$V_1 + S_1 = C_2 \qquad (1.24)$$
 
-la domanda di beni di consumo proveniente dal settore dei beni capitali (i suoi salari e profitti) deve eguagliare il capitale costante di cui il settore dei beni di consumo ha bisogno. Nella **riproduzione allargata**, una frazione $\Delta S$ del plusvalore viene invece accumulata, e la condizione diventa:
+Il significato è trasparente: i salari e i profitti generati nel settore dei beni capitali ($V_1 + S_1$), spesi in beni di consumo, devono eguagliare il capitale costante di cui ha bisogno il settore che quei beni di consumo produce ($C_2$). I due settori dipendono l'uno dall'altro - il settore 1 deve vendere mezzi di produzione al settore 2, il settore 2 deve vendere beni di consumo ai lavoratori e ai capitalisti del settore 1 - e l'equilibrio si regge su una proporzione precisa fra le loro grandezze.
+
+**Riproduzione allargata.** Consideriamo ora il caso in cui una parte del plusvalore, anziché essere consumata, viene **accumulata**, dando luogo a un'espansione della scala produttiva. Indichiamo con $\Delta S_i$ la frazione del plusvalore del settore $i$ destinata all'accumulazione: essa viene spesa in nuovi mezzi di produzione, mentre la parte restante, $S_i - \Delta S_i$, è consumata dai capitalisti. Rispetto alla riproduzione semplice cambiano entrambe le domande.
+
+Sul **mercato dei beni capitali** la domanda, oltre a reintegrare il capitale costante dei due settori, include ora il plusvalore che entrambi destinano all'accumulazione, $\Delta S_1 + \Delta S_2$:
+
+$$C_1 + V_1 + S_1 = C_1 + C_2 + \Delta S_1 + \Delta S_2$$
+
+Sul **mercato dei beni di consumo** la domanda si riduce invece in misura pari al risparmio dei capitalisti, che ora consumano solo $S_i - \Delta S_i$:
+
+$$C_2 + V_2 + S_2 = V_1 + V_2 + (S_1 - \Delta S_1) + (S_2 - \Delta S_2)$$
+
+Di nuovo i due mercati conducono alla medesima condizione. Semplificando i termini comuni - $C_1$ nel primo, $V_2 + S_2$ nel secondo - e riordinando, si ottiene la **condizione di riproduzione allargata**:
 
 $$V_1 + S_1 - \Delta S_1 = C_2 + \Delta S_2 \qquad (1.25)$$
 
-In entrambi i casi l'equilibrio richiede una **proporzione precisa** fra i due settori. Ma poiché le decisioni di produzione e investimento sono prese in modo decentralizzato, da una miriade di capitalisti in condizioni di incertezza, nulla garantisce ex ante tale proporzione: l'equilibrio è un caso limite, per giunta instabile.
+che si riduce alla (1.24) quando l'accumulazione si annulla ($\Delta S_1 = \Delta S_2 = 0$). Il senso della (1.25) è che, se il settore dei beni di consumo vuole accumulare ($\Delta S_2 > 0$), deve acquistare più mezzi di produzione, e quindi trattenere una parte del proprio plusvalore sottraendola al consumo.
 
-La **legge di Say** si rivela così implausibile, e la crisi appare come esito *endogeno* del funzionamento del capitalismo, non come deviazione accidentale. Questi schemi, che descrivono i flussi intersettoriali di $C$, $V$ e $S$ (si veda anche la Figura 1.4), sono il ponte diretto fra il *Tableau* di Quesnay e il modello **input-output** di Leontief (sezione 3.1).
+**Instabilità e crisi.** In entrambi i casi l'equilibrio richiede un coordinamento preciso fra le decisioni di accumulazione dei due settori e la struttura della domanda sociale. Ma poiché tali decisioni sono prese in modo decentralizzato, da una miriade di capitalisti in condizioni di incertezza, nulla garantisce ex ante il rispetto di queste proporzioni: l'equilibrio è un caso limite, per giunta instabile. Ne discendono l'implausibilità della **legge di Say** e la fragilità intrinseca del processo di riproduzione, per cui la crisi appare come esito *endogeno* del funzionamento del capitalismo, non come deviazione accidentale. Questi schemi, che descrivono i flussi intersettoriali di $C$, $V$ e $S$ (si veda anche la Figura 1.4), sono inoltre il ponte diretto fra il *Tableau* di Quesnay e il modello **input-output** di Leontief (sezione 3.1).
 
 #### 1.4.6 Accumulazione, ciclo e crisi
 
