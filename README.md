@@ -536,6 +536,12 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 > [!NOTE]
 > **Marx precursore.** Molti degli strumenti che incontreremo nel seguito hanno in Marx un antecedente. (a) Gli *schemi di riproduzione* a due settori, eredi del *Tableau* di Quesnay, anticipano il modello *input-output* di Leontief (sezione 3.1). (b) I *prezzi di produzione* con saggio di profitto uniforme, in forma matriciale (1.22)-(1.23), prefigurano il sistema di Sraffa (sezione 2.3). (c) La circolazione capitalistica $D-M-D'$ e la moneta-credito endogena preludono alla *teoria del circuito monetario* e della *moneta endogena* (sezione 3.2). (d) La dinamica ciclica fra accumulazione, occupazione e distribuzione si lascia formalizzare come un sistema *preda-predatore* (Lotka-Volterra), come mostrerà Goodwin (sezioni 3.2-3.3). (e) La distinzione fra il comportamento degli individui e quello delle *classi* - queste ultime come soggetti *emergenti* - anticipa l'approccio dei *sistemi complessi* (sezione 3.3).
 
+**Un'illustrazione dinamica in R.** Gli schemi di riproduzione si prestano a una semplice implementazione numerica, che ne mostra il funzionamento nel tempo e ne anticipa il carattere *dinamico*. Consideriamo un'economia a due settori in riproduzione allargata, in cui la quota di plusvalore accumulata (la *propensione all'accumulo*) del settore 1 (beni capitali) è data, mentre quella del settore 2 (beni di consumo) si adegua per soddisfare la condizione di equilibrio (1.25). Il codice seguente (una versione didattica semplificata di un modello più ampio) simula un sentiero di crescita bilanciata e, in uno scenario alternativo, uno shock permanente che dimezza la propensione all'accumulo del settore 1 a partire dal periodo 20.
+
+<details>
+<summary><strong>Codice R - schemi di riproduzione (versione semplificata)</strong></summary>
+
+```r
 # Marx's Reproduction Schemes - versione didattica semplificata
 # Corso "Analisi economica" - Parte I (sezione 1.4.5)
 # Basato su: M. Veronese Passarella, "Marx's Reproduction Schemes"
@@ -669,6 +675,17 @@ rect(xleft = 2, xright = 13, ybottom = 0, ytop = 1, col = mycol5, border = NA)
 lines(theta_c[2, 18:30], type = "l", lty = 3, lwd = 2, col = 2)
 legend("topright", c("Settore 1", "Settore 2"), bty = "n", cex = 0.8,
        lty = c(1, 3), lwd = c(2, 2), col = c(4, 2))
+```
+
+</details>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/schemi_riproduzione.png" width="90%">
+</p>
+
+<p align="center"><em>Figura 1.5 - Schemi di riproduzione: effetto di una caduta della propensione all'accumulo del settore 1 (beni capitali) sui saggi di accumulazione (a sinistra) e sulle propensioni all'accumulo (a destra) dei due settori.</em></p>
+
+A regime i due settori crescono allo stesso saggio (nell'esempio, il 10 per cento), a conferma che la riproduzione allargata richiede una proporzione precisa fra di essi. Quando i capitalisti del settore 1 riducono la quota di plusvalore accumulata, il saggio di crescita di lungo periodo si dimezza; ma nel periodo di transizione il settore 2 deve assorbire l'eccesso temporaneo di mezzi di produzione, da cui il breve rimbalzo visibile nella figura. È proprio questa interdipendenza dinamica fra decisioni di accumulazione e proporzioni settoriali a preparare il terreno per l'analisi del ciclo (sezione 1.4.6) e per la sua formalizzazione preda-predatore alla Goodwin (sezioni 3.2-3.3).
 
 🚧 *Work in progress* 🚧
 
