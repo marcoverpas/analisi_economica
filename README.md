@@ -9,7 +9,7 @@
 </figure>
 </div>
 
-Questo archivio raccoglie slide, letture e altro materiale del corso. Nei prossimi mesi sarà consultabile anche in forma di libro HTML. 🚧
+Questo archivio raccoglie slide, letture e altro materiale del corso. Nei prossimi mesi sarà reso consultabile anche in forma di libro HTML. 🚧
 
 ---
 
