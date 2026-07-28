@@ -413,8 +413,11 @@ Al di là della presa di posizione a favore del commercio internazionale, ciò c
 
 **Riferimenti della Parte I**
 - Duhem, P. (1906), *La teoria fisica: il suo oggetto, la sua struttura*, il Mulino, Bologna, 1978.
+- Duménil, G. e Foley, D. K. (2008), "The Marxian transformation problem", in S. N. Durlauf e L. E. Blume (a cura di), *The New Palgrave Dictionary of Economics*, 2ª ed., Palgrave Macmillan, Londra.
 - Feyerabend, P. K. (1975), *Contro il metodo. Abbozzo di una teoria anarchica della conoscenza*, Feltrinelli, Milano, 1979.
+- Foley, D. K. (1982), "The Value of Money, the Value of Labour Power and the Marxian Transformation Problem", *Review of Radical Political Economics*, 14(2), pp. 37-47.
 - Gattei, G. (1994), *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino.
+- Goodwin, R. M. (1967), "A Growth Cycle", in C. H. Feinstein (a cura di), *Socialism, Capitalism and Economic Growth*, Cambridge University Press, Cambridge, pp. 54-58.
 - Keynes, J. M. (1936), *Teoria generale dell'occupazione, dell'interesse e della moneta*, UTET, Torino, 1947.
 - Kuhn, T. S. (1962), *La struttura delle rivoluzioni scientifiche*, Einaudi, Torino, 1969.
 - Lakatos, I. (1970), "La falsificazione e la metodologia dei programmi di ricerca scientifici", in I. Lakatos e A. Musgrave (a cura di), *Critica e crescita della conoscenza*, Feltrinelli, Milano, 1976.
@@ -430,3 +433,5 @@ Al di là della presa di posizione a favore del commercio internazionale, ciò c
 - Smith, A. (1776), *La ricchezza delle nazioni*, a cura di A. e T. Bagiotti, UTET, Torino, 1975.
 - Sraffa, P. (1960), *Produzione di merci a mezzo di merci. Premesse a una critica della teoria economica*, Einaudi, Torino.
 - Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, [DOI: 10.1038/s41586-026-10702-5](https://www.nature.com/articles/s41586-026-10702-5).
+- [Veronese] Passarella, M. (2011), "Marx in the matrix. L'algebra del 'lavoro vivo'", *Storia del Pensiero Economico. Nuova Serie*, 6(2), pp. 31-48, [DOI: 10.3280/SPE2009-002002](https://www.francoangeli.it/riviste/articolo/38095)
+
