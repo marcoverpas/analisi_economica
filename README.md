@@ -536,7 +536,7 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 > [!NOTE]
 > **Marx precursore.** Molti degli strumenti che incontreremo nel seguito hanno in Marx un antecedente. (a) Gli *schemi di riproduzione* a due settori, eredi del *Tableau* di Quesnay, anticipano il modello *input-output* di Leontief (sezione 3.1). (b) I *prezzi di produzione* con saggio di profitto uniforme, in forma matriciale (1.22)-(1.23), prefigurano il sistema di Sraffa (sezione 2.3). (c) La circolazione capitalistica $D-M-D'$ e la moneta-credito endogena preludono alla *teoria del circuito monetario* e della *moneta endogena* (sezione 3.2). (d) La dinamica ciclica fra accumulazione, occupazione e distribuzione si lascia formalizzare come un sistema *preda-predatore* (Lotka-Volterra), come mostrerà Goodwin (sezioni 3.2-3.3). (e) La distinzione fra il comportamento degli individui e quello delle *classi* - queste ultime come soggetti *emergenti* - anticipa l'approccio dei *sistemi complessi* (sezione 3.3).
 
-**Un'illustrazione dinamica in R.** Gli schemi di riproduzione si prestano a una semplice implementazione numerica, che ne mostra il funzionamento nel tempo e ne anticipa il carattere *dinamico*. Consideriamo un'economia a due settori in riproduzione allargata, in cui la quota di plusvalore accumulata (la *propensione all'accumulo*) del settore 1 (beni capitali) è data, mentre quella del settore 2 (beni di consumo) si adegua per soddisfare la condizione di equilibrio (1.25). Il codice seguente (una versione didattica semplificata di un modello più ampio) simula un sentiero di crescita bilanciata e, in uno scenario alternativo, uno shock permanente che dimezza la propensione all'accumulo del settore 1 a partire dal periodo 20.
+**Un'illustrazione dinamica in R.** Gli schemi di riproduzione si prestano a una semplice implementazione numerica, che ne mostra il funzionamento nel tempo e ne anticipa il carattere *dinamico*. Consideriamo un'economia a due settori in riproduzione allargata, in cui la quota di plusvalore accumulata (la *propensione all'accumulo*) del settore 1 (beni capitali) è data, mentre quella del settore 2 (beni di consumo) si adegua *gradualmente* verso il valore coerente con il saggio di crescita del settore 1. Il codice seguente (una versione didattica semplificata di un modello più ampio) simula un sentiero di crescita bilanciata e, in uno scenario alternativo, uno shock permanente che dimezza la propensione all'accumulo del settore 1 a partire dal periodo 20.
 
 ```r
 # Marx's Reproduction Schemes - versione didattica semplificata
@@ -545,8 +545,8 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 #            (versione originale 30/03/2016; qui semplificata)
 #
 # Notazione: v = capitale variabile (V), k = capitale costante (C),
-# s = plusvalore (S). Indici delle variabili: i = settore 1 (beni capitali),
-# c = settore 2 (beni di consumo).
+# s = plusvalore (S). Indici: 1 = settore dei beni capitali,
+# 2 = settore dei beni di consumo.
 
 #~~~~~~~~~~~~~~~~
 # STEP 1: Prepare the environment ####
@@ -562,29 +562,31 @@ nScenarios <- 2       # 1 = baseline ; 2 = shock alla propensione all'accumulo d
 mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
 
 # Parametri (costanti nel tempo)
-e_i <- mat(1)      # saggio di sfruttamento, settore 1
-e_c <- mat(1)      # saggio di sfruttamento, settore 2
-q_i <- mat(4)      # composizione organica, settore 1 (alta)
-q_c <- mat(2)      # composizione organica, settore 2 (bassa)
-theta0_i <- mat(0.5)  # propensione all'accumulo (retention rate) del settore 1 - esogena
+e_1 <- mat(1)      # saggio di sfruttamento, settore 1
+e_2 <- mat(1)      # saggio di sfruttamento, settore 2
+q_1 <- mat(4)      # composizione organica, settore 1 (alta)
+q_2 <- mat(2)      # composizione organica, settore 2 (bassa)
+theta0_1 <- mat(0.5)  # propensione all'accumulo (retention rate) del settore 1 - esogena
+adj <- 0.3            # velocita' di aggiustamento della propensione del settore 2
+                      # (0 < adj <= 1; adj = 1 riproduce l'aggiustamento istantaneo)
 
 # Variabili di stato: capitale variabile iniziale SUL sentiero bilanciato
-# (la proporzione v_i/v_c = 1.375 soddisfa la condizione di riproduzione).
-v_i <- mat(1100)   # capitale variabile anticipato, settore 1
-v_c <- mat(800)    # capitale variabile anticipato, settore 2
+# (la proporzione v_1/v_2 = 1.375 soddisfa la condizione di riproduzione).
+v_1 <- mat(1100)   # capitale variabile anticipato, settore 1
+v_2 <- mat(800)    # capitale variabile anticipato, settore 2
 
 # Variabili derivate (inizializzate al valore di regime)
-k_i <- v_i * q_i   # capitale costante, settore 1
-k_c <- v_c * q_c   # capitale costante, settore 2
-s_i <- v_i * e_i   # plusvalore, settore 1
-s_c <- v_c * e_c   # plusvalore, settore 2
-y_i <- k_i + v_i + s_i   # valore del prodotto, settore 1
-y_c <- k_c + v_c + s_c   # valore del prodotto, settore 2
+k_1 <- v_1 * q_1   # capitale costante, settore 1
+k_2 <- v_2 * q_2   # capitale costante, settore 2
+s_1 <- v_1 * e_1   # plusvalore, settore 1
+s_2 <- v_2 * e_2   # plusvalore, settore 2
+y_1 <- k_1 + v_1 + s_1   # valore del prodotto, settore 1
+y_2 <- k_2 + v_2 + s_2   # valore del prodotto, settore 2
 
-theta_i <- mat(0.5)   # propensione all'accumulo del settore 1
-theta_c <- mat(0.3)   # propensione all'accumulo del settore 2 (endogena, da equilibrio)
-g_i <- mat(0.1)       # saggio di accumulazione, settore 1
-g_c <- mat(0.1)       # saggio di accumulazione, settore 2
+theta_1 <- mat(0.5)   # propensione all'accumulo del settore 1
+theta_2 <- mat(0.3)   # propensione all'accumulo del settore 2 (endogena, aggiustamento graduale)
+g_1 <- mat(0.1)       # saggio di accumulazione, settore 1
+g_2 <- mat(0.1)       # saggio di accumulazione, settore 2
 r   <- mat(0)         # saggio generale del profitto
 omega <- mat(0)       # quota salari (sul reddito netto)
 pri   <- mat(0)       # quota profitti (pi e' riservato in R)
@@ -596,80 +598,77 @@ for (j in 1:nScenarios) {
 
     # Scenario 2: shock permanente alla propensione all'accumulo del settore 1 dal periodo 20
     if (i >= 20 && j == 2) {
-      theta0_i[2, i] <- 0.25
+      theta0_1[2, i] <- 0.25
     }
 
     #(1) Propensione all'accumulo del settore 1 (esogena)
-    theta_i[j, i] <- theta0_i[j, i]
+    theta_1[j, i] <- theta0_1[j, i]
 
     #(2) Capitale variabile del settore 1 (accumula la quota trattenuta del plusvalore)
-    v_i[j, i] <- v_i[j, i - 1] + theta_i[j, i - 1] * s_i[j, i - 1] / (1 + q_i[j, i - 1])
+    v_1[j, i] <- v_1[j, i - 1] + theta_1[j, i - 1] * s_1[j, i - 1] / (1 + q_1[j, i - 1])
 
     #(3) Capitale variabile del settore 2
-    v_c[j, i] <- v_c[j, i - 1] + theta_c[j, i - 1] * s_c[j, i - 1] / (1 + q_c[j, i - 1])
+    v_2[j, i] <- v_2[j, i - 1] + theta_2[j, i - 1] * s_2[j, i - 1] / (1 + q_2[j, i - 1])
 
     #(4)-(5) Capitale costante (capitale circolante; ammortamento = 100%)
-    k_i[j, i] <- v_i[j, i] * q_i[j, i]
-    k_c[j, i] <- v_c[j, i] * q_c[j, i]
+    k_1[j, i] <- v_1[j, i] * q_1[j, i]
+    k_2[j, i] <- v_2[j, i] * q_2[j, i]
 
     #(6)-(7) Plusvalore
-    s_i[j, i] <- v_i[j, i] * e_i[j, i]
-    s_c[j, i] <- v_c[j, i] * e_c[j, i]
+    s_1[j, i] <- v_1[j, i] * e_1[j, i]
+    s_2[j, i] <- v_2[j, i] * e_2[j, i]
 
     #(8)-(9) Valore del prodotto per settore
-    y_i[j, i] <- k_i[j, i] + v_i[j, i] + s_i[j, i]
-    y_c[j, i] <- k_c[j, i] + v_c[j, i] + s_c[j, i]
+    y_1[j, i] <- k_1[j, i] + v_1[j, i] + s_1[j, i]
+    y_2[j, i] <- k_2[j, i] + v_2[j, i] + s_2[j, i]
 
-    #(10) Saggio di accumulazione del settore 1:  g_i = e_i * theta_i / (1 + q_i)
-    g_i[j, i] <- e_i[j, i] * theta_i[j, i] / (1 + q_i[j, i])
+    #(10) Saggio di accumulazione del settore 1:  g_1 = e_1 * theta_1 / (1 + q_1)
+    g_1[j, i] <- e_1[j, i] * theta_1[j, i] / (1 + q_1[j, i])
 
-    #(11) Saggio di accumulazione del settore 2 - CONDIZIONE DI EQUILIBRIO
-    g_c[j, i] <- ((y_i[j, i] - k_i[j, i] -
-                     (s_i[j, i] * theta_i[j, i] * q_i[j, i]) / (1 + q_i[j, i])) /
-                    k_c[j, i]) - 1
+    #(11) Propensione all'accumulo "di regime" del settore 2, coerente con la
+    #     crescita del settore 1 (valore-obiettivo verso cui il settore 2 si adegua)
+    theta_2_star <- g_1[j, i] * (1 + q_2[j, i]) / e_2[j, i]
 
-    #(12) Propensione all'accumulo del settore 2 (endogena)
-    theta_c[j, i] <- g_c[j, i] * (1 + q_c[j, i]) / e_c[j, i]
+    #(12) Aggiustamento GRADUALE della propensione all'accumulo del settore 2
+    theta_2[j, i] <- theta_2[j, i - 1] + adj * (theta_2_star - theta_2[j, i - 1])
 
-    #(13) Saggio generale del profitto (plusvalore totale / capitale anticipato totale)
-    r[j, i] <- (s_i[j, i] + s_c[j, i]) /
-      (k_i[j, i] + k_c[j, i] + v_i[j, i] + v_c[j, i])
+    #(13) Saggio di accumulazione del settore 2 (dalla propensione effettiva)
+    g_2[j, i] <- e_2[j, i] * theta_2[j, i] / (1 + q_2[j, i])
 
-    #(14)-(15) Quote distributive (sul reddito netto = valore aggiunto)
-    omega[j, i] <- (v_i[j, i] + v_c[j, i]) /
-      (y_i[j, i] + y_c[j, i] - k_i[j, i] - k_c[j, i])
+    #(14) Saggio generale del profitto (plusvalore totale / capitale anticipato totale)
+    r[j, i] <- (s_1[j, i] + s_2[j, i]) /
+      (k_1[j, i] + k_2[j, i] + v_1[j, i] + v_2[j, i])
+
+    #(15)-(16) Quote distributive (sul reddito netto = valore aggiunto)
+    omega[j, i] <- (v_1[j, i] + v_2[j, i]) /
+      (y_1[j, i] + y_2[j, i] - k_1[j, i] - k_2[j, i])
     pri[j, i] <- 1 - omega[j, i]
   }
 }
 
 #~~~~~~~~~~~~~~~~
 # STEP 4: Plot charts ####
-mycol3 <- rgb(0, 255, 0, max = 255, alpha = 50)     # verde: prima dello shock
-mycol5 <- rgb(255, 204, 0, max = 255, alpha = 50)   # giallo: dopo lo shock
+tt <- 15:50   # finestra temporale (lo shock avviene al periodo 20)
 
 layout(matrix(c(1, 2), 1, 2, byrow = TRUE))
 
-# Fig. 1 - Saggi di accumulazione (scenario 2), intorno allo shock del periodo 20
-plot(g_i[2, 18:30], type = "l", lty = 1, lwd = 2, col = 4, font.main = 1,
-     cex.main = 0.75, ylim = range(0.04, 0.24),
+# Fig. 1 - Saggi di accumulazione (scenario 2)
+plot(tt, g_1[2, tt], type = "l", lty = 1, lwd = 2, col = 4, font.main = 1,
+     cex.main = 0.75, ylim = range(0.045, 0.105),
      main = "Fig. 1 - Shock alla propensione all'accumulo del settore 1: \n saggi di accumulazione",
      ylab = "Saggi di accumulazione", xlab = "Tempo", cex.axis = 0.75, cex.lab = 0.8)
 grid()
-rect(xleft = 0, xright = 2, ybottom = 0, ytop = 1, col = mycol3, border = NA)
-rect(xleft = 2, xright = 13, ybottom = 0, ytop = 1, col = mycol5, border = NA)
-lines(g_c[2, 18:30], type = "l", lty = 3, lwd = 2, col = 2)
+lines(tt, g_2[2, tt], type = "l", lty = 3, lwd = 2, col = 2)
 legend("topright", c("Settore 1", "Settore 2"), bty = "n", cex = 0.8,
        lty = c(1, 3), lwd = c(2, 2), col = c(4, 2))
 
 # Fig. 2 - Propensioni all'accumulo (scenario 2)
-plot(theta_i[2, 18:30], type = "l", lty = 1, lwd = 2, col = 4, font.main = 1,
-     cex.main = 0.75, ylim = range(0.15, 0.75),
+plot(tt, theta_1[2, tt], type = "l", lty = 1, lwd = 2, col = 4, font.main = 1,
+     cex.main = 0.75, ylim = range(0.13, 0.52),
      main = "Fig. 2 - Shock alla propensione all'accumulo del settore 1: \n propensioni all'accumulo",
      ylab = "Propensioni all'accumulo", xlab = "Tempo", cex.axis = 0.75, cex.lab = 0.8)
 grid()
-rect(xleft = 0, xright = 2, ybottom = 0, ytop = 1, col = mycol3, border = NA)
-rect(xleft = 2, xright = 13, ybottom = 0, ytop = 1, col = mycol5, border = NA)
-lines(theta_c[2, 18:30], type = "l", lty = 3, lwd = 2, col = 2)
+lines(tt, theta_2[2, tt], type = "l", lty = 3, lwd = 2, col = 2)
 legend("topright", c("Settore 1", "Settore 2"), bty = "n", cex = 0.8,
        lty = c(1, 3), lwd = c(2, 2), col = c(4, 2))
 ```
@@ -680,7 +679,7 @@ legend("topright", c("Settore 1", "Settore 2"), bty = "n", cex = 0.8,
 
 <p align="center"><em>Figura 1.5 - Schemi di riproduzione: effetto di una caduta della propensione all'accumulo del settore 1 (beni capitali) sui saggi di accumulazione (a sinistra) e sulle propensioni all'accumulo (a destra) dei due settori.</em></p>
 
-A regime i due settori crescono allo stesso saggio (nell'esempio, il 10 per cento), a conferma che la riproduzione allargata richiede una proporzione precisa fra di essi. Quando i capitalisti del settore 1 riducono la quota di plusvalore accumulata, il saggio di crescita di lungo periodo si dimezza; ma nel periodo di transizione il settore 2 deve assorbire l'eccesso temporaneo di mezzi di produzione, da cui il breve rimbalzo visibile nella figura. È proprio questa interdipendenza dinamica fra decisioni di accumulazione e proporzioni settoriali a preparare il terreno per l'analisi del ciclo (sezione 1.4.6) e per la sua formalizzazione preda-predatore alla Goodwin (sezioni 3.2-3.3).
+A regime i due settori crescono allo stesso saggio (nell'esempio, il 10 per cento), a conferma che la riproduzione allargata richiede una proporzione precisa fra di essi. Quando i capitalisti del settore 1 riducono la quota di plusvalore accumulata, il saggio di crescita del settore 1 scende di colpo, mentre quello del settore 2 vi converge *gradualmente*: il parametro `adj` regola la velocità con cui la propensione all'accumulo del settore 2 si adegua al nuovo sentiero di crescita. È proprio questa interdipendenza dinamica fra decisioni di accumulazione e proporzioni settoriali a preparare il terreno per l'analisi del ciclo (sezione 1.4.6) e per la sua formalizzazione preda-predatore alla Goodwin (sezioni 3.2-3.3).
 
 🚧 *Work in progress* 🚧
 
