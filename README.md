@@ -343,7 +343,7 @@ Su una terra marginale il prodotto netto è:
 
 $$X = a N \qquad (1.8)$$
 
-dove $N$ è il lavoro impiegato e $a = a(N)$ il prodotto netto per lavoratore, decrescente ($a'(N) < 0$). Il saggio di profitto agricolo sulla terra marginale, dove non si paga rendita, è allora:
+dove $N$ è il lavoro impiegato e $a = a(N)$ il prodotto (netto) per lavoratore, decrescente ($a'(N) < 0$). Il saggio di profitto agricolo sulla terra marginale, dove non si paga rendita, è allora:
 
 $$r = \frac{X - wN}{wN} = \frac{a}{w} - 1 \qquad (1.9)$$
 
