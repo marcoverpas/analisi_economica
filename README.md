@@ -379,7 +379,7 @@ Questa configurazione distributiva si lascia riassumere in un unico diagramma (F
 
 <table align="center">
   <tr>
-    <td width="640" align="center">
+    <td width="720" align="center">
       <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/lv_salario_popolazione.gif" width="100%">
     </td>
   </tr>
