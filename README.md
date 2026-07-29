@@ -364,7 +364,7 @@ Questa configurazione distributiva si lascia riassumere in un unico diagramma (F
 <table align="center">
   <tr>
     <td width="640" align="center">
-      <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/rendita.png" width="100%">
+      <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/rendita.gif" width="100%">
     </td>
   </tr>
   <tr>
