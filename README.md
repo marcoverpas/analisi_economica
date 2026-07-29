@@ -766,4 +766,4 @@ Con Marx si chiude la parabola dell'economia politica classica e si aprono le su
 - Sraffa, P. (1960), *Produzione di merci a mezzo di merci. Premesse a una critica della teoria economica*, Einaudi, Torino.
 - Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, [DOI: 10.1038/s41586-026-10702-5](https://www.nature.com/articles/s41586-026-10702-5).
 - [Veronese] Passarella, M. (2011), "Marx in the matrix. L'algebra del 'lavoro vivo'", *Storia del Pensiero Economico. Nuova Serie*, 6(2), pp. 31-48, [DOI: 10.3280/SPE2009-002002](https://www.francoangeli.it/riviste/articolo/38095)
-- Veronese Passarella, M. (2027), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo*, Cedam-Utet, Milano.
+- Veronese Passarella, M. (2027), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo* [titolo provvisorio], Cedam-Utet, Milano.
