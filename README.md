@@ -367,7 +367,7 @@ La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla dif
   </tr>
   <tr>
     <td width="640" align="center">
-      <em><strong>Figura 1.5</strong> - La rendita differenziale ricardiana. Al crescere dell'intensità di coltivazione (o con la messa a coltura di terre meno fertili) il prodotto marginale del lavoro <em>a</em> diminuisce. Dato il salario di sussistenza <em>w&#772;</em>, al margine <em>N<sub>m</sub></em> il prodotto <em>a<sub>m</sub></em> si divide fra salari e profitti, mentre la rendita è il sovrappiù delle dosi intra-marginali, pari all'area al di sopra di <em>a<sub>m</sub></em>. Nel punto <em>S</em>, dove <em>a</em> = <em>w&#772;</em>, il profitto si annulla (stato stazionario).</em>
+      <sub><em><strong>Figura 1.5</strong> - La rendita differenziale ricardiana. Al crescere dell'intensità di coltivazione (o con la messa a coltura di terre meno fertili) il prodotto marginale del lavoro <em>a</em> diminuisce. Dato il salario di sussistenza <em>w&#772;</em>, al margine <em>N<sub>m</sub></em> il prodotto <em>a<sub>m</sub></em> si divide fra salari e profitti, mentre la rendita è il sovrappiù delle dosi intra-marginali, pari all'area al di sopra di <em>a<sub>m</sub></em>. Nel punto <em>S</em>, dove <em>a</em> = <em>w&#772;</em>, il profitto si annulla (stato stazionario).</em><sub>
     </td>
   </tr>
 </table>
@@ -385,7 +385,7 @@ Questa configurazione distributiva si lascia riassumere in un unico diagramma (F
   </tr>
   <tr>
     <td width="820" align="center">
-      <em><strong>Figura 1.6</strong> - La dinamica salario-popolazione come sistema preda-predatore (Lotka-Volterra). Il diagramma delle fasi mostra un'orbita chiusa attorno al salario di sussistenza, mentre le traiettorie temporali del salario (la "preda") e della popolazione (il "predatore") oscillano in modo ritardato e auto-sostenuto attorno ai rispettivi valori di equilibrio.</em>
+      <sub><em><strong>Figura 1.6</strong> - La dinamica salario-popolazione come sistema preda-predatore (Lotka-Volterra). Il diagramma delle fasi mostra un'orbita chiusa attorno al salario di sussistenza, mentre le traiettorie temporali del salario (la "preda") e della popolazione (il "predatore") oscillano in modo ritardato e auto-sostenuto attorno ai rispettivi valori di equilibrio.</em><sub>
     </td>
   </tr>
 </table>
@@ -720,7 +720,7 @@ legend("topright", c("Settore 1", "Settore 2"), bty = "n", cex = 0.8,
   </tr>
 </table>
 
-<p align="center"><em>Figura 1.7 - Schemi di riproduzione: effetto di una caduta della propensione all'accumulo del settore 1 sui saggi di accumulazione (a sinistra) e sulle propensioni all'accumulo (a destra).</em></p>
+<p align="center"><sub><em>Figura 1.7 - Schemi di riproduzione: effetto di una caduta della propensione all'accumulo del settore 1 sui saggi di accumulazione (a sinistra) e sulle propensioni all'accumulo (a destra).</em><sub></p>
 
 > [!NOTE]
 > A regime i due settori crescono allo stesso saggio (nell'esempio, il 10 per cento), a conferma che la riproduzione allargata richiede una proporzione precisa fra di essi. Va però sottolineato che questo sentiero di crescita bilanciata è esso stesso un **caso limite**, nel senso chiarito nella sezione 1.4.5. Qui lo imponiamo (facendo convergere la propensione all'accumulo del settore 2 verso il valore coerente con la crescita del settore 1) non perché il mercato lo garantisca spontaneamente, ma per poterne **studiare le condizioni**. In un'economia decentralizzata nulla assicura che quelle proporzioni siano rispettate, e lo squilibrio, più che l'equilibrio, è la norma. Quando i capitalisti del settore 1 riducono la quota di plusvalore accumulata, il saggio di crescita del settore 1 scende di colpo, mentre quello del settore 2 vi converge (qui gradualmente, sulla base del parametro *adj* che regola, appunto, la velocità con cui la propensione all'accumulo del settore 2 si adegua al nuovo sentiero di crescita). È proprio questa interdipendenza dinamica fra decisioni di accumulazione e proporzioni settoriali a preparare il terreno per l'analisi del ciclo (sezione 1.4.6) e per la sua formalizzazione preda-predatore alla Goodwin (sezioni 3.2-3.3).
