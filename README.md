@@ -384,7 +384,7 @@ Questa configurazione distributiva si lascia riassumere in un unico diagramma (F
     </td>
   </tr>
   <tr>
-    <td width="640" align="center">
+    <td width="720" align="center">
       <em><strong>Figura 1.6</strong> - La dinamica salario-popolazione come sistema preda-predatore (Lotka-Volterra). Il diagramma delle fasi mostra un'orbita chiusa attorno al salario di sussistenza, mentre le traiettorie temporali del salario (la "preda") e della popolazione (il "predatore") oscillano in modo ritardato e auto-sostenuto attorno ai rispettivi valori di equilibrio.</em>
     </td>
   </tr>
