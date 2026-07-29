@@ -21,7 +21,7 @@ if (!is.null(dev.list())) dev.off()
 cat("\014")
 
 nPeriods   <- 100     # Numero di periodi
-nScenarios <- 2       # 1 = baseline ; 2 = shock alla propensione all'accumulo del settore 1
+nScenarios <- 2       # 1 = scenario base; 2 = shock alla propensione all'accumulo del settore 1
 
 #~~~~~~~~~~~~~~~~
 # Passo 2: Crea variabili e parametri ####
