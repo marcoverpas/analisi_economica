@@ -1,5 +1,4 @@
 # Modello keynesiano SFC (SIM di Godley e Lavoie, 2007)
-# Modello keynesiano dinamico elementare
 # Corso "Analisi economica" - Parte II (sezione 2.2.6)
 # Ultima modifica: 31/07/2026
 
