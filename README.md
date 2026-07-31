@@ -5,7 +5,7 @@
 
 <div align="center">
 <figure>
-<img src="https://github.com/marcoverpas/figures/blob/main/analisi_economica_cover.png" width="1000">
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/analisi_economica_cover.png" width="1000">
 </figure>
 </div>
 
