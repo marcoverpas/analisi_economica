@@ -1,16 +1,23 @@
 # Modello keynesiano SFC (SIM di Godley e Lavoie, 2007)
+# Modello keynesiano dinamico elementare
+# Corso "Analisi economica" - Parte II (sezione 2.2.6)
+# Ultima modifica: 31/07/2026
+
 # Prepara l'ambiente ####
 rm(list = ls(all = TRUE))
 if (!is.null(dev.list())) dev.off()
 cat("\014")              # Cancella tutto
 nPeriods   <- 180        # Numero di periodi
 nScenarios <- 2          # 1 = scenario base; 2 = shock di spesa pubblica
+
 # Crea funzione che definisce le variabili come matrici ####
 mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
+
 # Definisci i coefficienti del modello ####
 alpha1 <- 0.6            # Propensione al consumo dal reddito disponibile
 alpha2 <- 0.2            # Propensione al consumo dalla ricchezza (moneta)
 theta  <- 0.2            # Aliquota fiscale
+
 # Definisci le variabili del modello ####
 G  <- mat(20)            # Spesa pubblica (esogena)
 Y  <- mat(0)             # Reddito
@@ -18,6 +25,7 @@ Tax <- mat(0)            # Tasse
 YD <- mat(0)             # Reddito disponibile
 C <- mat(0)              # Consumo
 H <- mat(0)              # Stock di ricchezza
+
 # Lancia il modello ####
 for (j in 1:nScenarios) {
   
@@ -38,6 +46,7 @@ for (j in 1:nScenarios) {
     
   }
 }
+
 # Visualizza i risultati ####
 plot(Y[2,100:nPeriods], type = "l", lwd = 2, col = 4, ylim = range(min(Y[,100:nPeriods]),max(H[,100:nPeriods])),
      main = "Modello keynesiano SFC (SIM): shock di spesa pubblica",
