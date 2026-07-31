@@ -607,7 +607,7 @@ adj <- 0.3           # Velocita' di aggiustamento della propensione del settore 
 
 # Nota: 0 < adj <= 1, e adj = 1 riproduce l'aggiustamento istantaneo.
 
-# Variabili di stato: capitale variabile iniziale SUL sentiero bilanciato
+# Variabili di stato: capitale variabile iniziale sul sentiero bilanciato
 v_1 <- mat(1100)     # Capitale variabile anticipato, settore 1
 v_2 <- mat(800)      # Capitale variabile anticipato, settore 2
 
