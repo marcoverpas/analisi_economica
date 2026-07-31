@@ -847,7 +847,7 @@ Le pagine che seguono passano dalla teoria ai **modelli**. La *Teoria generale* 
 
 I tre riquadri che seguono traducono in modelli minimi le idee della sezione: il moltiplicatore, la coerenza fra fondi e flussi, la crescita. Sono anche un primo assaggio del metodo che useremo nella Parte III.
 
-**Modello 1 - Il moltiplicatore in movimento.** Il modello keynesiano più elementare determina il reddito come somma di consumo e investimento, con il consumo che reagisce, con un ritardo, al reddito del periodo precedente. Un aumento permanente dell'investimento autonomo si trasmette al reddito amplificato dal moltiplicatore $1/(1-c_1)$, e il reddito converge gradualmente al nuovo livello di regime.
+**Modello 1 - Il moltiplicatore in movimento.** Il modello keynesiano più elementare determina il reddito come somma di consumo e investimento, con il consumo che reagisce, con un ritardo, al reddito del periodo precedente. Un aumento permanente dell'investimento autonomo si trasmette al reddito amplificato dal moltiplicatore $1/(1-c_1)$, e il reddito converge gradualmente al nuovo livello di regime (Figura 2.1).
 
 ```r
 # Modello keynesiano dinamico elementare
@@ -891,14 +891,14 @@ legend("right", c("Scenario alternativo (shock)", "Scenario base"),
 
 <table align="center">
   <tr><td width="620" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_dinamico.gif" width="820">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_dinamico.gif" width="720">
   </td></tr>
   <tr><td width="620" align="center">
     <em><strong>Figura 2.1</strong> - Modello keynesiano dinamico. Dopo un aumento permanente dell'investimento autonomo (da 10 a 30 nel periodo 10), il reddito converge a un nuovo livello di regime cresciuto di un multiplo dello shock (qui il moltiplicatore vale 5: il reddito passa da 100 a 200).</em>
   </td></tr>
 </table>
 
-**Modello 2 - Un modello coerente fondi-flussi (SIM).** Il moltiplicatore, da solo, ignora ciò che accade agli *stock*. Il modello SIM di Godley e Lavoie (2007) colma questa lacuna nel modo più semplice: un'economia con sole famiglie e Stato, in cui l'unica attività finanziaria è la **moneta**, creata dallo Stato quando spende e distrutta quando incassa imposte. Ogni euro di disavanzo pubblico diventa ricchezza (moneta) delle famiglie, che a sua volta alimenta il consumo. Le equazioni sono simultanee entro il periodo e si risolvono per iterazione, esattamente come nei modelli fondi-flussi che studieremo nella sezione 3.2. Dopo uno shock di spesa pubblica il reddito converge a $G/\theta$ e la ricchezza si accumula fino al nuovo livello di regime.
+**Modello 2 - Un modello coerente fondi-flussi (SIM).** Il moltiplicatore, da solo, ignora ciò che accade agli *stock*. Il modello SIM di Godley e Lavoie (2007) colma questa lacuna nel modo più semplice: un'economia con sole famiglie e Stato, in cui l'unica attività finanziaria è la **moneta**, creata dallo Stato quando spende e distrutta quando incassa imposte. Ogni euro di disavanzo pubblico diventa ricchezza (moneta) delle famiglie, che a sua volta alimenta il consumo. Le equazioni sono simultanee entro il periodo e si risolvono per iterazione, esattamente come nei modelli fondi-flussi che studieremo nella sezione 3.2. Dopo uno shock di spesa pubblica il reddito converge a $G/\theta$ e la ricchezza si accumula fino al nuovo livello di regime  (Figura 2.2).
 
 ```r
 # Modello keynesiano SFC (SIM di Godley e Lavoie, 2007)
@@ -953,14 +953,14 @@ legend("right", c("Reddito", "Stock di moneta"),
 
 <table align="center">
   <tr><td width="620" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_sim.gif" width="820">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_sim.gif" width="720">
   </td></tr>
   <tr><td width="620" align="center">
     <em><strong>Figura 2.2</strong> - Modello SIM. La finestra mostra il regime iniziale (reddito 100, moneta 160) e la transizione: dopo l'aumento della spesa pubblica (da 20 a 25 nel periodo 120) il reddito converge a <em>G</em>/<em>&theta;</em> = 125, mentre la ricchezza delle famiglie (la moneta) si accumula fino al nuovo livello di regime (200), in cui il bilancio pubblico torna in pareggio.</em>
   </td></tr>
 </table>
 
-**Modello 3 - Crescita e instabilità: Harrod-Domar.** Estendere Keynes al lungo periodo significa chiedersi a quale ritmo l'economia debba crescere perché la capacità produttiva creata dagli investimenti resti pienamente utilizzata. La risposta di Harrod e Domar è il **saggio di crescita garantito** $g_w = s/v$ (con $s$ la propensione al risparmio e $v$ il rapporto capitale/prodotto). Il risultato è, però, poco rassicurante: si tratta di un equilibrio "sul filo del rasoio". Se l'investimento cresce anche solo di poco al di sopra di $g_w$, la domanda supera la capacità e lo scarto si amplifica. Se cresce al di sotto, si accumula capacità inutilizzata. Nulla garantisce che il sistema si tenga sul sentiero garantito, da cui l'esigenza di un intervento pubblico stabilizzatore.
+**Modello 3 - Crescita e instabilità: Harrod-Domar.** Estendere Keynes al lungo periodo significa chiedersi a quale ritmo l'economia debba crescere perché la capacità produttiva creata dagli investimenti resti pienamente utilizzata. La risposta di Harrod e Domar è il **saggio di crescita garantito** $g_w = s/v$ (con $s$ la propensione al risparmio e $v$ il rapporto capitale/prodotto). Il risultato è, però, poco rassicurante: si tratta di un equilibrio "sul filo del rasoio". Se l'investimento cresce anche solo di poco al di sopra di $g_w$, la domanda supera la capacità e lo scarto si amplifica. Se cresce al di sotto, si accumula capacità inutilizzata (Figura 2.3). Nulla garantisce che il sistema si tenga sul sentiero garantito, da cui l'esigenza di un intervento pubblico stabilizzatore.
 
 ```r
 # Modello di crescita di Harrod-Domar: il "filo del rasoio"
@@ -1017,7 +1017,7 @@ legend("topleft", c("g > g_w (0.06)", "g = g_w (0.05)", "g < g_w (0.04)"),
 
 <table align="center">
   <tr><td width="620" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_domar.gif" width="820">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_domar.gif" width="720">
   </td></tr>
   <tr><td width="620" align="center">
     <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar. Il grado di utilizzo della capacità resta pari a 1 solo se l'investimento cresce esattamente al saggio garantito <em>g<sub>w</sub></em> = <em>s</em>/<em>v</em>. Ogni scostamento, in eccesso o in difetto, si amplifica nel tempo. È l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico.</em>
