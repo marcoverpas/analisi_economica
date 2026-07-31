@@ -848,7 +848,7 @@ Per queste ragioni, non approfondiremo qui il modello IS-LM, che peraltro costit
 
 Le pagine che seguono passano dalla teoria ai **modelli**. La *Teoria generale* fornisce infatti la base su cui costruire i primi modelli macroeconomici dinamici. Nei riquadri seguenti ne introduciamo tre, in linguaggio R: un modello keynesiano dinamico elementare, un modello coerente sul piano dei fondi e dei flussi (che anticipa la sezione 3.2) e un semplice modello keynesiano di crescita.
 
-#### 2.2.6 Tre modelli keynesiani in R
+#### 2.2.6 Tre modelli keynesiani in `R`
 
 I tre riquadri che seguono traducono in modelli minimi le idee della sezione: il moltiplicatore, la coerenza fra fondi e flussi, la crescita. Sono anche un primo assaggio del metodo che useremo nella Parte III.
 
