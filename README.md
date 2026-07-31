@@ -863,12 +863,16 @@ Le pagine che seguono passano dalla teoria ai **modelli**. La *Teoria generale* 
 ---
 
 **Riferimenti bibliografici**
+- Domar, E. D. (1946), "Capital Expansion, Rate of Growth, and Employment", *Econometrica*, 14(2), pp. 137-147.
 - Duhem, P. (1906), *La teoria fisica: il suo oggetto, la sua struttura*, il Mulino, Bologna, 1978.
 - Duménil, G. e Foley, D. K. (2008), "The Marxian transformation problem", in S. N. Durlauf e L. E. Blume (a cura di), *The New Palgrave Dictionary of Economics*, 2ª ed., Palgrave Macmillan, Londra.
 - Feyerabend, P. K. (1975), *Contro il metodo. Abbozzo di una teoria anarchica della conoscenza*, Feltrinelli, Milano, 1979.
 - Foley, D. K. (1982), "The Value of Money, the Value of Labour Power and the Marxian Transformation Problem", *Review of Radical Political Economics*, 14(2), pp. 37-47.
 - Gattei, G. (1994), *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino.
 - Goodwin, R. M. (1967), "A Growth Cycle", in C. H. Feinstein (a cura di), *Socialism, Capitalism and Economic Growth*, Cambridge University Press, Cambridge, pp. 54-58.
+- Harrod, R. F. (1939), "An Essay in Dynamic Theory", *The Economic Journal*, 49(193), pp. 14-33.
+- Hicks, J. R. (1937), "Mr. Keynes and the 'Classics': A Suggested Interpretation", *Econometrica*, 5(2), pp. 147-159.
+- Keynes, J. M. (1930), *A Treatise on Money*, Macmillan, London (trad. it. *Trattato sulla moneta*).
 - Keynes, J. M. (1936), *Teoria generale dell'occupazione, dell'interesse e della moneta*, UTET, Torino, 1947.
 - Kuhn, T. S. (1962), *La struttura delle rivoluzioni scientifiche*, Einaudi, Torino, 1969.
 - Lakatos, I. (1970), "La falsificazione e la metodologia dei programmi di ricerca scientifici", in I. Lakatos e A. Musgrave (a cura di), *Critica e crescita della conoscenza*, Feltrinelli, Milano, 1976.
@@ -879,6 +883,7 @@ Le pagine che seguono passano dalla teoria ai **modelli**. La *Teoria generale* 
 - Quesnay, F. (1758), *Il Tableau économique e altri scritti di economia*, a cura di M. Ridolfi, ISEDI, Milano, 1973.
 - Quine, W. V. O. (1951), "I due dogmi dell'empirismo", in *Il problema del significato*, Ubaldini, Roma, 1966.
 - Ricardo, D. (1817), *Sui principi dell'economia politica e della tassazione*, introduzione di F. Vianello, ISEDI, Milano, 1976 (trad. dalla III ed., 1821).
+- Robbins, L. (1932), *An Essay on the Nature and Significance of Economic Science*, Macmillan, London.
 - Schumpeter, J. A. (1954), *Storia dell'analisi economica*, Boringhieri, Torino, 1959–60 (ed. it. a cura di P. Sylos Labini).
 - Screpanti, E. e Zamagni, S. (2004), *Profilo di storia del pensiero economico*, Carocci, Roma.
 - Smith, A. (1776), *La ricchezza delle nazioni*, a cura di A. e T. Bagiotti, UTET, Torino, 1975.
@@ -886,3 +891,13 @@ Le pagine che seguono passano dalla teoria ai **modelli**. La *Teoria generale* 
 - Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, [DOI: 10.1038/s41586-026-10702-5](https://www.nature.com/articles/s41586-026-10702-5).
 - [Veronese] Passarella, M. (2011), "Marx in the matrix. L'algebra del 'lavoro vivo'", *Storia del Pensiero Economico. Nuova Serie*, 6(2), pp. 31-48, [DOI: 10.3280/SPE2009-002002](https://www.francoangeli.it/riviste/articolo/38095)
 - Veronese Passarella, M. (2027), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo* [titolo provvisorio], Cedam-Utet, Milano.
+- Veronese Passarella, M. (in corso di pubblicazione), *Mr. Keynes and the "Classics" (Almost) a Century Later: Reviewing the IS-LM Model*.
+
+
+
+
+
+
+
+
+
