@@ -811,7 +811,7 @@ Il secondo pilastro è il **tasso di interesse naturale**, inteso come il prezzo
 
 Il meccanismo quantitativo che collega investimento e reddito è il **moltiplicatore**. Se il reddito nazionale è $Y = C + I + G$ e il consumo dipende dal reddito secondo $C = c_0 + c_1 Y$ (con $0 < c_1 < 1$ la propensione marginale al consumo), una variazione della spesa autonoma si trasmette al reddito amplificata:
 
-$$\Delta Y = \frac{1}{1 - c_1}\,\Delta(\text{spesa autonoma})$$
+$$\Delta Y = \frac{1}{1 - c_1} \Delta(c_0 + I + G)$$
 
 Poiché una parte di ogni euro di reddito addizionale viene spesa, e diventa reddito per qualcun altro che a sua volta ne spende una parte, l'effetto totale è un multiplo della spinta iniziale. Il moltiplicatore spiega perché una caduta degli investimenti possa deprimere il reddito ben oltre la contrazione iniziale, e perché la spesa pubblica possa sostenerlo. Ne discende anche il **paradosso della parsimonia**: se tutti tentano di risparmiare di più riducendo i consumi, la domanda cade, il reddito si contrae e il risparmio aggregato, alla fine, non aumenta.
 
