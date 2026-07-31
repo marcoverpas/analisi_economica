@@ -843,6 +843,187 @@ Per queste ragioni, non approfondiremo qui il modello IS-LM, che peraltro costit
 
 Le pagine che seguono passano dalla teoria ai **modelli**. La *Teoria generale* fornisce infatti la base su cui costruire i primi modelli macroeconomici dinamici. Nei riquadri seguenti ne introduciamo tre, in linguaggio R: un modello keynesiano dinamico elementare, un modello coerente sul piano dei fondi e dei flussi (che anticipa la sezione 3.2) e un semplice modello keynesiano di crescita.
 
+#### 2.2.6 Tre modelli keynesiani in R
+
+I tre riquadri che seguono traducono in modelli minimi le idee della sezione: il moltiplicatore, la coerenza fra fondi e flussi, la crescita. Sono anche un primo assaggio del metodo che useremo nella Parte III.
+
+**Modello 1 - Il moltiplicatore in movimento.** Il modello keynesiano più elementare determina il reddito come somma di consumo e investimento, con il consumo che reagisce, con un ritardo, al reddito del periodo precedente. Un aumento permanente dell'investimento autonomo si trasmette al reddito amplificato dal moltiplicatore $1/(1-c_1)$, e il reddito converge gradualmente al nuovo livello di regime.
+
+```r
+# Modello keynesiano dinamico elementare
+# Prepara l'ambiente ####
+rm(list = ls(all = TRUE))
+if (!is.null(dev.list())) dev.off()
+cat("\014")              # Cancella tutto
+nPeriods   <- 60         # Numero di periodi
+nScenarios <- 2          # 1 = scenario base; 2 = shock all'investimento
+# Crea funzione che definisce le variabili come matrici ####
+mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
+# Definisci i coefficienti del modello ####
+c0 <- 10                 # Consumo autonomo
+c1 <- 0.8                # Propensione marginale al consumo (0 < c1 < 1)
+I0 <- mat(10)            # Investimento autonomo
+Y  <- mat((c0 + 10) / (1 - c1))   # Valore di stato stazionario del reddito (moltiplicatore)
+C  <- mat(0)             # Consumo totale
+I  <- mat(0)             # Investimento totale
+# Lancia il modello ####
+for (j in 1:nScenarios) {
+
+  for (i in 2:nPeriods) {
+
+    if (i >= 10 && j == 2) I0[j, i] <- 30      # Shock: investimento 10 -> 30
+
+    I[j, i] <- I0[j, i]
+    C[j, i] <- c0 + c1 * Y[j, i - 1]
+    Y[j, i] <- C[j, i] + I0[j, i]
+
+  }
+}
+# Visualizza i risultati ####
+plot(Y[2, ], type = "l", lwd = 2, col = 4, ylim = range(min(Y[,]),max(Y[,])),
+     main = "Modello keynesiano dinamico: shock all'investimento",
+     xlab = "Tempo", ylab = "Reddito Y", font.main = 1, cex.main = 1, cex.axis=1, cex.lab=1)
+#grid()
+lines(Y[1, ], lwd = 2, lty = 3, col = 2)
+legend("right", c("Scenario alternativo (shock)", "Scenario base"),
+       lty = c(1, 3), lwd = c(2, 2), col = c(4, 2), bty = "n", cex=1)
+```
+
+<table align="center">
+  <tr><td width="620" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_dinamico.png" width="100%">
+  </td></tr>
+  <tr><td width="620" align="center">
+    <em><strong>Figura 2.1</strong> - Modello keynesiano dinamico. Dopo un aumento permanente dell'investimento autonomo (da 10 a 30 nel periodo 10), il reddito converge a un nuovo livello di regime cresciuto di un multiplo dello shock (qui il moltiplicatore vale 5: il reddito passa da 100 a 200).</em>
+  </td></tr>
+</table>
+
+**Modello 2 - Un modello coerente fondi-flussi (SIM).** Il moltiplicatore, da solo, ignora ciò che accade agli *stock*. Il modello SIM di Godley e Lavoie (2007) colma questa lacuna nel modo più semplice: un'economia con sole famiglie e Stato, in cui l'unica attività finanziaria è la **moneta**, creata dallo Stato quando spende e distrutta quando incassa imposte. Ogni euro di disavanzo pubblico diventa ricchezza (moneta) delle famiglie, che a sua volta alimenta il consumo. Le equazioni sono simultanee entro il periodo e si risolvono per iterazione, esattamente come nei modelli fondi-flussi che studieremo nella sezione 3.2. Dopo uno shock di spesa pubblica il reddito converge a $G/\theta$ e la ricchezza si accumula fino al nuovo livello di regime.
+
+```r
+# Modello keynesiano SFC (SIM di Godley e Lavoie, 2007)
+# Prepara l'ambiente ####
+rm(list = ls(all = TRUE))
+if (!is.null(dev.list())) dev.off()
+cat("\014")              # Cancella tutto
+nPeriods   <- 180        # Numero di periodi
+nScenarios <- 2          # 1 = scenario base; 2 = shock di spesa pubblica
+# Crea funzione che definisce le variabili come matrici ####
+mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
+# Definisci i coefficienti del modello ####
+alpha1 <- 0.6            # Propensione al consumo dal reddito disponibile
+alpha2 <- 0.2            # Propensione al consumo dalla ricchezza (moneta)
+theta  <- 0.2            # Aliquota fiscale
+# Definisci le variabili del modello ####
+G  <- mat(20)            # Spesa pubblica (esogena)
+Y  <- mat(0)             # Reddito
+Tax <- mat(0)            # Tasse
+YD <- mat(0)             # Reddito disponibile
+C <- mat(0)              # Consumo
+H <- mat(0)              # Stock di ricchezza
+# Lancia il modello ####
+for (j in 1:nScenarios) {
+
+  for (i in 2:nPeriods) {
+
+    if (i >= 120 && j == 2) G[j, i] <- 25          # Shock: spesa pubblica 20 -> 25
+
+    for (iter in 1:60) {                          # Iterazioni per convergenza alla soluzione simultanea
+
+      Y[j, i]  <- C[j, i] + G[j, i]
+      Tax[j, i] <- theta * Y[j, i]
+      YD[j, i] <- Y[j, i] - Tax[j, i]
+      C[j, i]  <- alpha1 * YD[j, i] + alpha2 * H[j, i - 1]
+
+    }
+
+    H[j, i] <- H[j, i - 1] + (YD[j, i] - C[j, i])
+
+  }
+}
+# Visualizza i risultati ####
+plot(Y[2,100:nPeriods], type = "l", lwd = 2, col = 4, ylim = range(min(Y[,100:nPeriods]),max(H[,100:nPeriods])),
+     main = "Modello keynesiano SFC (SIM): shock di spesa pubblica",
+     xlab = "Tempo", ylab = "Livello", font.main = 1, cex.main = 1, cex.axis=1, cex.lab=1)
+#grid()
+lines(H[2,100:nPeriods], lwd = 2, lty = 1, col = 2)
+legend("right", c("Reddito", "Stock di moneta"),
+       lty = c(1, 1), lwd = c(2, 2), col = c(4, 2), bty = "n", cex=1)
+```
+
+<table align="center">
+  <tr><td width="620" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_sim.png" width="100%">
+  </td></tr>
+  <tr><td width="620" align="center">
+    <em><strong>Figura 2.2</strong> - Modello SIM. La finestra mostra il regime iniziale (reddito 100, moneta 160) e la transizione: dopo l'aumento della spesa pubblica (da 20 a 25 nel periodo 120) il reddito converge a <em>G</em>/<em>&theta;</em> = 125, mentre la ricchezza delle famiglie (la moneta) si accumula fino al nuovo livello di regime (200), in cui il bilancio pubblico torna in pareggio.</em>
+  </td></tr>
+</table>
+
+**Modello 3 - Crescita e instabilità: Harrod-Domar.** Estendere Keynes al lungo periodo significa chiedersi a quale ritmo l'economia debba crescere perché la capacità produttiva creata dagli investimenti resti pienamente utilizzata. La risposta di Harrod e Domar è il **saggio di crescita garantito** $g_w = s/v$ (con $s$ la propensione al risparmio e $v$ il rapporto capitale/prodotto). Il risultato è, però, poco rassicurante: si tratta di un equilibrio "sul filo del rasoio". Se l'investimento cresce anche solo di poco al di sopra di $g_w$, la domanda supera la capacità e lo scarto si amplifica. Se cresce al di sotto, si accumula capacità inutilizzata. Nulla garantisce che il sistema si tenga sul sentiero garantito, da cui l'esigenza di un intervento pubblico stabilizzatore.
+
+```r
+# Modello di crescita di Harrod-Domar: il "filo del rasoio"
+# Prepara l'ambiente ####
+rm(list = ls(all = TRUE))
+if (!is.null(dev.list())) dev.off()
+cat("\014")              # Cancella tutto
+nPeriods <- 60           # Numero di periodi
+s <- 0.2                 # Propensione al risparmio
+v <- 4                   # Rapporto capitale/prodotto (incrementale)
+gw <- s / v              # Saggio di crescita garantito
+# Visualizza l'informazione
+cat("Saggio di crescita garantito g_w = ", gw, "\n")
+# Tre scenari: investimento che cresce sopra, uguale, sotto g_w ####
+gI <- c(0.06, 0.05, 0.04)
+# Definisci il grado di utilizzo degli impianti ####
+u  <- matrix(0, nrow = length(gI), ncol = nPeriods)
+# Nota:
+# Saggio di crescita garantito:  g_w = s / v.
+# s = propensione al risparmio; v = rapporto capitale/prodotto.
+# Domanda:  Y_dom = I / s   (moltiplicatore)
+# Capacità: Y_cap = K / v ; K_t = K_{t-1} + I_{t-1}
+# Grado di utilizzo: u = Y_dom / Y_cap. Solo se l'investimento cresce a g_w
+# la capacita' resta pienamente utilizzata. Ogni scostamento si autoalimenta.
+# Lancia il modello nei tre scenari ####
+for (j in 1:length(gI)) {
+
+  K <- numeric(nPeriods); I <- numeric(nPeriods)  # Definisci lo stock di capitale e l'investimento
+  K[1] <- 100                                     # Assegna valore iniziale allo stock di capitale
+  I[1] <- (s / v) * K[1]                          # Definisci l'investimento iniziale
+
+  # Definisci il "loop" temporale
+  for (t in 2:nPeriods) {
+
+      I[t] <- I[1] * (1 + gI[j])^(t - 1)          # Investimento
+
+      K[t] <- K[t - 1] + I[t - 1]                 # Stock di capitale
+
+      u[j, t] <- (I[t] / s) / (K[t] / v)          # Grado di utilizzo
+
+  }
+}
+# Visualizza i risultati ####
+plot(u[1, 2:nPeriods], type = "l", lwd = 2, col = 2, ylim = range(0.80, 1.20),
+     main = "Harrod-Domar: il filo del rasoio",
+     xlab = "Tempo", ylab = "Grado di utilizzo", font.main = 1, cex.main = 1, cex.axis=1, cex.lab=1)
+#grid()
+lines(u[2, 2:nPeriods ], lwd = 2, lty = 1, col = 1)
+lines(u[3, 2:nPeriods], lwd = 2, lty = 1, col = 4)
+abline(h = 1, lty = 3, col = "grey")
+legend("topleft", c("g > g_w (0.06)", "g = g_w (0.05)", "g < g_w (0.04)"),
+       lty = 1, lwd = 2, col = c(2, 1, 4), bty = "n", cex=1)
+```
+
+<table align="center">
+  <tr><td width="620" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_domar.png" width="100%">
+  </td></tr>
+  <tr><td width="620" align="center">
+    <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar. Il grado di utilizzo della capacità resta pari a 1 solo se l'investimento cresce esattamente al saggio garantito <em>g<sub>w</sub></em> = <em>s</em>/<em>v</em>. Ogni scostamento, in eccesso o in difetto, si amplifica nel tempo. È l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico.</em>
+  </td></tr>
+</table>
+
 ---
 
 
