@@ -851,14 +851,17 @@ I tre riquadri che seguono traducono in modelli minimi le idee della sezione: il
 
 ```r
 # Modello keynesiano dinamico elementare
+
 # Prepara l'ambiente ####
 rm(list = ls(all = TRUE))
 if (!is.null(dev.list())) dev.off()
 cat("\014")              # Cancella tutto
 nPeriods   <- 60         # Numero di periodi
 nScenarios <- 2          # 1 = scenario base; 2 = shock all'investimento
+
 # Crea funzione che definisce le variabili come matrici ####
 mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
+
 # Definisci i coefficienti del modello ####
 c0 <- 10                 # Consumo autonomo
 c1 <- 0.8                # Propensione marginale al consumo (0 < c1 < 1)
@@ -866,6 +869,7 @@ I0 <- mat(10)            # Investimento autonomo
 Y  <- mat((c0 + 10) / (1 - c1))   # Valore di stato stazionario del reddito (moltiplicatore)
 C  <- mat(0)             # Consumo totale
 I  <- mat(0)             # Investimento totale
+
 # Lancia il modello ####
 for (j in 1:nScenarios) {
 
@@ -879,6 +883,7 @@ for (j in 1:nScenarios) {
 
   }
 }
+
 # Visualizza i risultati ####
 plot(Y[2, ], type = "l", lwd = 2, col = 4, ylim = range(min(Y[,]),max(Y[,])),
      main = "Modello keynesiano dinamico: shock all'investimento",
@@ -902,18 +907,22 @@ legend("right", c("Scenario alternativo (shock)", "Scenario base"),
 
 ```r
 # Modello keynesiano SFC (SIM di Godley e Lavoie, 2007)
+
 # Prepara l'ambiente ####
 rm(list = ls(all = TRUE))
 if (!is.null(dev.list())) dev.off()
 cat("\014")              # Cancella tutto
 nPeriods   <- 180        # Numero di periodi
 nScenarios <- 2          # 1 = scenario base; 2 = shock di spesa pubblica
+
 # Crea funzione che definisce le variabili come matrici ####
 mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
+
 # Definisci i coefficienti del modello ####
 alpha1 <- 0.6            # Propensione al consumo dal reddito disponibile
 alpha2 <- 0.2            # Propensione al consumo dalla ricchezza (moneta)
 theta  <- 0.2            # Aliquota fiscale
+
 # Definisci le variabili del modello ####
 G  <- mat(20)            # Spesa pubblica (esogena)
 Y  <- mat(0)             # Reddito
@@ -921,6 +930,7 @@ Tax <- mat(0)            # Tasse
 YD <- mat(0)             # Reddito disponibile
 C <- mat(0)              # Consumo
 H <- mat(0)              # Stock di ricchezza
+
 # Lancia il modello ####
 for (j in 1:nScenarios) {
 
@@ -941,6 +951,7 @@ for (j in 1:nScenarios) {
 
   }
 }
+
 # Visualizza i risultati ####
 plot(Y[2,100:nPeriods], type = "l", lwd = 2, col = 4, ylim = range(min(Y[,100:nPeriods]),max(H[,100:nPeriods])),
      main = "Modello keynesiano SFC (SIM): shock di spesa pubblica",
@@ -964,6 +975,7 @@ legend("right", c("Reddito", "Stock di moneta"),
 
 ```r
 # Modello di crescita di Harrod-Domar: il "filo del rasoio"
+
 # Prepara l'ambiente ####
 rm(list = ls(all = TRUE))
 if (!is.null(dev.list())) dev.off()
@@ -972,12 +984,16 @@ nPeriods <- 60           # Numero di periodi
 s <- 0.2                 # Propensione al risparmio
 v <- 4                   # Rapporto capitale/prodotto (incrementale)
 gw <- s / v              # Saggio di crescita garantito
+
 # Visualizza l'informazione
 cat("Saggio di crescita garantito g_w = ", gw, "\n")
+
 # Tre scenari: investimento che cresce sopra, uguale, sotto g_w ####
 gI <- c(0.06, 0.05, 0.04)
+
 # Definisci il grado di utilizzo degli impianti ####
 u  <- matrix(0, nrow = length(gI), ncol = nPeriods)
+
 # Nota:
 # Saggio di crescita garantito:  g_w = s / v.
 # s = propensione al risparmio; v = rapporto capitale/prodotto.
@@ -985,6 +1001,7 @@ u  <- matrix(0, nrow = length(gI), ncol = nPeriods)
 # Capacità: Y_cap = K / v ; K_t = K_{t-1} + I_{t-1}
 # Grado di utilizzo: u = Y_dom / Y_cap. Solo se l'investimento cresce a g_w
 # la capacita' resta pienamente utilizzata. Ogni scostamento si autoalimenta.
+
 # Lancia il modello nei tre scenari ####
 for (j in 1:length(gI)) {
 
@@ -1003,6 +1020,7 @@ for (j in 1:length(gI)) {
 
   }
 }
+
 # Visualizza i risultati ####
 plot(u[1, 2:nPeriods], type = "l", lwd = 2, col = 2, ylim = range(0.80, 1.20),
      main = "Harrod-Domar: il filo del rasoio",
@@ -1026,6 +1044,7 @@ legend("topleft", c("g > g_w (0.06)", "g = g_w (0.05)", "g < g_w (0.04)"),
 
 ---
 
+### 2.3 Sraffa e la ripresa delle teorie del sovrappiù
 
 🚧 *Work in progress* 🚧
 
