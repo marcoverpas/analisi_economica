@@ -1,12 +1,17 @@
 # Modello keynesiano dinamico elementare
+# Corso "Analisi economica" - Parte II (sezione 2.2.6)
+# Ultima modifica: 31/07/2026
+
 # Prepara l'ambiente ####
 rm(list = ls(all = TRUE))
 if (!is.null(dev.list())) dev.off()
 cat("\014")              # Cancella tutto
 nPeriods   <- 60         # Numero di periodi
 nScenarios <- 2          # 1 = scenario base; 2 = shock all'investimento
+
 # Crea funzione che definisce le variabili come matrici ####
 mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
+
 # Definisci i coefficienti del modello ####
 c0 <- 10                 # Consumo autonomo
 c1 <- 0.8                # Propensione marginale al consumo (0 < c1 < 1)
@@ -14,6 +19,7 @@ I0 <- mat(10)            # Investimento autonomo
 Y  <- mat((c0 + 10) / (1 - c1))   # Valore di stato stazionario del reddito (moltiplicatore)
 C  <- mat(0)             # Consumo totale
 I  <- mat(0)             # Investimento totale
+
 # Lancia il modello ####
 for (j in 1:nScenarios) {
   
@@ -27,6 +33,7 @@ for (j in 1:nScenarios) {
     
   }
 }
+
 # Visualizza i risultati ####
 plot(Y[2, ], type = "l", lwd = 2, col = 4, ylim = range(min(Y[,]),max(Y[,])),
      main = "Modello keynesiano dinamico: shock all'investimento",
