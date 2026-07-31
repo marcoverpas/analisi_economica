@@ -891,7 +891,7 @@ legend("right", c("Scenario alternativo (shock)", "Scenario base"),
 
 <table align="center">
   <tr><td width="620" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_dinamico.gif" width="1000">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_dinamico.gif" width="820">
   </td></tr>
   <tr><td width="620" align="center">
     <em><strong>Figura 2.1</strong> - Modello keynesiano dinamico. Dopo un aumento permanente dell'investimento autonomo (da 10 a 30 nel periodo 10), il reddito converge a un nuovo livello di regime cresciuto di un multiplo dello shock (qui il moltiplicatore vale 5: il reddito passa da 100 a 200).</em>
@@ -953,7 +953,7 @@ legend("right", c("Reddito", "Stock di moneta"),
 
 <table align="center">
   <tr><td width="620" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_sim.gif" width="1000">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_sim.gif" width="820">
   </td></tr>
   <tr><td width="620" align="center">
     <em><strong>Figura 2.2</strong> - Modello SIM. La finestra mostra il regime iniziale (reddito 100, moneta 160) e la transizione: dopo l'aumento della spesa pubblica (da 20 a 25 nel periodo 120) il reddito converge a <em>G</em>/<em>&theta;</em> = 125, mentre la ricchezza delle famiglie (la moneta) si accumula fino al nuovo livello di regime (200), in cui il bilancio pubblico torna in pareggio.</em>
@@ -1017,8 +1017,8 @@ legend("topleft", c("g > g_w (0.06)", "g = g_w (0.05)", "g < g_w (0.04)"),
 
 <table align="center">
   <tr><td width="620" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod-domar.gif" width="1000">
-   </td></tr>
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_domar.gif" width="820">
+  </td></tr>
   <tr><td width="620" align="center">
     <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar. Il grado di utilizzo della capacità resta pari a 1 solo se l'investimento cresce esattamente al saggio garantito <em>g<sub>w</sub></em> = <em>s</em>/<em>v</em>. Ogni scostamento, in eccesso o in difetto, si amplifica nel tempo. È l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico.</em>
   </td></tr>
