@@ -60,7 +60,7 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 
 ### Parte II - Crisi e rinascita dell'approccio classico
 - [**2.1** L'ascesa del marginalismo e la nascita dell'ortodossia neoclassica](https://github.com/marcoverpas/analisi_economica/tree/main#21-lascesa-del-marginalismo-e-la-nascita-dellortodossia-neoclassica)
-- **2.2** La rivoluzione keynesiana: rottura o rinnovamento?
+- [**2.2** La rivoluzione keynesiana: rottura o rinnovamento?](https://github.com/marcoverpas/analisi_economica/blob/main/README.md#22-la-rivoluzione-keynesiana-rottura-o-rinnovamento)
 - **2.3** Sraffa e la ripresa delle teorie del sovrappiù
 - **2.4** La controrivoluzione monetarista e la risposta classico-keynesiana
 
