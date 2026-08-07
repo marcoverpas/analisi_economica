@@ -1291,7 +1291,7 @@ barplot(p, names.arg = indLab, col = indCol, ylim = c(0, 1.2),
 
 <table align="center">
   <tr><td width="860" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_sraffa.png" width=820">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_sraffa.gif" width=820">
   </td></tr>
   <tr><td width="820" align="center">
     <em><strong>Figura 2.5</strong> - Modello dinamico Keynes + Sraffa. (a) Uno shock all'investimento autonomo (da 10 a 30) accresce il reddito reale di un multiplo dello shock (moltiplicatore keynesiano). (b) La maggiore domanda si propaga a tutte le industrie: l'inversa di Leontief converte la domanda finale nella produzione lorda di ciascun settore, comprensiva dei fabbisogni intermedi. (c) I prezzi di produzione (cost-plus alla Sraffa) sono determinati dalla tecnica e dalla distribuzione e restano costanti: sono le quantità, non i prezzi, ad aggiustarsi.</em>
