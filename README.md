@@ -1357,6 +1357,9 @@ Da qui la richiesta di rifondare la macroeconomia su **microfondazioni**, ossia 
 
 È bene sottolineare che questa mossa svolge anche una funzione difensiva meno dichiarata. La ricerca sull'equilibrio economico generale di tradizione walrasiana (sezione 2.1) si era infatti scontrata con un ostacolo insormontabile: i teoremi di **Sonnenschein, Mantel e Debreu** avevano dimostrato che, aggregando le domande di individui eterogenei ma razionali, la funzione di eccesso di domanda che ne risulta può avere una forma pressoché qualsiasi. In generale, quindi, l'equilibrio generale non può essere dimostrato né **unico** né **stabile**. L'unico modo per riottenere un equilibrio ben definito e stabile è imporre che il comportamento aggregato sia quello di un singolo individuo: proprio ciò che l'ipotesi dell'agente rappresentativo garantisce per costruzione. Le microfondazioni, in altre parole, non risolvono il problema dell'aggregazione: lo aggirano, assumendo che il problema non esista.
 
+> [!NOTE]
+> 💡 **Razionalità sì, ma quale?** L'obiezione che la teoria classico-keynesiana muove alla nuova macroeconomia classica non è che gli individui siano irrazionali, né che le aspettative non contino. Sarebbe una tesi ingenua, e per giunta estranea a Keynes, il primo ad avere posto le aspettative al centro dell'analisi. Il punto è un altro, e riguarda la *particolare definizione* di razionalità adottata. L'ipotesi di **aspettative razionali** (Muth, 1961) non chiede semplicemente agli agenti di non commettere errori grossolani: pretende che essi conoscano il "vero" modello dell'economia - la distribuzione di probabilità oggettiva che genera gli eventi - e che, disponendo di capacità di calcolo illimitata, massimizzino coerentemente su quella base. La razionalità, qui, coincide con l'ottimizzazione da parte di un agente onnisciente in un mondo probabilisticamente conosciuto. Che si tratti di una nozione peculiare, e non del senso comune del termine "razionale", si vede bene con un esempio quotidiano. Nessuno sceglie *come vestirsi* o *cosa mangiare* costruendo il modello probabilistico corretto del proprio ambiente, enumerando tutte le contingenze future e massimizzando l'utilità attesa intertemporale sotto vincolo. Una persona che decidesse davvero così - che ogni mattina risolvesse un problema di ottimizzazione dinamica per abbinare giacca e pantaloni - non ci apparirebbe più razionale degli altri: ci apparirebbe, con ogni probabilità, pazza. Le scelte reali poggiano su abitudini, convenzioni, gusti sedimentati e regole pratiche (le *rules of thumb*), che sono forme di razionalità *adattiva* e *contestuale*, non deviazioni da un ideale di calcolo perfetto. Che questa sia la regola, e non l'eccezione, lo conferma la ricerca sui processi decisionali. Già Herbert Simon aveva contrapposto alla razionalità "sostanziale" degli ottimizzatori una razionalità **limitata** e *procedurale*, in cui gli individui non massimizzano ma si accontentano di soluzioni soddisfacenti (Simon, 1955); la psicologia cognitiva di Kahneman e Tversky ha poi mostrato che le decisioni si fondano su euristiche sistematiche, non sul calcolo bayesiano (Tversky e Kahneman, 1974; Kahneman, 2011). Ancora più radicale è l'indicazione delle **neuroscienze**: le nostre decisioni non dipendono dalla quantità di informazioni disponibili né dal possedere o meno il modello "giusto", ma da una stratificazione di esperienze e condizionamenti. Queste non sono l'opposto della ragione, ma una sua condizione di funzionamento. Il rilievo ha una conseguenza precisa per la modellistica. Poiché in un mondo attraversato da **incertezza fondamentale** (ossia non riducibile a rischio calcolabile) la distribuzione di probabilità "vera" semplicemente non esiste, l'ipotesi di aspettative razionali non è neppure ben definita. Gli agenti non possono conoscere un modello che nessuno possiede. È per questo che gli approcci post-keynesiani, anziché derivare i comportamenti da un agente rappresentativo ottimizzante e preveggente, li descrivono attraverso **regole comportamentali** (propensioni, norme, convenzioni) storicamente e socialmente situate. 
+
 #### 2.4.5 La biforcazione e la nascita della modellistica post-keynesiana
 
 È a questo punto - di fronte alla restaurazione dell'ortodossia e alla sua sistemazione nella nuova macroeconomia classica - che gli approcci più radicalmente in dissenso prendono strade proprie e si separano nettamente dal *mainstream*. Da quel ripensamento ha origine la famiglia di modelli che possiamo raccogliere sotto il termine ombrello di **modellistica post-keynesiana**.
@@ -1392,17 +1395,27 @@ L'etichetta è, in verità, imprecisa: sotto di essa convivono tradizioni distin
 - Duménil, G. e Foley, D. K. (2008), "The Marxian transformation problem", in S. N. Durlauf e L. E. Blume (a cura di), *The New Palgrave Dictionary of Economics*, 2ª ed., Palgrave Macmillan, Londra.
 - Feyerabend, P. K. (1975), *Contro il metodo. Abbozzo di una teoria anarchica della conoscenza*, Feltrinelli, Milano, 1979.
 - Foley, D. K. (1982), "The Value of Money, the Value of Labour Power and the Marxian Transformation Problem", *Review of Radical Political Economics*, 14(2), pp. 37-47.
+- Friedman, M. (1957), A Theory of the Consumption Function, Princeton University Press, Princeton.
+- Friedman, M. (1968), "The Role of Monetary Policy", The American Economic Review, 58(1), pp. 1-17.
 - Gattei, G. (1994), *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino.
 - Goodwin, R. M. (1967), "A Growth Cycle", in C. H. Feinstein (a cura di), *Socialism, Capitalism and Economic Growth*, Cambridge University Press, Cambridge, pp. 54-58.
 - Harrod, R. F. (1939), "An Essay in Dynamic Theory", *The Economic Journal*, 49(193), pp. 14-33.
 - Hicks, J. R. (1937), "Mr. Keynes and the 'Classics': A Suggested Interpretation", *Econometrica*, 5(2), pp. 147-159.
 - Keynes, J. M. (1930), *A Treatise on Money*, Macmillan, London (trad. it. *Trattato sulla moneta*).
+- Kahneman, D. (2011), Thinking, Fast and Slow, Farrar, Straus and Giroux, New York (trad. it. Pensieri lenti e veloci).
 - Keynes, J. M. (1936), *Teoria generale dell'occupazione, dell'interesse e della moneta*, UTET, Torino, 1947.
+- Knight, F. H. (1921), Risk, Uncertainty and Profit, Houghton Mifflin, Boston.
 - Kuhn, T. S. (1962), *La struttura delle rivoluzioni scientifiche*, Einaudi, Torino, 1969.
 - Lakatos, I. (1970), "La falsificazione e la metodologia dei programmi di ricerca scientifici", in I. Lakatos e A. Musgrave (a cura di), *Critica e crescita della conoscenza*, Feltrinelli, Milano, 1976.
+- Lucas, R. E. (1972), "Expectations and the Neutrality of Money", Journal of Economic Theory, 4(2), pp. 103-124.
+- Lucas, R. E. (1976), "Econometric Policy Evaluation: A Critique", Carnegie-Rochester Conference Series on Public Policy, 1, pp. 19-46.
 - Marx, K. (1867), *Il capitale. Critica dell'economia politica*, Libro I, Editori Riuniti, Roma, 1964.
+- Modigliani, F. e Brumberg, R. (1954), "Utility Analysis and the Consumption Function: An Interpretation of Cross-Section Data", in K. K. Kurihara (a cura di), Post-Keynesian Economics, Rutgers University Press, New Brunswick, pp. 388-436.
+- Muth, J. F. (1961), "Rational Expectations and the Theory of Price Movements", Econometrica, 29(3), pp. 315-335.
 - Napoleoni, C. (1973), *Smith Ricardo Marx. Considerazioni sulla storia del pensiero economico*, Boringhieri, Torino.
 - Pasinetti, L. L. (1960), "A Mathematical Formulation of the Ricardian System", *The Review of Economic Studies*, 27(2), pp. 78–98.
+- Phelps, E. S. (1968), "Money-Wage Dynamics and Labor-Market Equilibrium", Journal of Political Economy, 76(4, Part 2), pp. 678-711.
+- Phillips, A. W. (1958), "The Relation between Unemployment and the Rate of Change of Money Wage Rates in the United Kingdom, 1861-1957", Economica, 25(100), pp. 283-299.
 - Popper, K. R. (1934), *Logica della scoperta scientifica*, Einaudi, Torino, 1970.
 - Quesnay, F. (1758), *Il Tableau économique e altri scritti di economia*, a cura di M. Ridolfi, ISEDI, Milano, 1973.
 - Quine, W. V. O. (1951), "I due dogmi dell'empirismo", in *Il problema del significato*, Ubaldini, Roma, 1966.
@@ -1410,18 +1423,14 @@ L'etichetta è, in verità, imprecisa: sotto di essa convivono tradizioni distin
 - Robbins, L. (1932), *An Essay on the Nature and Significance of Economic Science*, Macmillan, London.
 - Schumpeter, J. A. (1954), *Storia dell'analisi economica*, Boringhieri, Torino, 1959–60 (ed. it. a cura di P. Sylos Labini).
 - Screpanti, E. e Zamagni, S. (2004), *Profilo di storia del pensiero economico*, Carocci, Roma.
+- Simon, H. A. (1955), "A Behavioral Model of Rational Choice", The Quarterly Journal of Economics, 69(1), pp. 99-118.
 - Smith, A. (1776), *La ricchezza delle nazioni*, a cura di A. e T. Bagiotti, UTET, Torino, 1975.
 - Sraffa, P. (1960), *Produzione di merci a mezzo di merci. Premesse a una critica della teoria economica*, Einaudi, Torino.
 - Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, [DOI: 10.1038/s41586-026-10702-5](https://www.nature.com/articles/s41586-026-10702-5).
+- Tversky, A. e Kahneman, D. (1974), "Judgment under Uncertainty: Heuristics and Biases", Science, 185(4157), pp. 1124-1131.
 - [Veronese] Passarella, M. (2011), "Marx in the matrix. L'algebra del 'lavoro vivo'", *Storia del Pensiero Economico. Nuova Serie*, 6(2), pp. 31-48, [DOI: 10.3280/SPE2009-002002](https://www.francoangeli.it/riviste/articolo/38095)
 - Veronese Passarella, M. (2027), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo* [titolo provvisorio], Cedam-Utet, Milano.
 - Veronese Passarella, M. (in corso di pubblicazione), *Mr. Keynes and the "Classics" (Almost) a Century Later: Reviewing the IS-LM Model*.
-
-
-
-
-
-
 
 
 
