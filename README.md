@@ -1173,7 +1173,7 @@ legend("topright", c("k tecnica A", "k tecnica B"),
 
 <table align="center">
   <tr><td width="820" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Reswitching.png" width=720>
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Reswitching.png" width=820>
   </td></tr>
   <tr><td width="820" align="center">
     <em><strong>Figura 2.4</strong> - Il ritorno delle tecniche. A sinistra, la tecnica di costo minimo (inviluppo in grassetto) al variare del saggio di profitto: la tecnica B è scelta per <em>r</em> bassi, la A per <em>r</em> intermedi, e la B <em>ritorna</em> per <em>r</em> alti (doppio switch). A destra, l'intensità capitalistica delle due tecniche: le curve si incrociano, dunque non esiste un ordinamento delle tecniche per intensità di capitale indipendente dalla distribuzione. Cade così la "parabola" neoclassica del capitale.</em>
@@ -1183,6 +1183,124 @@ legend("topright", c("k tecnica A", "k tecnica B"),
 #### 2.3.4 Sraffa come ponte verso il modello input-output
 
 Se si prende l'impostazione di Ricardo e di Marx - il sovrappiù, la riproduzione, i prezzi naturali o di produzione, il saggio di profitto uniforme - e la si **traduce in algebra lineare**, si arriva esattamente alle equazioni di prezzo di Sraffa, la (2.2). E queste equazioni, a loro volta, **presuppongono** una precisa visione del funzionamento dell'economia: quella di un sistema di settori che si scambiano reciprocamente input e output, ciascuno dipendente da tutti gli altri. È, punto per punto, la visione del **modello input-output** di Leontief (sezione 3.1). In questo senso Sraffa può essere intepretato come la **controparte teorica** del modello input-output. Leontief ne fornisce la contabilità e la misura empirica (le tavole delle interdipendenze settoriali), Sraffa il fondamento logico e il legame con la teoria classica del valore e della distribuzione. Gli schemi di riproduzione di Marx (sezione 1.4.5), i prezzi di produzione (sezione 1.4.4) e persino il modello grano-grano di Ricardo (sezione 1.3.2) si ritrovano qui nella loro forma rigorosa e generale, come casi della stessa struttura matriciale.
+
+#### 2.3.5 Un modellino dinamico Keynes + Sraffa
+
+Le due grandi ricostruzioni eterodosse della Parte II - quella di Keynes e quella di Sraffa - si possono far dialogare in un unico, semplice modello dinamico. L'idea è che esse rispondano a **domande diverse e complementari**: Keynes spiega il *livello* del reddito e dell'occupazione (la domanda effettiva e il moltiplicatore); Sraffa spiega i *prezzi relativi* e la loro dipendenza dalla distribuzione. Il modello che segue prende il modello keynesiano elementare (sezione 2.2.6) e lo "apre" in più industrie, aggiungendovi il nucleo **input-output** e i **prezzi di produzione**. È, in un certo senso, il ponte fra il moltiplicatore e i modelli della Parte III: anticipa il modello input-output (sezione 3.1), ma resta un modello *reale*, privo di moneta e ricchezza; il salto verso la coerenza fondi-flussi (SFC) verrà compiuto solo nelle sezioni 3.2-3.3.
+
+Il modello si articola in due blocchi separati, secondo una vera e propria **divisione del lavoro** fra Keynes e Sraffa. Dal lato dei **prezzi** (Sraffa), i prezzi di produzione delle tre industrie sono determinati una volta per tutte dalla tecnica e dalla distribuzione, secondo la regola del *cost-plus*: ogni prezzo è pari al costo unitario del lavoro più un ricarico sui costi dei mezzi di produzione, $p = w/\text{pr} + (1+\mu)\,pA$. Dato il salario, la produttività e il mark-up, questi prezzi restano costanti. Dal lato delle **quantità** (Keynes), il livello del reddito reale è determinato dalla domanda effettiva: il consumo reagisce con un ritardo al reddito, $C_t = c_0 + c_1\,y_{t-1}$, e la domanda finale (consumi, investimenti, spesa pubblica) si ripartisce fra le industrie secondo quote fisse. L'inversa di **Leontief** traduce infine la domanda finale nella **produzione lorda** di ciascuna industria, comprensiva dei fabbisogni intermedi. Uno shock all'investimento autonomo (da 10 a 30, come nel modello elementare) mette in moto il moltiplicatore e si propaga, tramite la struttura input-output, a tutte le industrie.
+
+```r
+# Modello dinamico Keynes + Sraffa (senza moneta, NON ancora SFC)
+
+# Cancella tutto ####
+rm(list = ls(all = TRUE))
+if (!is.null(dev.list())) dev.off()
+cat("\014")
+
+# Parametri di sistema ####
+nPeriods <- 180                                             # Periodi
+nScenarios <- 2                                             # Numero di scenari
+nIndustries <- 3                                            # Numero di industrie
+
+# Parametri del modello ####
+c0 <- 10                                                    # Consumo autonomo       
+c1 <- 0.8                                                   # Propensione marginale al consumo sul reddito
+Gexog <- 20                                                 # Valore iniziale della spesa pubblica
+I0base <- 10                                                # Valore iniziale dell'investimento
+wage <- 0.4                                                 # Salario unitario
+pr <- c(3.5, 5, 2.2)                                        # Prodotto per unità di lavoro
+mu <- 0.875                                                 # Mark-up o saggio di profitto
+A <- matrix(c(0.11, 0.12, 0.10,
+              0.21, 0.22, 0.20,
+              0.15, 0.18, 0.10),
+              nrow = nIndustries,
+              byrow = TRUE)                                 # Matrice dei coefficienti tecnici
+Leontief <- solve(diag(nIndustries) - A)                    # Inversa di Leontief (I-A)^-1
+betaC <- c(0.15, 0.35, 0.50)                                # Quote di consumo per prodotto (industria)
+betaI <- c(0.20, 0.50, 0.30)                                # Quote di investimento per prodotto (industria)
+betaG <- c(0.10, 0.30, 0.60)                                # Quote di spesa pubblica per prodotto (industria)
+
+# Parametri dello shock ####
+I0shock <- 30                                               # Nuovo livello dell'investimento
+shockAt <- 120                                              # Periodo dello shock
+
+# Prezzi di produzione (cost-plus alla Sraffa), COSTANTI ####
+p <- rep(1, nIndustries)
+for (iter in 1:500) for (z in 1:nIndustries)
+  p[z] <- wage / pr[z] + (1 + mu) * sum(p * A[, z])
+p_c <- sum(p * betaC)                                       # Indice dei prezzi al consumo
+
+# Variabili ####
+I0 <- matrix(I0base, nScenarios, nPeriods)                  # Investimento
+yr <- matrix(0, nScenarios, nPeriods)                       # Prodotto netto reale
+C <- matrix(0, nScenarios, nPeriods)                        # Consumo
+Y  <- matrix(0, nScenarios, nPeriods)                       # Reddito netto nominale
+d  <- array(0, dim = c(nScenarios, nPeriods, nIndustries))  # Domanda reale
+x  <- array(0, dim = c(nScenarios, nPeriods, nIndustries))  # Prodotto lordo reale
+
+# Lancia il modello ####
+for (j in 1:nScenarios) {
+  
+  for (i in 2:nPeriods) {
+    
+    if (i >= shockAt && j == 2) I0[j, i] <- I0shock          # Shock all'investimento
+    
+    C[j, i]  <- c0 + c1 * yr[j, i - 1]                       # Consumo reale (Keynes)
+    d[j, i, ] <- betaC * C[j, i] + betaI * I0[j, i] + betaG * Gexog
+    Y[j, i]  <- sum(p * d[j, i, ])                           # Reddito netto nominale
+    yr[j, i] <- Y[j, i] / p_c                                # Reddito netto reale
+    x[j, i, ] <- Leontief %*% d[j, i, ]                      # Produzione lorda (Leontief)
+  
+  }
+}
+
+# Grafici ####
+indCol <- c("springgreen4", "orangered", "dodgerblue3")
+indLab <- c("Agricoltura", "Manifattura", "Servizi")
+par(mfrow = c(2, 2), mar = c(4, 4, 3, 1))
+
+# a) Reddito reale
+plot(yr[2,100:nPeriods], type = "l", lwd = 2, col = "purple", ylim = range(180,320),
+     main = "a) Reddito reale (moltiplicatore)", xlab = "Tempo", ylab = "Reddito reale",
+     font.main = 1, cex.main = 0.95)
+lines(yr[1,100:nPeriods], lwd = 2, lty = 3, col = "gold3")
+legend("right", c("Shock", "Baseline"), lty = c(1, 3), lwd = 2, col = c("purple", "gold3"), bty = "n")
+
+# a) Consumo reale
+plot(C[2,100:nPeriods]/p_c, type = "l", lwd = 2, col = "purple", ylim = range(150,270),
+     main = "b) Consumo reale", xlab = "Tempo", ylab = "Consumo reale",
+     font.main = 1, cex.main = 0.95)
+lines(C[1,100:nPeriods]/p_c, lwd = 2, lty = 3, col = "gold3")
+legend("right", c("Shock", "Baseline"), lty = c(1, 3), lwd = 2, col = c("purple", "gold3"), bty = "n")
+
+# c) Produzione lorda per industria
+plot((x[2,100:nPeriods,1]), type = "l", lty = 1, lwd = 2, col = "springgreen4", ylim = range(x[2,100:nPeriods,]),
+     main = "c) Produzione lorda per industria (shock)", xlab = "Tempo",
+     ylab = "Produzione lorda (reale)", font.main = 1, cex.main = 0.95)
+lines((x[2,100:nPeriods,2]), lty = 1, lwd = 2, col = "orangered")
+lines((x[2,100:nPeriods,3]), lty = 1, lwd = 2, col = "dodgerblue3")
+legend("right", indLab, col = indCol, lwd = 2, bty = "n")
+
+# c) Prezzi
+barplot(p, names.arg = indLab, col = indCol, ylim = c(0, 1.2),
+        main = "d) Prezzi di produzione (cost-plus)", ylab = "Prezzo unitario",
+        font.main = 1, cex.main = 0.95)
+
+```
+
+<table align="center">
+  <tr><td width="860" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/keynes_sraffa.png" width=820">
+  </td></tr>
+  <tr><td width="820" align="center">
+    <em><strong>Figura 2.5</strong> - Modello dinamico Keynes + Sraffa. (a) Uno shock all'investimento autonomo (da 10 a 30) accresce il reddito reale di un multiplo dello shock (moltiplicatore keynesiano). (b) La maggiore domanda si propaga a tutte le industrie: l'inversa di Leontief converte la domanda finale nella produzione lorda di ciascun settore, comprensiva dei fabbisogni intermedi. (c) I prezzi di produzione (cost-plus alla Sraffa) sono determinati dalla tecnica e dalla distribuzione e restano costanti: sono le quantità, non i prezzi, ad aggiustarsi.</em>
+  </td></tr>
+</table>
+
+Il modello mette così in scena la sintesi che attraversa tutto il corso: **le quantità sono keynesiane, i prezzi sono sraffiani**. Il livello dell'attività è governato dalla domanda effettiva e può stabilizzarsi ovunque (non necessariamente alla piena occupazione), mentre i prezzi relativi riflettono i costi e la distribuzione, indipendentemente dal livello della domanda. Manca ancora un ingrediente decisivo: la **moneta**, con gli stock finanziari e la loro coerenza contabile. Aggiungendola - facendo sì che ogni flusso alimenti uno stock e che i bilanci di tutti i settori tornino - si ottiene un modello *stock-flow consistent*, ed è ciò di cui ci occuperemo nella Parte III.
+
+
 
 > [!NOTE]
 > ❓ **Le quattro domande-guida in chiave sraffiana.** *Che cosa determina la produzione?* La tecnica e le condizioni di **riproduzione** del sistema: dati i metodi produttivi e la composizione del prodotto sociale, l'economia è vista come un processo circolare, non come allocazione di risorse scarse. *Come si formano i prezzi?* Sono **prezzi di produzione** (centri di gravitazione dei prezzi di mercato), determinati dalla tecnica e dalla distribuzione tramite la (2.2); dipendono da $r$ e $w$, non dall'utilità marginale. *Da dove nascono i profitti?* Dal **sovrappiù**: la parte del prodotto netto che eccede i salari; la sua ripartizione fra profitti e salari è fissata da una variabile distributiva assunta *dall'esterno* (conflitto, istituzioni, tasso di interesse), non dalle produttività marginali. *Quale ruolo hanno banche e moneta?* Nel sistema "puro" restano sullo sfondo, ma Sraffa apre alla possibilità che sia il **tasso di interesse monetario** a fissare il saggio di profitto: un ponte diretto verso Keynes (sezione 2.2) e la teoria del circuito (sezione 3.2).
