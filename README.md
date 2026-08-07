@@ -1053,6 +1053,115 @@ legend("topleft", c("g > g_w (0.06)", "g = g_w (0.05)", "g < g_w (0.04)"),
 
 ### 2.3 Sraffa e la ripresa delle teorie del sovrappiù
 
+Piero Sraffa (1898-1983), torinese, amico di Antonio Gramsci e di Ludwig Wittgenstein, trascorse gran parte della vita a Cambridge, dove curò l'edizione monumentale delle *Opere e corrispondenza di David Ricardo* (la cui celebre *Introduzione* del 1951 riscopre il nucleo del pensiero ricardiano) e pubblicò, nel 1960, un libretto di poco più di cento pagine dal titolo *Produzione di merci a mezzo di merci* e dal sottotitolo *Premessa a una critica della teoria economica*. In quell'opera essenziale e avara di parole, Sraffa persegue un doppio obiettivo: da un lato **ricostruire** l'impianto dei classici e del sovrappiù, che il marginalismo aveva rimosso (sezione 2.1); dall'altro **minare dall'interno** la teoria neoclassica, in particolare la sua teoria del capitale e della distribuzione. Per il nostro percorso Sraffa ha un ruolo ancora più preciso: è il **ponte** che collega Ricardo e Marx al modello input-output, cioè la controparte *teorica* di ciò che Leontief costruiva sul piano empirico (sezione 3.1).
+
+#### 2.3.1 Il ritorno ai classici: il metodo del sovrappiù
+
+Il modo in cui Sraffa imposta il problema è agli antipodi del marginalismo. Non vi sono curve di domanda e di offerta, né sostituzione fra fattori, né scarsità: l'economia è vista come un **processo circolare** in cui le merci sono prodotte per mezzo di altre merci e di lavoro, e in cui una parte del prodotto deve tornare indietro a reintegrare ciò che si è consumato nella produzione. È l'immagine del *Tableau* di Quesnay e degli schemi di riproduzione di Marx (sezione 1.4.5), non quella dell'"avenue a senso unico" che va dai fattori (terra, lavoro, capitale) ai beni finali.
+
+Su questa base Sraffa riprende il **metodo del sovrappiù** dei classici, che la sua *Introduzione* a Ricardo aveva contribuito a riportare alla luce. Il metodo consiste nel prendere come **dati** tre elementi: la **tecnica** in uso (i metodi di produzione), la **dimensione e composizione del prodotto** sociale, e **una** variabile distributiva - il salario reale, oppure il saggio di profitto. A partire da questi dati, la teoria determina l'**altra** variabile distributiva e i **prezzi relativi**. È il "nucleo" dell'analisi classica: la distribuzione non è spiegata dalle produttività marginali, ma è in parte assunta dall'esterno, come esito del **conflitto** fra le classi e dei rapporti sociali e istituzionali. Sraffa arriva a suggerire (§44) che il saggio di profitto possa essere determinato "dall'esterno" dal livello dei **tassi di interesse monetari** - un'apertura verso Keynes e verso la natura monetaria della distribuzione su cui torneremo (sezioni 2.2 e 3.2).
+
+#### 2.3.2 La riproduzione del sistema: produzione senza sovrappiù
+
+Il libro comincia dal caso più semplice: un'economia che si limita a **riprodursi**, senza generare alcun sovrappiù. Si prenda l'esempio di Sraffa, a due sole industrie (grano e ferro):
+
+$$280 \text{ qr. grano} + 12 \text{ t. ferro} \; \rightarrow \; 400 \text{ qr. grano}$$
+$$120 \text{ qr. grano} + \; 8 \text{ t. ferro} \; \rightarrow \; 20 \text{ t. ferro}$$
+
+Sommando, l'economia impiega in tutto 400 qr. di grano e 20 t. di ferro, ed è esattamente ciò che produce: nulla avanza. Perché il sistema possa ripartire identico, ogni industria deve poter **riacquistare** i mezzi di produzione che ha consumato, e questo fissa in modo univoco i prezzi (o rapporti di scambio) relativi. Detti $p_g$ e $p_f$ i prezzi del grano e del ferro, la condizione di riproduzione dell'industria del grano è $280\,p_g + 12\,p_f = 400\,p_g$, da cui $p_f = 10\,p_g$: una tonnellata di ferro vale dieci quarti di grano. La stessa proporzione soddisfa, per costruzione, anche l'industria del ferro. I prezzi, qui, non misurano scarsità né utilità: sono i **rapporti che consentono al sistema di rinnovarsi**. È il germe stesso del modello input-output, e la traduzione rigorosa degli schemi di riproduzione di Quesnay e Marx.
+
+#### 2.3.3 Il sovrappiù e i prezzi di produzione, data la distribuzione
+
+Le cose si fanno interessanti quando l'economia produce **più** di quanto le serve per riprodursi: nasce un **sovrappiù**, che deve essere distribuito. La concorrenza impone allora un **saggio di profitto uniforme** $r$ su tutte le industrie, e occorre pagare un **salario** $w$ al lavoro impiegato. Riprendiamo le due industrie di prima, aggiungendo ora il lavoro e il sovrappiù. Il prezzo di ciascun bene deve coprire il costo dei mezzi di produzione, maggiorato del profitto al saggio $r$, più il salario. Per il grano e per il ferro:
+
+$$p_g = (1+r)\,(a_{gg}\,p_g + a_{fg}\,p_f) + w\,l_g$$
+
+$$p_f = (1+r)\,(a_{gf}\,p_g + a_{ff}\,p_f) + w\,l_f$$
+
+dove $a_{ij}$ è la quantità di merce $i$ necessaria per una unità di merce $j$ (ricavabile dall'esempio: $a_{gg}=280/400=0{,}7$, $a_{fg}=12/400=0{,}03$, $a_{gf}=120/20=6$, $a_{ff}=8/20=0{,}4$), mentre $l_g$ e $l_f$ sono i coefficienti di lavoro diretto. Le due equazioni hanno la stessa struttura: *costo dei mezzi di produzione* $\times (1+r)$, più il *salario*. Passando da due a $n$ merci, le equazioni diventano $n$: la coppia dei prezzi $(p_g, p_f)$ diventa un vettore riga $p$, i coefficienti $a_{ij}$ una **matrice** $A$ (la cui colonna $j$ raccoglie gli input necessari a produrre il bene $j$), i coefficienti di lavoro un vettore $l$. In forma compatta si ottiene il sistema dei **prezzi di produzione** di Sraffa:
+
+$$p = (1+r)\, p A + w\, l \qquad (2.2)$$
+
+in cui ogni prezzo copre il costo dei mezzi di produzione maggiorato del profitto, $(1+r)\,pA$, più il salario, $w\,l$. Si noti una differenza rispetto a Smith e a Marx (sezioni 1.2 e 1.4): in Sraffa il **salario è posticipato**, pagato alla fine del periodo sul prodotto, sicché non frutta profitto e resta fuori dalla parentesi $(1+r)$ - mentre nel salario *anticipato* di Marx si aveva $p = (1+r)(pA + w\,l)$. 
+
+Il punto teorico decisivo è che la (2.2) determina i prezzi **data la distribuzione**. Le incognite sono i prezzi relativi e le due variabili distributive $r$ e $w$; le equazioni sono una in meno delle incognite. Il sistema, cioè, ha **un grado di libertà**: fissata *dall'esterno* una delle due variabili distributive (per esempio il salario reale, o il saggio di profitto via il tasso di interesse monetario), restano determinati l'altra variabile e tutti i prezzi relativi. Ne discendono due conseguenze fondamentali. La prima è la **relazione inversa fra salario e profitto**: a parità di tecnica, un salario più alto implica un saggio di profitto più basso, e viceversa (la frontiera salario-profitto già incontrata con Ricardo). La seconda è che i **prezzi dipendono dalla distribuzione**, non solo dalla tecnica: al variare di $r$ i prezzi relativi si modificano, perché industrie con diversa "profondità" di capitale sono colpite in modo diverso. È esattamente il fenomeno che aveva bloccato Ricardo nella ricerca di una misura invariabile del valore (sezione 1.3.4), e che Sraffa affronta con la *merce tipo* (si veda il box).
+
+Questo sistema non è una novità isolata: costituisce uno sviluppo delle intuizioni di Ricardo e di Marx. Non a caso, traducendo la teoria del valore-lavoro di Marx in algebra lineare, si ottiene un sistema di prezzi **formalmente identico** a quello di Sraffa (a meno della convenzione sul salario). Un risultato che, come mostrato altrove, chiarisce in che senso i prezzi di produzione siano "forme fenomeniche" dei valori-lavoro e in che senso la legge del valore vada riferita al **prodotto netto** e al lavoro vivo complessivamente speso.
+
+> [!NOTE]
+> 💡 **Reswitching: perché la funzione di produzione neoclassica non regge.** La teoria marginalista della distribuzione (sezione 2.1) poggia su una **funzione di produzione** in cui il "capitale" è un fattore misurabile, la cui remunerazione, il saggio di interesse, eguaglia la sua produttività marginale. La "parabola" che ne discende è intuitiva: quando il saggio di interesse scende, le imprese adottano tecniche più *capital-intensive* (si "approfondisce" il capitale), in modo monotono. L'impostazione di Sraffa mostra che questa parabola non regge. Il "capitale" non è una grandezza fisica omogenea, ma una somma di merci eterogenee il cui **valore dipende dai prezzi**, e i prezzi - come si è visto - dipendono a loro volta dalla distribuzione, cioè dal saggio di profitto. Misurare la "quantità di capitale" indipendentemente da $r$ è dunque impossibile. Ma c'è di peggio. Compare ora il fenomeno del **ritorno delle tecniche** (*reswitching*): al crescere di $r$, la tecnica di costo minimo può passare da $A$ a $B$ e poi **tornare** ad $A$. Non esiste quindi alcuna relazione monotona fra saggio di interesse e "intensità di capitale", e la teoria della distribuzione basata sulle produttività marginali crolla. È il cuore della *controversia dei due Cambridge* degli anni Sessanta (la Cambridge inglese di Robinson, Sraffa, Pasinetti e Garegnani contro la Cambridge del Massachusetts di Samuelson e Solow), che lo stesso Samuelson riconobbe persa nel 1966. La distribuzione, allora, non è un fatto tecnico di scarsità, ma il prodotto di relazioni **sociali**.
+
+**Un esperimento in R: il ritorno delle tecniche.** Per "vedere" il *reswitching* mettiamo a confronto due **tecniche** che producono lo stesso bene, descritte alla maniera di Sraffa mediante la *riduzione a quantità datate di lavoro*: una tecnica è un profilo temporale di lavori, e produrre oggi una unità di prodotto ha richiesto $l_t$ unità di lavoro $t$ periodi fa. Poiché il capitale immobilizzato in quel lavoro passato frutta profitto, ogni input di lavoro va capitalizzato al fattore $(1+r)^t$. Scegliendo il prodotto stesso come numerario (prezzo unitario pari a 1), il prezzo eguaglia il costo e si ottiene, per ciascuna tecnica, l'equazione
+
+$$1 = w \cdot \sum_t l_t\,(1+r)^t$$
+
+che, risolta per $w$, fornisce la **frontiera salario-profitto** della tecnica. Nell'esempio del codice la tecnica **A** impiega lavoro in due date, "adesso" (data 0) e "due periodi fa" (data 2), con coefficienti $l_0 = 1{,}3125$ e $l_2 = 1$; la tecnica **B** impiega tutto il lavoro "un periodo fa" (data 1), con $l_1 = 2{,}3$. Le due frontiere sono dunque
+
+$$w_A(r) = \frac{1}{1{,}3125 + (1+r)^2}, \qquad w_B(r) = \frac{1}{2{,}3\,(1+r)}$$
+
+A ciascun saggio di profitto si adotta la tecnica che consente il salario più alto (cioè il costo più basso). Le due tecniche si equivalgono quando $w_A = w_B$, ossia quando $1{,}3125 + (1+r)^2 = 2{,}3\,(1+r)$: posto $x = 1+r$, è l'equazione di **secondo grado** $x^2 - 2{,}3\,x + 1{,}3125 = 0$, con radici $x = 1{,}05$ e $x = 1{,}25$, cioè $r = 5\%$ e $r = 25\%$. Ed ecco il punto cruciale: poiché il costo della tecnica A è *quadratico* in $(1+r)$ - per via del lavoro datato due periodi indietro - mentre quello della B è *lineare*, le due frontiere possono intersecarsi **due volte**. La tecnica B risulta la migliore per saggi bassi, la A per saggi intermedi, e la B **ritorna** per saggi alti: è il "ritorno delle tecniche". Ne segue che non esiste un ordinamento delle tecniche per "intensità di capitale" indipendente dalla distribuzione: nel secondo pannello, le curve dell'intensità capitalistica $k = -dw/dr$ delle due tecniche si incrociano, sicché *quale* tecnica sia più capitalistica dipende dal livello di $r$.
+
+Si noti che assegnare al lavoro date diverse equivale a impiegare input intermedi diversi. Il lavoro speso due periodi fa non è che il lavoro incorporato in un mezzo di produzione costruito due stadi a monte, sicché un diverso profilo temporale del lavoro è semplicemente la forma ridotta di una diversa composizione di lavoro e beni intermedi (è la "riduzione a quantità datate di lavoro" di Sraffa).
+
+```r
+# Il ritorno delle tecniche (reswitching)
+rm(list = ls(all = TRUE)); if (!is.null(dev.list())) dev.off(); cat("\014")
+
+# Due tecniche per 1 unita' del bene (numerario = il bene stesso).
+# Costo = w * somma_t l_t (1+r)^t. A: lavoro alle date 0 e 2 ; B: alla data 1.
+lA0 <- 1.3125; lA2 <- 1        # tecnica A
+lB1 <- 2.3                     # tecnica B
+
+r <- seq(0, 0.45, length.out = 600); x <- 1 + r
+costA <- lA0 + lA2 * x^2; costB <- lB1 * x
+wA <- 1 / costA; wB <- 1 / costB
+rsw <- sort(Re(polyroot(c(lA0, -lB1, lA2)))) - 1   # punti di switch
+cat("Switch ai saggi di profitto r =", round(rsw, 4), "\n")
+wenv <- pmax(wA, wB)                               # inviluppo (tecnica scelta)
+rk <- r[-1]; kA <- -diff(wA)/diff(r); kB <- -diff(wB)/diff(r)  # k = -dw/dr
+
+par(mfrow = c(1, 2), mar = c(4.2, 4.2, 3, 1))
+# Pannello 1: inviluppo colorato per tecnica scelta
+plot(r, wA, type = "l", lwd = 1, col = "blue", ylim = range(wA, wB),
+     main = "Tecnica scelta (inviluppo): B -> A -> B",
+     xlab = "Saggio di profitto r", ylab = "Salario w", font.main = 1, cex.main = 0.95)
+lines(r, wB, lwd = 1, col = "red")
+mB1 <- r <= rsw[1]; mA <- r > rsw[1] & r < rsw[2]; mB2 <- r >= rsw[2]
+lines(r[mB1], wenv[mB1], lwd = 3.5, col = "red")
+lines(r[mA],  wenv[mA],  lwd = 3.5, col = "blue")
+lines(r[mB2], wenv[mB2], lwd = 3.5, col = "red")
+abline(v = rsw, lty = 3, col = "grey")
+text(0.02, max(wB), "B", col = "red"); text(0.15, 0.40, "A", col = "blue")
+text(0.33, 0.35, "B (ritorna)", col = "red"); grid()
+# Pannello 2: intensita' capitalistica delle due tecniche
+plot(rk, kA, type = "l", lwd = 2, col = "blue", ylim = range(kA, kB),
+     main = "Intensita' capitalistica: l'ordinamento si inverte",
+     xlab = "Saggio di profitto r", ylab = "k = valore capitale / lavoro",
+     font.main = 1, cex.main = 0.95)
+lines(rk, kB, lwd = 2, col = "red")
+abline(v = rsw, lty = 3, col = "grey")
+legend("topright", c("k tecnica A", "k tecnica B"),
+       lty = 1, lwd = 2, col = c("blue", "red"), bty = "n"); grid()
+```
+
+<table align="center">
+  <tr><td width="820" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/reswitching.png" width="100%">
+  </td></tr>
+  <tr><td width="820" align="center">
+    <em><strong>Figura 2.4</strong> - Il ritorno delle tecniche. A sinistra, la tecnica di costo minimo (inviluppo in grassetto) al variare del saggio di profitto: la tecnica B è scelta per <em>r</em> bassi, la A per <em>r</em> intermedi, e la B <em>ritorna</em> per <em>r</em> alti (doppio switch). A destra, l'intensità capitalistica delle due tecniche: le curve si incrociano, dunque non esiste un ordinamento delle tecniche per intensità di capitale indipendente dalla distribuzione. Cade così la "parabola" neoclassica del capitale.</em>
+  </td></tr>
+</table>
+
+#### 2.3.4 Sraffa, ponte verso il modello input-output
+
+Possiamo ora enunciare la tesi che attraversa questa sezione. Se si prende l'analisi di Ricardo e di Marx - il sovrappiù, la riproduzione, i prezzi naturali o di produzione, il saggio di profitto uniforme - e la si **traduce in algebra lineare**, si arriva esattamente alle equazioni di prezzo di Sraffa, la (2.2). E queste equazioni, a loro volta, **presuppongono** una precisa visione del funzionamento dell'economia: quella di un sistema di settori che si scambiano reciprocamente input e output, ciascuno dipendente da tutti gli altri. È, punto per punto, la visione del **modello input-output** di Leontief (sezione 3.1). In questo senso Sraffa è la **controparte teorica** dell'input-output. Leontief ne fornisce la contabilità e la misura empirica (le tavole delle interdipendenze settoriali), Sraffa il fondamento logico e il legame con la teoria classica del valore e della distribuzione. Gli schemi di riproduzione di Marx (sezione 1.4.5), i prezzi di produzione (sezione 1.4.4) e persino il modello grano-grano di Ricardo (sezione 1.3.2) si ritrovano qui nella loro forma rigorosa e generale, come casi della stessa struttura matriciale.
+
+> [!NOTE]
+> ❓ **Le quattro domande-guida in chiave sraffiana.** *Che cosa determina la produzione?* La tecnica e le condizioni di **riproduzione** del sistema: dati i metodi produttivi e la composizione del prodotto sociale, l'economia è vista come un processo circolare, non come allocazione di risorse scarse. *Come si formano i prezzi?* Sono **prezzi di produzione** (centri di gravitazione dei prezzi di mercato), determinati dalla tecnica e dalla distribuzione tramite la (2.2); dipendono da $r$ e $w$, non dall'utilità marginale. *Da dove nascono i profitti?* Dal **sovrappiù**: la parte del prodotto netto che eccede i salari; la sua ripartizione fra profitti e salari è fissata da una variabile distributiva assunta *dall'esterno* (conflitto, istituzioni, tasso di interesse), non dalle produttività marginali. *Quale ruolo hanno banche e moneta?* Nel sistema "puro" restano sullo sfondo, ma Sraffa apre alla possibilità che sia il **tasso di interesse monetario** a fissare il saggio di profitto: un ponte diretto verso Keynes (sezione 2.2) e la teoria del circuito (sezione 3.2).
+
+---
+
 🚧 ATTENZIONE: *Work in progress* 🚧
 
 ---
@@ -1066,6 +1175,9 @@ legend("topleft", c("g > g_w (0.06)", "g = g_w (0.05)", "g < g_w (0.04)"),
 
 > [!NOTE]
 > 🤓🧠🔢 **Box per geek e nerd 4 - Il teorema di Perron-Frobenius.** Nel box precedente abbiamo visto che la produttività di un sistema tecnico dipende dal suo **autovalore dominante** $\lambda_{\max}$, il raggio spettrale della matrice $A$ dei coefficienti tecnici. Ma come facciamo ad essere sicuri che questo autovalore dominante sia ben definito, positivo e associato a un autovettore con tutte le componenti positive? È qui che interviene il **teorema di Perron-Frobenius**. Se una matrice è non negativa (tutti gli $a_{ij} \geq 0$, come dev'essere per dei coefficienti tecnici) e irriducibile (il sistema è "connesso": ogni settore dipende, direttamente o indirettamente, da tutti gli altri), allora esiste un autovalore reale positivo $\lambda_{\max}$ che è maggiore in modulo di tutti gli altri e a cui è associato un autovettore con tutte le componenti positive. Sono esattamente le due proprietà che servono all'economia: un sistema di **prezzi** (o di **quantità**) deve essere positivo, e soltanto l'autovettore di Perron lo è. Gli altri autovettori hanno componenti di segno misto e non rappresentano nulla di sensato. **L'intuizione** è la seguente. Si prenda un qualunque vettore di produzioni positivo e gli si applichi ripetutamente $A$ (input, poi input degli input, e così via). Dopo molte iterazioni la *direzione* del vettore smette di cambiare e si stabilizza sull'autovettore di Perron, mentre l'intensità si riscala di un fattore $\lambda_{\max}$ a ogni passo. Il sistema "dimentica" da dove è partito e converge sempre sulla stessa struttura relativa, un po' come un'orchestra in cui, dopo qualche battuta, emerge una proporzione stabile fra i volumi dei vari strumenti. La ragione è una gara fra esponenziali: elevando $A$ a potenze, $\lambda_{\max}^n$ cresce più in fretta di ogni altro autovalore, che diventa perciò trascurabile. Il che ci porta alla domanda decisiva: **che cosa significa tutto questo per il sistema di Sraffa?** L'autovalore dominante misura "quanto pesa" la tecnologia: se è piccolo, la riproduzione assorbe poche risorse e resta molto sovrappiù; se è vicino a 1, quasi tutto il prodotto serve solo a ricostituire gli input. Il **saggio massimo del profitto** è quello che si otterrebbe con salario nullo. Ponendo $w = 0$ nell'equazione dei prezzi $p = (1+r)(pA + w l)$ (con $l$ i coefficienti di lavoro), questa si riduce a $p = (1+R)pA$: un problema agli autovalori in cui il vettore dei prezzi $p$ è l'autovettore (positivo) di Perron e $1/(1+R) = \lambda_{\max}$, da cui $R = 1/\lambda_{\max} - 1$. In sostanza Perron-Frobenius dice che la complessità di migliaia di relazioni tecniche si riassume in **un solo numero** (il raggio spettrale) e in **un solo vettore positivo** (l'autovettore di Perron). L'intero limite tecnologico alla distribuzione del reddito è racchiuso nelle proprietà spettrali di $A$. Non è un caso che i modelli di produzione interdipendente (l'input-output di Leontief, il modello di crescita di von Neumann, il sistema di Sraffa) trovino nella teoria di Perron-Frobenius la loro naturale veste matematica, riconosciuta e sviluppata soprattutto dagli economisti matematici e dai teorici del sovrappiù nella seconda metà del Novecento. Un'ultima precisazione. Le considerazioni svolte poggiano sull'ipotesi di **saggio di profitto uniforme**. Solo in questo caso il sistema dei prezzi a salario nullo si riduce, come abbiamo visto, a un genuino problema agli autovalori. Se invece ogni settore avesse un proprio saggio di profitto, al posto dello scalare $(1+r)$ comparirebbe una matrice diagonale, il legame con Perron-Frobenius si spezzerebbe e verrebbe meno l'idea di un unico tetto tecnologico alla redditività. È anche per questo che l'ipotesi del saggio uniforme, oltre a essere fondata economicamente sulla concorrenza, è così potente sul piano analitico. Sraffa, per inciso, giunse a risultati equivalenti senza usare esplicitamente il linguaggio degli autovalori. La lettura spettrale del suo sistema è una razionalizzazione successiva, dovuta soprattutto a von Neumann, Pasinetti e alla scuola del sovrappiù.
+
+> [!NOTE]
+> 🤓🧠🔢 **Box per geek e nerd 4 - La merce tipo e Perron-Frobenius.** Al variare della distribuzione i prezzi relativi cambiano, e sembra impossibile trovare un'unità di misura del valore "invariabile" rispetto a $r$: è il problema che aveva sconfitto Ricardo (sezione 1.3.4). Sraffa lo risolve con un'invenzione ingegnosa, la **merce tipo** (*Standard commodity*). Si tratta di una merce *composita*, un paniere costruito in modo che entri nella propria produzione nelle **stesse proporzioni** in cui ne esce come prodotto. Nel sistema che la produce (il "sistema tipo") il rapporto fra prodotto netto e mezzi di produzione, il **rapporto tipo** $R$, è allora lo stesso in ogni industria e **non dipende dai prezzi**. Adottando la merce tipo come numerario, la relazione salario-profitto diventa **lineare**: $r = R\,(1 - w)$, dove $w$ è la quota di salario sul prodotto netto tipo e $R$ è il **saggio massimo del profitto**, quello che si otterrebbe con salario nullo. Ecco l'unità di misura invariabile che Ricardo cercava. E qui scatta il legame con i box precedenti: la merce tipo è, in sostanza, l'**autovettore di Perron** della matrice dei coefficienti tecnici (le "proporzioni stabili" del sistema, la direzione che la tecnologia non altera), e il rapporto tipo coincide con l'autovalore dominante trasformato, $R = 1/\lambda_{\max} - 1$ - esattamente il saggio massimo del profitto ricavato nel box su Perron-Frobenius. La stessa matematica che governa l'invertibilità di $(I-A)$ e la riproduzione del sistema fornisce dunque, con la merce tipo, la chiave per districare distribuzione e prezzi.
 
 ---
 
