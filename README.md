@@ -1148,7 +1148,7 @@ legend("topright", c("k tecnica A", "k tecnica B"),
 
 <table align="center">
   <tr><td width="820" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/reswitching.png" width="100%">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Reswitching.png" width=720>
   </td></tr>
   <tr><td width="820" align="center">
     <em><strong>Figura 2.4</strong> - Il ritorno delle tecniche. A sinistra, la tecnica di costo minimo (inviluppo in grassetto) al variare del saggio di profitto: la tecnica B è scelta per <em>r</em> bassi, la A per <em>r</em> intermedi, e la B <em>ritorna</em> per <em>r</em> alti (doppio switch). A destra, l'intensità capitalistica delle due tecniche: le curve si incrociano, dunque non esiste un ordinamento delle tecniche per intensità di capitale indipendente dalla distribuzione. Cade così la "parabola" neoclassica del capitale.</em>
