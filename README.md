@@ -1307,6 +1307,64 @@ Il modello mette così in scena la sintesi che attraversa tutto il corso: **le q
 
 ---
 
+### 2.4 La controrivoluzione monetarista e la risposta classico-keynesiana
+
+La sintesi neoclassico-keynesiana descritta nella sezione 2.2 - il modello IS-LM e la sua traduzione manualistica - aveva "addomesticato" Keynes, riducendone il messaggio a un caso particolare (quello dei prezzi e dei salari rigidi) all'interno di un impianto sostanzialmente pre-keynesiano. Per circa un ventennio, dal dopoguerra alla fine degli anni sessanta, questo compromesso funzionò: bastava affiancare alla teoria dell'equilibrio di piena occupazione una politica fiscale e monetaria "keynesiana" di stabilizzazione del ciclo. All'inizio degli anni settanta, però, il compromesso entra in crisi, e prende avvio quella che è stata efficacemente chiamata una **controrivoluzione**: un progressivo ritorno all'ortodossia pre-keynesiana, di cui il monetarismo di Milton Friedman e la successiva *nuova macroeconomia classica* di Robert Lucas sono le due tappe principali.
+
+Le ragioni di questo rovesciamento sono insieme interne ed esterne alla disciplina. Sul piano **interno**, la sintesi neoclassico-keynesiana si rivelò incapace di spiegare la **stagflazione** (ossia la coesistenza di alta inflazione e alta disoccupazione) che caratterizzò il decennio. La curva di Phillips manualistica, che postulava una relazione stabile e inversa fra inflazione e disoccupazione, semplicemente non reggeva più al confronto con i dati. Sul piano **esterno**, gli anni settanta furono attraversati da una eccezionale forza del movimento operaio (con la connessa spinta salariale e la caduta della redditività del capitale), dai conflitti geopolitici e dagli shock petroliferi. In un simile contesto, la spiegazione dell'inflazione come esito del conflitto distributivo e della politica espansiva perse terreno a favore di una lettura puramente monetaria, e la difesa dell'intervento pubblico nell'economia lasciò il posto alla richiesta di regole, disciplina di bilancio e indipendenza della banca centrale.
+
+La controrivoluzione si articola in alcune tappe successive, che conviene ricostruire nell'ordine, perché ciascuna smonta un pezzo dell'edificio keynesiano.
+
+#### 2.4.1 Il ritorno del moltiplicatore della moneta
+
+La prima mossa consiste nel riportare al centro la **teoria quantitativa della moneta**, riformulata da Milton Friedman come teoria della domanda di moneta. Nella sua forma essenziale essa afferma che il livello dei prezzi è governato dalla quantità di moneta in circolazione,
+
+$$M \cdot V = P \cdot Y$$
+
+con la velocità di circolazione $V$ trattata come stabile e il reddito reale $Y$ ancorato al suo livello "naturale". L'offerta di moneta, a sua volta, viene concepita come una grandezza che la banca centrale controlla dall'esterno attraverso la base monetaria $H$ e il **moltiplicatore della moneta**:
+
+$$M = m \cdot H$$
+
+dove $m$ dipende dalle propensioni a detenere circolante e riserve. Si tratta della visione *esogena* della moneta, ribaltata rispetto alla logica keynesiana: la quantità di moneta non risponde passivamente ai bisogni della produzione, ma è la variabile di controllo da cui dipendono i prezzi. La conseguenza polemica è immediata: se lo Stato finanzia la spesa emettendo moneta, non fa che alimentare l'inflazione. La politica fiscale espansiva viene così ridefinita, per costruzione, come un fenomeno essenzialmente **inflazionistico**. Per una critica di questa impostazioni, si veda [qui](https://github.com/marcoverpas/economia_monetaria#9-implicazioni-della-moneta-endogena).
+
+#### 2.4.2 La distruzione del moltiplicatore keynesiano
+
+La seconda mossa colpisce il cuore analitico della teoria di Keynes: il **moltiplicatore della spesa** (sezione 2.2.6). Esso poggia su una funzione del consumo che lega la spesa delle famiglie al reddito *corrente*, $C_t = c_0 + c_1 Y_t$. Friedman e Modigliani, con due ipotesi affini, ne minano il fondamento.
+
+Secondo l'**ipotesi del reddito permanente** di Milton Friedman, le famiglie non regolano il consumo sul reddito effettivo del periodo, ma sul reddito che si aspettano di percepire in modo durevole, il reddito permanente $Y^P$:
+
+$$C = c \cdot Y^{P}.$$
+
+Secondo l'**ipotesi del ciclo vitale** di Franco Modigliani, analogamente, gli individui distribuiscono il consumo lungo l'intero arco della loro esistenza, risparmiando negli anni di reddito elevato e attingendo ai risparmi in quelli di reddito basso. In entrambi i casi la conclusione è la stessa: una variazione *transitoria* del reddito (per esempio, quella indotta da uno stimolo fiscale temporaneo) viene in larga parte risparmiata anziché spesa, perché non modifica il reddito permanente né la ricchezza di ciclo vitale. La propensione a consumare il reddito aggiuntivo si assottiglia, il moltiplicatore si riduce e la politica di bilancio perde efficacia. Il moltiplicatore keynesiano, da meccanismo centrale della determinazione del reddito, viene ricondotto a un caso di miopia dei consumatori.
+
+#### 2.4.3 La curva di Phillips verticale e le aspettative
+
+La terza mossa riguarda il legame fra inflazione e disoccupazione. La lettura **accelerazionista** proposta da Friedman (e, indipendentemente, da Edmund Phelps) riscrive la curva di Phillips introducendo le **aspettative di inflazione**:
+
+$$\pi = \pi^{e} - \alpha \cdot (u - u^{\*}),$$
+
+dove $\pi^{e}$ è l'inflazione attesa e $u^{\*}$ il tasso di disoccupazione "naturale". Se le aspettative sono *adattive* - se cioè i lavoratori aggiornano gradualmente $\pi^{e}$ sulla base dell'inflazione passata - allora esiste un *trade-off* fra inflazione e disoccupazione solo *finché* gli agenti sono ingannati. Nel **lungo periodo**, quando le aspettative si adeguano ($\pi^{e} = \pi$), la disoccupazione ritorna al livello naturale e la curva di Phillips diventa **verticale**. Nessuna politica della domanda può, quindi, tenere stabilmente la disoccupazione al di sotto di $u^{\*}$, ma solo accelerare l'inflazione. La disoccupazione, di nuovo, dipende soltanto da fattori "reali" (l'offerta di lavoro, le imperfezioni del mercato del lavoro), esattamente come nella teoria pre-keynesiana.
+
+Lucas porta questo ragionamento alla sua conclusione radicale sostituendo le aspettative adattive con le **aspettative razionali**: gli agenti non commettono errori sistematici, perché formano le proprie previsioni usando lo stesso modello che governa l'economia. Ne segue che solo le variazioni monetarie *inattese* possono avere effetti reali, e per un istante soltanto. La curva di Phillips diventa verticale anche nel **breve periodo**, salvo la deviazione temporanea prodotta da *shock* esogeni non anticipati dagli agenti economici. È il celebre risultato di **inefficacia della politica economica**: una politica sistematica della domanda, essendo prevedibile, viene neutralizzata dagli agenti e non produce alcun effetto reale.
+
+#### 2.4.4 La critica di Lucas e le microfondazioni ad agente rappresentativo
+
+La quarta e ultima mossa è metodologica, ma è forse la più gravida di conseguenze. Con la cosiddetta **critica di Lucas** (1976) si mette in discussione l'intera generazione dei grandi modelli *macroeconometrici* di ispirazione keynesiana. L'argomento è il seguente: i parametri stimati di quei modelli (propensioni al consumo, elasticità, ritardi) non sono costanti di natura, ma riassumono i comportamenti degli agenti *dato* un certo regime di politica economica. Se la politica cambia, gli agenti razionali modificano il proprio comportamento e i parametri stimati non sono più validi. Prevedere gli effetti di una nuova politica sulla base di relazioni stimate sotto la vecchia politica è dunque, secondo Lucas, un errore logico.
+
+Da qui la richiesta di rifondare la macroeconomia su **microfondazioni**, ossia di derivare ogni relazione aggregata dal problema di ottimizzazione di un **agente rappresentativo** dotato di preferenze e tecnologia stabili, gli unici parametri considerati genuinamente "profondi" e invarianti rispetto alla politica.
+
+È bene sottolineare che questa mossa svolge anche una funzione difensiva meno dichiarata. La ricerca sull'equilibrio economico generale di tradizione walrasiana (sezione 2.1) si era infatti scontrata con un ostacolo insormontabile: i teoremi di **Sonnenschein, Mantel e Debreu** avevano dimostrato che, aggregando le domande di individui eterogenei ma razionali, la funzione di eccesso di domanda che ne risulta può avere una forma pressoché qualsiasi. In generale, quindi, l'equilibrio generale non può essere dimostrato né **unico** né **stabile**. L'unico modo per riottenere un equilibrio ben definito e stabile è imporre che il comportamento aggregato sia quello di un singolo individuo: proprio ciò che l'ipotesi dell'agente rappresentativo garantisce per costruzione. Le microfondazioni, in altre parole, non risolvono il problema dell'aggregazione: lo aggirano, assumendo che il problema non esista.
+
+#### 2.4.5 La biforcazione e la nascita della modellistica post-keynesiana
+
+È a questo punto - di fronte alla restaurazione dell'ortodossia e alla sua sistemazione nella nuova macroeconomia classica - che gli approcci più radicalmente in dissenso prendono strade proprie e si separano nettamente dal *mainstream*. Da quel ripensamento ha origine la famiglia di modelli che possiamo raccogliere sotto il termine ombrello di **modellistica post-keynesiana**.
+
+L'etichetta è, in verità, imprecisa: sotto di essa convivono tradizioni distinte e non sempre concordi, che condividono però il rifiuto dei pilastri neoclassici e il riconoscimento del principio della domanda effettiva. Vi rientrano i teorici del **sovrappiù** di matrice classico-sraffiana (sezione 2.3), numerosi economisti di ispirazione **marxista**, parte degli **evoluzionisti**, i **circuitisti** e i teorici della moneta endogena. Ciò che li accomuna, sul piano del metodo, è l'adozione di **coefficienti tecnici** determinati dalla struttura produttiva anziché dalla sostituzione fra fattori (sezione 2.3.1), il trattamento della moneta come variabile **endogena** e non come grandezza controllata dall'alto, e l'idea che il livello dell'attività economica sia governato dalla domanda tanto nel breve quanto nel lungo periodo.
+
+È precisamente questa la tradizione entro cui si collocano i modelli sviluppati nella Parte III di questo corso. Il modello dinamico Keynes + Sraffa della sezione 2.3.5 ne è già un primo esempio: quantità governate dalla domanda effettiva, prezzi governati dalla tecnica e dalla distribuzione. I passi successivi consisteranno nel dare a quello scheletro una carne monetaria e finanziaria coerente, facendo sì che ogni flusso alimenti uno stock e che i bilanci di tutti i settori si chiudano.
+
+---
+
 🚧 ATTENZIONE: *Work in progress* 🚧
 
 ---
