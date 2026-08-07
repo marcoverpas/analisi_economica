@@ -1107,23 +1107,47 @@ Si noti che assegnare al lavoro date diverse equivale a impiegare input intermed
 
 ```r
 # Il ritorno delle tecniche (reswitching)
-rm(list = ls(all = TRUE)); if (!is.null(dev.list())) dev.off(); cat("\014")
 
-# Due tecniche per 1 unita' del bene (numerario = il bene stesso).
-# Costo = w * somma_t l_t (1+r)^t. A: lavoro alle date 0 e 2 ; B: alla data 1.
-lA0 <- 1.3125; lA2 <- 1        # tecnica A
-lB1 <- 2.3                     # tecnica B
+# Esempio numerico di "reswitching":
+# la tecnica B è conveniente ai saggi di profitto bassi e alti,
+# mentre la tecnica A è conveniente per valori intermedi di r.
 
-r <- seq(0, 0.45, length.out = 600); x <- 1 + r
-costA <- lA0 + lA2 * x^2; costB <- lB1 * x
-wA <- 1 / costA; wB <- 1 / costB
-rsw <- sort(Re(polyroot(c(lA0, -lB1, lA2)))) - 1   # punti di switch
-cat("Switch ai saggi di profitto r =", round(rsw, 4), "\n")
-wenv <- pmax(wA, wB)                               # inviluppo (tecnica scelta)
-rk <- r[-1]; kA <- -diff(wA)/diff(r); kB <- -diff(wB)/diff(r)  # k = -dw/dr
+# Cancella tutto ####
+rm(list = ls(all = TRUE))
+if (!is.null(dev.list())) dev.off()
+cat("\014")
 
+# Nota: a) due tecniche per ottenere 1 unità del bene
+#       b) numerario = il bene stesso
+#       c) costo unitario = w * Σ l_t (1+r)^t.
+#       d) la tecnica A impiega lavoro nei periodi 0 e 2; la tecnica B nel periodo 1
+
+# Scrivi il modello ####
+lA0 <- 1.3125                                               # Lavoro anticipato di 0 periodi nella tecnica A
+lA2 <- 1                                                    # Lavoro anticipato di 2 periodi nella tecnica A
+lB1 <- 2.3                                                  # Lavoro anticipato di 1 periodo nella tecnica B
+r <- seq(0, 0.45, length.out = 600)                         # Saggio di profitto (vettore)
+x <- 1 + r                                                  # Coefficiente di ricarico (vettore)
+costA <- lA0 + lA2 * x^2                                    # Costo unitario della tecnica A (vettore)
+costB <- lB1 * x                                            # Costo unitario della tecnica B (vettore)
+wA <- 1 / costA                                             # Salario nel settore A (vettore)
+wB <- 1 / costB                                             # Salario nel settore B (vettore)
+rsw <- sort(Re(polyroot(c(lA0, -lB1, lA2)))) - 1            # Saggi di profitto ai quali le due tecniche hanno lo stesso costo
+  # Nota: polyroot() = calcola le radici di un polinomio (ottenuto uguagliando i costi unitari delle due tecniche)
+  #       Re = estrae la parte reale ed elimina la parte immaginaria
+  #       sort = ordina le soluzioni in ordine crescente
+wenv <- pmax(wA, wB)                                        # Frontiera salario-profitto (inviluppo delle due tecniche) (vettore)
+rk <- r[-1]                                                 # Saggio di profitto meno il primo valore nullo
+kA <- -diff(wA)/diff(r)                                     # Intensità capitalistica implicita della tecnica A (= -dw/dr) (vettore)   
+kB <- -diff(wB)/diff(r)                                     # Intensità capitalistica implicita della tecnica B (= -dw/dr) (vettore)
+
+# Mostra informazioni
+cat("Saggi di profitto ai quali le due tecniche hanno lo stesso costo r =", round(rsw, 4), "\n")
+
+# Impostazioni grafiche
 par(mfrow = c(1, 2), mar = c(4.2, 4.2, 3, 1))
-# Pannello 1: inviluppo colorato per tecnica scelta
+
+# Pannello 1: inviluppo colorato per tecnica scelta ####
 plot(r, wA, type = "l", lwd = 1, col = "blue", ylim = range(wA, wB),
      main = "Tecnica scelta (inviluppo): B -> A -> B",
      xlab = "Saggio di profitto r", ylab = "Salario w", font.main = 1, cex.main = 0.95)
@@ -1135,9 +1159,10 @@ lines(r[mB2], wenv[mB2], lwd = 3.5, col = "red")
 abline(v = rsw, lty = 3, col = "grey")
 text(0.02, max(wB), "B", col = "red"); text(0.15, 0.40, "A", col = "blue")
 text(0.33, 0.35, "B (ritorna)", col = "red"); grid()
-# Pannello 2: intensita' capitalistica delle due tecniche
+
+# Pannello 2: intensita' capitalistica delle due tecniche ####
 plot(rk, kA, type = "l", lwd = 2, col = "blue", ylim = range(kA, kB),
-     main = "Intensita' capitalistica: l'ordinamento si inverte",
+     main = "Intensità capitalistica: l'ordinamento si inverte",
      xlab = "Saggio di profitto r", ylab = "k = valore capitale / lavoro",
      font.main = 1, cex.main = 0.95)
 lines(rk, kB, lwd = 2, col = "red")
