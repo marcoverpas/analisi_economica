@@ -107,7 +107,7 @@ A titolo esemplificativo, alcuni suggerimenti di lettura (limitatamente ai capit
 - W. Godley, M. Lavoie, *Monetary Economics*, Palgrave Macmillan (modelli *stock-flow consistent*, capitoli introduttivi e modelli SIM, PC, BMW).
 - R. E. Miller, P. D. Blair, *Input-Output Analysis: Foundations and Extensions*, Cambridge University Press (analisi input-output, modello base).
 
-Ulteriori letture saranno indicate durante il corso.
+Ulteriori suggerimenti di lettura saranno dati durante il corso. Una lista completa dei riferimenti bibliografici è disponibile in fondo a questa pagina. 
 
 ---
 
