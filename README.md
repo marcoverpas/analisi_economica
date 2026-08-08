@@ -1378,10 +1378,10 @@ L'etichetta è, in verità, imprecisa: sotto di essa convivono tradizioni distin
 
 <table align="center">
   <tr><td width="860" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/eigen_demo.gif" width=820">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/eigen_demo.gif" width="820">
   </td></tr>
   <tr><td width="820" align="center">
-    <em><strong>Figura B1</strong> - Effetto della matrice $A = \begin{pmatrix} 1.2 & 0.6 \\ 0.6 & 1.2 \end{pmatrix}$ su un vettore $v$ che ruota lungo il cerchio unitario. Lungo gli autovettori (rette tratteggiate) l'immagine $Av$ resta allineata a $v$ e la matrice agisce come una semplice moltiplicazione, $Av = \lambda v$. Altrove $Av$ viene anche ruotato. A destra: l'angolo fra $v$ e $Av$ si annulla soltanto in corrispondenza degli autovettori.</em>
+    <em><strong>Figura B1</strong> - Effetto della matrice A = [1.2&nbsp;&nbsp;0.6; 0.6&nbsp;&nbsp;1.2] su un vettore v che ruota lungo il cerchio unitario. Lungo gli autovettori (rette tratteggiate) l'immagine Av resta allineata a v e la matrice agisce come una semplice moltiplicazione, Av = &lambda;v. Altrove Av viene anche ruotato. A destra: l'angolo fra v e Av si annulla soltanto in corrispondenza degli autovettori.</em>
   </td></tr>
 </table>
 
