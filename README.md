@@ -1396,7 +1396,7 @@ L'etichetta è, in verità, imprecisa: sotto di essa convivono tradizioni distin
 
 ---
 
-**Riferimenti bibliografici**
+## Riferimenti bibliografici
 - Domar, E. D. (1946), "Capital Expansion, Rate of Growth, and Employment", *Econometrica*, 14(2), pp. 137-147.
 - Duhem, P. (1906), *La teoria fisica: il suo oggetto, la sua struttura*, il Mulino, Bologna, 1978.
 - Duménil, G. e Foley, D. K. (2008), "The Marxian transformation problem", in S. N. Durlauf e L. E. Blume (a cura di), *The New Palgrave Dictionary of Economics*, 2ª ed., Palgrave Macmillan, Londra.
