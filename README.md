@@ -1099,7 +1099,7 @@ $$1 = w \cdot \sum_t l_t  \cdot (1+r)^t \qquad (2.3)$$
 
 che, risolta per $w$, fornisce la **frontiera salario-profitto** della tecnica. Nell'esempio del codice la tecnica **A** impiega lavoro in due date, "adesso" (data 0) e "due periodi fa" (data 2), con coefficienti $l_0 = 1.3125$ e $l_2 = 1$; la tecnica **B** impiega tutto il lavoro "un periodo fa" (data 1), con $l_1 = 2.3$. Le due frontiere sono dunque
 
-$$w_A(r) = \frac{1}{1.3125 + (1+r)^2}, \qquad w_B(r) = \frac{1}{2.3 \cdot (1+r)} \qquad (2.4)$$
+$$w_A(r) = \frac{1}{1.3125 + 1 \cdot (1+r)^2}, \qquad w_B(r) = \frac{1}{2.3 \cdot (1+r)} \qquad (2.4)$$
 
 A ciascun saggio di profitto si adotta la tecnica che consente il salario più alto (cioè il costo più basso). Le due tecniche si equivalgono quando $w_A = w_B$, ossia quando $1.3125 + (1+r)^2 = 2.3 \cdot (1+r)$: posto $x = 1+r$, è l'equazione di **secondo grado** $x^2 - 2.3 \cdot x + 1.3125 = 0$, con radici $x = 1.05$ e $x = 1.25$, cioè $r = 5\%$ e $r = 25\%$. Ed ecco il punto cruciale: poiché il costo della tecnica A è *quadratico* in $(1+r)$ - per via del lavoro datato due periodi indietro - mentre quello della B è *lineare*, le due frontiere possono intersecarsi **due volte**. La tecnica B risulta la migliore per saggi bassi, la A per saggi intermedi, e la B **ritorna** per saggi alti: è il "ritorno delle tecniche". Ne segue che non esiste un ordinamento delle tecniche per "intensità di capitale" indipendente dalla distribuzione: nel secondo pannello, le curve dell'intensità capitalistica $k = -dw/dr$ delle due tecniche si incrociano, sicché *quale* tecnica sia più capitalistica dipende dal livello di $r$.
 
