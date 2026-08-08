@@ -72,6 +72,8 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 - **3.3** Sintesi dei due approcci e introduzione ai sistemi complessi
 - **3.4** Conclusione del corso e ripasso
 
+## [Riferimenti bibliografici](https://github.com/marcoverpas/analisi_economica/blob/main/README.md#riferimenti-bibliografici)
+
 ---
 
 ## 🎯 Che cosa imparerai
