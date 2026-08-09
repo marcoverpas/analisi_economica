@@ -1089,7 +1089,7 @@ legend("topleft", c("Garantito", "Boom", "Collasso"),
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_extrap.gif" width="720">
   </td></tr>
   <tr><td width="620" align="center">
-    <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar. Il grado di utilizzo della capacità resta pari a 1 solo se l'investimento cresce esattamente al saggio garantito <em>g<sub>w</sub></em> = <em>s</em>/<em>v</em>. Ogni scostamento, in eccesso o in difetto, si amplifica nel tempo. È l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico.</em>
+    <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar. Il grado di utilizzo della capacità resta pari a 1 solo se l'investimento cresce esattamente al saggio garantito <em>G</em> = <em>s</em>/<em>a</em>. Ogni scostamento, in eccesso o in difetto, si amplifica nel tempo. È l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico.</em>
   </td></tr>
 </table>
 
