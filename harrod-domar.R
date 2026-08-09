@@ -1,7 +1,7 @@
 # Modello di crescita di Harrod-Domar (acceleratore + moltiplicatore)
 # Corso "Analisi economica" - Parte II (sezione 2.2)
 # Estende il modello keynesiano dinamico elementare aggiungendo una funzione
-# di investimento "acceleratore". Equazioni (cfr. LUBS 5228M, slide 10):
+# di investimento "acceleratore". 
 #   (1) Y_t    = CONS_t + INV_t
 #   (2) SAV_t  = s * Y_{t-1}
 #   (3) INV_t  = a * (Ye_t - Y_{t-1})     Acceleratore (a = rapporto capitale/prodotto)
