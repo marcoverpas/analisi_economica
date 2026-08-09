@@ -12,7 +12,7 @@ nScenarios <- 2          # 1 = scenario base; 2 = shock all'investimento
 # Crea funzione che definisce le variabili come matrici ####
 mat <- function(z) matrix(data = z, nrow = nScenarios, ncol = nPeriods)
 
-# Definisci i coefficienti del modello ####
+# Definisci i coefficienti e le variabili del modello ####
 c0 <- 10                 # Consumo autonomo
 c1 <- 0.8                # Propensione marginale al consumo (0 < c1 < 1)
 I0 <- mat(10)            # Investimento autonomo
