@@ -1089,7 +1089,7 @@ legend("topleft", c("Garantito", "Boom", "Collasso"),
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_extrap.gif" width="720">
   </td></tr>
   <tr><td width="620" align="center">
-    <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar. Il grado di utilizzo della capacità resta pari a 1 solo se l'investimento cresce esattamente al saggio garantito <em>G</em> = <em>s</em>/<em>a</em>. Ogni scostamento, in eccesso o in difetto, si amplifica nel tempo. È l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico.</em>
+    <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar (moltiplicatore + acceleratore). Con aspettative confermate il reddito cresce al saggio garantito <em>G</em> = <em>s</em>/<em>a</em> (linea arancione). Un errore di aspettativa una tantum (periodo 20) sposta l'economia su una traiettoria più alta (domanda effettiva &gt; attesa) o più bassa (domanda effettiva &lt; attesa) e non viene mai riassorbito: lo scarto dal sentiero garantito (pannello b) si allarga nel tempo. Il sentiero garantito non è un attrattore: è l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico. Parametri: <em>s</em> = 0.2, <em>a</em> = 4, <em>G</em> = 0.05.</em>
   </td></tr>
 </table>
 
