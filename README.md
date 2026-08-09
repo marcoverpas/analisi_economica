@@ -100,7 +100,7 @@ Prova scritta con tre tipologie di domande - a risposta multipla, vero/falso e a
 
 ## 📚 Materiale del corso
 
-Il materiale didattico principale è costituito dalle **slide delle lezioni** e dalle letture raccolte in questo archivio, disponibili anche come **libro HTML**.
+Il materiale didattico principale è costituito dalle **note delle lezioni** raccolte in questo archivio, disponibili anche come **libro HTML**.
 
 A titolo esemplificativo, alcuni suggerimenti di lettura (limitatamente ai capitoli utilizzati):
 
