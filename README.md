@@ -1004,7 +1004,7 @@ cioè la somma del tasso di crescita della popolazione ($n$) e della produttivit
 # Modello di crescita di Harrod-Domar (acceleratore + moltiplicatore)
 # Corso "Analisi economica" - Parte II (sezione 2.2)
 # Estende il modello keynesiano dinamico elementare aggiungendo una funzione
-# di investimento "acceleratore". Equazioni (cfr. LUBS 5228M, slide 10):
+# di investimento "acceleratore". Equazioni:
 #   (1) Y_t    = CONS_t + INV_t
 #   (2) SAV_t  = s * Y_{t-1}
 #   (3) INV_t  = a * (Ye_t - Y_{t-1})     Acceleratore (a = rapporto capitale/prodotto)
@@ -1083,7 +1083,7 @@ abline(v = shockAt, lty = 3, col = "grey70")
 
 <table align="center">
   <tr><td width="620" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_domar.gif" width="720">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_accel.gif" width="720">
   </td></tr>
   <tr><td width="620" align="center">
     <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar. Il grado di utilizzo della capacità resta pari a 1 solo se l'investimento cresce esattamente al saggio garantito <em>g<sub>w</sub></em> = <em>s</em>/<em>v</em>. Ogni scostamento, in eccesso o in difetto, si amplifica nel tempo. È l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico.</em>
@@ -1108,8 +1108,8 @@ Su questa base Sraffa riprende il **metodo del sovrappiù** dei classici, che la
 
 Il libro comincia dal caso più semplice: un'economia che si limita a **riprodursi**, senza generare alcun sovrappiù. Si prenda l'esempio di Sraffa, a due sole industrie (grano e ferro):
 
-$$280 \text{ qr. grano} + 12 \text{ t. ferro} \; \rightarrow \; 400 \text{ qr. grano}$$
-$$120 \text{ qr. grano} + \; 8 \text{ t. ferro} \; \rightarrow \; 20 \text{ t. ferro}$$
+$$280 \text{ qr. grano} + 12 \text{ t. ferro} \; \rightarrow \; 400 \text{ qr. grano} \qquad (2.6)$$
+$$120 \text{ qr. grano} + \; 8 \text{ t. ferro} \; \rightarrow \; 20 \text{ t. ferro} \qquad (2.7)$$
 
 Sommando, l'economia impiega in tutto 400 qr. di grano e 20 t. di ferro, ed è esattamente ciò che produce: nulla avanza. Perché il sistema possa ripartire identico, ogni industria deve poter **riacquistare** i mezzi di produzione che ha consumato, e questo fissa in modo univoco i prezzi (o rapporti di scambio) relativi. Detti $p_g$ e $p_f$ i prezzi del grano e del ferro, la condizione di riproduzione dell'industria del grano è $280 \cdot p_g + 12 \cdot p_f = 400 \cdot p_g$, da cui $p_f = 10 \cdot p_g$: una tonnellata di ferro vale dieci quarti di grano. La stessa proporzione soddisfa, per costruzione, anche l'industria del ferro. I prezzi, qui, non misurano scarsità né utilità: sono i **rapporti che consentono al sistema di rinnovarsi**. È il germe stesso del modello input-output, e la traduzione rigorosa degli schemi di riproduzione di Quesnay e Marx.
 
@@ -1117,13 +1117,13 @@ Sommando, l'economia impiega in tutto 400 qr. di grano e 20 t. di ferro, ed è e
 
 Le cose si fanno interessanti quando l'economia produce **più** di quanto le serve per riprodursi: nasce un **sovrappiù**, che deve essere distribuito. La concorrenza impone allora un **saggio di profitto uniforme** $r$ su tutte le industrie, e occorre pagare un **salario** $w$ al lavoro impiegato. Riprendiamo le due industrie di prima, aggiungendo ora il lavoro e il sovrappiù. Il prezzo di ciascun bene deve coprire il costo dei mezzi di produzione, maggiorato del profitto al saggio $r$, più il salario. Per il grano e per il ferro:
 
-$$p_g = (1+r) \cdot (a_{gg} \cdot p_g + a_{fg} \cdot p_f) + w \cdot l_g$$
+$$p_g = (1+r) \cdot (a_{gg} \cdot p_g + a_{fg} \cdot p_f) + w \cdot l_g \qquad (2.8)$$
 
-$$p_f = (1+r) \cdot (a_{gf} \cdot p_g + a_{ff} \cdot p_f) + w \cdot l_f$$
+$$p_f = (1+r) \cdot (a_{gf} \cdot p_g + a_{ff} \cdot p_f) + w \cdot l_f \qquad (2.9)$$
 
 dove $a_{ij}$ è la quantità di merce $i$ necessaria per una unità di merce $j$ (ricavabile dall'esempio: $a_{gg}=280/400=0.7$, $a_{fg}=12/400=0.03$, $a_{gf}=120/20=6$, $a_{ff}=8/20=0.4$), mentre $l_g$ e $l_f$ sono i coefficienti di lavoro diretto. Le due equazioni hanno la stessa struttura: *costo dei mezzi di produzione* $\times (1+r)$, più il *salario*. Passando da due a $n$ merci, le equazioni diventano $n$: la coppia dei prezzi $(p_g, p_f)$ diventa un vettore riga $p$, i coefficienti $a_{ij}$ una **matrice** $A$ (la cui colonna $j$ raccoglie gli input necessari a produrre il bene $j$), i coefficienti di lavoro un vettore $l$. In forma compatta si ottiene il sistema dei **prezzi di produzione** di Sraffa:
 
-$$p = (1+r) p A + w l \qquad (2.2)$$
+$$p = (1+r) p A + w l \qquad (2.10)$$
 
 in cui ogni prezzo copre il costo dei mezzi di produzione maggiorato del profitto, $(1+r) p A$, più il salario, $w l$. Si noti una differenza rispetto a Smith e a Marx (sezioni 1.2 e 1.4): in Sraffa il **salario è posticipato**, pagato alla fine del periodo sul prodotto, sicché non frutta profitto e resta fuori dalla parentesi $(1+r)$ - mentre nel salario *anticipato* di Marx si aveva $p = (1+r)(p A + w l)$. 
 
@@ -1136,11 +1136,11 @@ Questo sistema non è una novità isolata: costituisce uno sviluppo delle intuiz
 
 **Un esperimento in R: il ritorno delle tecniche.** Per "vedere" il *reswitching* mettiamo a confronto due **tecniche** che producono lo stesso bene, ma con una diversa combinazione di *input*. Al riguardo, si noti che attribuire ai coefficienti di lavoro diverse date di impiego costituisce la rappresentazione ridotta di una diversa composizione di lavoro e beni intermedi. Infatti, il lavoro impiegato due periodi fa rappresenta il lavoro incorporato in un mezzo di produzione realizzato due stadi produttivi a monte. Un diverso profilo temporale del lavoro è quindi semplicemente la forma ridotta di una diversa combinazione di lavoro e beni intermedi: è la "riduzione a quantità datate di lavoro" di Sraffa. Le diverse tecniche possono dunque essere descritte mediante tale riduzione: una tecnica è un profilo temporale del lavoro e produrre oggi un'unità di prodotto ha richiesto $l_t$ unità di lavoro $t$ periodi fa. Poiché il capitale immobilizzato in quel lavoro passato frutta un profitto, ogni input di lavoro va capitalizzato al fattore $(1+r)^t$. Scegliendo il prodotto stesso come numerario (cioè ponendo il suo prezzo pari a uno), il prezzo eguaglia il costo e si ottiene, per ciascuna tecnica, l'equazione:
 
-$$1 = w \cdot \sum_t l_t  \cdot (1+r)^t \qquad (2.3)$$
+$$1 = w \cdot \sum_t l_t  \cdot (1+r)^t \qquad (2.11)$$
 
 che, risolta per $w$, fornisce la **frontiera salario-profitto** della tecnica. Nell'esempio del codice la tecnica **A** impiega lavoro in due date, "adesso" (data 0) e "due periodi fa" (data 2), con coefficienti $l_0 = 1.3125$ e $l_2 = 1$; la tecnica **B** impiega tutto il lavoro "un periodo fa" (data 1), con $l_1 = 2.3$. Le due frontiere sono dunque:
 
-$$w_A(r) = \frac{1}{1.3125 + 1 \cdot (1+r)^2}, \qquad w_B(r) = \frac{1}{2.3 \cdot (1+r)} \qquad (2.4)$$
+$$w_A(r) = \frac{1}{1.3125 + 1 \cdot (1+r)^2}, \qquad w_B(r) = \frac{1}{2.3 \cdot (1+r)} \qquad (2.12)$$
 
 A ciascun saggio di profitto si adotta la tecnica che consente il salario più alto (cioè il costo più basso). Le due tecniche si equivalgono quando $w_A = w_B$, ossia quando $1.3125 + (1+r)^2 = 2.3 \cdot (1+r)$. Posto $x = 1+r$, ciò equivale a risolvere l'equazione di **secondo grado** $x^2 - 2.3 \cdot x + 1.3125 = 0$, che ha radici $x = 1.05$ e $x = 1.25$, cioè $r = 5\%$ e $r = 25\%$. Ed ecco il punto cruciale: siccome il costo della tecnica A è *quadratico* in $(1+r)$ - per via del lavoro datato due periodi indietro - mentre quello della B è *lineare*, le due frontiere possono intersecarsi **due volte**. La tecnica B risulta la migliore per saggi bassi, la A per saggi intermedi, e la B **ritorna** per saggi alti. È questo il cosiddetto "ritorno delle tecniche", il quale dimostra che non esiste un ordinamento delle tecniche per "intensità di capitale" indipendente dalla distribuzione. Nel secondo pannello, le curve dell'intensità capitalistica $k = -dw/dr$ delle due tecniche si incrociano, sicché *quale* tecnica sia più capitalistica dipende dal livello di $r$.
 
@@ -1361,11 +1361,11 @@ La controrivoluzione si articola in alcune tappe successive, che conviene ricost
 
 La prima mossa consiste nel riportare al centro la **teoria quantitativa della moneta**, riformulata da Milton Friedman come teoria della domanda di moneta. Nella sua forma essenziale essa afferma che il livello dei prezzi è governato dalla quantità di moneta in circolazione,
 
-$$M \cdot V = P \cdot Y \qquad (2.5)$$
+$$M \cdot V = P \cdot Y \qquad (2.13)$$
 
 con la velocità di circolazione $V$ trattata come stabile e il reddito reale $Y$ ancorato al suo livello "naturale". L'offerta di moneta, a sua volta, viene concepita come una grandezza che la banca centrale controlla dall'esterno attraverso la base monetaria $H$ e il **moltiplicatore della moneta**:
 
-$$M = m \cdot H \qquad (2.6)$$
+$$M = m \cdot H \qquad (2.14)$$
 
 dove $m$ dipende dalle propensioni a detenere circolante e riserve. Si tratta della visione *esogena* della moneta, ribaltata rispetto alla logica keynesiana: la quantità di moneta non risponde passivamente ai bisogni della produzione, ma è la variabile di controllo da cui dipendono i prezzi. La conseguenza polemica è immediata: se lo Stato finanzia la spesa emettendo moneta, non fa che alimentare l'inflazione. La politica fiscale espansiva viene così ridefinita, per costruzione, come un fenomeno essenzialmente **inflazionistico**. Per una critica di questa impostazioni, si veda [qui](https://github.com/marcoverpas/economia_monetaria#9-implicazioni-della-moneta-endogena).
 
@@ -1375,7 +1375,7 @@ La seconda mossa colpisce il cuore analitico della teoria di Keynes: il **moltip
 
 Secondo l'**ipotesi del reddito permanente** di Milton Friedman, le famiglie non regolano il consumo sul reddito effettivo del periodo, ma sul reddito che si aspettano di percepire in modo durevole, il reddito permanente $Y^P$:
 
-$$C = c \cdot Y^{P} \qquad (2.7)$$
+$$C = c \cdot Y^{P} \qquad (2.15)$$
 
 Secondo l'**ipotesi del ciclo vitale** di Franco Modigliani, analogamente, gli individui distribuiscono il consumo lungo l'intero arco della loro esistenza, risparmiando negli anni di reddito elevato e attingendo ai risparmi in quelli di reddito basso. In entrambi i casi la conclusione è la stessa: una variazione *transitoria* del reddito (per esempio, quella indotta da uno stimolo fiscale temporaneo) viene in larga parte risparmiata anziché spesa, perché non modifica il reddito permanente né la ricchezza di ciclo vitale. La propensione a consumare il reddito aggiuntivo si assottiglia, il moltiplicatore si riduce e la politica di bilancio perde efficacia. Il moltiplicatore keynesiano, da meccanismo centrale della determinazione del reddito, viene ricondotto a un caso di miopia dei consumatori.
 
@@ -1383,7 +1383,7 @@ Secondo l'**ipotesi del ciclo vitale** di Franco Modigliani, analogamente, gli i
 
 La terza mossa riguarda il legame fra inflazione e disoccupazione. La lettura **accelerazionista** proposta da Friedman (e, indipendentemente, da Edmund Phelps) riscrive la curva di Phillips introducendo le **aspettative di inflazione**:
 
-$$\pi = \pi^{e} - \alpha \cdot (u - u^{\*}) \qquad (2.8)$$
+$$\pi = \pi^{e} - \alpha \cdot (u - u^{\*}) \qquad (2.16)$$
 
 dove $\pi^{e}$ è l'inflazione attesa e $u^{\*}$ il tasso di disoccupazione "naturale". Se le aspettative sono *adattive* - se cioè i lavoratori aggiornano gradualmente $\pi^{e}$ sulla base dell'inflazione passata - allora esiste un *trade-off* fra inflazione e disoccupazione solo *finché* gli agenti sono ingannati. Nel **lungo periodo**, quando le aspettative si adeguano ($\pi^{e} = \pi$), la disoccupazione ritorna al livello naturale e la curva di Phillips diventa **verticale**. Nessuna politica della domanda può, quindi, tenere stabilmente la disoccupazione al di sotto di $u^{\*}$, ma solo accelerare l'inflazione. La disoccupazione, di nuovo, dipende soltanto da fattori "reali" (l'offerta di lavoro, le imperfezioni del mercato del lavoro), esattamente come nella teoria pre-keynesiana.
 
