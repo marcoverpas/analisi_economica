@@ -982,64 +982,103 @@ legend("right", c("Reddito", "Stock di moneta"),
 
 **Modello 3 - Crescita e instabilità: Harrod-Domar.** Estendere Keynes al lungo periodo significa chiedersi a quale ritmo l'economia debba crescere perché la capacità produttiva creata dagli investimenti resti pienamente utilizzata. La risposta di Harrod e Domar è il **saggio di crescita garantito** $g_w = s/v$ (con $s$ la propensione al risparmio e $v$ il rapporto capitale/prodotto). Il risultato è, però, poco rassicurante: si tratta di un equilibrio "sul filo del rasoio". Se l'investimento cresce anche solo di poco al di sopra di $g_w$, la domanda supera la capacità e lo scarto si amplifica. Se cresce al di sotto, si accumula capacità inutilizzata (Figura 2.3). Nulla garantisce che il sistema si tenga sul sentiero garantito, da cui l'esigenza di un intervento pubblico stabilizzatore.
 
+Da dove viene il saggio garantito? Il modello combina due meccanismi già visti: il **moltiplicatore** e l'**acceleratore**. In un'economia chiusa e senza settore pubblico l'equilibrio del mercato dei beni richiede l'uguaglianza fra risparmio e investimento *programmati*, $S = I$ (una condizione di equilibrio *ex ante*, da non confondere con l'identità contabile $S \equiv I$). Il risparmio è una quota fissa del reddito, secondo la logica del moltiplicatore:
+
+$$S = s \cdot Y, \qquad s = 1 - c \qquad (2.2)$$
+
+L'investimento segue il principio dell'acceleratore. Le imprese accrescono lo *stock* di capitale in proporzione all'aumento (atteso) della domanda:
+
+$$I = a \cdot \Delta \qquad (2.3) Y$$
+
+dove $a > 1$ è il rapporto marginale capitale/prodotto ($a = \Delta K/\Delta Y$). Imponendo $S = I$ si ottiene $s \cdot Y = a \cdot\Delta Y$, ossia:
+
+$$G \equiv \frac{\Delta Y}{Y} = \frac{s}{a} \qquad (2.4)$$
+
+Il saggio di crescita **garantito** $G$ è dunque l'unico ritmo di crescita del reddito compatibile con l'uguaglianza fra risparmio e investimento quando le aspettative sono confermate. Se l'economia cresce a questo tasso, la capacità produttiva che si va creando resta pienamente utilizzata e le decisioni non vengono riviste. Questo tasso, però, non ha alcuna ragione di coincidere con il saggio di crescita **naturale**
+
+$$G_n = n + \lambda \qquad (2.5)$$
+
+cioè la somma del tasso di crescita della popolazione ($n$) e della produttività del lavoro ($\lambda$), che fissa il massimo tasso di crescita consentito dalle risorse disponibili. Poiché $s$, $a$, $n$ e $\lambda$ dipendono da forze indipendenti, l'uguaglianza $G = G_n$ si realizza solo per caso: quando $G < G_n$ l'economia cresce meno del suo potenziale, con disoccupazione e tendenze deflazionistiche; quando $G > G_n$ la domanda cresce più della capacità, con tensioni inflazionistiche.
+
 ```r
-# Modello di crescita di Harrod-Domar: il "filo del rasoio"
+# Modello di crescita di Harrod-Domar (acceleratore + moltiplicatore)
+# Corso "Analisi economica" - Parte II (sezione 2.2)
+# Estende il modello keynesiano dinamico elementare aggiungendo una funzione
+# di investimento "acceleratore". Equazioni (cfr. LUBS 5228M, slide 10):
+#   (1) Y_t    = CONS_t + INV_t
+#   (2) SAV_t  = s * Y_{t-1}
+#   (3) INV_t  = a * (Ye_t - Y_{t-1})     Acceleratore (a = rapporto capitale/prodotto)
+#   (4) CONS_t = Y_t - SAV_t
+#   (5) Ye_t   = Y_t + eps_t              Domanda attesa (eps = errore di aspettativa)
+# Da (1) e (4) segue INV_t = SAV_t (equilibrio S=I). Sostituendo (2),(3),(5):
+#   a (Y_t + eps_t - Y_{t-1}) = s Y_{t-1}   =>   Y_t = (1 + s/a) Y_{t-1} - eps_t
+# Saggio di crescita garantito: G = s/a (con eps=0 e aspettative confermate).
 
 # Prepara l'ambiente ####
 rm(list = ls(all = TRUE))
 if (!is.null(dev.list())) dev.off()
-cat("\014")              # Cancella tutto
-nPeriods <- 60           # Numero di periodi
-s <- 0.2                 # Propensione al risparmio
-v <- 4                   # Rapporto capitale/prodotto (incrementale)
-gw <- s / v              # Saggio di crescita garantito
+cat("\014")
 
-# Visualizza l'informazione
-cat("Saggio di crescita garantito g_w = ", gw, "\n")
+# Parametri ####
+nPeriods <- 50
+s  <- 0.2                 # Propensione al risparmio
+a  <- 4                   # Rapporto capitale/prodotto (acceleratore, a > 1)
+G  <- s / a               # Saggio di crescita garantito
+Y0 <- 100                 # Reddito iniziale
+shockAt <- 20             # Periodo dello shock di aspettativa
+eps0 <- 0.08 * Y0 * (1 + G)^(shockAt - 2)   # ampiezza dello shock (una tantum)
+cat("Saggio di crescita garantito  G = s/a =", G, "\n")
 
-# Tre scenari: investimento che cresce sopra, uguale, sotto g_w ####
-gI <- c(0.06, 0.05, 0.04)
+# Tre scenari: (1) aspettative confermate; (2) domanda effettiva > attesa; (3) < attesa
+# eps < 0  ->  Ye < Y  ->  effettiva > attesa  ->  traiettoria piu' alta
+# eps > 0  ->  Ye > Y  ->  effettiva < attesa  ->  traiettoria piu' bassa
+segno <- c(0, -1, +1)
+nS <- length(segno)
 
-# Definisci il grado di utilizzo degli impianti ####
-u  <- matrix(0, nrow = length(gI), ncol = nPeriods)
+Y    <- matrix(0,  nS, nPeriods)
+CONS <- matrix(0,  nS, nPeriods)
+INV  <- matrix(0,  nS, nPeriods)
+SAV  <- matrix(0,  nS, nPeriods)
+g    <- matrix(NA, nS, nPeriods)      # tasso di crescita effettivo
 
-# Nota:
-# Saggio di crescita garantito:  g_w = s / v.
-# s = propensione al risparmio; v = rapporto capitale/prodotto.
-# Domanda:  Y_dom = I / s   (moltiplicatore)
-# Capacità: Y_cap = K / v ; K_t = K_{t-1} + I_{t-1}
-# Grado di utilizzo: u = Y_dom / Y_cap. Solo se l'investimento cresce a g_w
-# la capacita' resta pienamente utilizzata. Ogni scostamento si autoalimenta.
-
-# Lancia il modello nei tre scenari ####
-for (j in 1:length(gI)) {
-
-  K <- numeric(nPeriods); I <- numeric(nPeriods)  # Definisci lo stock di capitale e l'investimento
-  K[1] <- 100                                     # Assegna valore iniziale allo stock di capitale
-  I[1] <- (s / v) * K[1]                          # Definisci l'investimento iniziale
-
-  # Definisci il "loop" temporale
+# Lancia il modello ####
+for (j in 1:nS) {
+  eps <- rep(0, nPeriods); eps[shockAt] <- segno[j] * eps0
+  Y[j, 1] <- Y0
   for (t in 2:nPeriods) {
-
-      I[t] <- I[1] * (1 + gI[j])^(t - 1)          # Investimento
-
-      K[t] <- K[t - 1] + I[t - 1]                 # Stock di capitale
-
-      u[j, t] <- (I[t] / s) / (K[t] / v)          # Grado di utilizzo
-
+    Y[j, t]    <- (1 + G) * Y[j, t - 1] - eps[t]     # Forma ridotta (equilibrio S=I)
+    SAV[j, t]  <- s * Y[j, t - 1]                    # Eq. (2)
+    INV[j, t]  <- SAV[j, t]                          # Equilibrio S=I
+    CONS[j, t] <- Y[j, t] - SAV[j, t]                # Eq. (4)
+    g[j, t]    <- Y[j, t] / Y[j, t - 1] - 1          # Tasso di crescita effettivo
   }
 }
+cat("Tasso di crescita sul sentiero garantito:", round(g[1, nPeriods], 4), "\n")
 
-# Visualizza i risultati ####
-plot(u[1, 2:nPeriods], type = "l", lwd = 2, col = 2, ylim = range(0.80, 1.20),
-     main = "Harrod-Domar: il filo del rasoio",
-     xlab = "Tempo", ylab = "Grado di utilizzo", font.main = 1, cex.main = 1, cex.axis=1, cex.lab=1)
-#grid()
-lines(u[2, 2:nPeriods ], lwd = 2, lty = 1, col = 1)
-lines(u[3, 2:nPeriods], lwd = 2, lty = 1, col = 4)
-abline(h = 1, lty = 3, col = "grey")
-legend("topleft", c("g > g_w (0.06)", "g = g_w (0.05)", "g < g_w (0.04)"),
-       lty = 1, lwd = 2, col = c(2, 1, 4), bty = "n", cex=1)
+# Grafici ####
+cW <- "orange"; cH <- "black"; cL <- "blue"
+par(mfrow = c(1, 2), mar = c(4, 4, 3, 1))
+
+# a) Livello del reddito
+plot(Y[1, ], type = "l", lwd = 2.5, col = cW, ylim = range(Y),
+     main = "a) Reddito (livello)", xlab = "Tempo", ylab = "Y",
+     font.main = 1, cex.main = 0.95)
+lines(Y[2, ], lwd = 2, lty = 2, col = cH)
+lines(Y[3, ], lwd = 2, lty = 2, col = cL)
+abline(v = shockAt, lty = 3, col = "grey70")
+legend("topleft", c("Crescita garantita (g = G)",
+                    "Domanda effettiva > attesa", "Domanda effettiva < attesa"),
+       col = c(cW, cH, cL), lwd = 2, lty = c(1, 2, 2), bty = "n", cex = 0.85)
+
+# b) Scarto dal sentiero garantito
+gapH <- Y[2, ] - Y[1, ]; gapL <- Y[3, ] - Y[1, ]
+plot(NA, xlim = c(1, nPeriods), ylim = range(gapH, gapL),
+     main = "b) Scarto dal sentiero garantito", xlab = "Tempo",
+     ylab = "Y - Y garantito", font.main = 1, cex.main = 0.95)
+abline(h = 0, lwd = 2.5, col = cW)
+lines(gapH, lwd = 2, lty = 2, col = cH)
+lines(gapL, lwd = 2, lty = 2, col = cL)
+abline(v = shockAt, lty = 3, col = "grey70")
 ```
 
 <table align="center">
