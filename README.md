@@ -980,25 +980,27 @@ legend("right", c("Reddito", "Stock di moneta"),
   </td></tr>
 </table>
 
-**Modello 3 - Crescita e instabilità: Harrod-Domar.** Estendere Keynes al lungo periodo significa chiedersi a quale ritmo l'economia debba crescere perché la capacità produttiva creata dagli investimenti resti pienamente utilizzata. La risposta di Harrod e Domar è il **saggio di crescita garantito** $g_w = s/v$ (con $s$ la propensione al risparmio e $v$ il rapporto capitale/prodotto). Il risultato è, però, poco rassicurante: si tratta di un equilibrio "sul filo del rasoio". Se l'investimento cresce anche solo di poco al di sopra di $g_w$, la domanda supera la capacità e lo scarto si amplifica. Se cresce al di sotto, si accumula capacità inutilizzata (Figura 2.3). Nulla garantisce che il sistema si tenga sul sentiero garantito, da cui l'esigenza di un intervento pubblico stabilizzatore.
+**Modello 3 - Crescita e instabilità: Harrod-Domar.** Estendere Keynes al lungo periodo significa chiedersi a quale ritmo l'economia debba crescere perché la capacità produttiva creata dagli investimenti resti pienamente utilizzata. La risposta di Harrod e Domar è il **saggio di crescita garantito** $G = s/a$, dove $s$ è la propensione al risparmio e $a$ il rapporto capitale/prodotto. È però un equilibrio "sul filo del rasoio": se l'investimento cresce anche solo di poco al di sopra di $G$, la domanda eccede la capacità e lo scarto si amplifica; se cresce al di sotto, si accumula capacità inutilizzata (Figura 2.3). Nulla riporta il sistema sul sentiero garantito, da cui l'esigenza di un intervento pubblico stabilizzatore.
 
-Da dove viene il saggio garantito? Il modello combina due meccanismi già visti: il **moltiplicatore** e l'**acceleratore**. In un'economia chiusa e senza settore pubblico l'equilibrio del mercato dei beni richiede l'uguaglianza fra risparmio e investimento *programmati*, $S = I$ (una condizione di equilibrio *ex ante*, da non confondere con l'identità contabile $S \equiv I$). Il risparmio è una quota fissa del reddito, secondo la logica del moltiplicatore:
+Da dove viene $G$? Il modello combina due meccanismi già visti, il **moltiplicatore** e l'**acceleratore**. In un'economia chiusa e senza settore pubblico, l'equilibrio del mercato dei beni richiede l'uguaglianza fra risparmio e investimento *programmati*, $S = I$ (una condizione *ex ante*, da non confondere con l'identità contabile $S \equiv I$). Il risparmio è una quota fissa del reddito, secondo la logica del moltiplicatore:
 
 $$S = s \cdot Y, \qquad s = 1 - c \qquad (2.2)$$
 
-L'investimento segue il principio dell'acceleratore. Le imprese accrescono lo *stock* di capitale in proporzione all'aumento (atteso) della domanda:
+mentre l'investimento segue il principio dell'acceleratore, ossia cresce in proporzione all'aumento atteso della domanda:
 
-$$I = a \cdot \Delta \qquad (2.3) Y$$
+$$I = a \cdot \Delta Y \qquad (2.3)$$
 
-dove $a > 1$ è il rapporto marginale capitale/prodotto ($a = \Delta K/\Delta Y$). Imponendo $S = I$ si ottiene $s \cdot Y = a \cdot\Delta Y$, ossia:
+dove $a > 1$ è il rapporto marginale capitale/prodotto ($a = \Delta K / \Delta Y$). Imponendo $S = I$ si ottiene $s \cdot Y = a \cdot \Delta Y$, da cui:
 
 $$G \equiv \frac{\Delta Y}{Y} = \frac{s}{a} \qquad (2.4)$$
 
-Il saggio di crescita **garantito** $G$ è dunque l'unico ritmo di crescita del reddito compatibile con l'uguaglianza fra risparmio e investimento quando le aspettative sono confermate. Se l'economia cresce a questo tasso, la capacità produttiva che si va creando resta pienamente utilizzata e le decisioni non vengono riviste. Questo tasso, però, non ha alcuna ragione di coincidere con il saggio di crescita **naturale**
+$G$ è dunque l'unico ritmo di crescita del reddito compatibile con l'uguaglianza fra risparmio e investimento quando le aspettative sono confermate: a quel tasso la capacità che via via si crea resta pienamente utilizzata e i piani non vengono rivisti.
+
+Questo tasso non ha però alcuna ragione di coincidere con il **saggio di crescita naturale**, ossia con:
 
 $$G_n = n + \lambda \qquad (2.5)$$
 
-cioè la somma del tasso di crescita della popolazione ($n$) e della produttività del lavoro ($\lambda$), che fissa il massimo tasso di crescita consentito dalle risorse disponibili. Poiché $s$, $a$, $n$ e $\lambda$ dipendono da forze indipendenti, l'uguaglianza $G = G_n$ si realizza solo per caso: quando $G < G_n$ l'economia cresce meno del suo potenziale, con disoccupazione e tendenze deflazionistiche; quando $G > G_n$ la domanda cresce più della capacità, con tensioni inflazionistiche.
+Si tratta della somma dei tassi di crescita della popolazione ($n$) e della produttività del lavoro ($\lambda$), che fissa il massimo consentito dalle risorse disponibili. Poiché $s$, $a$, $n$ e $\lambda$ dipendono da forze indipendenti, l'uguaglianza $G = G_n$ si realizza solo per caso: quando $G < G_n$ l'economia cresce meno del suo potenziale, con disoccupazione e tendenze deflazionistiche; quando $G > G_n$ la domanda cresce più della capacità, con tensioni inflazionistiche.
 
 ```r
 # Modello di Harrod-Domar con ASPETTATIVE ESTRAPOLATIVE (il "filo del rasoio")
