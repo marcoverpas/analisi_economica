@@ -1474,17 +1474,26 @@ Due facce di una stessa matrice. La stessa inversa $(I - A)^{-1}$ risolve due pr
 
 > 💡 **"Reale" non significa "fisico".** In questo corso le variabili dette "reali" (produzione reale, domanda finale reale, coefficienti tecnici reali) non vanno intese come quantità fisiche (tonnellate, unità, ore). I dati effettivi, tanto la contabilità nazionale quanto le tavole input-output, registrano transazioni in termini monetari, a prezzi correnti. Ciò che chiamiamo "reale" sono quei valori nominali divisi per un indice dei prezzi costruito ad hoc: un deflatore implicito e specifico per ciascuna grandezza, che serve a depurare i valori dagli effetti di prezzo. La distinzione non è meramente terminologica. Le serie deflazionate dipendono dall'indice scelto ed ereditano i noti problemi dei numeri indice che sorgono nell'aggregare beni e servizi eterogenei. In particolare, i coefficienti tecnici "reali" calcolati da dati deflazionati possono variare nel tempo per il solo mutare dei prezzi relativi, anche quando la relazione tecnica fra input e prodotto è rimasta invariata. Usiamo dunque "reale" nel senso corrente della contabilità nazionale, segnalando qui la differenza per evitare la comune confusione con "fisico".
 
-#### 3.1.4 Dallo schema statico ai modelli IO-SFC
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/io_leontief.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.1</strong> - Modello input-output a tre industrie (agricoltura, manifattura, servizi), con i coefficienti tecnici del modello Keynes + Sraffa (sezione 2.3.5) e domanda finale d = (50, 80, 120). (a) La produzione lorda supera la domanda finale in ogni settore: la differenza è la domanda intermedia che circola fra le industrie. (b) Il moltiplicatore di produzione di ciascun settore, somma della relativa colonna dell'inversa di Leontief, misura la produzione lorda totale attivata da un'unità di domanda finale rivolta a quel settore; la manifattura, principale fornitrice di input, ha le connessioni a monte più forti. (c) La produzione lorda totale come somma parziale della serie di Neumann I + A + A&sup2; + ...: giro dopo giro si aggiungono gli input degli input, e il totale converge al valore esatto (raggio spettrale di A &asymp; 0.47, sistema produttivo). (d) L'inversa di Leontief (I-A)^-1: ogni cella indica la produzione del settore in riga richiesta da un'unità di domanda finale del settore in colonna, direttamente e indirettamente; la somma di ciascuna colonna è il moltiplicatore del pannello (b).</em>
+  </td></tr>
+</table>
+
+IL pannello (a) della Figura 3.1 mostra che la produzione lorda eccede la domanda finale in ogni settore: nel complesso il sistema produce per circa 464 a fronte di una domanda finale di 250, e la differenza, circa 214, è la domanda intermedia che le industrie si rivolgono a vicenda. Si tratta di una misura di quanto l'economia lavori "su se stessa" prima di consegnare il prodotto agli usi finali. Il pannello (b) mostra, invece, l'intensità di queste interdipendenze. Il moltiplicatore di produzione della manifattura ($1.98$) è il più alto, perché la manifattura è il principale fornitore di input intermedi, sicché una domanda rivolta a essa attiva a cascata la produzione di tutti gli altri settori. È lo stesso fenomeno già osservato nel modello Keynes + Sraffa (sezione 2.3.5), dove la manifattura recuperava terreno nella produzione lorda pur restando indietro nella domanda finale. Il pannello (c) mostra da dove nasce tutto questo: la produzione lorda non si determina in un colpo solo, ma come somma di "giri" successivi di domanda intermedia, la serie di Neumann $I + A + A^2 + \cdots$, che converge perché ogni giro pesa meno del precedente (il raggio spettrale è $0.47$). È la stessa logica del moltiplicatore keynesiano (box 1), qui applicata a una rete di industrie anziché a un solo bene. Il pannello (d), infine, dà il volto della matrice che sintetizza il tutto: l'inversa di Leontief. La sua diagonale è sempre maggiore di 1, dato che consegnare un'unità di prodotto ne richiede almeno una prodotta, più i fabbisogni che rientrano nel settore stesso, e la somma di ciascuna colonna restituisce i moltiplicatori del pannello (b). Quantità e prezzi, come si è visto, sono le due facce di questa stessa matrice.
+
+---
+
+### 3.2 L'economia come insieme di bilanci integrati: circuito monetario e modelli dinamici fondi-flussi 
+
+#### 3.2.x Dallo schema IO statico ai modelli IO-SFC
 
 Il modello input-output è potente ma **statico**: confronta due istantanee del sistema senza descrivere il percorso che le collega, e dice poco di moneta e finanza. I modelli fondi-flussi (*stock-flow consistent*, SFC) della sezione 3.2 sono l'immagine speculare: dinamicamente e finanziariamente coerenti, ma di norma ciechi al dettaglio intersettoriale. I modelli **IO-SFC** mirano a unire i due pregi - la granularità industriale dell'input-output e la coerenza dinamica e finanziaria dei modelli SFC - così da risolvere un'economia monetaria e guidata dalla domanda industria per industria, mentre ogni *stock* e ogni flusso continua a quadrare (Berg et al., 2015; Veronese Passarella, 2025; Fevereiro et al., 2025).
 
 Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede poche equazioni in più. I prezzi non sono più fissi, ma determinati da condizioni di **costo pieno** (*cost-plus*) e di riproduzione - i prezzi di Sraffa (sezione 2.3.3) - mentre la domanda finale si ripartisce fra le industrie secondo **quote di composizione** fisse. Poiché ora i prezzi esistono, grandezze reali e nominali divergono: il consumo è deciso in termini reali, mentre il prodotto è misurato in valore. Il modellino Keynes + Sraffa della sezione 2.3.5 era già un primo passo in questa direzione; la sua trasformazione in un modello pienamente monetario e coerente sul piano dei bilanci è l'oggetto delle sezioni che seguono.
-
-
-
-
-
-
 
 
 🚧 ATTENZIONE: *Work in progress* 🚧
