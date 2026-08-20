@@ -1423,6 +1423,70 @@ L'etichetta è, in verità, imprecisa: sotto di essa convivono tradizioni distin
 
 ---
 
+## Parte III - Gli sviluppi modellistici più recenti
+
+La terza parte del corso raccoglie i fili delle prime due e li traduce in strumenti di modellizzazione. Se la Parte I ha ricostruito la visione classica dell'economia come processo di **riproduzione** e **sovrappiù**, e la Parte II ne ha seguito la crisi e la rinascita fino a Keynes e Sraffa, la Parte III mostra come quella visione prenda forma in famiglie di modelli fra loro complementari: il modello **input-output** (sezione 3.1), che descrive l'economia come insieme di settori integrati; i modelli del **circuito monetario** e **fondi-flussi** (sezione 3.2), che la descrivono come insieme di bilanci integrati; e la loro **sintesi**, aperta verso i sistemi complessi (sezione 3.3).
+
+### 3.1 L'economia come insieme di settori integrati: il modello input-output
+
+I modelli visti finora sono **pienamente aggregati**: la produzione è un unico bene omogeneo e l'intera economia si riassume in poche grandezze macroeconomiche. Ma l'immagine che percorre tutto il corso, dal *Tableau* di Quesnay agli schemi di Marx fino ai prezzi di Sraffa, è un'altra: quella di un'economia fatta di **settori che si producono reciprocamente i mezzi di produzione**. Il modello **input-output** di Wassily Leontief (premio Nobel 1973) è la forma rigorosa e generale di questa immagine, ed è al tempo stesso la sua controparte empirica, poiché si fonda su tavole statistiche - le *tavole delle interdipendenze settoriali* - che misurano gli scambi effettivi fra le industrie di un paese (Miller e Blair, 2009).
+
+#### 3.1.1 Dalla riproduzione al modello input-output
+
+Conviene richiamare il filo che ci ha condotti fin qui. Il *Tableau économique* (sezione 1.2.1) raffigurava per la prima volta l'economia come **flusso circolare** fra classi, in cui il prodotto di un anno fornisce gli input dell'anno successivo. Gli **schemi di riproduzione** di Marx (sezione 1.4.5) davano a quell'idea una forma a due settori - beni di produzione e beni di consumo - legati da precise condizioni di scambio. Il sistema **grano-ferro** di Sraffa (sezione 2.3.2) mostrava, nel caso più semplice, che i prezzi non sono che i rapporti i quali consentono a ciascuna industria di riacquistare i mezzi di produzione consumati. E la sezione 2.3.4 ne ha indicato l'approdo: tradotte in algebra lineare, tutte queste costruzioni convergono in un'unica struttura matriciale, di cui Sraffa fornisce il fondamento teorico e Leontief la misura empirica. Il modello input-output è quella struttura.
+
+L'idea di fondo è semplice. Con più industrie, ciascuna ha bisogno dei prodotti delle altre come input. Perciò la produzione **lorda** di ogni settore non serve solo a soddisfare la **domanda finale** (consumi, investimenti, spesa pubblica), ma anche la **domanda intermedia** delle altre industrie. Produzione lorda e domanda finale, come già osservato a proposito del modello Keynes + Sraffa (sezione 2.3.5), non coincidono: la loro differenza è precisamente ciò che circola all'interno del sistema produttivo.
+
+#### 3.1.2 La tavola delle interdipendenze e i coefficienti tecnici
+
+Tutta l'informazione si riassume in un'unica tavola contabile (Miller e Blair, 2009, capitoli 1-2). Con $n$ industrie, indichiamo con $z_{ij}$ il flusso di prodotto dell'industria $i$ impiegato come input dall'industria $j$, con $d_i$ la domanda finale del bene $i$, con $x_i$ la produzione lorda dell'industria $i$ e con $v_j$ il valore aggiunto (salari e profitti) generato dall'industria $j$.
+
+|                       |   Ind. 1   |   Ind. 2   | $\cdots$ |   Ind. $n$   | Domanda finale | Prod. lorda |
+|:----------------------|:----------:|:----------:|:--------:|:------------:|:--------------:|:-----------:|
+| **Ind. 1**            | $z_{11}$   | $z_{12}$   | $\cdots$ | $z_{1n}$     | $d_1$          | $x_1$       |
+| **Ind. 2**            | $z_{21}$   | $z_{22}$   | $\cdots$ | $z_{2n}$     | $d_2$          | $x_2$       |
+| $\vdots$              | $\vdots$   | $\vdots$   | $\ddots$ | $\vdots$     | $\vdots$       | $\vdots$    |
+| **Ind. $n$**          | $z_{n1}$   | $z_{n2}$   | $\cdots$ | $z_{nn}$     | $d_n$          | $x_n$       |
+| **Valore aggiunto**   | $v_1$      | $v_2$      | $\cdots$ | $v_n$        |                |             |
+| **Impieghi totali**   | $x_1$      | $x_2$      | $\cdots$ | $x_n$        |                |             |
+
+Letta **per righe**, la tavola mostra come si distribuisce il prodotto dell'industria $i$: i flussi $z_{ij}$ venduti come input a ciascuna industria $j$, più la domanda finale $d_i$. Letta **per colonne**, mostra invece che cosa l'industria $j$ deve acquistare per produrre: gli stessi flussi $z_{ij}$, più il valore aggiunto $v_j$. Poiché per ogni industria la produzione lorda eguaglia il totale degli impieghi, vale l'identità contabile
+
+$$x_i = \sum_{j} z_{ij} + d_i \qquad (3.1)$$
+
+Il cuore del modello è un'ipotesi tecnologica: la produzione impiega gli input in **proporzioni fisse**. La quantità del bene $i$ necessaria a produrre una unità del bene $j$ è il **coefficiente tecnico** $a_{ij} = z_{ij}/x_j$, la stessa nozione già incontrata nei prezzi di produzione di Marx e Sraffa (equazione 1.22, sezione 2.3.3). I flussi intermedi si scrivono allora $z_{ij} = a_{ij} \cdot x_j$. È esattamente l'ipotesi di coefficienti fissi discussa nella sezione 2.3.1, quella che separa la modellistica classica e post-keynesiana dalla sostituibilità fra fattori di marca neoclassica.
+
+#### 3.1.3 Il sistema di Leontief e l'inversa
+
+Raccogliendo i coefficienti nella matrice $A$, le produzioni lorde nel vettore $x$ e le domande finali nel vettore $d$, l'identità (3.1) diventa il **sistema di Leontief**:
+
+$$x = A \cdot x + d \qquad (3.2)$$
+
+la cui soluzione è
+
+$$x = (I - A)^{-1} \cdot d \qquad (3.3)$$
+
+La matrice $(I - A)^{-1}$ è l'**inversa di Leontief**, che abbiamo già incontrato più volte. Essa traduce una qualunque domanda finale $d$ nella produzione lorda che ogni industria deve realizzare per soddisfarla, **direttamente e indirettamente**. Il significato diventa trasparente sviluppando l'inversa nella **serie di Neumann** $(I - A)^{-1} = I + A + A^2 + A^3 + \cdots$ (si vedano i box per geek e nerd 1 e 3): la produzione deve coprire la domanda finale ($I$), poi gli input necessari a produrla ($A$), poi gli input di quegli input ($A^2$), lungo una catena infinita che converge purché il sistema sia **produttivo**, cioè capace di reintegrare i propri mezzi di produzione e lasciare un sovrappiù. Le condizioni precise di esistenza e di positività dell'inversa - il raggio spettrale di $A$ minore di 1 e il teorema di Perron-Frobenius - sono discusse nei box 3 e 4.
+
+Il modello è **guidato dalla domanda**: dato $d$, livello e composizione della produzione si determinano di conseguenza. Sommando gli elementi della colonna $j$-esima dell'inversa si ottiene inoltre il **moltiplicatore di produzione** del settore $j$, cioè la produzione lorda complessivamente attivata in tutta l'economia da una unità di domanda finale rivolta a quel settore: una misura delle sue **connessioni a monte** con il resto del sistema (Miller e Blair, 2009). È la versione settoriale del moltiplicatore keynesiano (box 1).
+
+Due facce di una stessa matrice. La stessa inversa $(I - A)^{-1}$ risolve due problemi speculari, a seconda del lato da cui la si moltiplica. Moltiplicata **a destra** per la domanda finale $d$ (un vettore colonna) restituisce le **quantità**: le produzioni lorde $x = (I - A)^{-1} d$ necessarie a soddisfare quella domanda, direttamente e indirettamente. Moltiplicata **a sinistra** per i coefficienti di lavoro diretto $l$ (un vettore riga) restituisce i **valori**: il lavoro complessivo, diretto e indiretto, incorporato in ciascun bene, $\Lambda = l(I - A)^{-1}$ (sono i valori-lavoro di Marx, equazione 1.22). L'intuizione è la stessa da entrambi i lati: poiché $(I - A)^{-1} = I + A + A^2 + \cdots$ somma l'intera catena dei fabbisogni, partendo dalla domanda finale si risale a tutta la produzione che la sostiene, e partendo dal lavoro diretto si risale a tutto il lavoro che ogni merce contiene. I prezzi di produzione di Sraffa $p = (1+r)pA + wl$ (equazione 2.2) hanno la stessa struttura, con l'aggiunta del profitto. Leontief e Sraffa sono così, alla lettera, le due facce - quantità e prezzi - della medesima interdipendenza (sezione 2.3.4).
+
+> 💡 **"Reale" non significa "fisico".** In questo corso le variabili dette "reali" (produzione reale, domanda finale reale, coefficienti tecnici reali) non vanno intese come quantità fisiche (tonnellate, unità, ore). I dati effettivi, tanto la contabilità nazionale quanto le tavole input-output, registrano transazioni in termini monetari, a prezzi correnti. Ciò che chiamiamo "reale" sono quei valori nominali divisi per un indice dei prezzi costruito ad hoc: un deflatore implicito e specifico per ciascuna grandezza, che serve a depurare i valori dagli effetti di prezzo. La distinzione non è meramente terminologica. Le serie deflazionate dipendono dall'indice scelto ed ereditano i noti problemi dei numeri indice che sorgono nell'aggregare beni e servizi eterogenei. In particolare, i coefficienti tecnici "reali" calcolati da dati deflazionati possono variare nel tempo per il solo mutare dei prezzi relativi, anche quando la relazione tecnica fra input e prodotto è rimasta invariata. Usiamo dunque "reale" nel senso corrente della contabilità nazionale, segnalando qui la differenza per evitare la comune confusione con "fisico".
+
+#### 3.1.4 Dallo schema statico ai modelli IO-SFC
+
+Il modello input-output è potente ma **statico**: confronta due istantanee del sistema senza descrivere il percorso che le collega, e dice poco di moneta e finanza. I modelli fondi-flussi (*stock-flow consistent*, SFC) della sezione 3.2 sono l'immagine speculare: dinamicamente e finanziariamente coerenti, ma di norma ciechi al dettaglio intersettoriale. I modelli **IO-SFC** mirano a unire i due pregi - la granularità industriale dell'input-output e la coerenza dinamica e finanziaria dei modelli SFC - così da risolvere un'economia monetaria e guidata dalla domanda industria per industria, mentre ogni *stock* e ogni flusso continua a quadrare (Berg et al., 2015; Veronese Passarella, 2025; Fevereiro et al., 2025).
+
+Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede poche equazioni in più. I prezzi non sono più fissi, ma determinati da condizioni di **costo pieno** (*cost-plus*) e di riproduzione - i prezzi di Sraffa (sezione 2.3.3) - mentre la domanda finale si ripartisce fra le industrie secondo **quote di composizione** fisse. Poiché ora i prezzi esistono, grandezze reali e nominali divergono: il consumo è deciso in termini reali, mentre il prodotto è misurato in valore. Il modellino Keynes + Sraffa della sezione 2.3.5 era già un primo passo in questa direzione; la sua trasformazione in un modello pienamente monetario e coerente sul piano dei bilanci è l'oggetto delle sezioni che seguono.
+
+
+
+
+
+
+
+
 🚧 ATTENZIONE: *Work in progress* 🚧
 
 ---
