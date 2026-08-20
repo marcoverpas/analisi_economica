@@ -1476,7 +1476,7 @@ Due facce di una stessa matrice. La stessa inversa $(I - A)^{-1}$ risolve due pr
 
 <table align="center">
   <tr><td width="900" align="center">
-    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/io_leontief.png" width="900">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/leontief.png" width="900">
   </td></tr>
   <tr><td width="900" align="center">
     <em><strong>Figura 3.1</strong> - Modello input-output a tre industrie (agricoltura, manifattura, servizi), con i coefficienti tecnici del modello Keynes + Sraffa (sezione 2.3.5) e domanda finale d = (50, 80, 120). (a) La produzione lorda supera la domanda finale in ogni settore: la differenza è la domanda intermedia che circola fra le industrie. (b) Il moltiplicatore di produzione di ciascun settore, somma della relativa colonna dell'inversa di Leontief, misura la produzione lorda totale attivata da un'unità di domanda finale rivolta a quel settore; la manifattura, principale fornitrice di input, ha le connessioni a monte più forti. (c) La produzione lorda totale come somma parziale della serie di Neumann I + A + A&sup2; + ...: giro dopo giro si aggiungono gli input degli input, e il totale converge al valore esatto (raggio spettrale di A &asymp; 0.47, sistema produttivo). (d) L'inversa di Leontief (I-A)^-1: ogni cella indica la produzione del settore in riga richiesta da un'unità di domanda finale del settore in colonna, direttamente e indirettamente; la somma di ciascuna colonna è il moltiplicatore del pannello (b).</em>
