@@ -527,11 +527,11 @@ con $q$ la composizione organica dell'intera economia. Il saggio di profitto cre
 
 A prezzi diretti i saggi di profitto dei due settori (20% e 50%) sono incompatibili con la concorrenza. Seguendo la procedura originale di Marx, che valuta gli input $C$ e $V$ ai loro prezzi diretti, il saggio generale è $r = 70/200 = 35\%$, e i prezzi di produzione $P_i=(C_i+V_i)(1+r)$ valgono $P_1 = 135$ e $P_2 = 135$: il settore 1 (alta composizione) *guadagna* ($135 > 120$), il settore 2 (bassa composizione) *perde* ($135 < 150$). La somma resta $270$ e il profitto totale $70$: entrambe le identità (1.20) sono rispettate. In un trattamento pienamente coerente, però, anche gli input andrebbero valutati ai prezzi di produzione, e il saggio $r$ non precederebbe più i prezzi ma sarebbe determinato *insieme* ad essi (si veda oltre).
 
-In generale, con $n$ settori, la teoria si può riscrivere in forma **matriciale** (rivelandone la parentela con il modello input-output, di cui ci occuperemo in dettaglio nella sezione 3.1). Siano $A$ la matrice dei coefficienti di capitale circolante (l'elemento $a_{ij}$ è la quantità del bene $i$ impiegata per produrre una unità del bene $j$), $l$ il vettore riga dei coefficienti di lavoro diretto e $x$ il vettore dei prodotti lordi. I valori o prezzi diretti (vettore riga $\Lambda$) risolvono $\Lambda = \Lambda A + l$, ossia
+In generale, con $n$ settori, la teoria si può riscrivere in forma **matriciale** (rivelandone la parentela con il modello input-output, di cui ci occuperemo in dettaglio nella sezione 3.1). Siano $A$ la matrice dei coefficienti di capitale circolante (l'elemento $a_{ij}$ è la quantità del bene $i$ impiegata per produrre una unità del bene $j$), $l$ il vettore riga dei coefficienti di lavoro diretto e $x$ il vettore dei prodotti lordi. I valori o prezzi diretti (vettore riga $\Lambda$) risolvono $\Lambda = \Lambda A + l$, ossia:
 
 $$\Lambda = l (I - A)^{-1} \qquad (1.22)$$
 
-dove $(I-A)^{-1}$ è l'**inversa di Leontief**. I prezzi di produzione (vettore riga $p$), valutando gli input al loro prezzo effettivo e anticipando il salario monetario $w$, risolvono a loro volta
+dove $(I-A)^{-1}$ è l'**inversa di Leontief**. I prezzi di produzione (vettore riga $p$), valutando gli input al loro prezzo effettivo e anticipando il salario monetario $w$, risolvono a loro volta:
 
 $$p = (1+r) (p A + w l) \qquad (1.23)$$
 
