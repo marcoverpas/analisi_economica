@@ -1535,6 +1535,7 @@ Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede
 - Lucas, R. E. (1972), "Expectations and the Neutrality of Money", Journal of Economic Theory, 4(2), pp. 103-124.
 - Lucas, R. E. (1976), "Econometric Policy Evaluation: A Critique", Carnegie-Rochester Conference Series on Public Policy, 1, pp. 19-46.
 - Marx, K. (1867), *Il capitale. Critica dell'economia politica*, Libro I, Editori Riuniti, Roma, 1964.
+- Miller, R. E. e Blair, P. D. (2009), *Input-Output Analysis: Foundations and Extensions*, Cambridge University Press, Cambridge.
 - Modigliani, F. e Brumberg, R. (1954), "Utility Analysis and the Consumption Function: An Interpretation of Cross-Section Data", in K. K. Kurihara (a cura di), Post-Keynesian Economics, Rutgers University Press, New Brunswick, pp. 388-436.
 - Muth, J. F. (1961), "Rational Expectations and the Theory of Price Movements", Econometrica, 29(3), pp. 315-335.
 - Napoleoni, C. (1973), *Smith Ricardo Marx. Considerazioni sulla storia del pensiero economico*, Boringhieri, Torino.
