@@ -1642,6 +1642,11 @@ Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instab
 
 ---
 
+<div align="center">
+<figure>
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/ritratti.png" width="1000">
+</figure>
+</div>
 
 ## Riferimenti bibliografici
 - Berg, M., Hartley, B. e Richters, O. (2015), "A Stock-Flow Consistent Input-Output Model with Applications to Energy Price Shocks, Interest Rates, and Heat Emissions", *New Journal of Physics*, 17(1), 015011.
