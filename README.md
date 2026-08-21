@@ -1507,20 +1507,6 @@ La stessa inversa $(I - A)^{-1}$ risolve due problemi speculari, a seconda del l
 
 IL pannello (a) della Figura 3.1 mostra che la produzione lorda eccede la domanda finale in ogni settore: nel complesso il sistema produce per circa 464 a fronte di una domanda finale di 250, e la differenza, circa 214, è la domanda intermedia che le industrie si rivolgono a vicenda. Si tratta di una misura di quanto l'economia lavori "su se stessa" prima di consegnare il prodotto agli usi finali. Il pannello (b) mostra, invece, l'intensità di queste interdipendenze. Il moltiplicatore di produzione della manifattura ($1.98$) è il più alto, perché la manifattura è il principale fornitore di input intermedi, sicché una domanda rivolta a essa attiva a cascata la produzione di tutti gli altri settori. È lo stesso fenomeno già osservato nel modello Keynes + Sraffa (sezione 2.3.5), dove la manifattura recuperava terreno nella produzione lorda pur restando indietro nella domanda finale. Il pannello (c) mostra da dove nasce tutto questo: la produzione lorda non si determina in un colpo solo, ma come somma di "giri" successivi di domanda intermedia, la serie di Neumann $I + A + A^2 + \cdots$, che converge perché ogni giro pesa meno del precedente (il raggio spettrale è $0.47$). È la stessa logica del moltiplicatore keynesiano (box 1), qui applicata a una rete di industrie anziché a un solo bene. Il pannello (d), infine, dà il volto della matrice che sintetizza il tutto: l'inversa di Leontief. La sua diagonale è sempre maggiore di 1, dato che consegnare un'unità di prodotto ne richiede almeno una prodotta, più i fabbisogni che rientrano nel settore stesso, e la somma di ciascuna colonna restituisce i moltiplicatori del pannello (b). Quantità e prezzi, come si è visto, sono le due facce di questa stessa matrice. Il codice che riproduce la Figura 3.1 è [disponibile qui](https://github.com/marcoverpas/analisi_economica/blob/main/leontief.R).
 
----
-
-### 3.2 L'economia come insieme di bilanci integrati: circuito monetario e modelli dinamici fondi-flussi 
-
-#### 3.2.x Dallo schema IO statico ai modelli IO-SFC
-
-Il modello input-output è potente ma **statico**: confronta due istantanee del sistema senza descrivere il percorso che le collega, e dice poco di moneta e finanza. I modelli fondi-flussi (*stock-flow consistent*, SFC) della sezione 3.2 sono l'immagine speculare: dinamicamente e finanziariamente coerenti, ma di norma ciechi al dettaglio intersettoriale. I modelli **IO-SFC** mirano a unire i due pregi - la granularità industriale dell'input-output e la coerenza dinamica e finanziaria dei modelli SFC - così da risolvere un'economia monetaria e guidata dalla domanda industria per industria, mentre ogni *stock* e ogni flusso continua a quadrare (Berg et al., 2015; Veronese Passarella, 2025; Fevereiro et al., 2025).
-
-Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede poche equazioni in più. I prezzi non sono più fissi, ma determinati da condizioni di **costo pieno** (*cost-plus*) e di riproduzione - i prezzi di Sraffa (sezione 2.3.3) - mentre la domanda finale si ripartisce fra le industrie secondo **quote di composizione** fisse. Poiché ora i prezzi esistono, grandezze reali e nominali divergono: il consumo è deciso in termini reali, mentre il prodotto è misurato in valore. Il modellino Keynes + Sraffa della sezione 2.3.5 era già un primo passo in questa direzione; la sua trasformazione in un modello pienamente monetario e coerente sul piano dei bilanci è l'oggetto delle sezioni che seguono.
-
-
-🚧 ATTENZIONE: *Work in progress* 🚧
-
----
 
 > [!NOTE]
 > 🤓🧠🔢 **Box per geek e nerd 2 - Ripasso lampo: autovalori e autovettori**. Una matrice $A$ si può pensare come una *trasformazione* che prende un vettore e lo sposta, allungandolo, comprimendolo e ruotandolo. Per la maggior parte dei vettori la direzione cambia. Esistono però alcune direzioni speciali che la matrice **non fa ruotare**, ma allunga o accorcia soltanto. Un vettore che punta in una di queste direzioni è un **autovettore**, e il fattore di allungamento (o accorciamento) a esso associato è il suo **autovalore**. In formule, $A v = \lambda v$: applicare la matrice $A$ al vettore $v$ equivale semplicemente a moltiplicarlo per il numero $\lambda$. L'animazione della Figura B1 rende visibile questa idea. Un vettore $v$ (in blu) ruota lungo tutte le direzioni possibili e, accanto, ne compare l'immagine $Av$ (in rosso). Per quasi tutte le direzioni le due frecce puntano da parti diverse, segno che la matrice ha *ruotato* il vettore oltre ad allungarlo. Solo lungo due direzioni particolari - le rette tratteggiate - la freccia rossa si sovrappone perfettamente a quella blu: sono gli **autovettori**, e in quel momento l'azione della matrice si riduce a una semplice moltiplicazione, $Av = \lambda v$ (qui $\lambda = 1.8$ lungo $(1, 1)$, che allunga il vettore, e $\lambda = 0.6$ lungo $(1, -1)$, che lo accorcia). Il pannello di destra misura la stessa cosa in modo quantitativo. L'angolo fra $v$ e $Av$ tocca lo zero esattamente - e soltanto - in corrispondenza degli autovettori Perché sono importanti? Perché sono le "direzioni naturali" del sistema descritto dalla matrice. Lungo di esse l'azione complicata della matrice si riduce a una semplice moltiplicazione. Inoltre, se si applica la matrice molte volte di seguito, è l'autovalore più grande, con il suo autovettore, a governare il comportamento di lungo periodo, mentre gli altri diventano trascurabili. È proprio questa proprietà che, nei modelli di produzione interdipendente come quello di Sraffa, consente di riassumere una rete di migliaia di relazioni tecniche in un unico numero (l'autovalore dominante) e in un'unica struttura di prezzi o di quantità (il relativo autovettore), come vedremo nel box successivo.
@@ -1545,20 +1531,141 @@ Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede
 
 ---
 
+### 3.2 L'economia come insieme di bilanci integrati: circuito monetario e modelli dinamici fondi-flussi
+
+Il modello input-output (sezione 3.1) descrive l'economia come una rete di **settori** che si scambiano beni. Di quella rete, però, coglie solo il lato reale: le merci circolano, la moneta no. Per compiere l'ultimo passo occorre aggiungere ciò che finora è rimasto sullo sfondo - la **moneta**, il **credito** e i **bilanci** - e guardare l'economia non più soltanto come insieme di settori integrati, ma come insieme di **bilanci integrati**, in cui ogni pagamento è al tempo stesso l'uscita di un settore e l'entrata di un altro, e ogni attività finanziaria è la passività di qualcun altro. Due tradizioni, nate separate e oggi convergenti, forniscono gli strumenti. La **teoria del circuito monetario** di Augusto Graziani spiega come la moneta viene creata, circola e viene distrutta; la **modellistica fondi-flussi** (*stock-flow consistent*, SFC) di Wynne Godley e Marc Lavoie impone a quel racconto una contabilità perfettamente coerente. Sono, come vedremo, due facce di una stessa medaglia.
+
+#### 3.2.1 Il circuito monetario della produzione: moneta endogena, banche e classi
+
+Il punto di partenza di Graziani (2003) è che la moneta non è né una merce né uno *stock* calato dall'esterno - la "moneta dall'elicottero" della teoria quantitativa (sezione 2.4.1) - ma **moneta creditizia bancaria**, creata in modo **endogeno** ogni volta che una banca concede un prestito. È la forma matura di un'intuizione che il corso ha già incontrato: la moneta-credito di Marx (sezione 1.4.8), la moneta endogena del *Trattato* di Keynes (sezione 2.2.1) e la preferenza per la liquidità come teoria monetaria dell'interesse (sezione 2.2.3). Contro il moltiplicatore della moneta rispolverato dal monetarismo (sezione 2.4.1), qui la causalità va **dal credito ai depositi**, non dalle riserve ai prestiti. Per un approfondimento sulle diverse teorie dell'origine della moneta e sulle sue funzioni si rinvia al mini-corso di *economia monetaria* disponibile online ([marcoverpas/economia_monetaria](https://github.com/marcoverpas/economia_monetaria)).
+
+La teoria descrive un vero e proprio **circuito**, una sequenza logica che si svolge dentro ogni periodo (Veronese Passarella, "Sequenza e classi", 2022) e che conviene scomporre nelle sue fasi.
+
+1. **Apertura: il finanziamento iniziale.** Le banche concedono alle imprese il credito necessario a pagare i salari e ad avviare la produzione. È in questo momento che la moneta viene **creata**.
+2. **Produzione.** Le imprese impiegano la forza-lavoro acquistata e producono le merci. Sono le imprese, non i consumatori, a fissare prezzi, livello e composizione del prodotto: non c'è "sovranità del consumatore", e la distribuzione fra le classi resta mediata dalle decisioni produttive.
+3. **Circolazione: la spesa.** I lavoratori spendono i salari in beni di consumo e collocano il risparmio in depositi bancari o in titoli emessi dalle imprese. La moneta passa di mano e rifluisce verso le imprese, per la via dei mercati dei beni e di quelli finanziari.
+4. **Chiusura: il finanziamento finale e il rimborso.** Con i ricavi raccolti (il **finanziamento finale**) le imprese **rimborsano** il debito contratto con le banche: la moneta creata all'apertura viene così **distrutta**.
+
+<table align="center">
+  <tr><td width="720" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/monetary_circuit.gif" width="720">
+  </td></tr>
+  <tr><td width="720" align="center">
+    <em><strong>Figura 3.2</strong> - Il circuito monetario della produzione. Le banche concedono alle imprese il finanziamento iniziale (creazione di moneta); le imprese pagano i salari; i lavoratori spendono i salari e ne risparmiano una parte; le imprese incassano il finanziamento finale dalle vendite e rimborsano il debito bancario (distruzione di moneta). La moneta è creditizia ed endogena: nasce con il credito e si estingue con il rimborso.</em>
+  </td></tr>
+</table>
+
+In simboli, all'apertura il finanziamento iniziale copre il monte salari $WB$,
+
+$$FIN_i = WB \qquad (3.4)$$
+
+e, poiché ogni prestito bancario genera un pari deposito, la moneta è integralmente **endogena**:
+
+$$\Delta M = \Delta L \qquad (3.5)$$
+
+Alla chiusura, la variazione dello *stock* di prestiti si calcola come **differenza fra il finanziamento iniziale e il finanziamento finale** $FIN_f$:
+
+$$\Delta L = FIN_i - FIN_f \qquad (3.6)$$
+
+Il finanziamento finale è la moneta che le imprese recuperano vendendo i beni ($C$) e collocando nuovi titoli ($\Delta B$), al netto di ciò che esse stesse versano, cioè gli interessi su prestiti e su titoli e i profitti distribuiti $F_f$:
+
+$$FIN_f = C + \Delta B - (int_L + int_B + F_f) \qquad (3.7)$$
+
+Basta ora ricordare che il profitto d'impresa è il reddito che resta dopo aver pagato salari, interessi e ammortamenti - con $Y = C + I$ il prodotto in valore:
+
+$$F_f = (C + I) - WB - int_L - int_B - AF$$
+
+Sostituendo quest'ultima e la (3.4) nella (3.7), e la (3.7) nella (3.6), i termini in $C$, $WB$, $int_L$, $int_B$ e $F_f$ si elidono a due a due e resta
+
+$$\Delta L = I - AF - \Delta B \qquad (3.8)$$
+
+È il cuore contabile del circuito: alla fine del periodo le imprese restano indebitate verso le banche esattamente per la parte di **investimento** che non hanno finanziato né con i fondi di ammortamento $AF$ né emettendo nuovi titoli $\Delta B$. Se tutta la moneta rifluisce - se cioè le famiglie spendono e sottoscrivono titoli per l'intero reddito ricevuto - allora $FIN_f = FIN_i$, la (3.8) si annulla e il debito si estingue; in generale, invece, l'investimento non autofinanziato resta a carico di nuovo credito bancario, ed è in questo senso che i prestiti sono una grandezza **residuale**.
+
+Il circuito non è un meccanismo neutrale, ma una **relazione triangolare** fra imprese, lavoratori e banche che incorpora una precisa **divisione in classi** (Veronese Passarella, 2024). Solo chi ha accesso al credito bancario - le imprese, i capitalisti - può *avviare* il circuito acquistando forza-lavoro; i lavoratori possono soltanto venderla, e ricevono moneta solo alla fine. Questa asimmetria strutturale è la forma monetaria del rapporto di classe e dello sfruttamento analizzati in Marx (sezione 1.4.3), e riecheggia l'idea sraffiana di una distribuzione fissata **dall'esterno** del sistema dei prezzi (sezione 2.3.3). Non a caso il circuito è stato descritto come una "rendition marxiana del metodo degli aggregati di Keynes": la circolazione capitalistica $D-M-D'$ (sezione 1.4.2) letta con gli strumenti della domanda effettiva.
+
+Da questa impostazione nasce il celebre **paradosso dei profitti**. Se le banche anticipano soltanto il monte salari, la moneta immessa nel circuito è pari a $WB$: come possono allora le imprese recuperare $WB$, pagare gli interessi e realizzare per giunta un profitto **monetario**? In un'economia privata e chiusa l'aggregato delle imprese può, al massimo, recuperare quanto ha anticipato. La soluzione è che il profitto monetario richiede un'**iniezione di moneta dall'esterno** del circuito puro: la spesa in disavanzo dello Stato, le esportazioni nette, o l'investimento delle imprese finanziato da nuovo credito. Più che un rompicapo logico, è un **controfattuale** che mette in luce il ruolo della moneta esterna e dello Stato (si collega alla politica economica di Keynes, sezione 2.2.4, e al problema della realizzazione in Marx, sezione 1.4.6).
+
+#### 3.2.2 I modelli fondi-flussi (SFC): i bilanci integrati e la coerenza contabile
+
+Se il circuito fornisce il *racconto*, i modelli SFC di Godley e Lavoie (2007) ne impongono la **contabilità**. L'economia è descritta da due matrici. La **matrice dei bilanci** (*balance-sheet matrix*) registra gli *stock*, cioè le attività e le passività di ciascun settore in un dato istante; la **matrice dei flussi** (*transaction-flow matrix*) registra i flussi di un periodo. La matrice dei bilanci, nella sua versione essenziale, ha questa forma:
+
+|                     | Lavoratori | Capitalisti | Imprese | Banche | $\sum$ |
+|:--------------------|:----------:|:-----------:|:-------:|:------:|:------:|
+| Depositi            | $+M_w$     | $+M_z$      |         | $-M$   | $0$    |
+| Prestiti            |            |             | $-L$    | $+L$   | $0$    |
+| Capitale fisso      |            |             | $+K$    |        | $+K$   |
+| Titoli              | $+B_w$     | $+B_z$      | $-B$    |        | $0$    |
+| Ricchezza netta     | $-V_w$     | $-V_z$      | $0$     | $0$    | $-K$   |
+| $\sum$              | $0$        | $0$         | $0$     | $0$    | $0$    |
+
+La regola che tiene insieme il tutto è semplice e stringente: ogni **attività finanziaria è la passività di qualcun altro**, sicché ogni riga finanziaria somma a zero; l'unica eccezione è il capitale fisso $K$, attività **reale** che non ha contropartita e costituisce la ricchezza netta dell'intero sistema. Letta per colonne, la matrice dà la ricchezza netta di ciascun settore.
+
+I flussi di un periodo sono registrati nella **matrice delle transazioni**, che ha la struttura seguente (un segno $+$ indica una fonte o un'entrata, un segno $-$ un impiego o un'uscita; il conto delle imprese è sdoppiato in conto *corrente* e conto *capitale*):
+
+|                        | Lavoratori     | Capitalisti    | Imprese (corr.) | Imprese (cap.) | Banche      | $\sum$ |
+|:-----------------------|:--------------:|:--------------:|:---------------:|:--------------:|:-----------:|:------:|
+| Consumo                | $-C_w$         | $-C_z$         | $+C$            |                |             | $0$    |
+| Investimento           |                |                | $+I$            | $-I$           |             | $0$    |
+| Salari                 | $+WB$          |                | $-WB$           |                |             | $0$    |
+| Ammortamenti           |                |                | $-AF$           | $+AF$          |             | $0$    |
+| Profitti d'impresa     |                | $+F_f$         | $-F_f$          |                |             | $0$    |
+| Profitti bancari       |                | $+F_b$         |                 |                | $-F_b$      | $0$    |
+| Interessi su prestiti  |                |                | $-int_L$        |                | $+int_L$    | $0$    |
+| Interessi su depositi  | $+int_M^w$     | $+int_M^z$     |                 |                | $-int_M$    | $0$    |
+| Interessi su titoli    | $+int_B^w$     | $+int_B^z$     | $-int_B$        |                |             | $0$    |
+| $\Delta$ prestiti      |                |                |                 | $+\Delta L$    | $-\Delta L$ | $0$    |
+| $\Delta$ depositi      | $-\Delta M_w$  | $-\Delta M_z$  |                 |                | $+\Delta M$ | $0$    |
+| $\Delta$ titoli        | $-\Delta B_w$  | $-\Delta B_z$  |                 | $+\Delta B$    |             | $0$    |
+| $\sum$                 | $0$            | $0$            | $0$             | $0$            | $0$         | $0$    |
+
+dove $int_L$, $int_M$ e $int_B$ sono gli interessi su prestiti, depositi e titoli ($int_M = int_M^w + int_M^z$ e $int_B = int_B^w + int_B^z$).
+
+La logica è la stessa dei bilanci: ogni flusso è una **fonte** per un settore e un **impiego** per un altro, così che ogni **riga** somma a zero - il consumo delle famiglie è ricavo delle imprese, i salari sono costo delle imprese e reddito dei lavoratori, l'interesse pagato da un settore è incassato da un altro. E ogni **colonna**, essendo il vincolo di bilancio di un settore, somma anch'essa a zero: per ciascuno, le fonti di fondi eguagliano gli impieghi. È la contabilità a **quadrupla entrata** - ogni operazione tocca quattro caselle, due per chi paga e due per chi incassa - che garantisce che nulla nasca dal nulla e nulla si perda. Le due matrici, infine, sono collegate: le righe di variazione ($\Delta L$, $\Delta M$, $\Delta B$) della matrice delle transazioni sono esattamente gli incrementi degli *stock* iscritti nella matrice dei bilanci.
+
+Ne discende una proprietà di controllo notevole. Se i vincoli di bilancio di tutti i settori sono rispettati, allora **un'equazione è sempre ridondante**: l'ultimo mercato si chiude da sé. È la **legge di Walras** in veste contabile - l'"equazione nascosta" - e serve da verifica di coerenza del modello.
+
+Il modello SFC più semplice è quello che abbiamo già incontrato: il **modello SIM** di Godley e Lavoie (sezione 2.2.6), un'economia con la sola moneta e senza banche. Da lì si sale a modelli via via più ricchi. Il **modello PC** (*portfolio choice*) affianca alla moneta i **titoli di Stato**, introducendo la scelta di portafoglio delle famiglie e il settore pubblico; il **modello BMW** (*bank-money world*) aggiunge le **banche private** e il **capitale**, e in esso la moneta è creditizia ed endogena, poiché ogni prestito genera un deposito. Quest'ultimo compie il passo decisivo per il nostro percorso: è, in sostanza, la traduzione fondi-flussi del **circuito monetario** descritto sopra. Per una trattazione completa dei tre modelli - equazioni, matrici contabili e codice `R` - si rinvia alle rispettive pagine del repository *Leeds lectures 2026*: [modello SIM](https://github.com/marcoverpas/Leeds_lectures_2026#12---model-sim), [modello PC](https://github.com/marcoverpas/Leeds_lectures_2026#13---model-pc) e [modello BMW](https://github.com/marcoverpas/Leeds_lectures_2026#14---model-bmw). Il circuito monetario ne è dunque il **contenuto teorico**, la struttura SFC lo **scheletro dinamico e a tenuta stagna**: in questo senso un modello SFC è "la controparte dinamica del circuito" (Veronese Passarella, 2024).
+
+#### 3.2.3 Dallo schema IO statico ai modelli IO-SFC
+
+Il modello input-output è potente ma **statico**: confronta due istantanee del sistema senza descrivere il percorso che le collega, e dice poco di moneta e finanza. I modelli fondi-flussi appena visti sono l'immagine speculare: dinamicamente e finanziariamente coerenti, ma di norma ciechi al dettaglio intersettoriale. I modelli **IO-SFC** mirano a unire i due pregi - la granularità industriale dell'input-output e la coerenza dinamica e finanziaria dei modelli SFC - così da risolvere un'economia monetaria e guidata dalla domanda industria per industria, mentre ogni *stock* e ogni flusso continua a quadrare (Berg et al., 2015; Veronese Passarella, 2023, 2025; Fevereiro et al., 2025). Per la logica e l'implementazione di questi modelli si rinvia alla pagina dedicata del repository *Leeds lectures 2026*: [The logic of IO and IO-SFC models](https://github.com/marcoverpas/Leeds_lectures_2026#21---the-logic-of-io-and-io-sfc-models).
+
+Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede poche equazioni in più. I prezzi non sono più fissi, ma determinati da condizioni di **costo pieno** (*cost-plus*) e di riproduzione - i prezzi di Sraffa (sezione 2.3.3) - mentre la domanda finale si ripartisce fra le industrie secondo **quote di composizione** fisse. Poiché ora i prezzi esistono, grandezze reali e nominali divergono: il consumo è deciso in termini reali, mentre il prodotto è misurato in valore. Il modellino Keynes + Sraffa della sezione 2.3.5 era già un primo passo in questa direzione; la sua trasformazione in un modello pienamente monetario e coerente sul piano dei bilanci è precisamente ciò che l'apparato di questa sezione consente di compiere.
+
+Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instabilità, di cui ci occupiamo separatamente nel box su Minsky e nella sezione 3.3.
+
+> 💡 **Minsky e l'instabilità finanziaria.** Hyman Minsky (1919-1996) propone una rilettura *finanziaria* della *Teoria generale* di Keynes: in un'economia monetaria di produzione le decisioni di investimento sono, prima di tutto, decisioni **finanziarie**, prese sotto incertezza e vincolate dai bilanci. Al centro sta la **teoria dei due prezzi**: il *prezzo di domanda* del capitale, cioè la valutazione che ne danno i mercati finanziari (funzione dei profitti attesi e delle condizioni del credito), e il *prezzo di offerta* dei beni capitali, determinato dai costi di produzione e dal *mark-up*. L'impresa investe finché il primo supera il secondo, e tanto più quanto più ampio è il divario (un rapporto affine alla "q di Tobin"). A frenare l'espansione interviene il **rischio crescente** (Kalecki): oltre la soglia dei fondi propri, il *rischio del debitore* abbassa il prezzo di domanda e il *rischio del creditore* alza quello di offerta, sicché la **leva finanziaria** - il rapporto fra fondi esterni e fondi interni - aumenta nelle fasi di espansione.
+>
+> Da qui l'**ipotesi di instabilità finanziaria** e il suo paradosso: **la stabilità è destabilizzante**. Nei periodi tranquilli imprese, banche e investitori riducono i propri **margini di sicurezza**, passando da posizioni *coperte* (*hedge*, i cui incassi coprono interessi e capitale) a posizioni *speculative* (gli incassi coprono i soli interessi) e infine *Ponzi* (gli incassi non coprono neppure gli interessi). La fragilità si accumula in modo **endogeno**, finché un piccolo *shock*, o un rialzo del tasso d'interesse, innesca il "*momento Minsky*": vendite forzate di attività, caduta dei loro prezzi e **deflazione da debito** (Fisher), che si propaga lungo la rete interconnessa dei bilanci, dove la passività di un'unità è l'attività di un'altra. Sul piano macroeconomico, poiché i profitti aggregati sono determinati dall'investimento (Kalecki: "i capitalisti guadagnano ciò che spendono"), la fase espansiva si autoconvalida - più investimento significa più profitti, quindi più credito - fino al punto di svolta.
+>
+> Ne discendono le due prescrizioni di Minsky: un **grande Stato** (*Big Government*), la cui spesa in disavanzo sostiene domanda e profitti e fornisce attività sicure, e una **grande banca centrale** (*Big Bank*), prestatrice di ultima istanza che pone "pavimenti" e "soffitti" alle oscillazioni; ogni salvataggio, però, riducendo i margini di sicurezza futuri, semina già la crisi successiva. Formalizzata, la dinamica fra **profitti** e **debito** assume la forma di un sistema *preda-predatore*: un ponte diretto verso i modelli di Goodwin e i sistemi complessi (sezione 3.3). Innestata nel circuito monetario (sezione 3.2), essa trasforma l'aggiustamento ordinato in **cicli endogeni** di espansione e recessione. È la stessa idea di crisi endogena già incontrata in Marx (sezioni 1.4.6-1.4.8) e in Harrod (sezione 2.2), qui fondata sulla struttura finanziaria del capitalismo. Non a caso i suoi meccanismi sono penetrati anche nel *mainstream*, sotto il nome di "acceleratore finanziario" (Bernanke, Gertler e Gilchrist).
+
+🚧 ATTENZIONE: *Work in progress* 🚧
+
+---
+
+
 ## Riferimenti bibliografici
+- Berg, M., Hartley, B. e Richters, O. (2015), "A Stock-Flow Consistent Input-Output Model with Applications to Energy Price Shocks, Interest Rates, and Heat Emissions", *New Journal of Physics*, 17(1), 015011.
+- Bernanke, B. S., Gertler, M. e Gilchrist, S. (1996), "The Financial Accelerator and Flight to Quality", *The Review of Economics and Statistics*, 78(1), pp. 1-15.
 - Domar, E. D. (1946), "Capital Expansion, Rate of Growth, and Employment", *Econometrica*, 14(2), pp. 137-147.
 - Duhem, P. (1906), *La teoria fisica: il suo oggetto, la sua struttura*, il Mulino, Bologna, 1978.
 - Duménil, G. e Foley, D. K. (2008), "The Marxian transformation problem", in S. N. Durlauf e L. E. Blume (a cura di), *The New Palgrave Dictionary of Economics*, 2ª ed., Palgrave Macmillan, Londra.
 - Feyerabend, P. K. (1975), *Contro il metodo. Abbozzo di una teoria anarchica della conoscenza*, Feltrinelli, Milano, 1979.
+- Fisher, I. (1933), "The Debt-Deflation Theory of Great Depressions", *Econometrica*, 1(4), pp. 337-357.
 - Foley, D. K. (1982), "The Value of Money, the Value of Labour Power and the Marxian Transformation Problem", *Review of Radical Political Economics*, 14(2), pp. 37-47.
 - Friedman, M. (1957), A Theory of the Consumption Function, Princeton University Press, Princeton.
 - Friedman, M. (1968), "The Role of Monetary Policy", The American Economic Review, 58(1), pp. 1-17.
 - Gattei, G. (1994), *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino.
+- Godley, W. e Lavoie, M. (2007), *Monetary Economics: An Integrated Approach to Credit, Money, Income, Production and Wealth*, Palgrave Macmillan, New York.
 - Goodwin, R. M. (1967), "A Growth Cycle", in C. H. Feinstein (a cura di), *Socialism, Capitalism and Economic Growth*, Cambridge University Press, Cambridge, pp. 54-58.
+- Graziani, A. (2003), *The Monetary Theory of Production*, Cambridge University Press, Cambridge.
 - Harrod, R. F. (1939), "An Essay in Dynamic Theory", *The Economic Journal*, 49(193), pp. 14-33.
 - Hicks, J. R. (1937), "Mr. Keynes and the 'Classics': A Suggested Interpretation", *Econometrica*, 5(2), pp. 147-159.
-- Keynes, J. M. (1930), *A Treatise on Money*, Macmillan, London (trad. it. *Trattato sulla moneta*).
 - Kahneman, D. (2011), Thinking, Fast and Slow, Farrar, Straus and Giroux, New York (trad. it. Pensieri lenti e veloci).
+- Kalecki, M. (1937), "The Principle of Increasing Risk", *Economica*, 4(4), pp. 440-447.
+- Kalecki, M. (1971), *Selected Essays on the Dynamics of the Capitalist Economy, 1933-1970*, Cambridge University Press, Cambridge.
+- Keynes, J. M. (1930), *A Treatise on Money*, Macmillan, London (trad. it. *Trattato sulla moneta*).
 - Keynes, J. M. (1936), *Teoria generale dell'occupazione, dell'interesse e della moneta*, UTET, Torino, 1947.
 - Knight, F. H. (1921), Risk, Uncertainty and Profit, Houghton Mifflin, Boston.
 - Kuhn, T. S. (1962), *La struttura delle rivoluzioni scientifiche*, Einaudi, Torino, 1969.
@@ -1567,6 +1674,8 @@ Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede
 - Lucas, R. E. (1976), "Econometric Policy Evaluation: A Critique", Carnegie-Rochester Conference Series on Public Policy, 1, pp. 19-46.
 - Marx, K. (1867), *Il capitale. Critica dell'economia politica*, Libro I, Editori Riuniti, Roma, 1964.
 - Miller, R. E. e Blair, P. D. (2009), *Input-Output Analysis: Foundations and Extensions*, Cambridge University Press, Cambridge.
+- Minsky, H. P. (1975), *John Maynard Keynes*, Columbia University Press, New York.
+- Minsky, H. P. (1986), *Stabilizing an Unstable Economy*, Yale University Press, New Haven.
 - Modigliani, F. e Brumberg, R. (1954), "Utility Analysis and the Consumption Function: An Interpretation of Cross-Section Data", in K. K. Kurihara (a cura di), Post-Keynesian Economics, Rutgers University Press, New Brunswick, pp. 388-436.
 - Muth, J. F. (1961), "Rational Expectations and the Theory of Price Movements", Econometrica, 29(3), pp. 315-335.
 - Napoleoni, C. (1973), *Smith Ricardo Marx. Considerazioni sulla storia del pensiero economico*, Boringhieri, Torino.
@@ -1586,8 +1695,9 @@ Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede
 - Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, [DOI: 10.1038/s41586-026-10702-5](https://www.nature.com/articles/s41586-026-10702-5).
 - Tversky, A. e Kahneman, D. (1974), "Judgment under Uncertainty: Heuristics and Biases", Science, 185(4157), pp. 1124-1131.
 - [Veronese] Passarella, M. (2011), "Marx in the matrix. L'algebra del 'lavoro vivo'", *Storia del Pensiero Economico. Nuova Serie*, 6(2), pp. 31-48, [DOI: 10.3280/SPE2009-002002](https://www.francoangeli.it/riviste/articolo/38095)
+- Veronese Passarella, M. (2022), "Sequence and Class Divide: A Reply to the Critics of the Theory of the Monetary Circuit", *Augusto Graziani Blog*, 18 settembre.
+- Veronese Passarella, M. (2023), "Technical Change and the Monetary Circuit: An Input-Output Stock-Flow Consistent Dynamic Model", *Quaderni del Dipartimento di Economia Politica e Statistica*, No. 903, Università di Siena.
+- Veronese Passarella, M. (2024), "It Is Not *la Vie en Rose*: New Insights from Graziani's Theory of the Monetary Circuit", *European Journal of Economics and Economic Policies: Intervention*, 21(3), pp. 461-485.
+- Veronese Passarella, M. (2025), "Destabilizing a Stable Economy: Minsky Meets Graziani's Monetary Circuit", *International Journal of Political Economy*, 54(3), pp. 338-355.
 - Veronese Passarella, M. (2027), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo* [titolo provvisorio], Cedam-Utet, Milano.
 - Veronese Passarella, M. (in corso di pubblicazione), *Mr. Keynes and the "Classics" (Almost) a Century Later: Reviewing the IS-LM Model*.
-
-
-
