@@ -123,11 +123,11 @@ Per orari, aule e date di inizio delle lezioni si rimanda alle comunicazioni del
 
 ## ⚙️ Requisiti
 
-Tutti i modelli presentati in questo README girano in `R` di base (*base R*), senza bisogno di alcun pacchetto aggiuntivo: gli schemi di riproduzione di Marx, i modelli keynesiani (elementare e SFC), il modello di Harrod-Domar, il ritorno delle tecniche, il modello dinamico Keynes + Sraffa e il modello input-output.
+Tutti i modelli presentati in questo archivio sono stati sviluppati in ambiente `R`. Per la riproduzione degli esperimenti non c'è bisogno di alcun pacchetto aggiuntivo.
 
-Si può scaricare R dal [sito ufficiale del CRAN](https://cran.r-project.org). Si consiglia inoltre [RStudio](https://posit.co/download/rstudio-desktop/), un ambiente di sviluppo (IDE) per R gratuito, potente e di facile utilizzo.
+`R` può essere scaricato gratuitamente dal [sito ufficiale del CRAN](https://cran.r-project.org). Si consiglia, inoltre, di scaricare ed installare [RStudio](https://posit.co/download/rstudio-desktop/), un ambiente di sviluppo (IDE) per `R` gratuito, potente e di facile utilizzo.
 
-Per chi volesse andare oltre - grafici più curati, tabelle formattate, manipolazione dei dati - sono utili (ma **facoltativi**) alcuni pacchetti aggiuntivi:
+Chi volesse ottenere rappresentazioni più accurate (grafici più sofisticati, tabelle formattate, manipolazione dei dati, ecc.), può installare alcuni pacchetti aggiuntivi:
 
 | Scopo | Pacchetti |
 | --- | --- |
@@ -135,11 +135,11 @@ Per chi volesse andare oltre - grafici più curati, tabelle formattate, manipola
 | Tabelle formattate | `knitr`, `kableExtra` |
 | Manipolazione dei dati | `dplyr`, `tidyr` |
 
-Si installano tutti in una volta con:
+Si possono installare tutti assieme all'interno di RStudio utilizzando il comando:
 
     install.packages(c("ggplot2", "dplyr", "tidyr", "knitr", "kableExtra"))
 
-Testato su R 4.6.1 (2026-06-24). Qualunque versione recente di R dovrebbe funzionare.
+Testato su `R` 4.6.1 (2026-06-24). Qualunque versione recente di `R` dovrebbe funzionare.
 
 ---
 
