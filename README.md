@@ -121,7 +121,7 @@ Per orari, aule e date di inizio delle lezioni si rimanda alle comunicazioni del
 
 ---
 
-## ⚙️ Requisiti
+## ⚙️ Requisiti *software*
 
 Tutti i modelli presentati in questo archivio sono stati sviluppati in ambiente `R`. Per la riproduzione degli esperimenti non c'è bisogno di alcun pacchetto aggiuntivo.
 
