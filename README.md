@@ -68,8 +68,8 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 
 ### Parte III - Gli sviluppi modellistici più recenti
 - [**3.1** L'economia come insieme di settori integrati: il modello input-output](https://github.com/marcoverpas/analisi_economica/blob/main/README.md#parte-iii---gli-sviluppi-modellistici-pi%C3%B9-recenti-1) 
-- **3.2** L'economia come insieme di bilanci integrati: circuito monetario e modelli dinamici fondi-flussi 
-- **3.3** Sintesi dei due approcci e introduzione ai sistemi complessi
+- [**3.2** L'economia come insieme di bilanci integrati: circuito monetario e modelli dinamici fondi-flussi](https://github.com/marcoverpas/analisi_economica#32-leconomia-come-insieme-di-bilanci-integrati-circuito-monetario-e-modelli-dinamici-fondi-flussi) 
+- **3.3** Introduzione ai sistemi complessi
 - **3.4** Conclusione del corso e ripasso
 
 - [Riferimenti bibliografici](https://github.com/marcoverpas/analisi_economica/blob/main/README.md#riferimenti-bibliografici)
