@@ -2144,6 +2144,19 @@ Il codice `R` dei tre modelli è nell'archivio *Leeds lectures 2026*: [ABM-SIM](
 
 La complessità, però, deve sempre **giustificarsi**. Il dettaglio input-output si merita il suo posto quando la domanda riguarda l'interdipendenza industriale, il mutamento strutturale, i prezzi relativi o la propagazione di uno shock settoriale; le microfondazioni ad agenti eterogenei quando l'eterogeneità e l'interazione producono davvero comportamenti *emergenti*. Quando la domanda non richiede queste estensioni, il modello aggregato non è una risposta più povera, ma quella giusta. Il pavimento, sotto ogni cosa, resta la **coerenza contabile**: un modello le cui matrici non tornano a zero non è "grosso modo giusto", sta perdendo moneta da qualche parte, e i suoi risultati non sono affidabili. È questo l'insegnamento che ci accompagnerà nelle conclusioni del corso (sezione 3.4): far corrispondere la risoluzione del modello a quella della domanda, e non più fine di così.
 
+---
+
+### 3.4 Introduzione al pensiero economico
+
+Abbiamo visto che non esiste un unico modo di rappresentare l'economia, così come non esiste un'unica teoria economica. Un modello è sempre un'astrazione: seleziona alcuni aspetti della realtà e ne trascura altri. La questione, dunque, non è eliminare l'astrazione e le ipotesi, ma renderle trasparenti e giustificarle.
+
+In particolare, il livello di dettaglio di un modello deve dipendere dalla domanda di ricerca e dalle caratteristiche, storicamente determinate, del sistema che vogliamo indagare. Un buon modello non è quello più complesso, ma quello che conserva ciò che è essenziale per la domanda che ci siamo posti.
+
+Questo implica che non si debbano confondere le proprietà del modello con quelle della realtà. Le ipotesi che rendono possibile una rappresentazione analitica non sono leggi eterne dell'economia. I modelli sono strumenti per comprendere la realtà, non la realtà stessa. Né, tanto meno, dovrebbero trasformarsi in strumenti apologitici atti a dimostrare che viviamo leibnizianamente nel migliore dei mondi possibili.
+
+L'obiettivo di chi frequenta questo corso dovrebbe essere quello di imparare a riconoscere queste scelte, discuterne i limiti e capire quali conclusioni possiamo davvero trarre da un modello. Dopo tutto, come osservava Joan Robinson, lo scopo di studiare economia non è quello di memorizzare un insieme di risposte già pronte, ma di imparare a non farsi ingannare dagli economisti.
+
+
 🚧 ATTENZIONE: *Work in progress* 🚧
 
 ---
