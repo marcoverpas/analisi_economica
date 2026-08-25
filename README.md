@@ -2042,12 +2042,15 @@ Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instab
 ## Riferimenti bibliografici
 - Berg, M., Hartley, B. e Richters, O. (2015), "A Stock-Flow Consistent Input-Output Model with Applications to Energy Price Shocks, Interest Rates, and Heat Emissions", *New Journal of Physics*, 17(1), 015011.
 - Bernanke, B. S., Gertler, M. e Gilchrist, S. (1996), "The Financial Accelerator and Flight to Quality", *The Review of Economics and Statistics*, 78(1), pp. 1-15.
+- Caiani, A., Russo, A., Palestrini, A. e Gallegati, M. (a cura di) (2016), *Economics with Heterogeneous Interacting Agents: A Practical Guide to Agent-Based Modeling*, Springer, Cham.
 - Domar, E. D. (1946), "Capital Expansion, Rate of Growth, and Employment", *Econometrica*, 14(2), pp. 137-147.
 - Duhem, P. (1906), *La teoria fisica: il suo oggetto, la sua struttura*, il Mulino, Bologna, 1978.
 - Duménil, G. e Foley, D. K. (2008), "The Marxian transformation problem", in S. N. Durlauf e L. E. Blume (a cura di), *The New Palgrave Dictionary of Economics*, 2ª ed., Palgrave Macmillan, Londra.
+- Fevereiro, J. B. R. T., Genovese, A., Purvis, B., Valles Codina, O. e Veronese Passarella, M. (2025), "Macroeconomic Models for Assessing the Transition towards a Circular Economy: A Systematic Review", *Ecological Economics*, 236, 108669.
 - Feyerabend, P. K. (1975), *Contro il metodo. Abbozzo di una teoria anarchica della conoscenza*, Feltrinelli, Milano, 1979.
 - Fisher, I. (1933), "The Debt-Deflation Theory of Great Depressions", *Econometrica*, 1(4), pp. 337-357.
 - Foley, D. K. (1982), "The Value of Money, the Value of Labour Power and the Marxian Transformation Problem", *Review of Radical Political Economics*, 14(2), pp. 37-47.
+- Forrester, J. W. (1961), *Industrial Dynamics*, MIT Press, Cambridge (MA).
 - Friedman, M. (1957), A Theory of the Consumption Function, Princeton University Press, Princeton.
 - Friedman, M. (1968), "The Role of Monetary Policy", The American Economic Review, 58(1), pp. 1-17.
 - Gattei, G. (1994), *Il difficile equilibrio. Studi di storia sul pensiero economico moderno*, Giappichelli, Torino.
@@ -2064,6 +2067,7 @@ Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instab
 - Knight, F. H. (1921), Risk, Uncertainty and Profit, Houghton Mifflin, Boston.
 - Kuhn, T. S. (1962), *La struttura delle rivoluzioni scientifiche*, Einaudi, Torino, 1969.
 - Lakatos, I. (1970), "La falsificazione e la metodologia dei programmi di ricerca scientifici", in I. Lakatos e A. Musgrave (a cura di), *Critica e crescita della conoscenza*, Feltrinelli, Milano, 1976.
+- Lorenz, E. N. (1963), "Deterministic Nonperiodic Flow", *Journal of the Atmospheric Sciences*, 20(2), pp. 130-141.
 - Lucas, R. E. (1972), "Expectations and the Neutrality of Money", Journal of Economic Theory, 4(2), pp. 103-124.
 - Lucas, R. E. (1976), "Econometric Policy Evaluation: A Critique", Carnegie-Rochester Conference Series on Public Policy, 1, pp. 19-46.
 - Marx, K. (1867), *Il capitale. Critica dell'economia politica*, Libro I, Editori Riuniti, Roma, 1964.
@@ -2079,6 +2083,7 @@ Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instab
 - Popper, K. R. (1934), *Logica della scoperta scientifica*, Einaudi, Torino, 1970.
 - Quesnay, F. (1758), *Il Tableau économique e altri scritti di economia*, a cura di M. Ridolfi, ISEDI, Milano, 1973.
 - Quine, W. V. O. (1951), "I due dogmi dell'empirismo", in *Il problema del significato*, Ubaldini, Roma, 1966.
+- Reynolds, C. W. (1987), "Flocks, Herds and Schools: A Distributed Behavioral Model", *Computer Graphics*, 21(4), pp. 25-34.
 - Ricardo, D. (1817), *Sui principi dell'economia politica e della tassazione*, introduzione di F. Vianello, ISEDI, Milano, 1976 (trad. dalla III ed., 1821).
 - Robbins, L. (1932), *An Essay on the Nature and Significance of Economic Science*, Macmillan, London.
 - Schumpeter, J. A. (1954), *Storia dell'analisi economica*, Boringhieri, Torino, 1959–60 (ed. it. a cura di P. Sylos Labini).
