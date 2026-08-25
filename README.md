@@ -1738,7 +1738,7 @@ $$r = \bar{r} \qquad (3.23)$$
 
 La (3.21) è la **scelta di portafoglio**: la quota di ricchezza tenuta in titoli cresce col loro rendimento $r$ e decresce col rapporto reddito/ricchezza; il contante (3.22) è la parte residua. Il tasso è fissato dalla banca centrale (3.23), che acquista i titoli non assorbiti dalle famiglie emettendo contante. L'equazione ridondante è di nuovo $H_h = H_s$.
 
-Anche qui il reddito di regime si ricava dalle condizioni di stazionarietà. A regime il risparmio è nullo (dalla (3.19), $YD = C$) e il bilancio pubblico, interessi inclusi, è in pareggio: poiché l'interesse netto a carico dello Stato (al netto degli utili della banca centrale, che li restituisce) è $r \cdot B_h$, l'annullarsi del disavanzo richiede $T = G + r \cdot B_h$. Sostituendo la (3.18) e risolvendo per $Y$:
+Anche qui il reddito di regime si ricava dalle condizioni di stazionarietà. A regime il risparmio è nullo (dalla (3.19), $YD = C$) e il bilancio pubblico, interessi inclusi, è in pareggio: poiché l'interesse netto a carico dello Stato (al netto degli utili della banca centrale, che li restituisce) è $r \cdot B_h$, l'annullarsi del disavanzo richiede $T = G + r \cdot B_h $. Sostituendo la (3.18) e risolvendo per $ Y $:
 
 $$Y^{*} = \frac{G + r \cdot B_h^{*} \cdot (1 - \theta)}{\theta} \qquad (3.24)$$
 
