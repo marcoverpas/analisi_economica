@@ -1622,13 +1622,408 @@ La logica è la stessa dei bilanci: ogni flusso è una **fonte** per un settore 
 
 Ne discende una proprietà di controllo notevole. Se i vincoli di bilancio di tutti i settori sono rispettati, allora **un'equazione è sempre ridondante**: l'ultimo mercato si chiude da sé. È la **legge di Walras** in veste contabile - l'"equazione nascosta" - e serve da verifica di coerenza del modello.
 
-Il modello SFC più semplice è quello che abbiamo già incontrato: il **modello SIM** di Godley e Lavoie (sezione 2.2.6), un'economia con la sola moneta e senza banche. Da lì si sale a modelli via via più ricchi. Il **modello PC** (*portfolio choice*) affianca alla moneta i **titoli di Stato**, introducendo la scelta di portafoglio delle famiglie e il settore pubblico; il **modello BMW** (*bank-money world*) aggiunge le **banche private** e il **capitale**, e in esso la moneta è creditizia ed endogena, poiché ogni prestito genera un deposito. Quest'ultimo compie il passo decisivo per il nostro percorso: è, in sostanza, la traduzione fondi-flussi del **circuito monetario** descritto sopra. Per una trattazione completa dei tre modelli - equazioni, matrici contabili e codice `R` - si rinvia alle rispettive pagine dell'archivio *Leeds lectures 2026*: [modello SIM](https://github.com/marcoverpas/Leeds_lectures_2026#12---model-sim), [modello PC](https://github.com/marcoverpas/Leeds_lectures_2026#13---model-pc) e [modello BMW](https://github.com/marcoverpas/Leeds_lectures_2026#14---model-bmw). Il circuito monetario ne è dunque il **contenuto teorico**, la struttura SFC lo **scheletro dinamico e a tenuta stagna**: in questo senso un modello SFC è "la controparte dinamica del circuito" (Veronese Passarella, 2024).
+Il modello SFC più semplice è quello che abbiamo già incontrato: il **modello SIM** di Godley e Lavoie (sezione 2.2.6), un'economia con la sola moneta e senza banche. Da lì si sale, aggiungendo attivi finanziari e settori, ai modelli PC e BMW, e infine, aprendo il settore produttivo in più industrie, ai modelli IO-SFC. Li presentiamo in dettaglio nelle prossime due sezioni. Il circuito monetario ne è il **contenuto teorico**, la struttura SFC lo **scheletro dinamico e a tenuta stagna**. In questo senso un modello SFC è "la controparte dinamica del circuito" (Veronese Passarella, 2024).
 
-#### 3.2.3 Dallo schema IO statico ai modelli IO-SFC
+#### 3.2.3 I tre modelli SFC di base: SIM, PC, BMW
 
-Il modello input-output è potente ma **statico**: confronta due istantanee del sistema senza descrivere il percorso che le collega, e dice poco di moneta e finanza. I modelli fondi-flussi appena visti sono l'immagine speculare: dinamicamente e finanziariamente coerenti, ma di norma ciechi al dettaglio intersettoriale. I modelli **IO-SFC** mirano a unire i due pregi - la granularità industriale dell'input-output e la coerenza dinamica e finanziaria dei modelli SFC - così da risolvere un'economia monetaria e guidata dalla domanda industria per industria, mentre ogni *stock* e ogni flusso continua a quadrare (Berg et al., 2015; Veronese Passarella, 2023, 2025; Fevereiro et al., 2025). Per la logica e l'implementazione di questi modelli si rinvia alla pagina dedicata dell'archivio *Leeds lectures 2026*: [The logic of IO and IO-SFC models](https://github.com/marcoverpas/Leeds_lectures_2026#21---the-logic-of-io-and-io-sfc-models).
+Conviene percorrere la scala dei modelli SFC dal più semplice al più completo, seguendo Godley e Lavoie (2007). I tre modelli qui presentati - **SIM**, **PC** e **BMW** - condividono lo scheletro contabile della sezione precedente e differiscono per gli attivi finanziari e i settori inclusi. Ciascuno è accompagnato da tre tipi di figura: un **diagramma di dinamica dei sistemi** (le tubature e i serbatoi che animano flussi e *stock*), un **diagramma di Sankey** (una singola istantanea della matrice delle transazioni) e i **grafici dinamici** delle simulazioni. Le versioni complete, con tutte le equazioni e il codice `R`, sono nell'archivio *Leeds lectures 2026*.
 
-Sul piano algebrico, aggiungere lo strato input-output a un modello SFC richiede poche equazioni in più. I prezzi non sono più fissi, ma determinati, ad esempio, da condizioni di **costo pieno** (*cost-plus*) e di riproduzione - i prezzi di Sraffa (sezione 2.3.3) - mentre la domanda finale si ripartisce fra le industrie secondo **quote di composizione** fisse. Poiché ora i prezzi esistono, grandezze reali e nominali divergono: il consumo è deciso in termini reali, mentre il prodotto è misurato in valore. Il modellino Keynes + Sraffa della sezione 2.3.5 era già un primo passo in questa direzione; la sua trasformazione in un modello pienamente monetario e coerente sul piano dei bilanci è precisamente ciò che l'apparato di questa sezione consente di compiere.
+##### 3.2.3.1 Il modello SIM
+
+Il modello **SIM** (da *simplest*, "il più semplice") è il modello SFC elementare, ed è quello che abbiamo già incontrato come secondo modello keynesiano della sezione 2.2.6. Le sue ipotesi sono: economia chiusa; tre agenti (famiglie, imprese, Stato); un solo attivo finanziario, la **moneta statale** (contante), creata quando lo Stato spende e distrutta quando incassa imposte; niente banche, investimenti, titoli o scorte; prezzi fissi e profitti netti nulli (tutto il reddito è salario). Le due matrici sono minime:
+
+|                 | Famiglie   | Imprese | Stato   | $\sum$ |
+|:----------------|:----------:|:-------:|:-------:|:------:|
+| Moneta          | $+H_h$     |         | $-H_s$  | $0$    |
+| Ricchezza netta | $-H_h$     | $0$     | $+H_s$  | $0$    |
+| $\sum$          | $0$        | $0$     | $0$     | $0$    |
+
+|                 | Famiglie        | Imprese  | Stato           | $\sum$ |
+|:----------------|:---------------:|:--------:|:---------------:|:------:|
+| Consumo         | $-C$            | $+C$     |                 | $0$    |
+| Spesa pubblica  |                 | $+G$     | $-G$            | $0$    |
+| Reddito (PIL)   | $+Y$            | $-Y$     |                 | $0$    |
+| Imposte         | $-T$            |          | $+T$            | $0$    |
+| $\Delta$ moneta | $-\Delta H_h$   |          | $+\Delta H_s$   | $0$    |
+| $\sum$          | $0$             | $0$      | $0$             | $0$    |
+
+Dalle matrici discendono le identità contabili, che, completate da due regole di comportamento (per imposte e consumo), danno il modello:
+
+$$Y = C + G \qquad (3.9)$$
+
+$$YD = Y - T \qquad (3.10)$$
+
+$$T = \theta \cdot Y \qquad (3.11)$$
+
+$$H_h = H_{h,-1} + (YD - C) \qquad (3.12)$$
+
+$$C = \alpha_1 \cdot YD + \alpha_2 \cdot H_{h,-1} \qquad (3.13)$$
+
+$$H_s = H_{s,-1} + (G - T) \qquad (3.14)$$
+
+dove $\alpha_1$ è la propensione a consumare il reddito e $\alpha_2$ quella a consumare la ricchezza. L'equazione ridondante (nascosta) eguaglia la moneta domandata e quella offerta, $H_h = H_s$.
+
+Da queste relazioni si **ricava** (non si postula) il reddito di stato stazionario. Nello stato stazionario gli *stock* sono costanti: se la ricchezza delle famiglie non varia, dalla (3.12) $\Delta H_h = YD - C = 0$, cioè il risparmio è nullo e $C = YD$; se la moneta non varia, dalla (3.14) $\Delta H_s = G - T = 0$, cioè il bilancio pubblico è in pareggio e $T = G$. Poiché per la (3.11) $T = \theta \cdot Y$, ne segue $\theta \cdot Y = G$, da cui
+
+$$Y^{*} = \frac{G}{\theta} \qquad (3.15)$$
+
+Il reddito di regime è dunque la spesa pubblica moltiplicata per $1/\theta$: è il moltiplicatore keynesiano (box 1), qui in versione fondi-flussi, dove l'unica "perdita" dal circuito del reddito è quella fiscale.
+
+<table align="center">
+  <tr><td width="820" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/sim_sd.gif" width="820">
+  </td></tr>
+  <tr><td width="820" align="center">
+    <em><strong>Figura 3.3</strong> - Il modello SIM come diagramma di dinamica dei sistemi. La spesa pubblica $G$ raggiunge le imprese, che pagano salari $Y$ alle famiglie; queste restituiscono parte del reddito come consumo e imposte e versano il resto nel "serbatoio" della moneta $H_h$. Il serbatoio dello Stato è l'immagine speculare: si riempie (verso il basso) del disavanzo accumulato, perché la moneta delle famiglie è debito dello Stato. A regime le imposte raggiungono la spesa e i serbatoi si fermano: $H_h = H_s$.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="800" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/SANKEY_SIM.png" width="800">
+  </td></tr>
+  <tr><td width="800" align="center">
+    <em><strong>Figura 3.4</strong> - Diagramma di Sankey del modello SIM: la matrice delle transazioni di un singolo periodo letta da sinistra (pagante) a destra (beneficiario). Le imprese pagano i salari alle famiglie, che li restituiscono come consumo, imposte e risparmio. Ogni transazione ha una sola fonte e una sola destinazione, e i due lati di ogni conto quadrano.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/SIM_anim.gif" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.5</strong> - Dinamica del modello SIM: le principali variabili e il controllo di coerenza mentre l'economia converge allo stato stazionario.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/SIM_experiment.gif" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.6</strong> - Esperimento: un aumento permanente della spesa pubblica $G$. La linea grigia è lo scenario base, quella rossa - che si stacca in corrispondenza del tratteggio - è lo scenario con lo shock. Il reddito converge al nuovo, più alto, stato stazionario $Y^{*} = G/\theta$, trascinando con sé reddito disponibile e consumo; le famiglie finiscono per detenere uno stock di moneta permanentemente maggiore.</em>
+  </td></tr>
+</table>
+
+Il codice `R` del modello è quello già discusso nella sezione 2.2.6.
+
+##### 3.2.3.2 Il modello PC
+
+Il modello **PC** (*portfolio choice*, "scelta di portafoglio") aggiunge un secondo attivo finanziario e fa comparire esplicitamente la banca centrale (Godley e Lavoie, 2007, cap. 4). Le famiglie possono ora detenere la ricchezza come **contante** e/o **titoli di Stato**; restano assenti banche, moneta interna (depositi), investimenti e scorte; prezzi fissi e profitti netti nulli. La matrice dei bilanci è:
+
+|                 | Famiglie   | Imprese | Banca centrale | Stato   | $\sum$ |
+|:----------------|:----------:|:-------:|:--------------:|:-------:|:------:|
+| Contante        | $+H_h$     |         | $-H_s$         |         | $0$    |
+| Titoli          | $+B_h$     |         | $+B_{cb}$      | $-B_s$  | $0$    |
+| Ricchezza netta | $-V_h$     |         |                | $+V_g$  | $0$    |
+| $\sum$          | $0$        | $0$     | $0$            | $0$     | $0$    |
+
+Rispetto al SIM cambiano poche equazioni: il reddito disponibile include gli interessi sui titoli, le imposte colpiscono il reddito complessivo, e compare la scelta di portafoglio.
+
+$$Y = C + G \qquad (3.16)$$
+
+$$YD = Y - T + r_{-1} \cdot B_{h,-1} \qquad (3.17)$$
+
+$$T = \theta \cdot (Y + r_{-1} \cdot B_{h,-1}) \qquad (3.18)$$
+
+$$V_h = V_{h,-1} + YD - C \qquad (3.19)$$
+
+$$C = \alpha_1 \cdot YD + \alpha_2 \cdot V_{h,-1} \qquad (3.20)$$
+
+$$\frac{B_h}{V_h} = \lambda_0 + \lambda_1 \cdot r - \lambda_2 \cdot \frac{YD}{V_h} \qquad (3.21)$$
+
+$$H_h = V_h - B_h \qquad (3.22)$$
+
+$$r = \bar{r} \qquad (3.23)$$
+
+La (3.21) è la **scelta di portafoglio**: la quota di ricchezza tenuta in titoli cresce col loro rendimento $r$ e decresce col rapporto reddito/ricchezza; il contante (3.22) è la parte residua. Il tasso è fissato dalla banca centrale (3.23), che acquista i titoli non assorbiti dalle famiglie emettendo contante. L'equazione ridondante è di nuovo $H_h = H_s$.
+
+Anche qui il reddito di regime si ricava dalle condizioni di stazionarietà. A regime il risparmio è nullo (dalla (3.19), $YD = C$) e il bilancio pubblico, interessi inclusi, è in pareggio: poiché l'interesse netto a carico dello Stato (al netto degli utili della banca centrale, che li restituisce) è $r \cdot B_h$, l'annullarsi del disavanzo richiede $T = G + r \cdot B_h$. Sostituendo la (3.18) e risolvendo per $Y$:
+
+$$Y^{*} = \frac{G + r \cdot B_h^{*} \cdot (1 - \theta)}{\theta} \qquad (3.24)$$
+
+È uno stato stazionario "quasi", nel senso che $B_h^{*}$ è a sua volta endogeno (dipende dalla regola di portafoglio); la derivazione formale completa è disponibile [qui](https://github.com/marcoverpas/PhD_Lectures_Macerata_2025/blob/main/README.md#b2_model_pc). Rispetto al SIM un tratto nuovo emerge subito: un aumento del tasso d'interesse, accrescendo il reddito da interessi delle famiglie, *innalza* il reddito di regime.
+
+<table align="center">
+  <tr><td width="820" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/pc_sd.gif" width="820">
+  </td></tr>
+  <tr><td width="820" align="center">
+    <em><strong>Figura 3.7</strong> - Il modello PC come diagramma di dinamica dei sistemi. Oltre ai flussi del SIM circola l'interesse $r \cdot B_h$ sui titoli; le famiglie hanno due serbatoi, contante $H_h$ e titoli $B_h$, che insieme rispecchiano il serbatoio (di segno opposto) del debito pubblico $-B_s$. È l'identità contabile $B_s = H_h + B_h$: il debito dello Stato è la ricchezza del settore privato.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="800" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/SANKEY_PC.png" width="800">
+  </td></tr>
+  <tr><td width="800" align="center">
+    <em><strong>Figura 3.8</strong> - Diagramma di Sankey del modello PC: la stessa lettura pagante → transazione → beneficiario del SIM, arricchita dal reddito da interessi e dalla scelta di portafoglio fra contante e titoli.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/PC_anim.gif" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.9</strong> - Dinamica del modello PC: reddito, ricchezza e composizione del portafoglio nel tempo.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/PC_experiment.gif" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.10</strong> - Esperimento: un aumento permanente del tasso d'interesse $r$. Il maggior reddito da interessi porta reddito disponibile e reddito nazionale a un nuovo stato stazionario più elevato, mentre le famiglie riequilibrano il portafoglio verso i titoli.</em>
+  </td></tr>
+</table>
+
+> 💡 **Laboratorio interattivo (modello PC).** Il modello si può esplorare in un'applicazione interattiva, variando propensioni al consumo, coefficienti di portafoglio e tasso d'interesse: [apri il laboratorio](https://x52gnt-marco-passarella.shinyapps.io/int_pc/). Il codice `R` completo è [`BASIC_PC.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/BASIC_PC.R).
+
+##### 3.2.3.3 Il modello BMW
+
+Il modello **BMW** (*bank-money world*, "mondo della moneta bancaria") è il più semplice modello con **banche private**, **investimenti** e **capitale fisso** (Godley e Lavoie, 2007, cap. 7), ed è la **controparte dinamica del circuito monetario** della sezione 3.2.1. Le ipotesi: economia chiusa; tre agenti (famiglie, imprese, banche); attivi e passivi dati da prestiti, depositi e capitale fisso; l'investimento è finanziato da prestiti e da fondi interni (ammortamenti); le imprese mirano a un rapporto capitale/prodotto obiettivo; prezzi fissi, profitti netti nulli; niente Stato né moneta esterna. Le matrici sono:
+
+|                     | Famiglie | Imprese | Banche | $\sum$ |
+|:--------------------|:--------:|:-------:|:------:|:------:|
+| Depositi            | $+M$     |         | $-M$   | $0$    |
+| Prestiti            |          | $-L$    | $+L$   | $0$    |
+| Capitale fisso      |          | $+K$    |        | $+K$   |
+| Ricchezza netta     | $-V_h$   | $0$     | $0$    | $-K$   |
+| $\sum$              | $0$      | $0$     | $0$    | $0$    |
+
+|                      | Famiglie                  | Imprese (corr.)            | Imprese (cap.) | Banche                    | $\sum$ |
+|:---------------------|:-------------------------:|:--------------------------:|:--------------:|:-------------------------:|:------:|
+| Consumo              | $-C$                      | $+C$                       |                |                           | $0$    |
+| Investimento         |                           | $+I$                       | $-I$           |                           | $0$    |
+| Salari               | $+WB$                     | $-WB$                      |                |                           | $0$    |
+| Ammortamenti         |                           | $-AF$                      | $+AF$          |                           | $0$    |
+| Interessi su prestiti|                           | $-r_{l,-1} L_{-1}$         |                | $+r_{l,-1} L_{-1}$        | $0$    |
+| Interessi su depositi| $+r_{m,-1} M_{-1}$        |                            |                | $-r_{m,-1} M_{-1}$        | $0$    |
+| $\Delta$ prestiti    |                           |                            | $+\Delta L$    | $-\Delta L$              | $0$    |
+| $\Delta$ depositi    | $-\Delta M$               |                            |                | $+\Delta M$              | $0$    |
+| $\sum$               | $0$                       | $0$                        | $0$            | $0$                       | $0$    |
+
+Il nucleo del modello, collassate le identità banali domanda = offerta, è:
+
+$$Y = C + I \qquad (3.25)$$
+
+$$WB = Y - r_{l,-1} \cdot L_{-1} - DA \qquad (3.26)$$
+
+$$L = L_{-1} + I - DA \qquad (3.27)$$
+
+$$YD = WB + r_{m,-1} \cdot M_{h,-1} \qquad (3.28)$$
+
+$$M_h = M_{h,-1} + YD - C \qquad (3.29)$$
+
+$$M_s = M_{s,-1} + \Delta L \qquad (3.30)$$
+
+$$C = \alpha_0 + \alpha_1 \cdot YD + \alpha_2 \cdot M_{h,-1} \qquad (3.31)$$
+
+$$K^{t} = \kappa \cdot Y_{-1} \qquad (3.32)$$
+
+$$I = \gamma \cdot (K^{t} - K_{-1}) + DA \qquad (3.33)$$
+
+$$DA = \delta \cdot K_{-1} \qquad (3.34)$$
+
+$$K = K_{-1} + I - DA \qquad (3.35)$$
+
+$$r_m = r_l = \bar{r}_l \qquad (3.36)$$
+
+Il punto cruciale è la (3.30): **ogni prestito crea un deposito** ($\Delta M = \Delta L$). Le (3.32)-(3.33) sono l'**acceleratore**: le imprese puntano a un capitale proporzionale al prodotto ritardato e ne colmano ogni periodo una frazione $\gamma$, oltre a sostituire il capitale logorato. L'equazione ridondante è $M_h = M_s$.
+
+Poiché prestiti e capitale crescono di pari passo (dalle (3.27) e (3.35), $\Delta L = \Delta K = I - DA$) e ogni prestito genera un pari deposito, con *stock* iniziali uguali si ha $M = L = K$ in ogni periodo: la ricchezza netta delle famiglie coincide con lo stock di capitale, e imprese e banche hanno ricchezza netta nulla. Nello stato stazionario l'investimento netto si annulla: quando il capitale raggiunge l'obiettivo, la (3.33) lascia solo la sostituzione degli ammortamenti, $I = DA = \delta \cdot K$, e i tre *stock* smettono di crescere. Il circuito prestiti-depositi, in altre parole, è **auto-bilanciato**: è esattamente la logica del circuito monetario, qui in veste dinamica e contabilmente chiusa.
+
+<table align="center">
+  <tr><td width="820" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/bmw_sd.gif" width="820">
+  </td></tr>
+  <tr><td width="820" align="center">
+    <em><strong>Figura 3.11</strong> - Il modello BMW come diagramma di dinamica dei sistemi. Le banche concedono nuovi prestiti alle imprese ($\Delta L$), che pagano salari ($WB$) e acquistano capitale ($I$); le famiglie consumano ($C$) e versano il risparmio in depositi ($\Delta M$). Poiché ogni prestito crea un deposito, il serbatoio dei prestiti $-L$ e quello dei depositi $M_h$ salgono di pari passo, e il bilancio chiude con $M_h = M_s = L = K$.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="800" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/SANKEY_BMW.png" width="800">
+  </td></tr>
+  <tr><td width="800" align="center">
+    <em><strong>Figura 3.12</strong> - Diagramma di Sankey del modello BMW: i quattro conti (famiglie, imprese in conto corrente e in conto capitale, banche), con investimento e ammortamenti come flussi interni al settore delle imprese. I prestiti creano depositi di pari importo e le due gambe di interesse si compensano presso la banca: il circuito prestiti-depositi è auto-bilanciato.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/BMW_anim.gif" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.13</strong> - Dinamica del modello BMW: prodotto, investimento, capitale e depositi nel tempo.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/BMW_experiment.gif" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.14</strong> - Esperimento: un aumento permanente del rapporto capitale/prodotto obiettivo $\kappa$. Puntando a un capitale maggiore, le imprese accrescono l'investimento, che balza all'impatto; il capitale sale a un livello permanentemente più alto e trascina con sé, tramite l'acceleratore, prodotto e consumo, prima che l'economia si assesti sul nuovo stato stazionario.</em>
+  </td></tr>
+</table>
+
+> 💡 **Laboratorio interattivo (modello BMW).** Anche il BMW si può esplorare in un'app interattiva, variando propensioni al consumo, coefficienti dell'investimento e shock di politica: [apri il laboratorio](https://x52gnt-marco-passarella.shinyapps.io/int_bmw/). Il codice `R` completo è [`BASIC_BMW.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/BASIC_BMW.R).
+
+
+#### 3.2.4 I modelli IO-SFC: settori e bilanci nello stesso schema
+
+Abbiamo ora i due tasselli. Il modello input-output (sezione 3.1) è potente ma **statico** e **reale**: fotografa la struttura delle interdipendenze senza descriverne il movimento e senza moneta né finanza. I modelli fondi-flussi (sezioni 3.2.2-3.2.3) sono l'immagine speculare: dinamici e finanziariamente coerenti, ma **ciechi al dettaglio intersettoriale**, poiché trattano la produzione come un unico bene. I modelli **IO-SFC** uniscono i due pregi - la granularità industriale dell'input-output e la coerenza dinamica e finanziaria dei modelli SFC - così da risolvere un'economia monetaria e guidata dalla domanda **industria per industria**, mentre ogni *stock* e ogni flusso continua a quadrare (Berg et al., 2015; Veronese Passarella, 2023, 2025; Fevereiro et al., 2025).
+
+La costruzione è più semplice di quanto sembri: si prende un modello SFC aggregato (SIM, PC o BMW) e se ne "apre" il settore produttivo in $n$ industrie, riscrivendo la tavola input-output in **valore**. Ogni casella $p_i \cdot a_{ij} \cdot x_j$ è il valore del prodotto $i$ assorbito come input dall'industria $j$; la somma di riga dà l'impiego del prodotto di $i$ (input alle altre industrie più domanda finale), la somma di colonna ciò che $j$ acquista, cui si aggiunge il valore aggiunto $yn_j$.
+
+|                          | Agric. (dom.)              | Manif. (dom.)              | Servizi (dom.)             | Domanda finale  | Prodotto        |
+|:-------------------------|:--------------------------:|:--------------------------:|:--------------------------:|:---------------:|:---------------:|
+| **Agric. (prod.)**       | $p_1 a_{11} x_1$           | $p_1 a_{12} x_2$           | $p_1 a_{13} x_3$           | $p_1 d_1$       | $p_1 x_1$       |
+| **Manif. (prod.)**       | $p_2 a_{21} x_1$           | $p_2 a_{22} x_2$           | $p_2 a_{23} x_3$           | $p_2 d_2$       | $p_2 x_2$       |
+| **Servizi (prod.)**      | $p_3 a_{31} x_1$           | $p_3 a_{32} x_2$           | $p_3 a_{33} x_3$           | $p_3 d_3$       | $p_3 x_3$       |
+| **Valore aggiunto**      | $yn_1$                     | $yn_2$                     | $yn_3$                     |                 |                 |
+| **Prodotto**             | $p_1 x_1$                  | $p_2 x_2$                  | $p_3 x_3$                  |                 | $p^T x$         |
+
+Bastano allora poche equazioni in più rispetto al nucleo SFC. La composizione **reale** della domanda finale è fissata da quote esogene che sommano a uno, sicché la domanda finale per industria è
+
+$$d = B_c \cdot c + B_g \cdot g \qquad (3.37)$$
+
+(consumo e spesa pubblica; nella versione con investimenti compare in più il termine $B_i \cdot i$). L'inversa di Leontief converte la domanda finale in produzione lorda,
+
+$$x = (I - A)^{-1} d \qquad (3.38)$$
+
+mentre i prezzi non sono più fissi ma determinati da **condizioni di riproduzione** (costo pieno):
+
+$$p^T = w \cdot l^T + (1 + \mu) \cdot p^T A \qquad (3.39)$$
+
+dove $w$ è il salario, $l$ il vettore dei coefficienti di lavoro (l'inverso delle produttività) e $\mu$ il mark-up. Sono, riga per riga, gli stessi **prezzi di produzione di Sraffa** (sezione 2.3.3) già usati nel modellino Keynes + Sraffa (sezione 2.3.5). Il PIL nominale è
+
+$$Y = p^T d \qquad (3.40)$$
+
+Da $p$ si ricavano gli indici dei prezzi al consumo e della spesa pubblica,
+
+$$p_c = p^T B_c, \qquad p_g = p^T B_g \qquad (3.41)$$
+
+e il consumo reale è deciso al netto dell'illusione monetaria,
+
+$$c = \alpha_1 \cdot \left( \frac{YD}{p_c} - \pi \cdot \frac{H_{h,-1}}{p_c} \right) + \alpha_2 \cdot \frac{H_{h,-1}}{p_c} \qquad (3.42)$$
+
+dove $\pi$ è il tasso d'inflazione. Poiché ora i prezzi **esistono**, grandezze reali e nominali divergono: il consumo è scelto in termini reali, ma il prodotto è misurato in valore.
+
+La rete di interdipendenze si può leggere in due modi complementari: come Sankey (quanta parte del prodotto di ciascun settore è assorbita altrove come input, e quanta va alla domanda finale) e come grafo orientato dei coefficienti tecnici.
+
+<table align="center">
+  <tr><td width="800" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/SANKEY_IO.png" width="800">
+  </td></tr>
+  <tr><td width="800" align="center">
+    <em><strong>Figura 3.15</strong> - Diagramma di Sankey della tavola degli impieghi (in valore): ogni prodotto, a sinistra, si distribuisce fra le tre industrie che lo impiegano come input intermedio e la domanda finale, a destra.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="600" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/IO_network.png" width="600">
+  </td></tr>
+  <tr><td width="600" align="center">
+    <em><strong>Figura 3.16</strong> - La matrice dei coefficienti tecnici come grafo orientato: ogni nodo è un'industria (di dimensione proporzionale alla produzione lorda), ogni arco pesato $a_{ij}$ è la quantità di prodotto $i$ necessaria per un'unità di prodotto $j$, e i cappi rappresentano l'uso intra-settoriale. È la rete di legami che l'inversa di Leontief risolve.</em>
+  </td></tr>
+</table>
+
+Su questo scheletro comune si innestano tre versioni, secondo il modello SFC di partenza.
+
+Il modello **IO-SIM** aggiunge il nucleo input-output al SIM: moneta statale, tre industrie, prezzi di riproduzione. Il comportamento aggregato riproduce quello del SIM, ma ora è leggibile industria per industria.
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig1_IO_SIM.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.17</strong> - Modello IO-SIM: dinamica aggregata (coincidente con quella del SIM) e dettaglio per industria.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig2_IO_SIM.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.18</strong> - Modello IO-SIM: risposta di alcune variabili a un aumento della spesa pubblica.</em>
+  </td></tr>
+</table>
+
+Il codice `R` è [`IO_SIM.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/IO_SIM.R).
+
+Il modello **IO-PC** innesta lo stesso strato sul PC: le famiglie scelgono fra moneta e titoli, e compaiono gli interessi e il debito pubblico. Il comportamento aggregato riproduce quello del PC, con in più il dettaglio industriale e dei prezzi.
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig1_IO_PC.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.19</strong> - Modello IO-PC: dinamica aggregata e dettaglio per industria.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig2_IO_PC.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.20</strong> - Modello IO-PC: risposta di alcune variabili a un aumento della spesa pubblica.</em>
+  </td></tr>
+</table>
+
+Il codice `R` è [`IO_PC.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/IO_PC.R).
+
+> 💡 **Laboratorio interattivo (modello ECO-3IO-PC).** Questi modelli non solo possono essere resi interattivi, ma anche estesi per includere nuove variabili. Qui si può esplorare una versione del modello IO-PC estesa all'ecosistema (con emissioni e risorse), a tre industrie: [apri il laboratorio](https://x52gnt-marco-passarella.shinyapps.io/eco_3io_sfc_model/).
+>
+> <table align="center">
+>   <tr><td width="900" align="center">
+>     <a href="https://x52gnt-marco-passarella.shinyapps.io/eco_3io_sfc_model/" target="_blank"><img src="https://raw.githubusercontent.com/marcoverpas/figures/main/laboratory.png" width="900"></a>
+>   </td></tr>
+> </table>
+
+Il modello **IO-BMW** lo innesta sul BMW: escono lo Stato e i titoli pubblici, entrano le **banche private**, il **credito** e l'**investimento**. La domanda finale ha ora due componenti, consumi e investimenti,
+
+$$d = B_c \cdot c + B_i \cdot i \qquad (3.43)$$
+
+e il capitale è determinato **industria per industria**, come nei più grandi modelli IO-SFC empirici: ciascuna industria punta a uno stock di capitale proporzionale alla propria produzione lorda ritardata e investe per colmare parte del divario, oltre a sostituire il capitale logorato,
+
+$$k^{t}_z = \kappa_z \cdot x_{z,-1} \qquad (3.44)$$
+
+$$i_z = \gamma \cdot (k^{t}_z - k_{z,-1}) + da_z \qquad (3.45)$$
+
+$$da_z = \delta_z \cdot k_{z,-1} \qquad (3.46)$$
+
+L'investimento aggregato è $\sum_z i_z$, e su queste grandezze opera il blocco prestiti/depositi del BMW. Poiché l'obiettivo è definito sulla produzione **lorda** (maggiore del valore aggiunto), il rapporto capitale/prodotto $\kappa_z$ è più piccolo di quello usato, nel BMW aggregato, rispetto al reddito. L'equazione ridondante resta $M_h = M_s$. È la versione più vicina al circuito monetario, ed è la base tanto dei modelli IO-SFC empirici quanto del modello che integra Minsky e Graziani (box su Minsky; Veronese Passarella, 2025).
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig1_IO_BMW.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.21</strong> - Modello IO-BMW: dinamica aggregata e dettaglio per industria.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig2_IO_BMW.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.22</strong> - Modello IO-BMW: risposta di alcune variabili a uno shock.</em>
+  </td></tr>
+</table>
+
+Il codice `R` è [`IO_BMW.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/IO_BMW.R).
+
+Con ciò il cerchio si chiude. Il modellino Keynes + Sraffa della sezione 2.3.5 era, a ben vedere, un **IO-SFC in nuce**: quantità keynesiane, prezzi sraffiani, struttura input-output; gli mancava soltanto la coerenza sui bilanci monetari, cioè proprio l'apparato di questa sezione. Le due immagini dell'economia - insieme di settori integrati (sezione 3.1) e insieme di bilanci integrati (sezione 3.2) - diventano così un unico modello.
 
 Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instabilità, di cui ci occupiamo separatamente nel box su Minsky e nella sezione 3.3.
 
@@ -1637,6 +2032,8 @@ Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instab
 > Da qui l'**ipotesi di instabilità finanziaria** e il suo paradosso: **la stabilità è destabilizzante**. Nei periodi tranquilli imprese, banche e investitori riducono i propri **margini di sicurezza**, passando da posizioni *coperte* (*hedge*, i cui incassi coprono interessi e capitale) a posizioni *speculative* (gli incassi coprono i soli interessi) e infine *Ponzi* (gli incassi non coprono neppure gli interessi). La fragilità si accumula in modo **endogeno**, finché un piccolo *shock*, o un rialzo del tasso d'interesse, innesca il "*momento Minsky*": vendite forzate di attività, caduta dei loro prezzi e **deflazione da debito** (Fisher), che si propaga lungo la rete interconnessa dei bilanci, dove la passività di un'unità è l'attività di un'altra. Sul piano macroeconomico, poiché i profitti aggregati sono determinati dall'investimento (Kalecki: "i capitalisti guadagnano ciò che spendono"), la fase espansiva si autoconvalida - più investimento significa più profitti, quindi più credito - fino al punto di svolta.
 >
 > Ne discendono le due prescrizioni di Minsky: un **grande Stato** (*Big Government*), la cui spesa in disavanzo sostiene domanda e profitti e fornisce attività sicure, e una **grande banca centrale** (*Big Bank*), prestatrice di ultima istanza che pone "pavimenti" e "soffitti" alle oscillazioni; ogni salvataggio, però, riducendo i margini di sicurezza futuri, semina già la crisi successiva. Formalizzata, la dinamica fra **profitti** e **debito** assume la forma di un sistema *preda-predatore*: un ponte diretto verso i modelli di Goodwin e i sistemi complessi (sezione 3.3). Innestata nel circuito monetario (sezione 3.2), essa trasforma l'aggiustamento ordinato in **cicli endogeni** di espansione e recessione. È la stessa idea di crisi endogena già incontrata in Marx (sezioni 1.4.6-1.4.8) e in Harrod (sezione 2.2), qui fondata sulla struttura finanziaria del capitalismo. Non a caso i suoi meccanismi sono penetrati anche nel *mainstream*, sotto il nome di "acceleratore finanziario" (Bernanke, Gertler e Gilchrist).
+
+
 
 🚧 ATTENZIONE: *Work in progress* 🚧
 
