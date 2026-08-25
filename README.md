@@ -1443,6 +1443,12 @@ L'etichetta è, in verità, imprecisa: sotto di essa convivono tradizioni distin
 
 È precisamente questa la tradizione entro cui si collocano i modelli sviluppati nella Parte III di questo corso. Il modello dinamico Keynes + Sraffa della sezione 2.3.5 ne è già un primo esempio: quantità governate dalla domanda effettiva, prezzi governati dalla tecnica e dalla distribuzione. I passi successivi consisteranno nel dare a quello scheletro una carne monetaria e finanziaria coerente, facendo sì che ogni flusso alimenti uno stock e che i bilanci di tutti i settori si chiudano.
 
+<div align="center">
+<figure>
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/ritratti.png" width="700">
+</figure>
+</div>
+
 ---
 
 ## Parte III - Gli sviluppi modellistici più recenti
@@ -2100,10 +2106,4 @@ Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instab
 - Veronese Passarella, M. (2025), "Destabilizing a Stable Economy: Minsky Meets Graziani's Monetary Circuit", *International Journal of Political Economy*, 54(3), pp. 338-355.
 - Veronese Passarella, M. (2027), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo* [titolo provvisorio], Cedam-Utet, Milano.
 - Veronese Passarella, M. (in corso di pubblicazione), *Mr. Keynes and the "Classics" (Almost) a Century Later: Reviewing the IS-LM Model*.
-
-<div align="center">
-<figure>
-<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/ritratti.png" width="700">
-</figure>
-</div>
 
