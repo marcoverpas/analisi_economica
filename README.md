@@ -1674,7 +1674,7 @@ Il reddito di regime è dunque la spesa pubblica moltiplicata per $1/\theta$: è
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/sim_sd.gif" width="820">
   </td></tr>
   <tr><td width="820" align="center">
-    <em><strong>Figura 3.3</strong> - Il modello SIM come diagramma di dinamica dei sistemi. La spesa pubblica $G$ raggiunge le imprese, che pagano salari $Y$ alle famiglie; queste restituiscono parte del reddito come consumo e imposte e versano il resto nel "serbatoio" della moneta $H_h$. Il serbatoio dello Stato è l'immagine speculare: si riempie (verso il basso) del disavanzo accumulato, perché la moneta delle famiglie è debito dello Stato. A regime le imposte raggiungono la spesa e i serbatoi si fermano: $H_h = H_s$.</em>
+    <em><strong>Figura 3.3</strong> - Il modello SIM come diagramma di dinamica dei sistemi. La spesa pubblica G raggiunge le imprese, che pagano salari Y alle famiglie; queste restituiscono parte del reddito come consumo e imposte e versano il resto nel "serbatoio" della moneta H<sub>h</sub>. Il serbatoio dello Stato è l'immagine speculare: si riempie (verso il basso) del disavanzo accumulato, perché la moneta delle famiglie è debito dello Stato. A regime le imposte raggiungono la spesa e i serbatoi si fermano: H<sub>h</sub> = H<sub>s</sub>.</em>
   </td></tr>
 </table>
 
@@ -1701,7 +1701,7 @@ Il reddito di regime è dunque la spesa pubblica moltiplicata per $1/\theta$: è
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/SIM_experiment.gif" width="900">
   </td></tr>
   <tr><td width="900" align="center">
-    <em><strong>Figura 3.6</strong> - Esperimento: un aumento permanente della spesa pubblica $G$. La linea grigia è lo scenario base, quella rossa - che si stacca in corrispondenza del tratteggio - è lo scenario con lo shock. Il reddito converge al nuovo, più alto, stato stazionario $Y^{*} = G/\theta$, trascinando con sé reddito disponibile e consumo; le famiglie finiscono per detenere uno stock di moneta permanentemente maggiore.</em>
+    <em><strong>Figura 3.6</strong> - Esperimento: un aumento permanente della spesa pubblica G. La linea grigia è lo scenario base, quella rossa - che si stacca in corrispondenza del tratteggio - è lo scenario con lo shock. Il reddito converge al nuovo, più alto, stato stazionario Y* = G/&theta;, trascinando con sé reddito disponibile e consumo; le famiglie finiscono per detenere uno stock di moneta permanentemente maggiore.</em>
   </td></tr>
 </table>
 
@@ -1738,18 +1738,18 @@ $$r = \bar{r} \qquad (3.23)$$
 
 La (3.21) è la **scelta di portafoglio**: la quota di ricchezza tenuta in titoli cresce col loro rendimento $r$ e decresce col rapporto reddito/ricchezza; il contante (3.22) è la parte residua. Il tasso è fissato dalla banca centrale (3.23), che acquista i titoli non assorbiti dalle famiglie emettendo contante. L'equazione ridondante è di nuovo $H_h = H_s$.
 
-Anche qui il reddito di regime si ricava dalle condizioni di stazionarietà. A regime il risparmio è nullo (dalla (3.19), $YD = C$) e il bilancio pubblico, interessi inclusi, è in pareggio: poiché l'interesse netto a carico dello Stato (al netto degli utili della banca centrale, che li restituisce) è $r \cdot B_h$, l'annullarsi del disavanzo richiede $T = G + r \cdot B_h $. Sostituendo la (3.18) e risolvendo per $ Y $:
+Anche qui il reddito di regime si ricava dalle condizioni di stazionarietà. A regime il risparmio è nullo (dalla (3.19), $YD = C$) e il bilancio pubblico, interessi inclusi, è in pareggio. Poiché l'interesse netto a carico dello Stato (al netto degli utili della banca centrale, che li restituisce) è $r \cdot B_h$, l'annullarsi del disavanzo richiede $T = G + r \cdot B_h$. Sostituendo la (3.18) e risolvendo per $Y$ si ottiene:
 
 $$Y^{*} = \frac{G + r \cdot B_h^{*} \cdot (1 - \theta)}{\theta} \qquad (3.24)$$
 
-È uno stato stazionario "quasi", nel senso che $B_h^{*}$ è a sua volta endogeno (dipende dalla regola di portafoglio); la derivazione formale completa è disponibile [qui](https://github.com/marcoverpas/PhD_Lectures_Macerata_2025/blob/main/README.md#b2_model_pc). Rispetto al SIM un tratto nuovo emerge subito: un aumento del tasso d'interesse, accrescendo il reddito da interessi delle famiglie, *innalza* il reddito di regime.
+È uno stato stazionario "quasi", nel senso che $B_h^{*}$ è a sua volta endogeno (dipende dalla regola di portafoglio). La derivazione formale completa è disponibile [qui](https://github.com/marcoverpas/PhD_Lectures_Macerata_2025/blob/main/README.md#b2_model_pc). Rispetto al SIM un tratto nuovo emerge subito: un aumento del tasso d'interesse, accrescendo il reddito da interessi delle famiglie, *innalza* il reddito di regime.
 
 <table align="center">
   <tr><td width="820" align="center">
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/pc_sd.gif" width="820">
   </td></tr>
   <tr><td width="820" align="center">
-    <em><strong>Figura 3.7</strong> - Il modello PC come diagramma di dinamica dei sistemi. Oltre ai flussi del SIM circola l'interesse $r \cdot B_h$ sui titoli; le famiglie hanno due serbatoi, contante $H_h$ e titoli $B_h$, che insieme rispecchiano il serbatoio (di segno opposto) del debito pubblico $-B_s$. È l'identità contabile $B_s = H_h + B_h$: il debito dello Stato è la ricchezza del settore privato.</em>
+    <em><strong>Figura 3.7</strong> - Il modello PC come diagramma di dinamica dei sistemi. Oltre ai flussi del SIM circola l'interesse r&middot;B<sub>h</sub> sui titoli; le famiglie hanno due serbatoi, contante H<sub>h</sub> e titoli B<sub>h</sub>, che insieme rispecchiano il serbatoio (di segno opposto) del debito pubblico &minus;B<sub>s</sub>. È l'identità contabile B<sub>s</sub> = H<sub>h</sub> + B<sub>h</sub>: il debito dello Stato è la ricchezza del settore privato.</em>
   </td></tr>
 </table>
 
@@ -1776,7 +1776,7 @@ $$Y^{*} = \frac{G + r \cdot B_h^{*} \cdot (1 - \theta)}{\theta} \qquad (3.24)$$
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/PC_experiment.gif" width="900">
   </td></tr>
   <tr><td width="900" align="center">
-    <em><strong>Figura 3.10</strong> - Esperimento: un aumento permanente del tasso d'interesse $r$. Il maggior reddito da interessi porta reddito disponibile e reddito nazionale a un nuovo stato stazionario più elevato, mentre le famiglie riequilibrano il portafoglio verso i titoli.</em>
+    <em><strong>Figura 3.10</strong> - Esperimento: un aumento permanente del tasso d'interesse r. Il maggior reddito da interessi porta reddito disponibile e reddito nazionale a un nuovo stato stazionario più elevato, mentre le famiglie riequilibrano il portafoglio verso i titoli.</em>
   </td></tr>
 </table>
 
@@ -1841,7 +1841,7 @@ Poiché prestiti e capitale crescono di pari passo (dalle (3.27) e (3.35), $\Del
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/bmw_sd.gif" width="820">
   </td></tr>
   <tr><td width="820" align="center">
-    <em><strong>Figura 3.11</strong> - Il modello BMW come diagramma di dinamica dei sistemi. Le banche concedono nuovi prestiti alle imprese ($\Delta L$), che pagano salari ($WB$) e acquistano capitale ($I$); le famiglie consumano ($C$) e versano il risparmio in depositi ($\Delta M$). Poiché ogni prestito crea un deposito, il serbatoio dei prestiti $-L$ e quello dei depositi $M_h$ salgono di pari passo, e il bilancio chiude con $M_h = M_s = L = K$.</em>
+    <em><strong>Figura 3.14</strong> - Esperimento: un aumento permanente del rapporto capitale/prodotto obiettivo &kappa;. Puntando a un capitale maggiore, le imprese accrescono l'investimento, che balza all'impatto; il capitale sale a un livello permanentemente più alto e trascina con sé, tramite l'acceleratore, prodotto e consumo, prima che l'economia si assesti sul nuovo stato stazionario.</em>
   </td></tr>
 </table>
 
@@ -1868,7 +1868,7 @@ Poiché prestiti e capitale crescono di pari passo (dalle (3.27) e (3.35), $\Del
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/BMW_experiment.gif" width="900">
   </td></tr>
   <tr><td width="900" align="center">
-    <em><strong>Figura 3.14</strong> - Esperimento: un aumento permanente del rapporto capitale/prodotto obiettivo $\kappa$. Puntando a un capitale maggiore, le imprese accrescono l'investimento, che balza all'impatto; il capitale sale a un livello permanentemente più alto e trascina con sé, tramite l'acceleratore, prodotto e consumo, prima che l'economia si assesti sul nuovo stato stazionario.</em>
+    <em><strong>Figura 3.14</strong> - Esperimento: un aumento permanente del rapporto capitale/prodotto obiettivo &kappa;. Puntando a un capitale maggiore, le imprese accrescono l'investimento, che balza all'impatto; il capitale sale a un livello permanentemente più alto e trascina con sé, tramite l'acceleratore, prodotto e consumo, prima che l'economia si assesti sul nuovo stato stazionario.</em>
   </td></tr>
 </table>
 
@@ -1931,7 +1931,7 @@ La rete di interdipendenze si può leggere in due modi complementari: come Sanke
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/IO_network.png" width="600">
   </td></tr>
   <tr><td width="600" align="center">
-    <em><strong>Figura 3.16</strong> - La matrice dei coefficienti tecnici come grafo orientato: ogni nodo è un'industria (di dimensione proporzionale alla produzione lorda), ogni arco pesato $a_{ij}$ è la quantità di prodotto $i$ necessaria per un'unità di prodotto $j$, e i cappi rappresentano l'uso intra-settoriale. È la rete di legami che l'inversa di Leontief risolve.</em>
+    <em><strong>Figura 3.16</strong> - La matrice dei coefficienti tecnici come grafo orientato: ogni nodo è un'industria (di dimensione proporzionale alla produzione lorda), ogni arco pesato a<sub>ij</sub> è la quantità di prodotto i necessaria per un'unità di prodotto j, e i cappi rappresentano l'uso intra-settoriale. È la rete di legami che l'inversa di Leontief risolve.</em>
   </td></tr>
 </table>
 
