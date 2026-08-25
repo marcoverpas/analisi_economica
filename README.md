@@ -70,7 +70,7 @@ Per ogni approccio si mette inoltre in luce il ruolo dei diversi **settori econo
 - [**3.1** L'economia come insieme di settori integrati: il modello input-output](https://github.com/marcoverpas/analisi_economica/blob/main/README.md#parte-iii---gli-sviluppi-modellistici-pi%C3%B9-recenti-1) 
 - [**3.2** L'economia come insieme di bilanci integrati: circuito monetario e modelli dinamici fondi-flussi](https://github.com/marcoverpas/analisi_economica#32-leconomia-come-insieme-di-bilanci-integrati-circuito-monetario-e-modelli-dinamici-fondi-flussi) 
 - [**3.3** L'economia come sistema complesso: dinamica, emergenza e agenti](https://github.com/marcoverpas/analisi_economica/tree/main#33-leconomia-come-sistema-complesso-dinamica-emergenza-e-agenti)
-- **3.4** Conclusione del corso e ripasso
+- [**3.4** Osservazioni finali](https://github.com/marcoverpas/analisi_economica/tree/main#34-osservazioni-finali)
 
 - [Riferimenti bibliografici](https://github.com/marcoverpas/analisi_economica/blob/main/README.md#riferimenti-bibliografici)
 
@@ -2146,7 +2146,7 @@ La complessità, però, deve sempre **giustificarsi**. Il dettaglio input-output
 
 ---
 
-### 3.4 Introduzione al pensiero economico
+### 3.4 Osservazioni finali
 
 Abbiamo visto che non esiste un unico modo di rappresentare l'economia, così come non esiste un'unica teoria economica. Un modello è sempre un'astrazione: seleziona alcuni aspetti della realtà e ne trascura altri. La questione, dunque, non è eliminare l'astrazione e le ipotesi, ma renderle trasparenti e giustificarle.
 
