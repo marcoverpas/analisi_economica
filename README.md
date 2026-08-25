@@ -1740,7 +1740,7 @@ La (3.21) è la **scelta di portafoglio**: la quota di ricchezza tenuta in titol
 
 Anche qui il reddito di regime si ricava dalle condizioni di stazionarietà. A regime il risparmio è nullo (dalla (3.19), $YD = C$) e il bilancio pubblico, interessi inclusi, è in pareggio. Poiché l'interesse netto a carico dello Stato (al netto degli utili della banca centrale, che li restituisce) è $r \cdot B_h$, l'annullarsi del disavanzo richiede $T = G + r \cdot B_h$. Sostituendo la (3.18) e risolvendo per $Y$ si ottiene:
 
-$$Y^{*} = \frac{G + r \cdot B_h^{*} \cdot (1 - \theta)}{\theta} \qquad (3.24)$$
+
 
 È uno stato stazionario "quasi", nel senso che $B_h^{*}$ è a sua volta endogeno (dipende dalla regola di portafoglio). La derivazione formale completa è disponibile [qui](https://github.com/marcoverpas/PhD_Lectures_Macerata_2025/blob/main/README.md#b2_model_pc). Rispetto al SIM un tratto nuovo emerge subito: un aumento del tasso d'interesse, accrescendo il reddito da interessi delle famiglie, *innalza* il reddito di regime.
 
