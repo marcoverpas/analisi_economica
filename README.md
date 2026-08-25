@@ -2039,7 +2039,110 @@ Resta un ultimo ingrediente, la finanza e il suo intrinseco potenziale di instab
 >
 > Ne discendono le due prescrizioni di Minsky: un **grande Stato** (*Big Government*), la cui spesa in disavanzo sostiene domanda e profitti e fornisce attività sicure, e una **grande banca centrale** (*Big Bank*), prestatrice di ultima istanza che pone "pavimenti" e "soffitti" alle oscillazioni; ogni salvataggio, però, riducendo i margini di sicurezza futuri, semina già la crisi successiva. Formalizzata, la dinamica fra **profitti** e **debito** assume la forma di un sistema *preda-predatore*: un ponte diretto verso i modelli di Goodwin e i sistemi complessi (sezione 3.3). Innestata nel circuito monetario (sezione 3.2), essa trasforma l'aggiustamento ordinato in **cicli endogeni** di espansione e recessione. È la stessa idea di crisi endogena già incontrata in Marx (sezioni 1.4.6-1.4.8) e in Harrod (sezione 2.2), qui fondata sulla struttura finanziaria del capitalismo. Non a caso i suoi meccanismi sono penetrati anche nel *mainstream*, sotto il nome di "acceleratore finanziario" (Bernanke, Gertler e Gilchrist).
 
+### 3.3 L'economia come sistema complesso: dinamica, emergenza e agenti
 
+Con i modelli IO-SFC i due approcci - l'economia come insieme di settori integrati (sezione 3.1) e come insieme di bilanci integrati (sezione 3.2) - possono essere ricondotti a un unico schema. È una **proposta di integrazione**, non un fatto acquisito: una linea di ricerca fra le più promettenti in questo campo, che qui adottiamo pur nella consapevolezza che si tratta di un programma ancora aperto. Conviene, a questo punto, fare un passo indietro e guardare quei modelli da una prospettiva più generale: quella dell'economia come **sistema complesso**, in cui il comportamento del tutto non si legge sul comportamento delle singole parti. È una prospettiva che il corso ha già sfiorato più volte: nei cicli endogeni di Marx (sezione 1.4.6), nell'instabilità "sul filo del rasoio" di Harrod (sezione 2.2), nella fragilità finanziaria di Minsky (sezione 3.3.2), e persino nell'idea marxiana delle classi come soggetti *emergenti*, non riducibili alla somma degli individui. La complessità economica si lascia affrontare con (almeno) tre linguaggi complementari, tutti presenti in questo corso: i **sistemi dinamici non lineari**, la **dinamica dei sistemi** e i **modelli ad agenti**.
+
+#### 3.3.1 L'economia come sistema dinamico: retroazioni e diagrammi animati
+
+Un sistema economico è, prima di tutto, un **sistema dinamico**: un insieme di *stock* e di flussi legati da **retroazioni** (*feedback*). Finché le retroazioni sono deboli, il sistema converge a uno stato stazionario, come nei modelli SFC di base; ma quando diventano forti e **non lineari**, l'equilibrio può cessare di essere un attrattore e lasciare il posto a **cicli endogeni**, generati dall'interno e non da urti esterni. È la lezione che ricorre da Marx a Harrod fino a Minsky, e la vedremo all'opera nella prossima sottosezione.
+
+Vale la pena, qui, una nota sul metodo. Molte delle figure animate di questo corso - i diagrammi "idraulici" dei modelli SIM, PC e BMW (Figure 3.3, 3.7, 3.11), ma anche le animazioni della dinamica salario-sussistenza, del ritorno delle tecniche e degli autovalori - non sono semplici illustrazioni: sono, a tutti gli effetti, diagrammi di **dinamica dei sistemi** (*system dynamics*), il linguaggio di *stock*, flussi e anelli di retroazione sviluppato da Jay Forrester (1961). Rappresentare i settori come **serbatoi** e i pagamenti come **tubature** rende visibile ciò che le equazioni dicono in astratto: dove si accumulano gli *stock*, quali flussi li alimentano, quali anelli di retroazione governano il moto. È un terzo linguaggio della complessità, accanto ai sistemi dinamici non lineari e ai modelli ad agenti: meno formale, ma prezioso per *vedere* la struttura causale di un modello prima ancora di risolverlo.
+
+#### 3.3.2 L'instabilità finanziaria di Minsky
+
+L'esempio più compiuto di dinamica endogena, in questo corso, viene dalla finanza. Hyman Minsky (1919-1996) propone una rilettura *finanziaria* della *Teoria generale* di Keynes: in un'economia monetaria di produzione le decisioni di investimento sono, prima di tutto, decisioni **finanziarie**, prese sotto incertezza e vincolate dai bilanci. Al centro sta la **teoria dei due prezzi**. L'impresa confronta il *prezzo di domanda* del capitale - la valutazione che ne danno i mercati finanziari, funzione dei profitti attesi e delle condizioni del credito - con il *prezzo di offerta* dei beni capitali, determinato dai costi di produzione e dal mark-up, e investe finché il primo supera il secondo. A frenare l'espansione interviene il **rischio crescente** (Kalecki): oltre la soglia dei fondi propri, il *rischio del debitore* abbassa il prezzo di domanda e il *rischio del creditore* alza quello di offerta, sicché l'investimento non può crescere all'infinito e la **leva finanziaria** aumenta nelle fasi di espansione. La Figura 3.23 anima questo meccanismo: al variare delle aspettative di profitto e della percezione del rischio, le due curve si spostano e il punto di investimento E scorre verso destra (boom) o verso sinistra (recessione).
+
+<table align="center">
+  <tr><td width="760" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/minsky_two_price.gif" width="760">
+  </td></tr>
+  <tr><td width="760" align="center">
+    <em><strong>Figura 3.23</strong> - La decisione di investimento dell'impresa secondo la teoria dei due prezzi, animata lungo il ciclo. L'impresa investe fino al punto E, dove il prezzo di domanda del capitale (arancione) eguaglia il prezzo di offerta dei beni capitali (blu); la quota fino a q_A è autofinanziata (area verde), quella fra q_A e q* è finanziata con debito (area rossa). Nell'espansione il prezzo di domanda si alza e l'offerta si appiattisce (rischi percepiti bassi), e l'investimento cresce; nella recessione il prezzo di domanda scende e l'offerta si irripidisce, e l'investimento si contrae. La curva verde tratteggiata sono i fondi interni.</em>
+  </td></tr>
+</table>
+
+Da qui l'**ipotesi di instabilità finanziaria** e il suo celebre paradosso: **la stabilità è destabilizzante**. Nei periodi tranquilli imprese, banche e investitori riducono i propri **margini di sicurezza**, spostandosi da posizioni *coperte* (*hedge*, i cui incassi coprono sia gli interessi sia il capitale) a posizioni *speculative* (gli incassi coprono i soli interessi, e occorre rifinanziare il capitale) e infine *Ponzi* (gli incassi non coprono neppure gli interessi). La Figura 3.24 illustra le tre strutture confrontando, per ciascuna, i flussi di cassa attesi con gli impegni di pagamento (interessi e capitale).
+
+<table align="center">
+  <tr><td width="720" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/minsky_financial_structures.png" width="720">
+  </td></tr>
+  <tr><td width="720" align="center">
+    <em><strong>Figura 3.24</strong> - Le tre strutture finanziarie di Minsky. A sinistra, per ciascun tipo di unità, i flussi di cassa attesi (verde); a destra, gli impegni di pagamento, distinti in interessi (arancione) e capitale (rosso). Unità *coperta* (hedge): i flussi coprono interessi e capitale. Unità *speculativa*: coprono i soli interessi. Unità *Ponzi*: non coprono neppure gli interessi. Più il sistema è popolato di unità speculative e Ponzi, più è fragile.</em>
+  </td></tr>
+</table>
+
+La fragilità si accumula così in modo **endogeno**, finché un piccolo *shock*, o un rialzo del tasso d'interesse, innesca il "*momento Minsky*": le unità più esposte non riescono più a rifinanziarsi e sono costrette a vendere attività, i cui prezzi cadono, facendo crescere il peso reale del debito - la **deflazione da debito** di Fisher. E poiché in un sistema finanziario i bilanci sono interconnessi (la passività di un'unità è l'attività di un'altra), la crisi si propaga per contagio, dalle unità più fragili a quelle inizialmente solide (Figura 3.25).
+
+<table align="center">
+  <tr><td width="720" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/minsky_contagion.png" width="720">
+  </td></tr>
+  <tr><td width="720" align="center">
+    <em><strong>Figura 3.25</strong> - Rete del contagio finanziario. Ogni nodo è un'unità, ogni freccia un rapporto debito-credito (dal debitore al creditore); i colori indicano il grado di difficoltà, dal basso (verde) al moderato (giallo e arancione) all'alto (rosso). Il dissesto di un'unità si trasmette lungo i legami di bilancio, come una reazione a catena, colpendo anche le unità inizialmente coperte.</em>
+  </td></tr>
+</table>
+
+Sul piano macroeconomico, poiché i profitti aggregati sono determinati dall'investimento (Kalecki: "i capitalisti guadagnano ciò che spendono"), la fase espansiva tende ad autoconvalidarsi - più investimento significa più profitti, quindi più credito - fino al punto di svolta. Ridotta all'osso, la dinamica minskyana si lascia rappresentare da un sistema a due variabili, i **profitti** $\Pi$ e il **debito** $D$ delle imprese:
+
+$$\dot{\Pi} = (g - a \cdot D) \cdot \Pi \qquad (3.47)$$
+
+$$\dot{D} = (c \cdot \Pi - h) \cdot D \qquad (3.48)$$
+
+In assenza di debito i profitti crescerebbero al ritmo dell'investimento $g$; il servizio di un debito crescente li erode ($-a \cdot D$). In assenza di profitti il debito si ridurrebbe al ritmo $h$; ma profitti elevati consentono e incoraggiano nuovo indebitamento ($+c \cdot \Pi$). È un sistema **preda-predatore** (Lotka-Volterra), con i profitti nel ruolo della preda e il debito in quello del predatore: profitti alti alimentano il debito, il debito comprime i profitti, i profitti in caduta costringono a ridurre il debito, e da lì i profitti riprendono - un'orbita perpetua attorno all'equilibrio, non un punto di quiete. È, si noti, lo **stesso identico modello formale** introdotto per la prima volta in economia da Richard Goodwin (1967) per il ciclo di crescita fondato sul conflitto di classe, e che abbiamo già incontrato nella Parte I discutendo la dinamica del **salario di sussistenza**: la figura che ne rappresentava le oscillazioni e l'orbita nel piano delle fasi è, formalmente, la stessa che descrive qui il ciclo profitti-debito.
+
+Innestata nel circuito monetario e nel modello IO-BMW (sezione 3.2.4), questa dinamica trasforma l'aggiustamento ordinato in **cicli endogeni** di espansione e recessione, tanto più violenti quanto più banche e imprese reagiscono alla leva e alla valutazione finanziaria del capitale (Veronese Passarella, 2025); è il meccanismo dell'**acceleratore finanziario**, penetrato anche nel *mainstream* (Bernanke, Gertler e Gilchrist). Ne discendono le due prescrizioni di Minsky: un **grande Stato** (*Big Government*), la cui spesa in disavanzo sostiene domanda e profitti e fornisce attività sicure, e una **grande banca centrale** (*Big Bank*), prestatrice di ultima istanza che pone "pavimenti" e "soffitti" alle oscillazioni; ogni salvataggio, però, riducendo i margini di sicurezza futuri, semina già la crisi successiva. È, di nuovo, la crisi come esito **endogeno** del capitalismo, la stessa conclusione di Marx (sezioni 1.4.6-1.4.8) e di Harrod (sezione 2.2), qui fondata sulla struttura finanziaria.
+
+#### 3.3.3 Modelli ad agenti ed emergenza
+
+I modelli visti finora - aggregati, input-output, fondi-flussi - sono **top-down**: si specificano direttamente le regole di comportamento dell'intera economia (o di un'intera industria). I **modelli ad agenti** (*agent-based models*, ABM) rovesciano la prospettiva e sono **bottom-up**: si specifica il comportamento di molti **agenti** individuali - qui le famiglie - e le grandezze macroeconomiche si ottengono **sommando sugli agenti**. Le regolarità aggregate non sono imposte, ma **emergono** dall'interazione (per un'introduzione pratica, in `R`, si veda Caiani et al., 2016). Tre tratti distinguono questo stile: l'**eterogeneità** (ogni famiglia ha, ad esempio, la propria propensione al consumo); l'**interazione e l'incontro** tramite meccanismi espliciti (qui una *lotteria del lavoro* per le assunzioni e un mercato dei beni *primo arrivato, primo servito*); e le **decisioni sequenziali**, prese sull'informazione del periodo precedente, senza risolvere un sistema simultaneo. I modelli restano **coerenti sul piano fondi-flussi**: poiché la moneta è solo trasferita fra agenti, mai creata o distrutta dall'incontro, l'equazione ridondante continua a valere. Ogni modello si esegue molte volte con semi casuali diversi (ripetizioni **Monte Carlo**) e i risultati si mediano.
+
+> 💡 **Emergenza: uno stormo senza capo.** Si guardi uno stormo di storni volteggiare nel cielo: viene spontaneo cercare un capo, o un piano. Non c'è né l'uno né l'altro. Ogni uccello segue poche regole semplici, guardando solo i vicini più prossimi - **separazione** (non accalcarsi), **allineamento** (andare più o meno nella stessa direzione), **coesione** (non allontanarsi troppo) - e in nessuna di queste regole compare la parola "stormo". Eppure lo stormo appare: una forma coerente e mutevole che appartiene al gruppo e a nessun individuo. Questa è l'**emergenza**: un ordine al livello del tutto che nasce dalla sola interazione locale e che non si potrebbe mai leggere su un singolo uccello. Il test è semplice: si **spenga** l'interazione (ogni uccello ignori i vicini) e lo stormo si dissolve in una nube di viandanti indipendenti. Il disegno viveva nell'*interazione*, non negli uccelli. I modelli ad agenti mettono al lavoro questa idea in economia: invece di scrivere come si comporta l'*economia*, si scrive come si comportano i singoli agenti e li si lascia interagire, e comportamenti macroeconomici che nessuno ha programmato - disoccupazione involontaria, una domanda aggregata che dipende da *chi* è stato pagato - compaiono da soli, la controparte economica dello stormo.
+
+<table align="center">
+  <tr><td width="720" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/deterministic_vs_emergent.gif" width="720">
+  </td></tr>
+  <tr><td width="720" align="center">
+    <em><strong>Figura 3.26</strong> - Due volti della complessità. A sinistra, uno sciame sull'attrattore di Lorenz: dinamica deterministica e intricata, persino caotica, ma senza interazione - ogni punto obbedisce alla stessa legge globale, la forma era scritta nelle equazioni fin dall'inizio (complessità, ma non emergenza). A destra, uno stormo di "Boids": l'ordine si auto-organizza dalle sole regole locali, e spegnendo l'interazione lo stormo si dissolve (emergenza). Fonti: Lorenz (1963); Reynolds (1987).</em>
+  </td></tr>
+</table>
+
+Anche gli ABM del corso si costruiscono a strati, sopra i modelli già visti. Il modello **ABM-SIM** popola il modello SIM con $N$ famiglie, ciascuna con la propria moneta, il proprio reddito e la propria propensione al consumo; poiché le famiglie sono più dei posti di lavoro disponibili, la **disoccupazione emerge** invece di essere assunta. Sommando sugli agenti si ritrova il SIM aggregato (il prodotto medio converge ancora a $G/\theta$), ma con due risultati nuovi: la disoccupazione diventa una variabile fluttuante generata dal modello, e lo *stock* di moneta si assesta *sopra* il valore del SIM senza attriti, perché quando le assunzioni sono insufficienti le famiglie sono razionate e non spendono quanto avevano pianificato: il reddito non speso diventa **risparmio involontario** e la ricchezza accumula un cuscinetto. Il modello **ABM-PC** aggiunge la scelta di portafoglio: qui l'eterogeneità ha una conseguenza più netta, perché la domanda aggregata dipende da *quali* famiglie percepiscono reddito (pesate per le loro propensioni), sicché la **composizione** del reddito diventa essa stessa una variabile macroeconomica. Il modello **ABM-BMW** tiene le famiglie come agenti eterogenei (lavoratori e consumatori) mentre il blocco imprese-capitale-banche resta aggregato: quando le assunzioni sono scarse, sono razionati sia i consumi sia gli investimenti, e poiché l'acceleratore si nutre del prodotto, la caduta si **amplifica** (meno prodotto → minore capitale obiettivo → meno investimento → meno prodotto). In tutti i casi, ponendo a zero l'attrito e l'eterogeneità si riottiene esattamente il modello deterministico di partenza.
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig1_ABM_SIM.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.27</strong> - Modello ABM-SIM. Ogni linea grigia sottile è una singola simulazione Monte Carlo, la linea colorata in grassetto è la media sulle ripetizioni: la fascia grigia misura la variabilità da una realizzazione all'altra, la linea colorata il percorso atteso verso lo stato stazionario e l'aggiustamento innescato da un aumento della spesa pubblica.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig1_ABM_PC.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.28</strong> - Modello ABM-PC: dinamica media (linea colorata) e variabilità fra simulazioni (linee grigie) verso lo stato stazionario e dopo un aumento della spesa pubblica.</em>
+  </td></tr>
+</table>
+
+<table align="center">
+  <tr><td width="900" align="center">
+    <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Fig1_ABM_BMW.png" width="900">
+  </td></tr>
+  <tr><td width="900" align="center">
+    <em><strong>Figura 3.29</strong> - Modello ABM-BMW: dinamica media e variabilità fra simulazioni; l'acceleratore amplifica l'effetto recessivo del razionamento del lavoro.</em>
+  </td></tr>
+</table>
+
+Il codice `R` dei tre modelli è nell'archivio *Leeds lectures 2026*: [ABM-SIM](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/ABM_SIM.R), [ABM-PC](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/ABM_PC.R) e [ABM-BMW](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/ABM_BMW.R).
+
+#### 3.3.4 Quanta complessità? Una nota di metodo
+
+La complessità, però, deve sempre **giustificarsi**. Il dettaglio input-output si merita il suo posto quando la domanda riguarda l'interdipendenza industriale, il mutamento strutturale, i prezzi relativi o la propagazione di uno shock settoriale; le microfondazioni ad agenti eterogenei quando l'eterogeneità e l'interazione producono davvero comportamenti *emergenti*. Quando la domanda non richiede queste estensioni, il modello aggregato non è una risposta più povera, ma quella giusta. Il pavimento, sotto ogni cosa, resta la **coerenza contabile**: un modello le cui matrici non tornano a zero non è "grosso modo giusto", sta perdendo moneta da qualche parte, e i suoi risultati non sono affidabili. È questo l'insegnamento che ci accompagnerà nelle conclusioni del corso (sezione 3.4): far corrispondere la risoluzione del modello a quella della domanda, e non più fine di così.
 
 🚧 ATTENZIONE: *Work in progress* 🚧
 
