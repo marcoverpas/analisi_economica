@@ -785,7 +785,7 @@ Nel Libro III Marx anticipa una concezione moderna della **moneta-credito** e de
 Con Marx si chiude la parabola dell'economia politica classica e si aprono le sue rielaborazioni eterodosse. La sua analisi lascia in eredità una teoria dello sfruttamento, un'idea del capitalismo come sistema instabile e conflittuale, e un intero arsenale di strumenti che le tradizioni successive - da Sraffa ai post-keynesiani, dai teorici del sovrappiù agli evoluzionisti - riprenderanno e svilupperanno. Prima, però, occorre fare i conti con la reazione che, proprio mentre Marx scriveva il *Capitale*, stava rovesciando l'intero impianto classico: la **rivoluzione marginalista**, con cui si apre la Parte II.
 
 > [!NOTE]
-> 💡 **Marx precursore.** Molti degli strumenti che incontreremo nel seguito hanno in Marx un antecedente. (a) Gli *schemi di riproduzione* a due settori, eredi del *Tableau* di Quesnay, anticipano il modello *input-output* di Leontief (sezione 3.1). (b) I *prezzi di produzione* con saggio di profitto uniforme, in forma matriciale (1.22)-(1.23), prefigurano il sistema di Sraffa (sezione 2.3). (c) La circolazione capitalistica $D-M-D'$ e la moneta-credito endogena preludono alla *teoria del circuito monetario* e della *moneta endogena* (sezione 3.2). (d) La dinamica ciclica fra accumulazione, occupazione e distribuzione si lascia formalizzare come un sistema *preda-predatore* (Lotka-Volterra), come mostrerà Goodwin (sezioni 3.2-3.3). (e) La distinzione fra il comportamento degli individui e quello delle *classi* - queste ultime come soggetti *emergenti* - anticipa l'approccio dei *sistemi complessi* (sezione 3.3). Per un approfondimento, si rinvia a Veronese Passarella (2027).
+> 💡 **Marx precursore.** Molti degli strumenti che incontreremo nel seguito hanno in Marx un antecedente. (a) Gli *schemi di riproduzione* a due settori, eredi del *Tableau* di Quesnay, anticipano il modello *input-output* di Leontief (sezione 3.1). (b) I *prezzi di produzione* con saggio di profitto uniforme, in forma matriciale (1.22)-(1.23), prefigurano il sistema di Sraffa (sezione 2.3). (c) La circolazione capitalistica $D-M-D'$ e la moneta-credito endogena preludono alla *teoria del circuito monetario* e della *moneta endogena* (sezione 3.2). (d) La dinamica ciclica fra accumulazione, occupazione e distribuzione si lascia formalizzare come un sistema *preda-predatore* (Lotka-Volterra), come mostrerà Goodwin (sezioni 3.2-3.3). (e) La distinzione fra il comportamento degli individui e quello delle *classi* - queste ultime come soggetti *emergenti* - anticipa l'approccio dei *sistemi complessi* (sezione 3.3). Per un approfondimento, si rinvia a Veronese Passarella (2027a).
 
 ---
 
@@ -2051,7 +2051,7 @@ L'esempio più compiuto di dinamica endogena, in questo corso, viene dalla finan
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/minsky_two_price.gif" width="760">
   </td></tr>
   <tr><td width="760" align="center">
-    <em><strong>Figura 3.23</strong> - La decisione di investimento dell'impresa secondo la teoria dei due prezzi, animata lungo il ciclo. L'impresa investe fino al punto E, dove il prezzo di domanda del capitale (arancione) eguaglia il prezzo di offerta dei beni capitali (blu); la quota fino a q<sub>A</sub> (il livello coperto dai fondi propri) è autofinanziata (area verde), quella fra q<sub>A</sub> e la quantità di equilibrio q* è finanziata con debito (area rossa). Nell'espansione il prezzo di domanda si alza e l'offerta si appiattisce (rischi percepiti bassi), e l'investimento cresce; nella recessione il prezzo di domanda scende e l'offerta si irripidisce, e l'investimento si contrae. La curva verde tratteggiata sono i fondi interni.</em>
+    <em><strong>Figura 3.23</strong> - La decisione di investimento dell'impresa secondo la teoria dei due prezzi, animata lungo il ciclo. L'impresa investe fino al punto E, dove il prezzo di domanda del capitale (arancione) eguaglia il prezzo di offerta dei beni capitali (blu); la quota fino a q<sub>A</sub> (il livello coperto dai fondi propri) è autofinanziata (area verde), quella fra q<sub>A</sub> e la quantità di equilibrio q* è finanziata con debito (area rossa). Nell'espansione il prezzo di domanda si alza e l'offerta si appiattisce (rischi percepiti bassi), e l'investimento cresce; nella recessione il prezzo di domanda scende e l'offerta si irripidisce, e l'investimento si contrae. La curva verde tratteggiata sono i fondi interni. Rielaborazione della Figura 2 in Veronese Passarella (2027b). </em>
   </td></tr>
 </table>
 
@@ -2062,7 +2062,7 @@ Da qui l'**ipotesi di instabilità finanziaria** e il suo celebre paradosso: **l
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/minsky_financial_structures.png" width="720">
   </td></tr>
   <tr><td width="720" align="center">
-    <em><strong>Figura 3.24</strong> - Le tre strutture finanziarie di Minsky. A sinistra, per ciascun tipo di unità, i flussi di cassa attesi (verde); a destra, gli impegni di pagamento, distinti in interessi (arancione) e capitale (rosso). Unità <em>coperta</em> (hedge): i flussi coprono interessi e capitale. Unità <em>speculativa</em>: coprono i soli interessi. Unità <em>Ponzi</em>: non coprono neppure gli interessi. Più il sistema è popolato di unità speculative e Ponzi, più è fragile.</em>
+    <em><strong>Figura 3.24</strong> - Le tre strutture finanziarie di Minsky. A sinistra, per ciascun tipo di unità, i flussi di cassa attesi (verde); a destra, gli impegni di pagamento, distinti in interessi (arancione) e capitale (rosso). Unità <em>coperta</em> (hedge): i flussi coprono interessi e capitale. Unità <em>speculativa</em>: coprono i soli interessi. Unità <em>Ponzi</em>: non coprono neppure gli interessi. Più il sistema è popolato di unità speculative e Ponzi, più è fragile. Tratto da Veronese Passarella (2027b), Figura 5. </em>
   </td></tr>
 </table>
 
@@ -2073,11 +2073,11 @@ La fragilità si accumula così in modo **endogeno**, finché un piccolo *shock*
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/minsky_contagion.png" width="720">
   </td></tr>
   <tr><td width="720" align="center">
-    <em><strong>Figura 3.25</strong> - Rete del contagio finanziario. Ogni nodo è un'unità, ogni freccia un rapporto debito-credito (dal debitore al creditore); i colori indicano il grado di difficoltà, dal basso (verde) al moderato (giallo e arancione) all'alto (rosso). Il dissesto di un'unità si trasmette lungo i legami di bilancio, come una reazione a catena, colpendo anche le unità inizialmente coperte.</em>
+    <em><strong>Figura 3.25</strong> - Rete del contagio finanziario. Ogni nodo è un'unità, ogni freccia un rapporto debito-credito (dal debitore al creditore); i colori indicano il grado di difficoltà, dal basso (verde) al moderato (giallo e arancione) all'alto (rosso). Il dissesto di un'unità si trasmette lungo i legami di bilancio, come una reazione a catena, colpendo anche le unità inizialmente coperte. Tratto da Veronese Passarella (2027b), Figura 6. </em>
   </td></tr>
 </table>
 
-Sul piano macroeconomico, poiché i profitti aggregati sono determinati dall'investimento (Kalecki: "i capitalisti guadagnano ciò che spendono"), la fase espansiva tende ad autoconvalidarsi - più investimento significa più profitti, quindi più credito - fino al punto di svolta. Ridotta all'osso, la dinamica minskyana si lascia rappresentare da un sistema a due variabili, i **profitti** $\Pi$ e il **debito** $D$ delle imprese:
+Sul piano macroeconomico, poiché i profitti aggregati sono determinati dall'investimento (Kalecki: "i capitalisti guadagnano ciò che spendono"), la fase espansiva tende ad autoconvalidarsi - più investimento significa più profitti, quindi più credito - fino al punto di svolta. Ridotta all'osso, la dinamica minskyana si lascia rappresentare da un sistema a due variabili, i **profitti** $\Pi$ e il **debito** $D$ delle imprese (Veronese Passarella, 2027b):
 
 $$\dot{\Pi} = (g - a \cdot D) \cdot \Pi \qquad (3.47)$$
 
@@ -2213,6 +2213,6 @@ L'obiettivo di chi frequenta questo corso dovrebbe essere quello di imparare a r
 - Veronese Passarella, M. (2023), "Technical Change and the Monetary Circuit: An Input-Output Stock-Flow Consistent Dynamic Model", *Quaderni del Dipartimento di Economia Politica e Statistica*, No. 903, Università di Siena.
 - Veronese Passarella, M. (2024), "It Is Not *la Vie en Rose*: New Insights from Graziani's Theory of the Monetary Circuit", *European Journal of Economics and Economic Policies: Intervention*, 21(3), pp. 461-485.
 - Veronese Passarella, M. (2025), "Destabilizing a Stable Economy: Minsky Meets Graziani's Monetary Circuit", *International Journal of Political Economy*, 54(3), pp. 338-355.
-- Veronese Passarella, M. (2027), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo* [titolo provvisorio], Cedam-Utet, Milano.
-- Veronese Passarella, M. (in corso di pubblicazione), *Mr. Keynes and the "Classics" (Almost) a Century Later: Reviewing the IS-LM Model*.
-
+- Veronese Passarella, M. (2027a), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo* [titolo provvisorio], Cedam-Utet, Milano.
+- Veronese Passarella, M. (2027b), "The economics of Hyman Minsky", in H. Bougrine e L.P. Rochon (a cura di), *A brief history of economic thought*, second edition, Edward Elgar, Cheltenham.
+- Veronese Passarella, M. (2027c), *Mr. Keynes and the "Classics" (Almost) a Century Later: Reviewing the IS-LM Model*, working paper presentato alla *66th SIE Conference*, Napoli, Italia, 23-25 ottobre 2025 (in corso di pubblicazione).
