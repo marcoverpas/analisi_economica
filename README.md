@@ -1504,13 +1504,13 @@ Da qui la richiesta di rifondare la macroeconomia su **microfondazioni**, ossia 
 
 L'etichetta è, in verità, imprecisa: sotto di essa convivono tradizioni distinte e non sempre concordi, che condividono però il rifiuto dei pilastri neoclassici e il riconoscimento del principio della domanda effettiva. Vi rientrano i teorici del **sovrappiù** di matrice classico-sraffiana (sezione 2.3), numerosi economisti di ispirazione **marxista**, parte degli **evoluzionisti**, i **circuitisti** e i teorici della moneta endogena. Ciò che li accomuna, sul piano del metodo, è l'adozione di **coefficienti tecnici** determinati dalla struttura produttiva anziché dalla sostituzione fra fattori (sezione 2.3.1), il trattamento della moneta come variabile **endogena** e non come grandezza controllata dall'alto, e l'idea che il livello dell'attività economica sia governato dalla domanda tanto nel breve quanto nel lungo periodo.
 
-È precisamente questa la tradizione entro cui si collocano i modelli sviluppati nella Parte III di questo corso. Il modello dinamico Keynes + Sraffa della sezione 2.3.5 ne è già un primo esempio: quantità governate dalla domanda effettiva, prezzi governati dalla tecnica e dalla distribuzione. I passi successivi consisteranno nel dare a quello scheletro un corpo monetario e finanziario coerente, facendo sì che ogni flusso alimenti uno *stock* e che i bilanci di tutti i settori si chiudano.
-
 <div align="center">
 <figure>
 <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/ritratti.png" width="700">
 </figure>
 </div>
+
+È precisamente questa la tradizione entro cui si collocano i modelli sviluppati nella Parte III di questo corso. Il modello dinamico Keynes + Sraffa della sezione 2.3.5 ne è già un primo esempio: quantità governate dalla domanda effettiva, prezzi governati dalla tecnica e dalla distribuzione. I passi successivi consisteranno nel dare a quello scheletro un corpo monetario e finanziario coerente, facendo sì che ogni flusso alimenti uno *stock* e che i bilanci di tutti i settori si chiudano.
 
 ---
 
