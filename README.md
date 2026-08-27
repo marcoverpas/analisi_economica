@@ -1178,10 +1178,10 @@ Su questa base Sraffa riprende il **metodo del sovrappiù** dei classici, che la
 
 #### 2.3.2 La riproduzione del sistema: produzione senza sovrappiù
 
-Il libro comincia dal caso più semplice: un'economia che si limita a **riprodursi**, senza generare alcun sovrappiù. Si prenda l'esempio di Sraffa, a due sole industrie (grano e ferro):
+Il libro comincia dal caso più semplice: un'economia che si limita a **riprodursi**, senza generare alcun sovrappiù. Si prenda l'esempio di Sraffa, a due sole industrie (grano e ):
 
-$$280 \text{ qr. grano} + 12 \text{ t. ferro} \; \rightarrow \; 400 \text{ qr. grano} \qquad (2.6)$$
-$$120 \text{ qr. grano} + \; 8 \text{ t. ferro} \; \rightarrow \; 20 \text{ t. ferro} \qquad (2.7)$$
+$$280 \text{ qr. grano} + 12 \text{ t. ferro}  \rightarrow  400 \text{ qr. grano} \qquad (2.6)$$
+$$120 \text{ qr. grano} +  8 \text{ t. ferro}  \rightarrow  20 \text{ t. ferro} \qquad (2.7)$$
 
 Sommando, l'economia impiega in tutto 400 qr. di grano e 20 t. di ferro, ed è esattamente ciò che produce: nulla avanza. Perché il sistema possa ripartire identico, ogni industria deve poter **riacquistare** i mezzi di produzione che ha consumato, e questo fissa in modo univoco i prezzi (o rapporti di scambio) relativi. Detti $p_g$ e $p_f$ i prezzi del grano e del ferro, la condizione di riproduzione dell'industria del grano è $280 \cdot p_g + 12 \cdot p_f = 400 \cdot p_g$, da cui $p_f = 10 \cdot p_g$: una tonnellata di ferro vale dieci quarti di grano. La stessa proporzione soddisfa, per costruzione, anche l'industria del ferro. I prezzi, qui, non misurano scarsità né utilità: sono i **rapporti che consentono al sistema di rinnovarsi**. È il germe stesso del modello input-output, e la traduzione rigorosa degli schemi di riproduzione di Quesnay e Marx.
 
