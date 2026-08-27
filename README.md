@@ -2263,9 +2263,6 @@ Nulla di tutto ciò va inteso come una condanna senza appello dell'analisi margi
 
 L'obiettivo di chi frequenta questo corso dovrebbe essere quello di imparare a riconoscere queste scelte, discuterne i limiti e capire quali conclusioni possiamo davvero trarre da un modello. Dopo tutto, come osservava Joan Robinson, lo scopo di studiare economia non è quello di memorizzare un insieme di risposte già pronte ai quesiti economici, ma di imparare a non farsi ingannare dagli economisti.
 
-
-🚧 ATTENZIONE: *Work in progress* 🚧
-
 ---
 
 ## Riferimenti bibliografici
