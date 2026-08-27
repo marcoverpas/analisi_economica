@@ -2235,9 +2235,9 @@ Il codice `R` dei tre modelli è nell'archivio *Leeds lectures 2026*: [ABM-SIM](
 
 #### 3.3.4 Quanta complessità? Una nota di metodo
 
-La complessità, però, deve sempre **giustificarsi**. È consigliabile ricorrere a strutture input-output quando la domanda di ricerca riguarda l'interdipendenza industriale, il mutamento strutturale, i prezzi relativi o la propagazione di uno shock settoriale. Del pari, le microfondazioni ad agenti eterogenei sono necessarie quando l'eterogeneità e l'interazione producono davvero comportamenti *emergenti*. Quando la domanda non richiede queste estensioni, il modello aggregato non è una risposta più povera, ma quella giusta.
+La complessità, però, deve sempre **giustificarsi**. È consigliabile ricorrere a strutture input-output quando la domanda di ricerca riguarda l'interdipendenza industriale, il mutamento strutturale, i prezzi relativi o la propagazione di uno *shock* settoriale. Del pari, le microfondazioni ad agenti eterogenei sono necessarie quando l'eterogeneità e l'interazione producono davvero comportamenti *emergenti*. Quando la domanda non richiede queste estensioni, il modello aggregato può essere la soluzione più trasparente.
 
-In tutti questi casi, non dovrebbe mai venir meno la **coerenza contabile**: un modello le cui matrici non tornano a zero non è "grosso modo giusto", sta perdendo moneta da qualche parte, e i suoi risultati non sono affidabili.
+Qualunque sia la scelta, non dovrebbe mai venir meno la **coerenza contabile**. Un modello le cui matrici non tornano a zero non è "grosso modo giusto". Sta, invece, perdendo traccia di qualche variabile o di qualche interazione, oppure le sta conteggiando più volte. Per questo, i suoi risultati potrebbero non essere affidabili.
 
 ---
 
