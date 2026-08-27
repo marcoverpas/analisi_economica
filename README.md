@@ -2310,7 +2310,7 @@ L'obiettivo di chi frequenta questo corso dovrebbe essere quello di imparare a r
 - Sraffa, P. (1960), *Produzione di merci a mezzo di merci. Premesse a una critica della teoria economica*, Einaudi, Torino.
 - Sylos Labini, F. e Galoppo, M. (2026), "Detection of anisotropic cosmic structures on a gigaparsec scale", *Nature*, [DOI: 10.1038/s41586-026-10702-5](https://www.nature.com/articles/s41586-026-10702-5).
 - Tversky, A. e Kahneman, D. (1974), "Judgment under Uncertainty: Heuristics and Biases", *Science*, 185(4157), pp. 1124-1131.
-- [Veronese] Passarella, M. (2009), "Marx in the matrix. L'algebra del 'lavoro vivo'", *Storia del Pensiero Economico. Nuova Serie*, 6(2), pp. 31-48, [DOI: 10.3280/SPE2009-002002](https://www.francoangeli.it/riviste/articolo/38095)
+- [Veronese] Passarella, M. (2009), "Marx in the matrix. L'algebra del 'lavoro vivo'", *Storia del Pensiero Economico. Nuova Serie*, 6(2), pp. 31-48.
 - Veronese Passarella, M. (2022), "Sequence and Class Divide: A Reply to the Critics of the Theory of the Monetary Circuit", *Augusto Graziani Blog*, 18 settembre.
 - Veronese Passarella, M. (2023), "Technical Change and the Monetary Circuit: An Input-Output Stock-Flow Consistent Dynamic Model", *Quaderni del Dipartimento di Economia Politica e Statistica*, No. 903, Università di Siena.
 - Veronese Passarella, M. (2024), "It Is Not *la Vie en Rose*: New Insights from Graziani's Theory of the Monetary Circuit", *European Journal of Economics and Economic Policies: Intervention*, 21(3), pp. 461-485.
