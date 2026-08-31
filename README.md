@@ -13,7 +13,7 @@
 
 Questo archivio raccoglie note, consigli di lettura e altro materiale del corso. Il materiale è consultabile anche in forma di [libro HTML](https://marcoverpas.github.io/analisi_economica/booklet.html). 
 
-🚧 ATTENZIONE: *Work in progress* 🚧. Il materiale potrà essere soggetto a revisioni nel corso del primo semestre dell'anno accademico 2026/2027.
+🚧 ATTENZIONE: *Work in progress* 🚧. Il materiale sarà soggetto revisioni nel corso del primo semestre dell'anno accademico 2026/2027.
 
 ---
 
