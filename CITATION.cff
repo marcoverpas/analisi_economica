@@ -1,12 +1,30 @@
-cff-version: 1.0.0
-message: "Se utilizzi questo materiale, cita come indicato di seguito."
-title: "Analisi economica: produzione, distribuzione, conflitto e moneta"
-type: dataset
+cff-version: 1.2.0
+message: "Se utilizzi questo materiale, per favore citalo come indicato di seguito."
+title: "Analisi Economica: produzione, distribuzione, conflitto e moneta"
+abstract: >-
+  Note delle lezioni dell'insegnamento di Analisi Economica (Università degli
+  Studi dell'Aquila): l'economia capitalistica come sistema monetario di
+  produzione, dall'economia politica classica agli sviluppi modellistici più
+  recenti (input-output, modelli fondi-flussi/stock-flow consistent, sistemi
+  complessi), con esempi e simulazioni in R.
+type: software
 authors:
   - family-names: "Veronese Passarella"
     given-names: "Marco"
-    affiliation: "Università degli Studi dell'Aquila"
-    # orcid: "https://orcid.org/0000-0001-7652-5952"
-version: "a.a. 2026-2027"
-date-released: "2026-09-01"
+    orcid: "https://orcid.org/0000-0001-7652-5952"
+    affiliation: "Università degli Studi dell'Aquila, DIIIE"
+repository-code: "https://github.com/marcoverpas/analisi_economica"
 url: "https://github.com/marcoverpas/analisi_economica"
+license: CC-BY-NC-4.0
+keywords:
+  - economia politica
+  - approccio classico e del sovrappiù
+  - economia post-keynesiana
+  - circuito monetario
+  - modelli input-output
+  - modelli fondi-flussi (stock-flow consistent)
+  - didattica
+  - R
+version: "1.0.0"                 # aggiorna ad ogni release (es. 1.1.0)
+date-released: "2026-08-31"          # aggiorna alla data della release
+doi: "10.5281/zenodo.22205941"  # concept DOI (punta sempre all'ultima versione)
