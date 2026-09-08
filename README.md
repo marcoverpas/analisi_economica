@@ -138,6 +138,8 @@ Tutti i modelli presentati in questo archivio sono stati sviluppati in ambiente 
 
 `R` può essere scaricato gratuitamente dal [sito ufficiale del CRAN](https://cran.r-project.org). Si consiglia, inoltre, di scaricare ed installare [RStudio](https://posit.co/download/rstudio-desktop/), un ambiente di sviluppo (IDE) per `R` gratuito, potente e di facile utilizzo.
 
+In alternativa, è possibile utilizzare la versione online di `R` creando un proprio profilo su [Posit Cloud](https://posit.cloud/). 
+
 Chi volesse ottenere rappresentazioni più accurate (grafici più sofisticati, tabelle formattate, manipolazione dei dati, ecc.), può installare alcuni pacchetti aggiuntivi:
 
 | Scopo | Pacchetti |
