@@ -2347,6 +2347,6 @@ L'obiettivo di chi frequenta questo corso dovrebbe essere quello di imparare a r
 - Veronese Passarella, M. (2023), "Technical Change and the Monetary Circuit: An Input-Output Stock-Flow Consistent Dynamic Model", *Quaderni del Dipartimento di Economia Politica e Statistica*, No. 903, Università di Siena.
 - Veronese Passarella, M. (2024), "It Is Not *la Vie en Rose*: New Insights from Graziani's Theory of the Monetary Circuit", *European Journal of Economics and Economic Policies: Intervention*, 21(3), pp. 461-485.
 - Veronese Passarella, M. (2025), "Destabilizing a Stable Economy: Minsky Meets Graziani's Monetary Circuit", *International Journal of Political Economy*, 54(3), pp. 338-355.
-- Veronese Passarella, M. (2026), *Mr. Keynes and the "Classics" (Almost) a Century Later: Reviewing the IS-LM Model*, *Journal of Post Keynesian Economics* (in corso di pubblicazione).
+- Veronese Passarella, M. (2026), "Mr. Keynes and the `Classics' (Almost) a Century Later: Reviewing the IS-LM Model", *Journal of Post Keynesian Economics* (in corso di pubblicazione).
 - Veronese Passarella, M. (2027a), "Karl Marx", in F. Simon, F. Bientinesi, R. Patalano (a cura di), *Visioni e Teorie dalla storia del capitalismo* [titolo provvisorio], Cedam-Utet, Milano.
 - Veronese Passarella, M. (2027b), "The economics of Hyman Minsky", in H. Bougrine e L.P. Rochon (a cura di), *A brief history of economic thought*, second edition, Edward Elgar, Cheltenham.
