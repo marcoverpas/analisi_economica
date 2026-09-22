@@ -289,6 +289,18 @@ Una precisazione terminologica è qui doverosa, perché i fisiocratici impiegava
 </table>
 </div>
 
+La Figura 1.4 mostra l'intero processo di circolazione di denaro e merci. Si immagini che l'anno agricolo si sia appena concluso. La classe produttiva ha ottenuto il raccolto e ne ha versato una parte, il *produit net*, ai proprietari terrieri sotto forma di **rendita**: è la freccia che, nella figura, sale dall'agricoltura al riquadro dorato. Poniamo che questa rendita valga 2 miliardi. È da qui che parte tutto: all'inizio del nuovo ciclo sono i proprietari ad avere in mano il denaro.
+
+Le frecce piene rappresentano **pagamenti in denaro**. In senso opposto, anche se non disegnato, viaggiano le **merci**. Ogni volta che qualcuno spende riceve in cambio un bene: dove la freccia porta il denaro in avanti, la merce torna indietro.
+
+Seguiamo ora il denaro passaggio per passaggio. La regola è semplice: ogni classe che incassa ne trattiene una parte, per ricostituire ciò che ha anticipato nella produzione, e rispende il resto comprando dall'altra classe. Se ipotizziamo che ciascuno rispenda la metà di quanto riceve, la catena degli acquisti diviene:
+
+1. i **proprietari** spendono la rendita comprando prodotti agricoli, e il denaro va alla **classe produttiva** (il primo tratto dello zig-zag, pari a 1);
+2. la **classe produttiva**, con parte di quell'incasso, compra manufatti dalla **classe sterile** (il denaro attraversa la figura verso destra, per un importo dimezzato: ½);
+3. la **classe sterile** usa ciò che ha incassato per comprare viveri e materie prime dalla classe produttiva (il denaro torna a sinistra: ¼);
+4. la classe produttiva rispende di nuovo verso la sterile (⅛), e così via.
+
+Ecco perché il tracciato ha la forma a **zig-zag**: il denaro rimbalza avanti e indietro fra le due classi che *producono*, e a ogni rimbalzo l'importo si dimezza. Alla fine del giro il cerchio si chiude, come indica la freccia tratteggiata che risale sulla sinistra. La classe produttiva ha recuperato il denaro necessario a due cose: reintegrare le proprie **anticipazioni** (sementi, strumenti, sussistenza dei lavoratori) e versare di nuovo la rendita ai proprietari l'anno successivo. La classe sterile ha ricostituito i propri mezzi. I proprietari hanno consumato la loro rendita. Nessuno resta con un buco e nessuno accumula di troppo: il sistema si ritrova nelle stesse condizioni di partenza e può **riprodursi identico**, anno dopo anno. A una condizione, però: che le proporzioni fra le spese siano rispettate. Se saltano, la riproduzione si inceppa, ed è il primo germe dell'idea di *crisi*.
 
 L'importanza del *Tableau* per il nostro percorso è duplice. Da un lato, esso definisce in modo netto il *produit net* come eccedenza del prodotto sui costi di riproduzione. Rappresenta, dunque, la prima formulazione rigorosa del concetto di sovrappiù, che ritroveremo in Ricardo, in Marx e in Sraffa. Dall'altro, esso è un vero e proprio schema di circuito *ante litteram*, un modello di riproduzione in cui i flussi fra settori sono rappresentati in modo sistematico. Le grandezze del *Tableau* sono espresse in moneta, e ciò che il quadro raffigura è propriamente una circolazione di denaro, cui corrisponde, in senso inverso, un flusso di merci.
 
