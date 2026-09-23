@@ -289,7 +289,7 @@ Una precisazione terminologica è qui doverosa, perché i fisiocratici impiegava
 </table>
 </div>
 
-La Figura 1.4 mostra l'intero processo di circolazione di denaro e merci. Si immagini che l'anno agricolo si sia appena concluso. La classe produttiva ha ottenuto il raccolto e ne ha versato una parte, il *produit net*, ai proprietari terrieri sotto forma di **rendita**: è la freccia che, nella figura, sale dall'agricoltura al riquadro dorato. Poniamo che questa rendita valga 2 miliardi. È da qui che parte tutto: all'inizio del nuovo ciclo sono i proprietari ad avere in mano il denaro.
+La Figura 1.4 mostra l'intero processo di circolazione di denaro e merci. Si immagini che l'anno agricolo si sia appena concluso. La classe produttiva ha ottenuto il raccolto e ne ha versato una parte, il *produit net*, ai proprietari terrieri sotto forma di **rendita**: è la freccia che, nella figura, va dall'agricoltura al riquadro dorato. Poniamo che questa rendita valga 2 miliardi. È da qui che parte tutto: all'inizio del nuovo ciclo sono i proprietari ad avere in mano il denaro.
 
 Le frecce piene rappresentano **pagamenti in denaro**. In senso opposto, anche se non disegnato, viaggiano le **merci**. Ogni volta che qualcuno spende riceve in cambio un bene: dove la freccia porta il denaro in avanti, la merce torna indietro.
 
