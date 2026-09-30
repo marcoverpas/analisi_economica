@@ -433,7 +433,7 @@ mentre la rendita ivi conseguita - indicando con $a_i$ il prodotto (netto) per l
 
 $$R = a_i L_i - w L_i - \Pi_i = (a_i - a) L_i \qquad (1.11)$$
 
-La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla differenza di fertilità (o dalla produttività decrescente del lavoro agricolo). All'estendersi della coltivazione - per esempio a seguito dell'introduzione di dazi sul grano - la rendita totale aumenta (le terre marginali, prima esenti, diventano inframarginali), il monte salari totale aumenta, e la massa dei profitti si riduce, poiché $a$ tende a $w$ e quindi $r$ tende a zero. È lo spettro dello **stato stazionario**.
+La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla differenza di fertilità (o dalla produttività decrescente del lavoro agricolo). All'estendersi della coltivazione - per esempio a seguito dell'introduzione di dazi sul grano - la rendita totale aumenta (le terre marginali, prima esenti, diventano inframarginali), il monte salari totale aumenta, e la massa dei profitti si riduce, perché $a$ tende a $w$ e quindi $r$ tende a zero. È lo spettro dello **stato stazionario**.
 
 <table align="center">
   <tr>
