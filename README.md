@@ -427,11 +427,11 @@ con $w$ il salario (in grano) per lavoratore. La (1.9) esprime, in forma traspar
 
 Sulla terra inframarginale la massa dei profitti è:
 
-$$\Pi' = r w L' = \left( \frac{a}{w} - 1 \right) w L' = (a - w) L' \qquad (1.10)$$
+$$\Pi_i = r w L_i = \left( \frac{a}{w} - 1 \right) w L_i = (a - w) L_i \qquad (1.10)$$
 
 mentre la rendita ivi conseguita - indicando con $a_i$ il prodotto (netto) per lavoratore su tale terra, superiore a quello marginale $a$ - è il residuo che eccede salari e profitti:
 
-$$R = a_i L' - w L' - \Pi' = (a_i - a) L' \qquad (1.11)$$
+$$R = a_i L_i - w L_i - \Pi_i = (a_i - a) L_i \qquad (1.11)$$
 
 La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla differenza di fertilità (o dalla produttività decrescente del lavoro agricolo). All'estendersi della coltivazione - per esempio a seguito dell'introduzione di dazi sul grano - la rendita totale aumenta (le terre marginali, prima esenti, diventano inframarginali), il monte salari totale aumenta, e la massa dei profitti si riduce, poiché $a$ tende a $w$ e quindi $r$ tende a zero. È lo spettro dello **stato stazionario**.
 
