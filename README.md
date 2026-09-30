@@ -357,7 +357,7 @@ Inoltre, moltiplicando per le quantità, il valore del prodotto si scompone in s
 
 $$p_i x_i = w l_i x_i + w l_i x_i r_i = V_i + \Pi_i \qquad (1.6)$$
 
-dove $V_i$ è il monte salari e $\Pi_i$ la massa dei profitti. Il sovrappiù dell'economia coincide, in questo schema, con il profitto aggregato $\Pi=\sum_i \Pi_i=\sum_i w\,l_i x_i\,r_i$ (la rendita, qui trascurata, ne costituirebbe un'ulteriore detrazione).
+dove $V_i$ è il monte salari e $\Pi_i$ la massa dei profitti. Il sovrappiù dell'economia coincide, in questo schema, con il profitto aggregato $\Pi=\sum_i \Pi_i=\sum_i w l_i x_i r_i$ (la rendita, qui trascurata, ne costituirebbe un'ulteriore detrazione).
 
 Se è lecito scrivere il prezzo come somma dei redditi, è invece un errore leggere quei redditi come *fonti prime* del valore. Se salari e profitti fossero determinati in modo indipendente, la relazione fisserebbe simultaneamente il salario e il saggio di profitto, e il sistema risulterebbe sovradeterminato. Coerenza richiede che il profitto sia un *residuo*. Omettendo i pedici, dato il salario reale $\omega \equiv w/p$ e indicando con $\Omega \equiv \omega l$ la quota salari, dall'equazione del prezzo (1.2) si ricava:
 
@@ -468,11 +468,11 @@ Da qui la tesi che Ricardo considerava decisiva: la rendita **non entra nel prez
 
 **La lettura con le equazioni di prezzo.** La stessa logica si coglie scrivendo, per ciascuna dose, il valore del prodotto come somma di salario anticipato, profitto normale ed eventuale rendita. Detto $p$ il prezzo del grano, sulla dose marginale, dove la rendita è nulla, si ha:
 
-$$p\,a_m = (1+r)\,p\,w \qquad (\text{dose marginale})$$
+$$p a_m = (1+r) p w \qquad (\text{dose marginale})$$
 
 equazione nella quale la rendita non compare, ed è perciò essa a fissare $r$ (e, in un'economia con più merci, il prezzo naturale $p$). Sulle dosi inframarginali si aggiunge invece un termine di rendita $R_i$:
 
-$$p\,a_i = (1+r)\,p\,w + R_i, \qquad R_i = p\,(a_i - a_m) L_i$$
+$$p a_i = (1+r) p w + R_i, \qquad R_i = p (a_i - a_m) L_i$$
 
 La rendita è quindi un *residuo* che emerge una volta noti $p$ e $r$, e non un costo che li determina. Nel modello grano-grano il prezzo $p$ si semplifica nei due membri e $r$ resta un puro rapporto grano su grano, ma la struttura dell'equazione - prodotto uguale alle anticipazioni capitalizzate al saggio normale, più la rendita - è già quella dei prezzi di produzione che ritroveremo nella sezione 2.3.
 
