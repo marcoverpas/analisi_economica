@@ -401,7 +401,7 @@ Le due "anime" di Smith già incontrate nella sezione precedente - quella *macro
 
 Se in Smith la teoria del sovrappiù convive con l'anima dell'equilibrio concorrenziale, in David Ricardo (1772-1823) l'approccio classico raggiunge la sua forma più rigorosa e conflittuale. Per Ricardo l'economia è la scienza che studia la **distribuzione** del prodotto fra le tre classi della società capitalistica (lavoratori salariati, capitalisti e proprietari fondiari) e il suo oggetto precipuo è la determinazione del **saggio di profitto** e del suo andamento, da cui dipende il ritmo dell'accumulazione. Poiché ciò che va a una classe non può andare a un'altra, la distribuzione è, per costruzione, un terreno di conflitto.
 
-Il quadro storico è quello dell'Età della Restaurazione, dal Congresso di Vienna (1815) alle rivoluzioni del 1848, e in particolare della battaglia sulle *Corn Laws*, le tariffe protezionistiche sul grano approvate nel 1816 e abrogate solo nel 1846. La posta in gioco è il modello di sviluppo del paese - agricoltura o industria - e dietro le teorie si scorge lo scontro fra "vecchi" proprietari terrieri e nascente borghesia industriale, di cui Ricardo è il portavoce teorico.
+Il quadro storico è quello dell'Età della Restaurazione, dal Congresso di Vienna (1815) alle rivoluzioni del 1848, e in particolare della battaglia sulle *Corn Laws*, le tariffe protezionistiche sul grano approvate nel 1816 e abrogate solo nel 1846. La posta in gioco è il modello di sviluppo del Regno Unito - agricoltura o industria - e dietro le teorie si scorge lo scontro fra "vecchi" proprietari terrieri e nascente borghesia industriale, di cui Ricardo è il portavoce teorico.
 
 #### 1.3.1 Il "Saggio" del 1815 e la rendita differenziale
 
