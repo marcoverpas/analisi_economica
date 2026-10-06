@@ -183,7 +183,7 @@ Queste scuole possono essere ricondotte ad alcune visioni di base di lungo perio
 <div align="center">
 <table>
 <tr><td width="820" align="center">
-<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Albero_gen.png" width="800" alt="I quattro concetti di equilibrio"><br>
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Albero_gen.png" width="800" alt="L'albero genealogico delle scuole del pensiero economico"><br>
 <sub><em>Figura 1.1 - L'albero genealogico delle scuole del pensiero economico. Le principali tradizioni teoriche sono disposte lungo l'asse verticale, che oppone la visione centrata su individuo, mercato e scarsità a quella centrata su società, conflitto e riproduzione, e lungo l'asse orizzontale del tempo storico. I riquadri distinguono gli approcci dominanti (in tinta piena o tratteggiata) da quelli eterodossi; le frecce indicano i legami diretti (linea continua) e mediati (tratteggiata) fra le scuole.</em></sub>
 </td></tr>
 </table>
@@ -377,7 +377,7 @@ La Figura 1.5 raffigura il capitalismo come un sistema che si *riproduce* nel te
 <div align="center">
 <table>
 <tr><td width="820" align="center">
-<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Classi_sociali.png" width="800" alt="I quattro concetti di equilibrio"><br>
+<img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Classi_sociali.png" width="800" alt="Lo schema della riproduzione e le classi sociali"><br>
 <sub><em>Figura 1.5 - Lo schema della riproduzione e le classi sociali. Il processo produttivo combina lavoro, terra, macchine, e genera il prodotto lordo. Le detrazioni successive (mezzi di produzione, fondo salari, rendita) conducono dal prodotto lordo al prodotto netto, al sovrappiù e infine al profitto. I tre redditi (salari, rendita, profitto) remunerano rispettivamente lavoratori salariati, proprietari terrieri e capitalisti. La loro ripartizione è oggetto della lotta di classe, mentre la quota di profitto reinvestita rende possibile la riproduzione del sistema.</em></sub>
 </td></tr>
 </table>
@@ -421,19 +421,19 @@ $$X_m = a_m L_m \qquad (1.8)$$
 
 dove $L_m$ è il lavoro impiegato e $a(L)$ il prodotto (netto) per lavoratore, funzione decrescente ($a'(L) < 0$), che al margine assume il valore $a_m = a(L_m)$. Il saggio di profitto agricolo sulla terra marginale, dove non si paga rendita, è allora:
 
-$$r = \frac{X_m - w L_m}{w L_m} = \frac{a_m}{w} - 1 \qquad (1.9)$$
+$$r = \frac{X_m - \omega L_m}{\omega L_m} = \frac{a_m}{\omega} - 1 \qquad (1.9)$$
 
-con $w$ il salario (in grano) per lavoratore. La (1.9) esprime, in forma trasparente, la **relazione inversa fra saggio di profitto e salario**: se $w$ è fisso al livello di sussistenza, $r$ è determinato come residuo e si riduce all'aumentare di $L_m$, cioè al decrescere di $a_m$.
+con $\omega$ il salario reale (in grano) per lavoratore. La (1.9) esprime, in forma trasparente, la **relazione inversa fra saggio di profitto e salario**: se $\omega$ è fisso al livello di sussistenza, $r$ è determinato come residuo e si riduce all'aumentare di $L_m$, cioè al decrescere di $a_m$.
 
 Sulla terra inframarginale la massa dei profitti è:
 
-$$\Pi_i = r w L_i = \left( \frac{a_m}{w} - 1 \right) w L_i = (a_m - w) L_i \qquad (1.10)$$
+$$\Pi_i = r \omega L_i = \left( \frac{a_m}{\omega} - 1 \right) \omega L_i = (a_m - \omega) L_i \qquad (1.10)$$
 
 mentre la rendita ivi conseguita - indicando con $a_i$ il prodotto (netto) per lavoratore su tale terra, superiore a quello marginale $a_m$ - è il residuo che eccede salari e profitti:
 
-$$R_i = a_i L_i - w L_i - \Pi_i = (a_i - a_m) L_i \qquad (1.11)$$
+$$R_i = a_i L_i - \omega L_i - \Pi_i = (a_i - a_m) L_i \qquad (1.11)$$
 
-La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla differenza di fertilità (o dalla produttività decrescente del lavoro agricolo). All'estendersi della coltivazione - per esempio a seguito dell'introduzione di dazi sul grano - la rendita totale aumenta (le terre marginali, prima esenti, diventano inframarginali), il monte salari totale aumenta, e la massa dei profitti si riduce, perché $a_m$ tende a $w$ e quindi $r$ tende a zero. È lo spettro dello **stato stazionario**.
+La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla differenza di fertilità (o dalla produttività decrescente del lavoro agricolo). All'estendersi della coltivazione - per esempio a seguito dell'introduzione di dazi sul grano - la rendita totale aumenta (le terre marginali, prima esenti, diventano inframarginali), il monte salari totale aumenta, e la massa dei profitti si riduce, perché $a_m$ tende a $\omega$ e quindi $r$ tende a zero. È lo spettro dello **stato stazionario**.
 
 <table align="center">
   <tr>
@@ -443,38 +443,38 @@ La (1.11) mostra con chiarezza che la rendita è un reddito che deriva dalla dif
   </tr>
   <tr>
     <td width="640" align="center">
-      <sub><em><strong>Figura 1.6</strong> - La rendita differenziale ricardiana. Al crescere dell'intensità di coltivazione (o con la messa a coltura di terre meno fertili) il prodotto marginale del lavoro <em>a</em> diminuisce. Dato il salario di sussistenza <em>w&#772;</em>, al margine <em>L<sub>m</sub></em> il prodotto <em>a<sub>m</sub></em> si divide fra salari e profitti, mentre la rendita è il sovrappiù delle dosi intra-marginali, pari all'area al di sopra di <em>a<sub>m</sub></em>. Nel punto <em>S</em>, dove <em>a<sub>m</sub></em> = <em>w&#772;</em>, il profitto si annulla (stato stazionario).</em></sub>
+      <sub><em><strong>Figura 1.6</strong> - La rendita differenziale ricardiana. Al crescere dell'intensità di coltivazione (o con la messa a coltura di terre meno fertili) il prodotto marginale del lavoro <em>a</em> diminuisce. Dato il salario reale di sussistenza <em>&#969;&#772;</em>, al margine <em>L<sub>m</sub></em> il prodotto <em>a<sub>m</sub></em> si divide fra salari e profitti, mentre la rendita è il sovrappiù delle dosi intra-marginali, pari all'area al di sopra di <em>a<sub>m</sub></em>. Nel punto <em>S</em>, dove <em>a<sub>m</sub></em> = <em>&#969;&#772;</em>, il profitto si annulla (stato stazionario).</em></sub>
     </td>
   </tr>
 </table>
 
-Questa configurazione distributiva si lascia riassumere in un unico diagramma (Figura 1.6). In ascissa è la quantità di lavoro $L$, ossia l'intensità della coltivazione. In ordinata il prodotto marginale del lavoro $a$, decrescente. Dato il salario di sussistenza $\bar{w}$, al margine $L_m$ l'ultima dose di lavoro rende $a_m$, che si ripartisce fra **salari** ($\bar{w}$) e **profitti** ($a_m - \bar{w}$), coerentemente con la (1.9). La **rendita** è invece il sovrappiù delle dosi intra-marginali, l'area compresa fra la curva e la retta $a_m$, ossia la (1.11) letta graficamente. All'estendersi della coltivazione il margine si sposta verso destra e $a_m$ scende verso $\bar{w}$. Le rendite si dilatano, i profitti si comprimono e il saggio di profitto tende a zero, fino al punto $S$, in cui $a_m = \bar{w}$ e il profitto si annulla, portando allo stato stazionario.
+Questa configurazione distributiva si lascia riassumere in un unico diagramma (Figura 1.6). In ascissa è la quantità di lavoro $L$, ossia l'intensità della coltivazione. In ordinata il prodotto marginale del lavoro $a$, decrescente. Dato il salario reale di sussistenza $\bar{\omega}$, al margine $L_m$ l'ultima dose di lavoro rende $a_m$, che si ripartisce fra **salari** ($\bar{\omega}$) e **profitti** ($a_m - \bar{\omega}$), coerentemente con la (1.9). La **rendita** è invece il sovrappiù delle dosi intra-marginali, l'area compresa fra la curva e la retta $a_m$, ossia la (1.11) letta graficamente. All'estendersi della coltivazione il margine si sposta verso destra e $a_m$ scende verso $\bar{\omega}$. Le rendite si dilatano, i profitti si comprimono e il saggio di profitto tende a zero, fino al punto $S$, in cui $a_m = \bar{\omega}$ e il profitto si annulla, portando allo stato stazionario.
 
 Vale la pena distinguere con cura le due forme del differenziale, che finora abbiamo trattato insieme. Nella rendita **estensiva** il margine si sposta *fra* terre di fertilità diversa: si mettono a coltura suoli via via peggiori, e la terra peggiore effettivamente coltivata - quella che non paga rendita - fissa le condizioni di riferimento. Nella rendita **intensiva** il margine si sposta *sulla stessa* terra: si applicano dosi successive di lavoro a un dato appezzamento e, per la legge dei rendimenti decrescenti, ogni dose rende meno della precedente ($a_1 > a_2 > \dots$), fino all'ultima dose ancora conveniente, che rende esattamente il prodotto marginale $a_m$ e non paga rendita. In entrambi i casi la logica è identica: esiste una **dose marginale** - l'ultima terra messa a coltura, o l'ultima dose applicata su quella data - che è ancora conveniente impiegare ma non genera rendita, e sono le *sue* condizioni di produzione a governare il sistema. Le dosi (o le terre) più produttive fruttano un'eccedenza, e quell'eccedenza si trasforma in rendita.
 
-Da qui la tesi che Ricardo considerava decisiva: la rendita **non entra nel prezzo**. Sulla dose marginale il prodotto per lavoratore copre esattamente il salario e il profitto normale, $a_m = w(1+r)$, che è la (1.9) riletta: è il margine, dove non si paga rendita, a determinare tanto il **prezzo naturale** del grano (in un'economia monetaria, il costo di produzione sulla terra che non paga rendita) quanto il **saggio di profitto normale** $r$, uniforme per l'intero sistema. Sulle terre o dosi inframarginali il prodotto eccede $w(1+r)$. Ma poiché la concorrenza fra capitali impone un unico saggio di profitto ovunque, quel di più non può sopravvivere come extra-profitto e viene ceduto al proprietario terriero come rendita, pari a $(a_i - a_m) L_i$ per la (1.11). La causalità va dunque dal prezzo alla rendita, e non viceversa: come scrive Ricardo, "il grano non è caro perché si paga una rendita, ma si paga una rendita perché il grano è caro".
+Da qui la tesi che Ricardo considerava decisiva: la rendita **non entra nel prezzo**. Sulla dose marginale il prodotto per lavoratore copre esattamente il salario e il profitto normale, $a_m = \omega(1+r)$, che è la (1.9) riletta: è il margine, dove non si paga rendita, a determinare tanto il **prezzo naturale** del grano (in un'economia monetaria, il costo di produzione sulla terra che non paga rendita) quanto il **saggio di profitto normale** $r$, uniforme per l'intero sistema. Sulle terre o dosi inframarginali il prodotto eccede $\omega(1+r)$. Ma poiché la concorrenza fra capitali impone un unico saggio di profitto ovunque, quel di più non può sopravvivere come extra-profitto e viene ceduto al proprietario terriero come rendita, pari a $(a_i - a_m) L_i$ per la (1.11). La causalità va dunque dal prezzo alla rendita, e non viceversa: come scrive Ricardo, "il grano non è caro perché si paga una rendita, ma si paga una rendita perché il grano è caro".
 
-**Un esempio numerico (margine intensivo).** Consideriamo un solo appezzamento, sul quale si applicano dosi successive di lavoro. Ogni dose impiega un lavoratore, al quale viene anticipato il salario di sussistenza $w = 10$ quintali di grano. Per la produttività decrescente, il prodotto (netto) per lavoratore cala di dose in dose, come nella tabella (con un solo lavoratore per dose, $L_i = 1$).
+**Un esempio numerico (margine intensivo).** Consideriamo un solo appezzamento, sul quale si applicano dosi successive di lavoro. Ogni dose impiega un lavoratore, al quale viene anticipato il salario reale di sussistenza $\omega = 10$ quintali di grano. Per la produttività decrescente, il prodotto (netto) per lavoratore cala di dose in dose, come nella tabella (con un solo lavoratore per dose, $L_i = 1$).
 
-| Dose | Prodotto per lavoratore (q) | Salario + profitto normale, $w(1+r)$ (q) | Rendita (q) |
+| Dose | Prodotto per lavoratore (q) | Salario + profitto normale, $\omega(1+r)$ (q) | Rendita (q) |
 |---|---|---|---|
 | 1ª | $a_1 = 16$ | 12 | 4 |
 | 2ª | $a_2 = 13$ | 12 | 1 |
 | 3ª (marginale) | $a_m = 12$ | 12 | 0 |
 
-È l'ultima dose ancora conveniente - la terza - a fissare il saggio di profitto normale. Su di essa non si paga rendita, e il prodotto per lavoratore copre esattamente salario e profitto: dalla (1.9) si ha $r = a_m/w - 1 = 12/10 - 1 = 20\%$. Poiché il saggio di profitto è unico in tutto il sistema, su ciascuna dose salari e profitto normale assorbono soltanto $w(1+r) = 12$ quintali del prodotto.
+È l'ultima dose ancora conveniente - la terza - a fissare il saggio di profitto normale. Su di essa non si paga rendita, e il prodotto per lavoratore copre esattamente salario e profitto: dalla (1.9) si ha $r = a_m/\omega - 1 = 12/10 - 1 = 20\%$. Poiché il saggio di profitto è unico in tutto il sistema, su ciascuna dose salari e profitto normale assorbono soltanto $\omega(1+r) = 12$ quintali del prodotto.
 
 **Il ruolo della concorrenza fra capitalisti agricoli.** Perché il sovrappiù delle dosi migliori finisce ai proprietari terrieri, e non ai capitalisti agricoli che lo producono? Perché la terra fertile è scarsa, e i capitalisti competono per accaparrarsela. Sulla prima dose il prodotto (16 q) eccede di 4 quintali il salario più il profitto normale (12 q), sicché chi coltiva quella terra otterrebbe, in un primo momento, un profitto superiore a quello normale. Tuttavia, proprio per questo altri capitalisti agricoli sono disposti a offrire al proprietario terriero un canone pur di subentrare, e la concorrenza fra di loro ne spinge l'importo verso l'alto finché l'intero extra-profitto non è assorbito. In equilibrio concorrenziale ogni capitalista ottiene soltanto il profitto normale (il 20 per cento ovunque), mentre l'eccedenza - 4 quintali sulla prima dose, 1 sulla seconda, in totale 5 - è appropriata dal proprietario terriero come **rendita**. È dunque la concorrenza fra capitalisti agricoli, e non un potere contrattuale del proprietario terriero, a trasformare il differenziale di fertilità in rendita, coerentemente con la (1.11), $R_i = (a_i - a_m) L_i$.
 
-**La lettura con le equazioni di prezzo.** La stessa logica si coglie scrivendo, per ciascuna dose, il valore del prodotto come somma di salario anticipato, profitto normale ed eventuale rendita. Detto $p$ il prezzo del grano, sulla dose marginale, dove la rendita è nulla, si ha:
+**La lettura con le equazioni di prezzo.** La stessa logica si coglie scrivendo, per ciascuna dose, il valore del prodotto come somma di salario monetario anticipato, profitto normale ed eventuale rendita. Detto $p$ il prezzo del grano, sulla dose marginale, dove la rendita è nulla, si ha:
 
-$$p a_m = (1+r) p w \qquad (\text{dose marginale})$$
+$$p a_m = (1+r) w \qquad (\text{dose marginale})$$
 
-equazione nella quale la rendita non compare, ed è perciò essa a fissare $r$ (e, in un'economia con più merci, il prezzo naturale $p$). Sulle dosi inframarginali si aggiunge invece un termine di rendita $R_i$:
+equazione nella quale la rendita non compare: dato il salario monetario $w$, essa lega il prezzo naturale $p$ al saggio di profitto, $p = (w/a_m)(1+r)$. Sulle dosi inframarginali si aggiunge invece un termine di rendita $R_i$:
 
-$$p a_i = (1+r) p w + R_i, \qquad R_i = p (a_i - a_m) L_i$$
+$$p a_i = (1+r) w + R_i, \qquad R_i = p (a_i - a_m) L_i$$
 
-La rendita è quindi un *residuo* che emerge una volta noti $p$ e $r$, e non un costo che li determina. Nel modello grano-grano il prezzo $p$ si semplifica nei due membri e $r$ resta un puro rapporto grano su grano, ma la struttura dell'equazione - prodotto uguale alle anticipazioni capitalizzate al saggio normale, più la rendita - è già quella dei prezzi di produzione che ritroveremo nella sezione 2.3.
+La rendita è quindi un *residuo* che emerge una volta noti $p$ e $r$, e non un costo che li determina. Qui $w$ è il salario **monetario** unitario, legato al salario reale $\omega$ usato sopra dalla relazione $\omega = w/p$. Sostituendo $w = \omega p$ nella dose marginale, la $p$ si semplifica e si ritrova $a_m = (1+r)\omega$, cioè la (1.9): è la degenerazione tipica del modello grano-grano, in cui il prezzo cade e $r$ resta un puro rapporto grano su grano. Con più merci, invece, il salario monetario è dato indipendentemente, la $p$ non si elide e l'equazione determina il prezzo naturale, nella stessa forma dei prezzi di produzione della sezione 2.3.
 
 > [!NOTE]
 > 💡 **Perché il salario gravita verso la sussistenza**. Nel modello grano-grano, come in tutta l'analisi ricardiana, il salario reale è preso come dato al livello di *sussistenza*. Ma perché il salario tende proprio verso quel livello? La risposta dei classici poggia sulla *legge della popolazione* di Malthus. Nel *Saggio sul principio di popolazione* (pubblicato anonimo nel 1798), Malthus sostiene che la popolazione si espande ogniqualvolta il salario reale supera il livello necessario alla sussistenza e si contrae quando scende al di sotto di esso. La dimensione della popolazione lavoratrice è dunque endogena e reagisce, con un ritardo, alla remunerazione del lavoro. Ricardo e gli altri economisti classici costruiscono direttamente su questa premessa. Se un salario reale più elevato incoraggia la crescita della popolazione, il conseguente aumento dell'offerta di lavoro riporta il salario verso il basso. Viceversa, un salario inferiore alla sussistenza frena la popolazione e lascia che il salario si riprenda. Il **prezzo naturale del lavoro** è pertanto il salario che mantiene stazionaria la popolazione lavoratrice, e il salario di mercato vi è attratto nel medio-lungo periodo, pur potendosene discostare per periodi anche prolungati. Questo meccanismo si lascia formalizzare, con un linguaggio mutuato dall'ecologia, come un [modello preda-predatore di tipo Lotka-Volterra](https://github.com/marcoverpas/analisi_economica/blob/main/lv_salario_popolazione.R) (vedi anche [qui](https://github.com/marcoverpas/analisi_economica/blob/main/lv_super_semplice.R)): il salario è la "preda" e la popolazione il "predatore". Un salario elevato alimenta la crescita della popolazione, una popolazione numerosa deprime il salario, e il salario reale oscilla di conseguenza attorno al proprio valore di sussistenza (il prezzo naturale del lavoro), anziché collocarvisi immediatamente. L'animazione lo rende visibile: il diagramma delle fasi traccia un'orbita chiusa attorno al punto di sussistenza, mentre le traiettorie temporali del salario e della popolazione descrivono fluttuazioni ritardate e auto-sostenute. Il medesimo modello preda-predatore riaffiora, in veste diversa, quando dalla relazione salario-popolazione si passa alla dinamica ciclica fra accumulazione, occupazione e distribuzione: è il **modello di Goodwin**, che incontreremo di nuovo nelle sezioni su Marx (1.4.6) e Minsky (3.3.2).
@@ -508,6 +508,13 @@ Se le merci si scambiano secondo il lavoro contenuto, il saggio di profitto può
 $$r = \frac{L - L_n}{L_n} = \frac{1}{\Omega} - 1 \qquad (1.13)$$
 
 dove $L$ è il lavoro contenuto nel prodotto netto sociale, $L_n$ il lavoro necessario alla produzione dei beni-salario e $\Omega \equiv L_n/L$ la quota salari misurata in lavoro. Coerentemente con la (1.7), il saggio di profitto è ancora un **residuo**, e la massa del profitto non è che il lavoro impiegato nella produzione delle merci che non entra nel salario pagato ai lavoratori (ciò che Marx chiamerà "pluslavoro").
+
+Così riformulata, la teoria del valore-lavoro permette di estendere al mondo a più merci la conclusione dinamica del modello grano-grano, ossia la tendenza del saggio di profitto a cadere. Il meccanismo resta di origine agricola. Man mano che l'accumulazione fa crescere la popolazione e spinge la coltivazione verso terre peggiori (o verso dosi più intensive), aumenta il lavoro necessario a produrre il grano, e con esso l'intero paniere di sussistenza. Poiché il salario reale è fissato alla sussistenza, una quota crescente della giornata lavorativa serve soltanto a reintegrare il salario: nella (1.13) la quota salari $\Omega = L_n/L$ sale verso l'unità, e il saggio di profitto $r = 1/\Omega - 1$ scende verso zero. Si ritrova così, in termini di lavoro anziché di grano, lo stesso **stato stazionario** della Figura 1.6.
+
+Il punto cruciale è che questa caduta non dipende dai rendimenti decrescenti di tutti i settori, ma solo di quello agricolo, che produce i beni-salario. La manifattura può anche accrescere la propria produttività, riducendo il lavoro contenuto nei propri prodotti. Finché il salario è dominato dal grano, è il rincaro in lavoro del grano a governare la distribuzione e a trasmettere all'intero sistema la caduta del saggio di profitto, a condizione, come vedremo nella sezione 1.3.4, che l'uso di altri mezzi di produzione in agricoltura sia trascurabile. È in questo senso che la (1.13) e il modello grano-grano dicono, in due linguaggi diversi, la stessa cosa.
+
+> [!NOTE]
+> 💡 **La stessa caduta, letta sui prezzi.** Il meccanismo si può raccontare anche in termini di prezzi relativi, come fa spesso Ricardo. I rendimenti decrescenti dell'agricoltura - cioè la caduta della produttività del lavoro applicato alla terra - fanno salire il prezzo naturale del grano rispetto ai manufatti, la cui produttività resta invariata. Poiché il salario di sussistenza è dominato dal grano, il salario monetario deve salire, e la concorrenza fra capitali, imponendo un unico saggio di profitto, trasmette la compressione dei profitti anche alla manifattura, che pure non ha subìto alcun calo di produttività. È la faccia "lato prezzi" della caduta descritta poco sopra in quote di lavoro. Questa lettura rende però più evidente un limite comune a entrambe le formulazioni (sezione 1.3.4): la teoria del valore-lavoro vale esattamente solo se le merci si scambiano ai valori-lavoro, ossia se i settori hanno la stessa proporzione fra capitale e lavoro e gli stessi tempi di produzione. Appena si introducono le macchine o tempi di investimento diversi, i prezzi relativi dipendono anche dal saggio di profitto (la (1.14)) e la catena "prezzo del grano, salario, profitti" diventa in parte circolare. Lo stesso limite, come vedremo, intacca anche la determinazione in quote di lavoro, la (1.13), che poggia sulla medesima ipotesi.
 
 #### 1.3.4 I problemi del valore-lavoro e la misura invariabile
 
@@ -1236,7 +1243,7 @@ Su questa base Sraffa riprende il **metodo del sovrappiù** dei classici, che la
 
 #### 2.3.2 La riproduzione del sistema: produzione senza sovrappiù
 
-Il libro comincia dal caso più semplice: un'economia che si limita a **riprodursi**, senza generare alcun sovrappiù. Si prenda l'esempio di Sraffa, a due sole industrie (grano e ):
+Il libro comincia dal caso più semplice: un'economia che si limita a **riprodursi**, senza generare alcun sovrappiù. Si prenda l'esempio di Sraffa, a due sole industrie (grano e ferro):
 
 $$280 \text{ qr. grano} + 12 \text{ t. ferro}  \rightarrow  400 \text{ qr. grano} \qquad (2.6)$$
 $$120 \text{ qr. grano} +  8 \text{ t. ferro}  \rightarrow  20 \text{ t. ferro} \qquad (2.7)$$
