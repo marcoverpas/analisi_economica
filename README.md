@@ -1253,7 +1253,7 @@ lines(Y[3,], col = 4, lwd = 2, lty = 2)
 abline(v = shockAt, lty = 3, col = "grey")
 legend("topleft", c("Base", "Ottimismo", "Pessimismo"),
        col = c(1, 2, 4), lty = c(1, 2, 2), lwd = 2, bty = "n")
-````
+```
 
 <table align="center">
   <tr><td width="620" align="center">
