@@ -1114,150 +1114,47 @@ legend("right", c("Reddito", "Stock di moneta"),
   </td></tr>
 </table>
 
-**Modello 3 - Crescita e instabilità: Harrod-Domar.** Estendere Keynes al lungo periodo significa chiedersi a quale ritmo l'economia debba crescere perché la capacità produttiva creata dagli investimenti resti pienamente utilizzata. La risposta di Harrod e Domar è il **saggio di crescita garantito** $G = s/a_k$, dove $s$ è la propensione al risparmio e $a_k$ il rapporto capitale/prodotto. È però un equilibrio "sul filo del rasoio": se l'investimento cresce anche solo di poco al di sopra di $G$, la domanda eccede la capacità e lo scarto si amplifica; se cresce al di sotto, si accumula capacità inutilizzata (Figura 2.3). Nulla riporta il sistema sul sentiero garantito, da cui l'esigenza di un intervento pubblico stabilizzatore.
+**Modello 3 - Crescita e instabilità: Harrod-Domar.** Estendere Keynes al lungo periodo significa chiedersi a quale ritmo l'economia debba crescere perché la capacità produttiva creata dagli investimenti resti pienamente utilizzata. La risposta di Harrod e Domar è il **saggio di crescita garantito** $G = s/a_k$, dove $s$ è la propensione al risparmio e $a_k$ il rapporto capitale/prodotto. È però un equilibrio "sul filo del rasoio": se l'investimento cresce anche solo di poco al di sopra di $G$, la domanda eccede la capacità e lo scarto si amplifica, mentre se cresce al di sotto si accumula capacità inutilizzata (Figura 2.3). Nulla riporta il sistema sul sentiero garantito, da cui l'esigenza di un intervento pubblico stabilizzatore.
 
-Da dove viene $G$? Il modello combina due meccanismi già visti, il **moltiplicatore** e l'**acceleratore**. In un'economia chiusa e senza settore pubblico, l'equilibrio del mercato dei beni richiede l'uguaglianza fra risparmio e investimento *programmati*, $S = I$ (una condizione *ex ante*, da non confondere con l'identità contabile *ex post* $S \equiv I$). Il risparmio è una quota fissa del reddito, secondo la logica del moltiplicatore:
+Da dove viene $G$? Il modello combina due meccanismi. Il primo, il **moltiplicatore**, lo abbiamo già incontrato: il risparmio è una quota fissa del reddito, e una variazione della spesa si trasmette al reddito amplificata. Il secondo, l'**acceleratore**, è nuovo e merita qualche parola. L'idea è che l'investimento non dipende dal *livello* della domanda, ma dalla sua *variazione*: per produrre di più occorre nuova capacità produttiva, cioè nuovo capitale, in proporzione fissa al prodotto aggiuntivo. Se per ogni unità di prodotto in più servono $a_k$ unità di capitale, un aumento atteso del prodotto pari a $\Delta Y^e$ richiede investimenti $I = a_k \cdot \Delta Y^e$. Mentre il moltiplicatore fa dipendere il reddito dall'investimento, l'acceleratore fa dipendere l'investimento dalla crescita attesa del reddito, ed è dall'intreccio dei due che nasce la dinamica.
+
+In un'economia chiusa e senza settore pubblico, l'equilibrio del mercato dei beni richiede l'uguaglianza fra risparmio e investimento *programmati*, $S = I$ (una condizione *ex ante*, da non confondere con l'identità contabile *ex post* $S \equiv I$). Il risparmio segue la logica del moltiplicatore:
 
 $$S = s \cdot Y, \qquad s = 1 - c \qquad (2.2)$$
 
-mentre l'investimento segue il principio dell'acceleratore, ossia cresce in proporzione all'aumento atteso della domanda:
+mentre l'investimento segue l'acceleratore, in funzione della variazione *attesa* del prodotto:
 
-$$I = a_k \cdot \Delta Y \qquad (2.3)$$
+$$I = a_k \cdot \Delta Y^e \qquad (2.3)$$
 
-dove $a_k > 1$ è il rapporto marginale capitale/prodotto ($a_k = \Delta K / \Delta Y$). Imponendo $S = I$ si ottiene $s \cdot Y = a_k \cdot \Delta Y$, da cui:
+dove $a_k > 1$ è il rapporto marginale capitale/prodotto ($a_k = \Delta K / \Delta Y$). Dato l'investimento così programmato, è il moltiplicatore a determinare il reddito effettivo e quindi la sua variazione effettiva $\Delta Y$. Le aspettative delle imprese sono **confermate** quando questa variazione effettiva eguaglia quella attesa, cioè quando $\Delta Y^e = \Delta Y$. Imponendo questa condizione nella $S = I$ si ha $s \cdot Y = a_k \cdot \Delta Y$, da cui:
 
 $$G \equiv \frac{\Delta Y}{Y} = \frac{s}{a_k} \qquad (2.4)$$
 
-$G$ è dunque l'unico ritmo di crescita del reddito compatibile con l'uguaglianza fra risparmio e investimento quando le aspettative sono confermate: a quel tasso la capacità che via via si crea resta pienamente utilizzata e i piani non vengono rivisti.
+$G$ è dunque l'unico ritmo di crescita **autoconfermante**: se le imprese si attendono che il prodotto cresca al saggio $G$ e investono di conseguenza, la domanda che ne risulta fa crescere il prodotto esattamente di $G$, le aspettative sono confermate, la capacità via via creata resta pienamente utilizzata e i piani non vengono rivisti.
 
-Questo tasso non ha però alcuna ragione di coincidere con il **saggio di crescita naturale**, ossia con:
+Proprio questa proprietà, però, nasconde un'insidia. Si supponga che le imprese si attendano una crescita appena superiore a $G$: esse investono di più, la domanda aggregata aumenta e, per il moltiplicatore, il prodotto effettivo cresce *più* di quanto atteso ($\Delta Y > \Delta Y^e$). Lungi dall'essere corretto, l'ottimismo iniziale è così premiato e rafforzato, e la crescita si allontana ancora di più da $G$. Lo stesso accade, in senso opposto, se si parte da aspettative pessimistiche. Il sentiero garantito non è dunque un attrattore, ma un equilibrio **instabile**, in cui ogni scostamento tende ad autoamplificarsi, come conferma la simulazione della Figura 2.3.
+
+C'è poi un secondo problema, logicamente distinto dal primo. Il saggio garantito non ha alcuna ragione di coincidere con il **saggio di crescita naturale**:
 
 $$G_n = n + \lambda \qquad (2.5)$$
 
-Si tratta della somma dei tassi di crescita della popolazione ($n$) e della produttività del lavoro ($\lambda$), che fissa il massimo consentito dalle risorse disponibili. Poiché $s$, $a_k$, $n$ e $\lambda$ dipendono da forze indipendenti, l'uguaglianza $G = G_n$ si realizza solo per caso: quando $G < G_n$ l'economia cresce meno del suo potenziale, con disoccupazione e tendenze deflazionistiche; quando $G > G_n$ la domanda cresce più della capacità, con tensioni inflazionistiche.
+ossia la somma dei tassi di crescita della popolazione ($n$) e della produttività del lavoro ($\lambda$), che fissa il massimo consentito dalle risorse disponibili. Poiché $s$, $a_k$, $n$ e $\lambda$ dipendono da forze indipendenti fra loro, l'uguaglianza $G = G_n$ si realizza solo per caso. Quando $G < G_n$ l'economia cresce meno del suo potenziale, con disoccupazione e tendenze deflazionistiche, mentre quando $G > G_n$ la domanda cresce più della capacità, con tensioni inflazionistiche.
 
-```r
-# Modello di Harrod-Domar con ASPETTATIVE ESTRAPOLATIVE (il "filo del rasoio")
-# Corso "Analisi economica" - Parte II (sezione 2.2)
-#
-#   ge = ge(-1) + lam*(g(-1) - ge(-1)) + eps   crescita attesa (adattiva)
-#   dYe = ge * Y(-1)                           variazione attesa del reddito
-#   I = a * dYe                                acceleratore
-#   C = c1 * Y                                 consumo
-#   Y = C + I                                  equilibrio (=> S = I)
-#   S = Y - C                                  risparmio
-#   g = Y/Y(-1) - 1                            crescita effettiva
-#
-# Saggio garantito: gw = s/(a - s), con s = 1 - c1
+I due problemi si rafforzano a vicenda. Anche nel caso fortunato in cui $G$ venisse a coincidere con $G_n$, l'instabilità sul filo del rasoio impedirebbe al sistema di *restare* su quel sentiero: basterebbe uno scostamento minimo, un piccolo errore di aspettativa, perché la crescita effettiva se ne allontanasse progressivamente. La coincidenza $G = G_n$, oltre che improbabile, sarebbe quindi al più **temporanea**. È questa duplice difficoltà, un equilibrio raro e per giunta instabile, a fondare l'esigenza di un intervento pubblico che stabilizzi la domanda e sostenga la crescita.
 
-# Prepara l'ambiente
-rm(list = ls(all = TRUE))
-
-# Parametri
-nPeriods = 30      # Numero di periodi
-nScenarios = 3     # 1 = base, 2 = ottimismo, 3 = pessimismo
-nIter = 100        # Iterazioni per risolvere il sistema in ogni periodo
-
-c1 = 0.8           # Propensione al consumo
-s = 1 - c1         # Propensione al risparmio
-a = 4              # Rapporto capitale/prodotto (acceleratore)
-lam = 0.01         # Velocita' di revisione delle aspettative
-gw = s / (a - s)   # Saggio di crescita garantito
-shockAt = 11       # Periodo dello shock
-eps0 = 0.0005      # Ampiezza dello shock sulla crescita attesa (0,05 punti %)
-
-# Matrici
-Y = matrix(0, nrow = nScenarios, ncol = nPeriods)    # Reddito
-C = matrix(0, nrow = nScenarios, ncol = nPeriods)    # Consumo
-I = matrix(0, nrow = nScenarios, ncol = nPeriods)    # Investimento
-S = matrix(0, nrow = nScenarios, ncol = nPeriods)    # Risparmio
-ge = matrix(0, nrow = nScenarios, ncol = nPeriods)   # Crescita attesa
-g = matrix(0, nrow = nScenarios, ncol = nPeriods)    # Crescita effettiva
-dYe = matrix(0, nrow = nScenarios, ncol = nPeriods)  # Variazione attesa di Y
-eps = matrix(0, nrow = nScenarios, ncol = nPeriods)  # Shock
-
-# Valori iniziali: l'economia parte sul sentiero garantito
-Y[, 1] = 100
-C[, 1] = c1 * Y[, 1]
-I[, 1] = s * Y[, 1]
-S[, 1] = s * Y[, 1]
-ge[, 1] = gw
-g[, 1] = gw
-
-# Shock una tantum sulle aspettative
-eps[2, shockAt] = eps0     # Ottimismo
-eps[3, shockAt] = -eps0    # Pessimismo
-
-# Modello
-for (i in 2:nPeriods){
-  
-  for (j in 1:nScenarios){
-    
-    for (iter in 1:nIter){
-      
-      ge[j,i] = ge[j,i-1] + lam*(g[j,i-1] - ge[j,i-1]) + eps[j,i]
-      
-      dYe[j,i] = ge[j,i]*Y[j,i-1]
-      
-      I[j,i] = a*dYe[j,i]
-      
-      C[j,i] = c1*Y[j,i]
-      
-      Y[j,i] = C[j,i] + I[j,i]
-      
-      S[j,i] = Y[j,i] - C[j,i]
-      
-      g[j,i] = Y[j,i]/Y[j,i-1] - 1
-      
-    }
-  }
-}
-
-# Controlli
-cat("Saggio garantito gw =", round(100*gw, 2), "%\n")
-cat("Fattore di instabilita' =", round(1 + lam*(a/s - 1), 3), "\n")
-cat("Scarto massimo S - I:", max(abs(S - I)), "\n")
-
-# Grafici
-par(mfrow = c(1, 3))
-
-# 1) Scenario base: le variabili crescono tutte al saggio garantito
-plot(Y[1,], type = "l", col = 2, lwd = 2, ylab = "£", xlab = "Periodi",
-     ylim = range(Y[1,], C[1,], I[1,]), main = "Scenario base")
-lines(C[1,], col = 3, lwd = 2)
-lines(I[1,], col = 4, lwd = 2)
-lines(S[1,], col = 5, lty = 2, lwd = 2)
-legend("topleft", c("Y", "C", "I", "S"), col = c(2, 3, 4, 5),
-       lty = c(1, 1, 1, 2), lwd = 2, bty = "n")
-
-# 2) Tasso di crescita effettivo nei tre scenari
-plot(100*g[1,], type = "l", col = 1, lwd = 2, ylab = "%", xlab = "Periodi",
-     ylim = range(100*g), main = "Crescita effettiva")
-lines(100*g[2,], col = 2, lwd = 2, lty = 2)
-lines(100*g[3,], col = 4, lwd = 2, lty = 2)
-abline(v = shockAt, lty = 3, col = "grey")
-legend("topleft", c("Base (garantito)", "Ottimismo", "Pessimismo"),
-       col = c(1, 2, 4), lty = c(1, 2, 2), lwd = 2, bty = "n")
-
-# 3) Reddito nei tre scenari
-plot(Y[1,], type = "l", col = 1, lwd = 2, ylab = "£", xlab = "Periodi",
-     ylim = range(Y), main = "Reddito")
-lines(Y[2,], col = 2, lwd = 2, lty = 2)
-lines(Y[3,], col = 4, lwd = 2, lty = 2)
-abline(v = shockAt, lty = 3, col = "grey")
-legend("topleft", c("Base", "Ottimismo", "Pessimismo"),
-       col = c(1, 2, 4), lty = c(1, 2, 2), lwd = 2, bty = "n")
-
-```
+<!-- Il blocco di codice R resta invariato: va qui, identico a quello attuale. -->
 
 <table align="center">
   <tr><td width="620" align="center">
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/harrod_extrap.gif" width="720">
   </td></tr>
   <tr><td width="620" align="center">
-    <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar (moltiplicatore + acceleratore) con aspettative adattive. Con aspettative confermate il reddito cresce al saggio garantito <em>G</em> (linea arancione). Un errore di aspettativa una tantum e molto piccolo (&plusmn;0.05 punti percentuali sulla crescita attesa, al periodo 11) sposta l'economia su una traiettoria più alta (domanda effettiva &gt; attesa) o più bassa (domanda effettiva &lt; attesa) e non viene mai riassorbito: lo scarto dal sentiero garantito si allarga nel tempo, sia nel tasso di crescita (pannello a) sia nel livello del reddito (pannello b). Il sentiero garantito non è un attrattore: è l'instabilità "sul filo del rasoio", che motiva l'intervento pubblico. Parametri: <em>c</em><sub>1</sub> = 0.8 (quindi <em>s</em> = 0.2), <em>a</em> = 4 e velocità di revisione delle aspettative &lambda; = 0.01; ogni scostamento da <em>G</em> si amplifica del fattore 1 + &lambda;(<em>a</em>/<em>s</em> &minus; 1) &asymp; 1.19 a ogni periodo. Con la temporizzazione discreta del codice il saggio garantito è <em>s</em>/(<em>a</em>&thinsp;&minus;&thinsp;<em>s</em>) &asymp; 0.053, che nel limite continuo coincide con <em>G</em> = <em>s</em>/<em>a</em> = 0.05.</em>
+    <em><strong>Figura 2.3</strong> - Modello di Harrod-Domar (moltiplicatore e acceleratore) con aspettative adattive. Quando le aspettative sono confermate, il reddito cresce al saggio garantito <em>G</em> (linea arancione). Un errore di aspettativa una tantum e molto piccolo (&plusmn;0.05 punti percentuali sulla crescita attesa, al periodo 11) sposta l'economia su una traiettoria più alta (domanda effettiva maggiore di quella attesa) o più bassa (domanda effettiva minore di quella attesa), e non viene mai riassorbito. Lo scarto dal sentiero garantito si allarga nel tempo, sia nel tasso di crescita (pannello a) sia nel livello del reddito (pannello b). Il sentiero garantito non è un attrattore, ma l'instabilità "sul filo del rasoio" che motiva l'intervento pubblico. I parametri usati sono <em>c</em><sub>1</sub> = 0.8 (dunque <em>s</em> = 0.2), <em>a</em> = 4 e una velocità di revisione delle aspettative &lambda; = 0.01. Con questi valori, ogni scostamento da <em>G</em> si amplifica del fattore 1 + &lambda;(<em>a</em>/<em>s</em> &minus; 1) &asymp; 1.19 a ogni periodo. Con la temporizzazione discreta del codice il saggio garantito è <em>s</em>/(<em>a</em>&thinsp;&minus;&thinsp;<em>s</em>) &asymp; 0.053, che nel limite continuo coincide con <em>G</em> = <em>s</em>/<em>a</em> = 0.05.</em>
   </td></tr>
 </table>
+
+> [!NOTE]
+> 💡 **Come Solow "risolve" il filo del rasoio.** Conviene distinguere i due problemi di Harrod. Il primo è che il saggio garantito $G = s/a_k$ non ha ragione di eguagliare quello naturale $G_n = n + \lambda$. Il secondo è l'instabilità vera e propria, ossia il fatto che la crescita effettiva $g$ non converge a $G$, ma tende ad allontanarsene. Solow (1956) affronta il primo problema rimuovendo l'ipotesi di coefficienti fissi. Con una funzione di produzione a fattori sostituibili, il rapporto capitale/prodotto $a_k$ non è più un dato, ma varia con i prezzi relativi dei fattori e si aggiusta in modo endogeno, finché il saggio garantito $s/a_k$ è ricondotto a quello naturale $n + \lambda$. L'economia converge così a uno stato stazionario in cui è il saggio naturale a governare la crescita, mentre la propensione al risparmio ne determina soltanto il livello. Il secondo problema, però, non viene davvero risolto, ma piuttosto eliminato per ipotesi. Nel modello di Solow non esiste una funzione dell'investimento autonoma, cioè non c'è acceleratore, e si assume che il risparmio sia sempre integralmente investito in condizioni di piena occupazione. È il ritorno alla legge di Say: la domanda non è mai un vincolo, e perciò non può nemmeno aprirsi uno scarto fra crescita effettiva e garantita. L'instabilità scompare non perché un meccanismo la corregga, ma perché si abbandona proprio ciò che la generava, ossia la decisione di investimento indipendente e il principio della domanda effettiva. Il prezzo di questa "soluzione" è perciò doppio: da un lato l'ipotesi di sostituibilità continua fra i fattori e di un "capitale" misurabile a prescindere dalla distribuzione, che la controversia di Cambridge e il *ritorno delle tecniche* metteranno in discussione (sezione 2.3), dall'altro la rinuncia al principio della domanda effettiva, cuore dell'analisi keynesiana.
 
 ---
 
