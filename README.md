@@ -1326,6 +1326,8 @@ Si noti una differenza rispetto a Smith e a Marx (sezioni 1.2 e 1.4): in Sraffa 
 
 Con $x$ vettore **colonna**, infine, lo stesso tipo di prodotto, $A x$, restituisce la domanda intermedia, cioè quanto di ciascuna merce serve come input in tutta l'economia: è il lato delle quantità su cui torneremo nella sezione 3.1.
 
+Una precisazione sui numeri. Con i valori dell'esempio la domanda intermedia $A x$ eguaglia esattamente il prodotto lordo $x$, cosicché il **prodotto netto** $x - A x$ è nullo e non vi è alcun sovrappiù: sono i coefficienti del sistema a riproduzione semplice della sezione 2.3.2, che qui riprendiamo soltanto per dare corpo alla forma di $A$ e del sistema dei prezzi. Un sovrappiù positivo, e con esso un saggio di profitto e un salario positivi, richiede una tecnica propriamente **produttiva**, che generi più di quanto consuma (la condizione, in termini di autovalore dominante di $A$, è discussa nel box su Perron-Frobenius).
+
 Il punto teorico decisivo è che la (2.10) determina i prezzi **data la distribuzione**. Le incognite sono i prezzi relativi e le due variabili distributive $r$ e $w$. Le equazioni sono una in meno delle incognite. Il sistema, cioè, ha **un grado di libertà**: fissata *dall'esterno* una delle due variabili distributive (per esempio il salario reale, o il saggio di profitto via il tasso di interesse monetario), restano determinati l'altra variabile e tutti i prezzi relativi.
 
 > [!NOTE]
