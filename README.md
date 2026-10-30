@@ -1300,9 +1300,29 @@ $$p_f = (1+r) \cdot (a_{gf} \cdot p_g + a_{ff} \cdot p_f) + w \cdot l_f \qquad (
 
 dove $a_{ij}$ è la quantità di merce $i$ necessaria per una unità di merce $j$ (ricavabile dall'esempio: $a_{gg}=280/400=0.7$, $a_{fg}=12/400=0.03$, $a_{gf}=120/20=6$, $a_{ff}=8/20=0.4$), mentre $l_g$ e $l_f$ sono i coefficienti di lavoro diretto. Le due equazioni hanno la stessa struttura: *costo dei mezzi di produzione* $\times (1+r)$, più il *salario*.
 
-Passando da due a $n$ merci, le equazioni diventano $n$: la coppia dei prezzi $(p_g, p_f)$ diventa un vettore riga $p$, i coefficienti $a_{ij}$ una **matrice** $A$ (la cui colonna $j$ raccoglie gli input necessari a produrre il bene $j$), i coefficienti di lavoro un vettore $l$. In forma compatta si ottiene il sistema dei **prezzi di produzione** di Sraffa:
+Conviene raccogliere i quattro coefficienti dell'esempio in un'unica **matrice dei coefficienti tecnici** $A$. Disponendo le merci nell'ordine (grano, ferro), con gli input in riga e il bene prodotto in colonna:
+
+$$A = \begin{bmatrix} a_{gg} & a_{gf} \\ a_{fg} & a_{ff} \end{bmatrix} = \begin{bmatrix} 0.7 & 6 \\ 0.03 & 0.4 \end{bmatrix}$$
+
+Ogni **colonna** è la «ricetta» di una merce: la prima dice che per produrre un quarto di grano servono $0.7$ quarti di grano e $0.03$ tonnellate di ferro, la seconda che per una tonnellata di ferro servono $6$ quarti di grano e $0.4$ tonnellate di ferro. Ogni **riga**, letta in orizzontale, dice invece quanto di una data merce è assorbito come input dalle varie industrie. La matrice $A$ è dunque la descrizione completa della **tecnica** in uso.
+
+Accanto ad $A$ compaiono i vettori del sistema. I **prezzi** $p$ e i **coefficienti di lavoro diretto** $l$ sono vettori **riga**, mentre i **prodotti lordi** $x$ formano un vettore **colonna**. Nell'esempio a due merci:
+
+$$p = \begin{bmatrix} p_g & p_f \end{bmatrix}, \qquad l = \begin{bmatrix} l_g & l_f \end{bmatrix}, \qquad x = \begin{bmatrix} x_g \\ x_f \end{bmatrix}$$
+
+Fra questi, i coefficienti $l$ fanno parte, come $A$, della **tecnica data**, mentre i prezzi $p$ sono l'**incognita** che il sistema determina. Con $n$ merci tutto si generalizza: $A$ diventa una matrice $n \times n$ di elemento generico $a_{ij}$ (quantità di merce $i$ per una unità di merce $j$), e $p$, $l$, $x$ hanno $n$ componenti:
+
+$$A = \begin{bmatrix} a_{11} & \cdots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{n1} & \cdots & a_{nn} \end{bmatrix}, \qquad p = \begin{bmatrix} p_1 & \cdots & p_n \end{bmatrix}, \qquad l = \begin{bmatrix} l_1 & \cdots & l_n \end{bmatrix}, \qquad x = \begin{bmatrix} x_1 \\ \vdots \\ x_n \end{bmatrix}$$
+
+L'orientamento non è un dettaglio. Con $p$ e $l$ vettori **riga**, il sistema dei prezzi di produzione, in **forma estesa**, è il prodotto fra il vettore dei prezzi e la matrice della tecnica, più il costo del lavoro:
+
+$$\begin{bmatrix} p_1 & \cdots & p_n \end{bmatrix} = (1+r)\begin{bmatrix} p_1 & \cdots & p_n \end{bmatrix}\begin{bmatrix} a_{11} & \cdots & a_{1n} \\ \vdots & \ddots & \vdots \\ a_{n1} & \cdots & a_{nn} \end{bmatrix} + w\begin{bmatrix} l_1 & \cdots & l_n \end{bmatrix}$$
+
+La $j$-esima riga di questo sistema, $p_j = (1+r)\sum_{i} p_i a_{ij} + w l_j$, dice che il prezzo del bene $j$ copre il costo dei suoi mezzi di produzione $\sum_{i} p_i a_{ij}$ (il valore della colonna $j$ di $A$ ai prezzi correnti), maggiorato del profitto al saggio $r$, più il salario $w l_j$. Raccogliendo tutto, il sistema dei **prezzi di produzione** di Sraffa si scrive in **forma compatta**:
 
 $$p = (1+r) p A + w l \qquad (2.10)$$
+
+Con $x$ vettore **colonna**, infine, lo stesso tipo di prodotto, $A x$, restituisce la domanda intermedia, cioè quanto di ciascuna merce serve come input in tutta l'economia: è il lato delle quantità su cui torneremo nella sezione 3.1.
 
 in cui ogni prezzo copre il costo dei mezzi di produzione maggiorato del profitto, $(1+r) p A$, più il salario, $w l$. Si noti una differenza rispetto a Smith e a Marx (sezioni 1.2 e 1.4): in Sraffa il **salario è posticipato**, pagato alla fine del periodo sul prodotto, sicché non frutta profitto e resta fuori dalla parentesi $(1+r)$ - mentre nel salario *anticipato* di Marx si aveva $p = (1+r)(p A + w l)$. 
 
