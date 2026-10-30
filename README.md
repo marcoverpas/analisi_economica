@@ -1322,9 +1322,9 @@ La $j$-esima riga di questo sistema, $p_j = (1+r)\sum_{i} p_i a_{ij} + w l_j$, d
 
 $$p = (1+r) p A + w l \qquad (2.10)$$
 
-Con $x$ vettore **colonna**, infine, lo stesso tipo di prodotto, $A x$, restituisce la domanda intermedia, cioè quanto di ciascuna merce serve come input in tutta l'economia: è il lato delle quantità su cui torneremo nella sezione 3.1.
+Si noti una differenza rispetto a Smith e a Marx (sezioni 1.2 e 1.4): in Sraffa il **salario è posticipato**, pagato alla fine del periodo sul prodotto, sicché non frutta profitto e resta fuori dalla parentesi $(1+r)$ - mentre nel salario *anticipato* di Marx si aveva $p = (1+r)(p A + w l)$.
 
-in cui ogni prezzo copre il costo dei mezzi di produzione maggiorato del profitto, $(1+r) p A$, più il salario, $w l$. Si noti una differenza rispetto a Smith e a Marx (sezioni 1.2 e 1.4): in Sraffa il **salario è posticipato**, pagato alla fine del periodo sul prodotto, sicché non frutta profitto e resta fuori dalla parentesi $(1+r)$ - mentre nel salario *anticipato* di Marx si aveva $p = (1+r)(p A + w l)$. 
+Con $x$ vettore **colonna**, infine, lo stesso tipo di prodotto, $A x$, restituisce la domanda intermedia, cioè quanto di ciascuna merce serve come input in tutta l'economia: è il lato delle quantità su cui torneremo nella sezione 3.1.
 
 Il punto teorico decisivo è che la (2.10) determina i prezzi **data la distribuzione**. Le incognite sono i prezzi relativi e le due variabili distributive $r$ e $w$. Le equazioni sono una in meno delle incognite. Il sistema, cioè, ha **un grado di libertà**: fissata *dall'esterno* una delle due variabili distributive (per esempio il salario reale, o il saggio di profitto via il tasso di interesse monetario), restano determinati l'altra variabile e tutti i prezzi relativi.
 
