@@ -1358,7 +1358,7 @@ Perché la pendenza della frontiera dovrebbe misurare l'intensità capitalistica
 
 $$1 = w \cdot L + r \cdot K$$
 
-dove $L = \sum_t l_t$ è il lavoro complessivamente impiegato, nelle varie date, per produrre un'unità del bene, e $K$ è il valore del capitale per unità di prodotto, cioè il lavoro datato capitalizzato, $K = w \cdot \sum_t l_t \cdot [1 + (1+r) + \dots + (1+r)^{t-1}]$: il salario pagato per il lavoro di data $t$ resta immobilizzato per $t$ periodi, rivalutandosi a ogni periodo al saggio $r$ (il lavoro "di oggi", con $t = 0$, non immobilizza nulla e non vi entra). Se $r$ aumenta di poco, il monte profitti cresce di $K \cdot dr$ e, poiché il prezzo è dato, il monte salari deve ridursi di altrettanto: $L \cdot dw = -K \cdot dr$. Ne segue:
+dove $L = \sum_t l_t$ è il lavoro complessivamente impiegato, nelle varie date, per produrre un'unità del bene, e $K$ è il valore del capitale per unità di prodotto, cioè il lavoro datato capitalizzato, $K = w \cdot \sum_t l_t \cdot [1 + (1+r) + \dots + (1+r)^{t-1}]$ (nota: il lavoro "di oggi", con $t = 0$, non vi entra). Se $r$ aumenta di poco, il monte profitti cresce di $K \cdot dr$ e, poiché il prezzo è dato, il monte salari deve ridursi di altrettanto: $L \cdot dw = -K \cdot dr$. Ne segue:
 
 $$-\frac{dw}{dr} = \frac{K}{L} \equiv k$$
 
