@@ -1354,6 +1354,15 @@ Il criterio di scelta della tecnica più conveniente per ciascun *r* è semplice
 
 Ed ecco il punto cruciale: siccome il costo della tecnica A è *quadratico* in $(1+r)$ - per via del lavoro datato due periodi indietro - mentre quello della B è *lineare*, le due frontiere possono intersecarsi **due volte**. La tecnica B risulta la migliore per saggi bassi, la A per saggi intermedi, e la B **ritorna** per saggi alti. È questo il cosiddetto "ritorno delle tecniche", il quale dimostra che non esiste un ordinamento delle tecniche per "intensità di capitale" indipendente dalla distribuzione. Nel secondo pannello, le curve dell'intensità capitalistica $k = -dw/dr$ delle due tecniche si incrociano, sicché *quale* tecnica sia più capitalistica dipende dal livello di $r$.
 
+Perché la pendenza della frontiera dovrebbe misurare l'intensità capitalistica? A prima vista $-dw/dr$ è un puro rapporto distributivo, in cui non compaiono né il lavoro né il capitale. Il ponte è l'identità del valore per unità di prodotto. Con il bene come numerario, il prezzo unitario, pari a uno, si ripartisce in salari e profitti:
+
+$$1 = w \cdot L + r \cdot K$$
+
+dove $L = \sum_t l_t$ è il lavoro complessivamente impiegato, nelle varie date, per produrre un'unità del bene, e $K$ è il valore del capitale per unità di prodotto, cioè il lavoro datato capitalizzato, $K = (w/r) \cdot \sum_t l_t \cdot [(1+r)^t - 1]$ (si noti che il lavoro "di oggi", con $t = 0$, non vi entra). Se $r$ aumenta di poco, il monte profitti cresce di $K \cdot dr$ e, poiché il prezzo è dato, il monte salari deve ridursi di altrettanto: $L \cdot dw = -K \cdot dr$. Ne segue:
+
+$$-\frac{dw}{dr} = \frac{K}{L} \equiv k$$
+
+cioè il capitale per unità di prodotto diviso il lavoro per unità di prodotto, ossia il **capitale per addetto**. Una tecnica che carica molto lavoro passato capitalizzato su ogni lavoratore vede il salario cedere molto a un piccolo aumento di $r$ (frontiera ripida), mentre una tecnica che ne carica poco quasi non se ne accorge (frontiera piatta). Il risultato vale, però, a valore del capitale dato. Poiché $K$ dipende a sua volta da $r$, la pendenza effettiva incorpora anche la rivalutazione del capitale (il cosiddetto *effetto Wicksell*) e coincide esattamente con il capitale per addetto solo quando il numerario è la merce tipo (si veda il box sulla merce tipo). Ma è proprio questa dipendenza da $r$ a rendere impossibile un ordinamento delle tecniche per intensità di capitale indipendente dalla distribuzione.
 
 ```r
 # Il ritorno delle tecniche (reswitching)
