@@ -1340,34 +1340,44 @@ Questo sistema non è una novità isolata: costituisce uno sviluppo delle intuiz
 > [!NOTE]
 > 💡 **Reswitching: perché la funzione di produzione neoclassica non regge.** La teoria marginalista della distribuzione (sezione 2.1) poggia su una **funzione di produzione** in cui il "capitale" è un fattore misurabile, la cui remunerazione, il saggio di interesse, eguaglia la sua produttività marginale. La "parabola" che ne discende è intuitiva: quando il saggio di interesse scende, le imprese adottano tecniche più *capital-intensive* (si "approfondisce" il capitale), in modo monotono. L'impostazione di Sraffa mostra che questa parabola non regge. Il "capitale" non è una grandezza fisica omogenea, ma una somma di merci eterogenee il cui **valore dipende dai prezzi**, e i prezzi - come si è visto - dipendono a loro volta dalla distribuzione, cioè dal saggio di profitto. Misurare la "quantità di capitale" indipendentemente da $r$ è dunque impossibile. Ma c'è di peggio. Compare ora il fenomeno del **ritorno delle tecniche** (*reswitching*): al crescere di $r$, la tecnica di costo minimo può implicare prima minore e poi maggiore intensità di capitale. Non esiste quindi alcuna relazione monotona fra saggio di interesse e "intensità di capitale", e la teoria della distribuzione basata sulle produttività marginali crolla. È il cuore della *controversia dei due Cambridge* degli anni Sessanta (la Cambridge inglese di Robinson, Sraffa, Pasinetti e Garegnani contro la Cambridge del Massachusetts di Samuelson e Solow), che lo stesso Samuelson riconobbe persa nel 1966. La distribuzione, allora, non è un fatto tecnico di scarsità, ma il prodotto di **relazioni sociali**.
 
-**Un esperimento in R: il ritorno delle tecniche.** Per "vedere" il *reswitching* mettiamo a confronto due **tecniche** che producono lo stesso bene, ma con una diversa combinazione di *input*. Al riguardo, si noti che attribuire ai coefficienti di lavoro diverse date di impiego costituisce la rappresentazione ridotta di una diversa composizione di lavoro e beni intermedi. Infatti, il lavoro impiegato due periodi fa rappresenta il lavoro incorporato in un mezzo di produzione realizzato due stadi produttivi a monte. Un diverso profilo temporale del lavoro è quindi semplicemente la forma ridotta di una diversa combinazione di lavoro e beni intermedi: è la "riduzione a quantità datate di lavoro" di Sraffa. Le diverse tecniche possono, dunque, essere descritte mediante tale riduzione: una tecnica è un profilo temporale del lavoro e produrre oggi un'unità di prodotto ha richiesto $l_t$ unità di lavoro $t$ periodi fa. Poiché il capitale immobilizzato in quel lavoro passato frutta un profitto, ogni input di lavoro va capitalizzato al fattore $(1+r)^t$.
+**Un esperimento in R: il ritorno delle tecniche.** Per "vedere" il *reswitching* basta l'economia più semplice in cui compaia un bene capitale. Consideriamo due merci, un **bene di consumo** ($c$) e una **macchina** ($m$). Le macchine servono a produrre sia il bene di consumo sia altre macchine, mentre il bene di consumo non entra come input in nessuna produzione. Con le merci nell'ordine $(c, m)$, la matrice dei coefficienti tecnici e il vettore del lavoro diretto sono:
 
-Scegliendo il prodotto stesso come numerario (cioè ponendo il suo prezzo pari a uno), il prezzo eguaglia il costo e si ottiene, per ciascuna tecnica, l'equazione:
+$$A = \begin{bmatrix} 0 & 0 \cr a_{mc} & a_{mm} \end{bmatrix}, \qquad l = \begin{bmatrix} l_c & l_m \end{bmatrix}$$
 
-$$1 = w \cdot \sum_t l_t  \cdot (1+r)^t \qquad (2.11)$$
+dove $a_{mc}$ e $a_{mm}$ sono le macchine necessarie per produrre, rispettivamente, un'unità del bene di consumo e una macchina, mentre $l_c$ e $l_m$ sono i corrispondenti coefficienti di lavoro. Il sistema dei prezzi (2.10) diventa allora:
 
-che, risolta per $w$, fornisce la **frontiera salario-profitto** della tecnica. Nell'esempio del codice la tecnica **A** impiega lavoro in due date, "adesso" (data 0) e "due periodi fa" (data 2), con coefficienti $l_0 = 1.3125$ e $l_2 = 1$; la tecnica **B** impiega tutto il lavoro "un periodo fa" (data 1), con $l_1 = 2.3$. Le due frontiere sono dunque:
+$$p_c = (1+r) \cdot p_m \cdot a_{mc} + w \cdot l_c, \qquad p_m = (1+r) \cdot p_m \cdot a_{mm} + w \cdot l_m \qquad (2.11)$$
 
-$$w_A(r) = \frac{1}{1.3125 + 1 \cdot (1+r)^2}, \qquad w_B(r) = \frac{1}{2.3 \cdot (1+r)} \qquad (2.12)$$
+Sono 2 equazioni in 4 incognite ($p_c$, $p_m$, $w$ e $r$). Prendendo come numerario il bene di consumo ($p_c = 1$), cioè la via più immediata fra quelle viste sopra, resta un solo grado di libertà. Ricavando $p_m$ dalla seconda equazione e sostituendolo nella prima si ottiene la **frontiera salario-profitto** della tecnica:
 
-Il criterio di scelta della tecnica più conveniente per ciascun *r* è semplice: a parità di saggio di profitto $r$, si adotta la tecnica che consente il salario $w$ più alto. La frontiera $w_i(r)$ è, infatti, il massimo salario che la tecnica $i$ può pagare a quel saggio, e fra due tecniche quella che ne sostiene uno più elevato è la più competitiva. Il nesso con il costo è automatico: con il prodotto come numerario (prezzo pari a uno), il costo unitario è $w \cdot \sum_t l_t \cdot (1+r)^t$, e la (2.11) fissa $w_i(r)$ al reciproco del lavoro capitalizzato $\sum_t l_t \cdot (1+r)^t$. La tecnica con quel lavoro capitalizzato minore ha, dunque, allo stesso tempo, il costo più basso e il salario più alto, sicché "salario più alto" e "costo più basso" sono lo stesso criterio. A ogni $r$, la tecnica scelta è quella la cui frontiera giace più in alto, cioè l'**inviluppo esterno** delle curve. Le due tecniche si equivalgono quando $w_A = w_B$, ossia quando $1.3125 + (1+r)^2 = 2.3 \cdot (1+r)$. Posto $x = 1+r$, ciò equivale a risolvere l'equazione di **secondo grado** $x^2 - 2.3 \cdot x + 1.3125 = 0$, che ha radici $x = 1.05$ e $x = 1.25$, cioè $r = 5\%$ e $r = 25\%$.
+$$w = \frac{1 - a_{mm} \cdot (1+r)}{l_c - (l_c \cdot a_{mm} - l_m \cdot a_{mc}) \cdot (1+r)} \qquad (2.12)$$
 
-Ed ecco il punto cruciale: siccome il costo della tecnica A è *quadratico* in $(1+r)$ - per via del lavoro datato due periodi indietro - mentre quello della B è *lineare*, le due frontiere possono intersecarsi **due volte**. La tecnica B risulta la migliore per saggi bassi, la A per saggi intermedi, e la B **ritorna** per saggi alti. È questo il cosiddetto "ritorno delle tecniche", il quale dimostra che non esiste un ordinamento delle tecniche per "intensità di capitale" indipendente dalla distribuzione. Nel secondo pannello, le curve dell'intensità capitalistica $k = -dw/dr$ delle due tecniche si incrociano, sicché *quale* tecnica sia più capitalistica dipende dal livello di $r$.
+La forma della frontiera dipende da come il capitale si distribuisce fra i due settori. Se i settori hanno la **stessa composizione**, cioè impiegano macchine e lavoro nella stessa proporzione ($a_{mm}/l_m = a_{mc}/l_c$), il termine fra parentesi al denominatore si annulla e la frontiera è una **retta**. In questo caso il prezzo relativo della macchina, $p_m/p_c = l_m/l_c$, non dipende da $r$, e i prezzi sono proporzionali ai valori-lavoro (è il caso marxiano di uguale composizione organica). Se invece il settore delle macchine è più intensivo di capitale di quello del bene di consumo ($a_{mm}/l_m > a_{mc}/l_c$), al crescere di $r$ la macchina rincara rispetto al bene di consumo e la frontiera si **incurva**, diventando concava.
 
-Perché la pendenza della frontiera dovrebbe misurare l'intensità capitalistica? A prima vista $-dw/dr$ è un puro rapporto distributivo, in cui non compaiono né il lavoro né il capitale. Il ponte è l'identità del valore per unità di prodotto. Con il bene come numerario, il prezzo unitario, pari a uno, si ripartisce in salari e profitti:
+Nell'esempio del codice, la tecnica **A** ha $l_c = 1.9$, $a_{mc} = 0.14$, $l_m = 1$ e $a_{mm} = 0.6$: le macchine si producono con molte macchine ($a_{mm}/l_m = 0.6$), il bene di consumo con pochissime ($a_{mc}/l_c \approx 0.07$). La tecnica **B** ha $l_c = l_m = 1$ e $a_{mc} = a_{mm} = 0.5$, cioè la stessa composizione nei due settori. Sostituendo nella (2.12) si ottengono le due frontiere, una curva e una retta:
 
-$$1 = w \cdot L + r \cdot K$$
+$$w_A(r) = \frac{0.4 - 0.6 \cdot r}{0.9 - r}, \qquad w_B(r) = 0.5 \cdot (1 - r)$$
 
-dove $L = \sum_t l_t$ è il lavoro complessivamente impiegato, nelle varie date, per produrre un'unità del bene, e $K$ è il valore del capitale per unità di prodotto, cioè il lavoro datato capitalizzato, $K = (w/r) \cdot \sum_t l_t \cdot [(1+r)^t - 1]$ (si noti che il lavoro "di oggi", con $t = 0$, non vi entra). Se $r$ aumenta di poco, il monte profitti cresce di $K \cdot dr$ e, poiché il prezzo è dato, il monte salari deve ridursi di altrettanto: $L \cdot dw = -K \cdot dr$. Ne segue:
+Il criterio di scelta della tecnica è semplice: a parità di saggio di profitto $r$, le imprese adottano la tecnica che consente il salario $w$ più alto. La frontiera $w_i(r)$ è, infatti, il massimo salario che la tecnica $i$ può pagare a quel saggio. Se, al salario corrente, una tecnica ne consentirebbe uno più alto, vuol dire che con essa il bene di consumo si produce a un costo più basso, ed è dunque quella che si afferma nella concorrenza. A ogni $r$ la tecnica scelta è quella la cui frontiera giace più in alto, cioè l'**inviluppo esterno** delle curve. Le due tecniche si equivalgono quando $w_A = w_B$, ossia quando $0.4 - 0.6 \cdot r = 0.5 \cdot (1 - r) \cdot (0.9 - r)$. Svolgendo i calcoli si ottiene l'equazione di **secondo grado** $r^2 - 0.7 \cdot r + 0.1 = 0$, che ha radici $r = 20\%$ e $r = 50\%$.
 
-$$-\frac{dw}{dr} = \frac{K}{L} \equiv k$$
+Ed ecco il punto cruciale: siccome la frontiera di A è curva e quella di B è una retta, le due possono intersecarsi **due volte**. La tecnica B risulta la migliore per saggi bassi ($r < 20\%$), la A per saggi intermedi, e la B **ritorna** per saggi alti ($r > 50\%$). È questo il cosiddetto "ritorno delle tecniche".
 
-cioè il capitale per unità di prodotto diviso il lavoro per unità di prodotto, ossia il **capitale per addetto**. Una tecnica che carica molto lavoro passato capitalizzato su ogni lavoratore vede il salario cedere molto a un piccolo aumento di $r$ (frontiera ripida), mentre una tecnica che ne carica poco quasi non se ne accorge (frontiera piatta). Il risultato vale, però, a valore del capitale dato. Poiché $K$ dipende a sua volta da $r$, la pendenza effettiva incorpora anche la rivalutazione del capitale (il cosiddetto *effetto Wicksell*) e coincide esattamente con il capitale per addetto solo quando il numerario è la merce tipo (si veda il box sulla merce tipo). Ma è proprio questa dipendenza da $r$ a rendere impossibile un ordinamento delle tecniche per intensità di capitale indipendente dalla distribuzione.
+Che cosa accade all'intensità capitalistica? Per rispondere occorre misurare il capitale, ed è qui la difficoltà messa in luce da Joan Robinson: A e B impiegano macchine diverse, sicché contarle non avrebbe senso. Il capitale va misurato **in valore**. Lo strumento è l'identità del prodotto netto per addetto. In un sistema che si riproduce, il prodotto netto è costituito soltanto dal bene di consumo (le macchine prodotte si limitano a reintegrare quelle consumate), e la sua quantità per addetto, $y$, dipende solo dalla tecnica. Con il bene di consumo come numerario, $y$ è dunque un numero fisso, e coincide con il salario che la tecnica pagherebbe se il profitto fosse nullo, $y = w(0)$, cioè con l'**intercetta verticale** della frontiera. Il prodotto netto si ripartisce in salario e profitti, e i profitti sono il saggio $r$ applicato al valore del capitale per addetto $k$:
+
+$$y = w + r \cdot k \quad \Longrightarrow \quad k = \frac{y - w}{r}$$
+
+Geometricamente, $k$ è la pendenza, cambiata di segno, della **corda** che unisce l'intercetta $(0, y)$ al punto $(r, w)$ della frontiera. Il capitale per addetto si legge, così, direttamente sul grafico.
+
+Nei punti di switch le due tecniche hanno lo stesso $r$ e lo stesso $w$, dunque è più intensiva di capitale quella con l'intercetta più alta. Nell'esempio $y_B = 0.5$ e $y_A = 0.4/0.9 \approx 0.44$, e in entrambi i punti di switch la tecnica più intensiva di capitale è B. A $r = 20\%$, dove $w = 0.4$, si ha $k_B = 0.5$ e $k_A \approx 0.22$: passando da B ad A al crescere di $r$, il capitale per addetto **scende**, come vuole la parabola neoclassica. A $r = 50\%$, dove $w = 0.25$, si ha $k_A \approx 0.39$ e $k_B = 0.5$: passando da A a B, sempre al crescere di $r$, il capitale per addetto **sale**. Un saggio di profitto più alto induce cioè a scegliere la tecnica *più* intensiva di capitale, esattamente il contrario di quanto prevede la teoria marginalista. C'è anche di più. Nell'intervallo in cui si usa A, il capitale per addetto cresce con $r$ pur restando invariata la tecnica, perché a crescere è il prezzo della macchina: è l'*effetto Wicksell di prezzo*, per cui le stesse macchine "valgono" più capitale a saggi di profitto più alti. Il secondo pannello della Figura 2.4 mostra entrambi i fenomeni.
+
+Per la tecnica B, la cui frontiera è una retta, la corda coincide con la frontiera stessa: il capitale per addetto è costante ($k_B = 0.5$ a ogni $r$) e coincide con la pendenza $-dw/dr$. Per una frontiera curva, invece, corda e pendenza divergono, e la pendenza non misura più il capitale per addetto. Una frontiera rettilinea è proprio ciò che Sraffa ottiene in generale, per qualunque tecnica, adottando come numerario la merce tipo (si veda il box sulla merce tipo).
+
+Sraffa (1960) mostrò la possibilità del fenomeno anche per un'altra via, riducendo ogni merce a una serie di **quantità datate di lavoro**. In quella rappresentazione il capitale è lavoro passato, capitalizzato al saggio $r$ per i periodi in cui resta immobilizzato, e due tecniche con un diverso profilo temporale del lavoro possono scambiarsi di posto due volte al variare di $r$. Il modello a due settori ha il vantaggio di mostrare il capitale nella stessa forma in cui compare nella (2.10), come mezzo di produzione dotato di un prezzo.
 
 ```r
 # Il ritorno delle tecniche (reswitching)
 
-# Esempio numerico di "reswitching":
+# Esempio numerico di "reswitching" in un'economia a due settori:
 # la tecnica B è conveniente ai saggi di profitto bassi e alti,
 # mentre la tecnica A è conveniente per valori intermedi di r.
 
@@ -1376,58 +1386,77 @@ rm(list = ls(all = TRUE))
 if (!is.null(dev.list())) dev.off()
 cat("\014")
 
-# Nota: a) due tecniche per ottenere 1 unità del bene
-#       b) numerario = il bene stesso
-#       c) costo unitario = w * Σ l_t (1+r)^t.
-#       d) la tecnica A impiega lavoro nei periodi 0 e 2; la tecnica B nel periodo 1
+# Nota: a) due beni: consumo (c) e macchine (m); le macchine servono a produrre entrambi i beni
+#       b) numerario = il bene di consumo (pc = 1)
+#       c) prezzi: pc = (1+r)*pm*amc + w*lc  e  pm = (1+r)*pm*amm + w*lm
+#       d) nella tecnica B i due settori hanno la stessa composizione (amm/lm = amc/lc), nella A no
 
 # Scrivi il modello ####
-lA0 <- 1.3125                                               # Lavoro anticipato di 0 periodi nella tecnica A
-lA2 <- 1                                                    # Lavoro anticipato di 2 periodi nella tecnica A
-lB1 <- 2.3                                                  # Lavoro anticipato di 1 periodo nella tecnica B
-r <- seq(0, 0.45, length.out = 600)                         # Saggio di profitto (vettore)
+lcA <- 1.9                                                  # Lavoro per unità di bene di consumo, tecnica A
+amcA <- 0.14                                                # Macchine per unità di bene di consumo, tecnica A
+lmA <- 1                                                    # Lavoro per macchina, tecnica A
+ammA <- 0.6                                                 # Macchine per macchina, tecnica A
+lcB <- 1                                                    # Lavoro per unità di bene di consumo, tecnica B
+amcB <- 0.5                                                 # Macchine per unità di bene di consumo, tecnica B
+lmB <- 1                                                    # Lavoro per macchina, tecnica B
+ammB <- 0.5                                                 # Macchine per macchina, tecnica B
+r <- seq(0, 0.65, length.out = 651)                         # Saggio di profitto (vettore)
 x <- 1 + r                                                  # Coefficiente di ricarico (vettore)
-costA <- lA0 + lA2 * x^2                                    # Costo unitario della tecnica A (vettore)
-costB <- lB1 * x                                            # Costo unitario della tecnica B (vettore)
-wA <- 1 / costA                                             # Salario nel settore A (vettore)
-wB <- 1 / costB                                             # Salario nel settore B (vettore)
-rsw <- sort(Re(polyroot(c(lA0, -lB1, lA2)))) - 1            # Saggi di profitto ai quali le due tecniche hanno lo stesso costo
-  # Nota: polyroot() = calcola le radici di un polinomio (ottenuto uguagliando i costi unitari delle due tecniche)
+dA <- lcA * ammA - lmA * amcA                               # Coefficiente di (1+r) al denominatore della frontiera A
+dB <- lcB * ammB - lmB * amcB                               # Coefficiente di (1+r) al denominatore della frontiera B (= 0)
+wA <- (1 - ammA * x) / (lcA - dA * x)                       # Frontiera salario-profitto della tecnica A (vettore)
+wB <- (1 - ammB * x) / (lcB - dB * x)                       # Frontiera salario-profitto della tecnica B (vettore)
+rsw <- sort(Re(polyroot(c(lcB - lcA,
+                          dA + ammB * lcA - dB - ammA * lcB,
+                          ammA * dB - ammB * dA)))) - 1     # Saggi di profitto ai quali le due tecniche si equivalgono
+  # Nota: polyroot() = calcola le radici di un polinomio (ottenuto uguagliando le due frontiere, in x = 1+r)
   #       Re = estrae la parte reale ed elimina la parte immaginaria
   #       sort = ordina le soluzioni in ordine crescente
 wenv <- pmax(wA, wB)                                        # Frontiera salario-profitto (inviluppo delle due tecniche) (vettore)
+yA <- wA[1]                                                 # Prodotto netto per addetto della tecnica A (= salario con r = 0)
+yB <- wB[1]                                                 # Prodotto netto per addetto della tecnica B (= salario con r = 0)
 rk <- r[-1]                                                 # Saggio di profitto meno il primo valore nullo
-kA <- -diff(wA)/diff(r)                                     # Intensità capitalistica implicita della tecnica A (= -dw/dr) (vettore)   
-kB <- -diff(wB)/diff(r)                                     # Intensità capitalistica implicita della tecnica B (= -dw/dr) (vettore)
+kA <- (yA - wA[-1]) / rk                                    # Capitale per addetto (in valore) della tecnica A (vettore)
+kB <- (yB - wB[-1]) / rk                                    # Capitale per addetto (in valore) della tecnica B (vettore)
+kenv <- ifelse(wA[-1] > wB[-1], kA, kB)                     # Capitale per addetto della tecnica scelta (vettore)
 
 # Mostra informazioni
-cat("Saggi di profitto ai quali le due tecniche hanno lo stesso costo r =", round(rsw, 4), "\n")
+cat("Saggi di profitto ai quali le due tecniche si equivalgono r =", round(rsw, 4), "\n")
+cat("Prodotto netto per addetto: yA =", round(yA, 4), " yB =", round(yB, 4), "\n")
 
 # Impostazioni grafiche
 par(mfrow = c(1, 2), mar = c(4.2, 4.2, 3, 1))
 
 # Pannello 1: inviluppo colorato per tecnica scelta ####
-plot(r, wA, type = "l", lwd = 1, col = "blue", ylim = range(wA, wB),
+plot(r, wB, type = "l", lwd = 1, col = "red", ylim = c(0, max(wA, wB)),
      main = "Tecnica scelta (inviluppo): B -> A -> B",
      xlab = "Saggio di profitto r", ylab = "Salario w", font.main = 1, cex.main = 0.95)
-lines(r, wB, lwd = 1, col = "red")
+lines(r, wA, lwd = 1, col = "blue")
 mB1 <- r <= rsw[1]; mA <- r > rsw[1] & r < rsw[2]; mB2 <- r >= rsw[2]
 lines(r[mB1], wenv[mB1], lwd = 3.5, col = "red")
 lines(r[mA],  wenv[mA],  lwd = 3.5, col = "blue")
 lines(r[mB2], wenv[mB2], lwd = 3.5, col = "red")
 abline(v = rsw, lty = 3, col = "grey")
-text(0.02, max(wB), "B", col = "red"); text(0.15, 0.40, "A", col = "blue")
-text(0.33, 0.35, "B (ritorna)", col = "red"); grid()
+text(0.06, 0.50, "B", col = "red"); text(0.35, 0.37, "A", col = "blue")
+text(0.60, 0.25, "B (ritorna)", col = "red"); grid()
 
-# Pannello 2: intensita' capitalistica delle due tecniche ####
-plot(rk, kA, type = "l", lwd = 2, col = "blue", ylim = range(kA, kB),
-     main = "Intensità capitalistica: l'ordinamento si inverte",
-     xlab = "Saggio di profitto r", ylab = "k = valore capitale / lavoro",
+# Pannello 2: capitale per addetto della tecnica scelta ####
+kA1 <- (yA - (1 - ammA * (1 + rsw)) / (lcA - dA * (1 + rsw))) / rsw   # k della tecnica A ai due saggi di switch
+kB1 <- (yB - (1 - ammB * (1 + rsw)) / (lcB - dB * (1 + rsw))) / rsw   # k della tecnica B ai due saggi di switch
+plot(rk, kB, type = "l", lwd = 1, lty = 2, col = "red", ylim = c(0, 0.6),
+     main = "Capitale per addetto: scende e poi risale",
+     xlab = "Saggio di profitto r", ylab = "k = (y - w) / r",
      font.main = 1, cex.main = 0.95)
-lines(rk, kB, lwd = 2, col = "red")
+lines(rk, kA, lwd = 1, lty = 2, col = "blue")
+nB1 <- rk <= rsw[1]; nA <- rk >= rsw[1] & rk <= rsw[2]; nB2 <- rk >= rsw[2]
+lines(rk[nB1], kB[nB1], lwd = 3.5, col = "red")
+lines(rk[nA],  kA[nA],  lwd = 3.5, col = "blue")
+lines(rk[nB2], kB[nB2], lwd = 3.5, col = "red")
+segments(rsw, kB1, rsw, kA1, lwd = 2)                       # Salti del capitale per addetto nei punti di switch
 abline(v = rsw, lty = 3, col = "grey")
-legend("topright", c("k tecnica A", "k tecnica B"),
-       lty = 1, lwd = 2, col = c("blue", "red"), bty = "n"); grid()
+text(rsw[1] + 0.07, 0.36, "scende", cex = 0.85); text(rsw[2] - 0.07, 0.45, "sale", cex = 0.85)
+legend("bottomright", c("k tecnica A", "k tecnica B", "tecnica scelta (tratto spesso)"),
+       lty = c(2, 2, 1), lwd = c(1, 1, 3.5), col = c("blue", "red", "black"), bty = "n"); grid()
 ```
 
 <table align="center">
@@ -1435,7 +1464,7 @@ legend("topright", c("k tecnica A", "k tecnica B"),
     <img src="https://raw.githubusercontent.com/marcoverpas/figures/main/Reswitching.png" width=820>
   </td></tr>
   <tr><td width="820" align="center">
-    <em><strong>Figura 2.4</strong> - Il ritorno delle tecniche. A sinistra, la tecnica di costo minimo (inviluppo in grassetto) al variare del saggio di profitto: la tecnica B è scelta per <em>r</em> bassi, la A per <em>r</em> intermedi, e la B <em>ritorna</em> per <em>r</em> alti (doppio switch). A destra, l'intensità capitalistica delle due tecniche: le curve si incrociano, dunque non esiste un ordinamento delle tecniche per intensità di capitale indipendente dalla distribuzione. Cade così la "parabola" neoclassica del capitale.</em>
+    <em><strong>Figura 2.4</strong> - Il ritorno delle tecniche in un'economia a due settori (bene di consumo e macchine). A sinistra, le frontiere salario-profitto delle due tecniche, la retta B (settori con uguale composizione) e la curva A (settore delle macchine più intensivo di capitale), con la tecnica di costo minimo in grassetto: B è scelta per <em>r</em> &lt; 20%, A fra 20% e 50%, e B <em>ritorna</em> per <em>r</em> &gt; 50%. A destra, il capitale per addetto in valore, <em>k</em> = (<em>y</em> - <em>w</em>)/<em>r</em>, della tecnica scelta (tratto spesso): al primo switch scende, al secondo risale, e nel tratto in cui si usa A cresce con <em>r</em> per la rivalutazione delle macchine. Non esiste dunque una relazione monotona fra saggio di profitto e intensità di capitale, e cade la "parabola" neoclassica del capitale.</em>
   </td></tr>
 </table>
 
