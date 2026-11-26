@@ -1967,6 +1967,8 @@ Il reddito verso cui l'economia converge nel tempo è, dunque, la spesa pubblica
 
 Il codice `R` del modello è quello già discusso nella sezione 2.2.6.
 
+> 💡 **Laboratorio interattivo (modello SIM).** Il modello SIM si può esplorare in un'applicazione interattiva, variando le due propensioni al consumo (dal reddito e dalla ricchezza), l'aliquota fiscale e la spesa pubblica: [apri il laboratorio (in inglese)](https://marcoverpas.github.io/Leeds_lectures_2026/int_sim.html).
+
 ##### 3.2.3.2 Il modello PC
 
 Il modello **PC** (*portfolio choice*, "scelta di portafoglio") aggiunge un secondo attivo finanziario e fa comparire esplicitamente la banca centrale (Godley e Lavoie, 2007, cap. 4). Le famiglie possono ora detenere la ricchezza come **contante** e/o **titoli di Stato**; restano assenti banche, moneta interna (depositi), investimenti e scorte; prezzi fissi e profitti netti nulli.
@@ -2042,7 +2044,7 @@ $$Y^* = \frac{G + r \cdot B_h^* \cdot (1 - \theta)}{\theta} \qquad (3.24)$$
   </td></tr>
 </table>
 
-> 💡 **Laboratorio interattivo (modello PC).** Il modello si può esplorare in un'applicazione interattiva, variando propensioni al consumo, coefficienti di portafoglio e tasso d'interesse: [apri il laboratorio](https://x52gnt-marco-passarella.shinyapps.io/int_pc/). Il codice `R` completo è [`BASIC_PC.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/BASIC_PC.R).
+> 💡 **Laboratorio interattivo (modello PC).** Il modello si può esplorare in un'applicazione interattiva, variando propensioni al consumo, coefficienti di portafoglio e tasso d'interesse: [apri il laboratorio (in inglese)](https://marcoverpas.github.io/Leeds_lectures_2026/int_pc.html). Il codice `R` completo è [`BASIC_PC.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/BASIC_PC.R).
 
 ##### 3.2.3.3 Il modello BMW
 
@@ -2136,7 +2138,7 @@ Poiché prestiti e capitale crescono di pari passo (dalle (3.27) e (3.35), $\Del
   </td></tr>
 </table>
 
-> 💡 **Laboratorio interattivo (modello BMW).** Anche il BMW si può esplorare in un'app interattiva, variando propensioni al consumo, coefficienti dell'investimento e shock di politica: [apri il laboratorio](https://x52gnt-marco-passarella.shinyapps.io/int_bmw/). Il codice `R` completo è [`BASIC_BMW.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/BASIC_BMW.R).
+> 💡 **Laboratorio interattivo (modello BMW).** Anche il BMW si può esplorare in un'app interattiva, variando propensioni al consumo, coefficienti dell'investimento e shock di politica: [apri il laboratorio (in inglese)](https://marcoverpas.github.io/Leeds_lectures_2026/int_bmw.html). Il codice `R` completo è [`BASIC_BMW.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/BASIC_BMW.R).
 
 
 #### 3.2.4 I modelli IO-SFC: settori e bilanci nello stesso schema
@@ -2245,11 +2247,11 @@ Il modello **IO-PC** innesta lo stesso strato sul PC: le famiglie scelgono fra m
 
 Il codice `R` è [`IO_PC.R`](https://github.com/marcoverpas/Leeds_lectures_2026/blob/main/IO_PC.R).
 
-> 💡 **Laboratorio interattivo (modello ECO-3IO-PC).** Questi modelli non solo possono essere resi interattivi, ma anche estesi per includere nuove variabili. Qui si può esplorare una versione del modello IO-PC estesa all'ecosistema (con emissioni e risorse), a tre industrie: [apri il laboratorio](https://x52gnt-marco-passarella.shinyapps.io/eco_3io_sfc_model/).
+> 💡 **Laboratorio interattivo (modello ECO-3IO-PC).** Questi modelli non solo possono essere resi interattivi, ma anche estesi per includere nuove variabili. Qui si può esplorare una versione del modello IO-PC estesa all'ecosistema (con emissioni e risorse), a tre industrie: [apri il laboratorio (in inglese)](https://marcoverpas.github.io/Leeds_lectures_2026/eco_3io_sfc_model.html).
 >
 > <table align="center">
 >   <tr><td width="900" align="center">
->     <a href="https://x52gnt-marco-passarella.shinyapps.io/eco_3io_sfc_model/" target="_blank"><img src="https://raw.githubusercontent.com/marcoverpas/figures/main/laboratory.png" width="900"></a>
+>     <a href="https://marcoverpas.github.io/Leeds_lectures_2026/eco_3io_sfc_model.html" target="_blank"><img src="https://raw.githubusercontent.com/marcoverpas/figures/main/laboratory.png" width="900"></a>
 >   </td></tr>
 > </table>
 
