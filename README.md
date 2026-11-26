@@ -1072,35 +1072,42 @@ Y  <- mat(0)             # Reddito
 Tax <- mat(0)            # Tasse
 YD <- mat(0)             # Reddito disponibile
 C <- mat(0)              # Consumo
-H <- mat(0)              # Stock di ricchezza
+H_s <- mat(0)            # Offerta di moneta (stock)
+H_h <-mat(0)             # Domanda di moneta (stock)
 
 # Lancia il modello ####
 for (j in 1:nScenarios) {
-
+  
   for (i in 2:nPeriods) {
-
+    
     if (i >= 120 && j == 2) G[j, i] <- 25          # Shock: spesa pubblica 20 -> 25
-
+    
     for (iter in 1:60) {                          # Iterazioni per convergenza alla soluzione simultanea
-
+      
       Y[j, i]  <- C[j, i] + G[j, i]
       Tax[j, i] <- theta * Y[j, i]
       YD[j, i] <- Y[j, i] - Tax[j, i]
-      C[j, i]  <- alpha1 * YD[j, i] + alpha2 * H[j, i - 1]
-
+      C[j, i]  <- alpha1 * YD[j, i] + alpha2 * H_h[j, i - 1]
+      H_h[j, i] <- H_h[j, i - 1] + (YD[j, i] - C[j, i])
+      H_s[j, i] <- H_s[j, i - 1] + (G[j, i] - Tax[j, i])
+      
     }
-
-    H[j, i] <- H[j, i - 1] + (YD[j, i] - C[j, i])
-
   }
 }
 
 # Visualizza i risultati ####
-plot(Y[2,100:nPeriods], type = "l", lwd = 2, col = 4, ylim = range(min(Y[,100:nPeriods]),max(H[,100:nPeriods])),
+
+# Visualizza condizione di coerenza
+plot(H_h[1,100:nPeriods]-H_s[1,100:nPeriods], type = "l", lwd = 2, col = "orangered", ylim = range(-0.1,0.1),
+     main = "Eccesso di domanda di moneta",
+     xlab = "Tempo", ylab = "Livello", font.main = 1, cex.main = 1, cex.axis=1, cex.lab=1)
+
+# Visualizza reddito e ricchezza
+plot(Y[2,100:nPeriods], type = "l", lwd = 2, col = 4, ylim = range(min(Y[,100:nPeriods]),max(H_s[,100:nPeriods])),
      main = "Modello keynesiano SFC (SIM): shock di spesa pubblica",
      xlab = "Tempo", ylab = "Livello", font.main = 1, cex.main = 1, cex.axis=1, cex.lab=1)
 #grid()
-lines(H[2,100:nPeriods], lwd = 2, lty = 1, col = 2)
+lines(H_s[2,100:nPeriods], lwd = 2, lty = 1, col = 2)
 legend("right", c("Reddito", "Stock di moneta"),
        lty = c(1, 1), lwd = c(2, 2), col = c(4, 2), bty = "n", cex=1)
 ```
